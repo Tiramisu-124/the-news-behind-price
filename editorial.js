@@ -1,38 +1,42 @@
 
-let selectedCase=window.EDITORIAL_CASES[0].id;
-const caseEscape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function renderCase(){
-const c=window.EDITORIAL_CASES.find(x=>x.id===selectedCase),city=document.getElementById('city').value,values=c[city]||c.australia;
-document.getElementById('case-filters').innerHTML = ['Everyday Consumer Goods','Raw Materials'].map((group,i) => {
-  const buttons = window.EDITORIAL_CASES.filter(item => item.category === group).map(item =>
-    '<button data-case="'+item.id+'" aria-pressed="'+(item.id===c.id)+'" class="'+(item.id===c.id?'selected':'')+'">'+caseEscape(item.cn)+' · '+caseEscape(item.name)+'</button>').join('');
-  return '<div><h3>'+['日常生活商品','原材料'][i]+' · '+group+'</h3><div class="filters">'+buttons+'</div></div>';
-}).join('');
-const lo=Math.min(...values)*.9,hi=Math.max(...values)*1.05;
-const xy=values.map((v,i)=>[60+i*170,200-(v-lo)/(hi-lo)*155]);
-const line=xy.map((p,i)=>(i?'L':'M')+p.join(',')).join(' ');
-document.getElementById('case-content').innerHTML=`
-<div class="case-layout"><article class="case-panel"><span class="eyebrow">${caseEscape(c.category)} · ${caseEscape(city==="china"?"China · 中国":"Australia · 澳大利亚")}</span><h3>${caseEscape(c.name)}</h3><p class="demo-label">ILLUSTRATIVE PRICES · Not observed market data</p><strong class="case-price">${values.at(-1).toFixed(2)} <small>${caseEscape(c.unit.replace("AUD",city==="china"?"CNY":"AUD"))}</small></strong><span class="case-change">${((values.at(-1)/values[0]-1)*100).toFixed(1)}% over example period</span><svg viewBox="0 0 640 250" role="img" aria-label="Illustrative price trend; exact values follow below"><path d="${line}" fill="none" stroke="#3269ff" stroke-width="3"/>${xy.map((p,i)=>'<circle cx="'+p[0]+'" cy="'+p[1]+'" r="5" fill="#3269ff"/><text x="'+p[0]+'" y="234" text-anchor="middle">Example '+(i+1)+'</text>').join('')}</svg><p class="example-values">${values.map((v,i)=>'Example '+(i+1)+': '+v.toFixed(2)).join(' · ')}</p><p>No real observation dates are assigned. These numbers are not taken from the linked report.</p></article>
-${c.source ? `<article class="case-panel"><span class="eyebrow">01 · ORIGINAL REPORT / SOURCE</span><h3>${caseEscape(c.headline)}</h3><p>${caseEscape(c.summary)}</p><p class="source">${caseEscape(c.publisher)}</p><a class="read-link" href="${caseEscape(c.source)}" target="_blank" rel="noopener noreferrer">Read the original source ↗</a><p>The source provides background; it does not validate the illustrative country prices.</p></article></div>
-<article class="case-panel connection"><span class="eyebrow">02 · THE CONNECTION — TEAM ANALYSIS</span><h3>How could this news reach the price tag?</h3><span class="demo-label">Sample interpretation · Replace with your team's reporting</span><ol class="causal-chain">${c.steps.map(s=>'<li>'+caseEscape(s)+'</li>').join('')}</ol><p>${caseEscape(city==="china"?c.chinaAnalysis:c.analysis)}</p><div class="case-layout"><div><h4>What else could affect the price?</h4><p>${caseEscape(c.other)}</p></div><div><h4>Evidence for your team to add</h4><p>${caseEscape(c.evidence)}</p></div></div><p class="draft-credit">Assigned to Member ${c.member} · Review status: draft example · Observation dates: to add</p></article>` : `<article class="case-panel"><h3>Original report & team analysis</h3><p>Member ${c.member} is preparing the source and the explanation for ${caseEscape(c.name)}.</p></article></div>`}`;
-document.querySelectorAll('[data-case]').forEach(b=>b.onclick=()=>{selectedCase=b.dataset.case;renderCase()});
+const catalog = window.EDITORIAL_CASES;
+const byId = id => document.getElementById(id);
+const country = () => byId('city').value;
+const escapeText = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const format = n => n.toLocaleString('en-US', {minimumFractionDigits:2,maximumFractionDigits:2});
+let selected = catalog[0];
+function showStory(item) {
+  selected = item;
+  const quote = item.quotes[country()];
+  const history = quote.history.map(([date,value]) => '<li><small>'+date+'</small>'+format(value)+'</li>').join('');
+  const report = item.source ? '<h3>'+escapeText(item.headline)+'</h3><p>'+escapeText(item.summary)+'</p><a href="'+item.source+'">Read '+escapeText(item.publisher)+' ↗</a>' : '<p>Reporting in progress.</p>';
+  const analysis = country()==='china' ? item.chinaAnalysis : item.analysis;
+  const explanation = (analysis||'').split(/(?<=[.!?])\s+/).filter(s=>!/fictional|illustrative|example Australian|plotted values/i.test(s)).join(' ');
+  byId('case-content').innerHTML = '<div class="case-layout"><article class="case-panel"><small>'+item.category+'</small><h3>'+item.name+'</h3><strong class="case-price">'+format(quote.price)+' <small>'+quote.unit+'</small></strong><p>'+escapeText(quote.label)+' · '+quote.date+'</p><a href="'+escapeText(quote.url)+'">Price source ↗</a>'+(history?'<h4>Recorded prices</h4><ul class="history">'+history+'</ul>':'')+'</article><article class="case-panel"><small>Original report</small>'+report+'</article></div><article class="case-panel connection"><small>Team analysis · Member '+item.member+'</small><h3>How does the story affect prices?</h3><p>'+escapeText(explanation||'Analysis in preparation.')+'</p>'+(item.steps?'<ol class="causal-chain">'+item.steps.map(s=>'<li>'+escapeText(s)+'</li>').join('')+'</ol><p>'+escapeText(item.other)+'</p>':'')+'</article>';
+  document.querySelectorAll('[data-product]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.product===item.id)));
 }
-document.getElementById('city').addEventListener('change',renderCase);renderCase();
-
-document.getElementById('methodBtn').onclick = () => document.getElementById('method').showModal();
-document.getElementById('closeDialog').onclick = () => document.getElementById('method').close();
-const searchInput = document.getElementById('search');
-searchInput.oninput = () => searchInput.setCustomValidity('');
-document.getElementById('searchForm').onsubmit = event => {
-  event.preventDefault();
-  const query = searchInput.value.trim().toLowerCase();
-  const match = window.EDITORIAL_CASES.find(item => [item.name,item.cn,item.id,item.category].join(' ').toLowerCase().includes(query));
-  if (!match) {
-    searchInput.setCustomValidity('No matching product. Try a product name in English or Chinese.');
-    searchInput.reportValidity();
-    return;
-  }
-  selectedCase = match.id;
-  renderCase();
-  document.getElementById('product-stories').scrollIntoView();
+function renderRails() {
+  const groups = [...new Set(catalog.map(item=>item.category))];
+  byId('case-filters').innerHTML = groups.map((group,i)=>{
+    const cards=catalog.filter(item=>item.category===group).map(item=>{
+      const q=item.quotes[country()];
+      return '<button class="quote-card" data-product="'+item.id+'"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+item.icon+'.svg"><span><b>'+item.name+'</b><small>'+escapeText(q.label)+'</small><strong>'+format(q.price)+' '+q.unit+'</strong><small>'+q.date+'</small></span></button>';
+    }).join('');
+    return '<div class="rail-title"><h3>'+group+'</h3><div><button data-rail="'+i+'" data-dir="-1" aria-label="Previous '+group+'">←</button><button data-rail="'+i+'" data-dir="1" aria-label="Next '+group+'">→</button></div></div><div class="quote-rail" id="rail-'+i+'">'+cards+'</div>';
+  }).join('');
+  document.querySelectorAll('[data-rail]').forEach(b=>b.onclick=()=>{const rail=byId('rail-'+b.dataset.rail);rail.scrollBy({left:Number(b.dataset.dir)*(rail.firstElementChild.offsetWidth+16),behavior:'smooth'})});
+  document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>showStory(catalog.find(item=>item.id===b.dataset.product)));
+  showStory(selected);
+}
+byId('city').addEventListener('change',renderRails);
+byId('methodBtn').onclick=()=>byId('method').showModal();
+byId('closeDialog').onclick=()=>byId('method').close();
+byId('search').oninput=()=>byId('search').setCustomValidity('');
+byId('searchForm').onsubmit=event=>{
+ event.preventDefault();
+ const key=byId('search').value.trim().toLowerCase();
+ const item=catalog.find(x=>(x.name+' '+x.id+' '+x.category).toLowerCase().includes(key));
+ if(!item){byId('search').setCustomValidity('No matching product.');byId('search').reportValidity();return;}
+ showStory(item);document.querySelector('[data-product="'+item.id+'"]').scrollIntoView({block:'center',inline:'center'});
 };
+renderRails();
