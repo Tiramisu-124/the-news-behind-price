@@ -1,16 +1,14 @@
-# Team content guide
+# Product assignments
 
-Edit editorial-data.js to replace the four product stories. Keep each id unchanged. Fields: category, name, unit, australia/china (four illustrative prices), source (original report URL), publisher, headline, summary (source facts), steps (three transmission stages), analysis (your interpretation), other (alternative explanations), evidence (reporting still required).
+- Everyday Consumer Goods / Member 1: 羽毛球 (Shuttlecocks)
+- Everyday Consumer Goods / Member 1: 牛肉 (Beef)
+- Everyday Consumer Goods / Member 2: 牛奶 (Milk)
+- Everyday Consumer Goods / Member 2: T恤 (T-shirt)
+- Everyday Consumer Goods / Member 3: 内存条 (RAM)
+- Raw Materials / Member 3: 原油 (Crude Oil)
+- Raw Materials / Member 4: 黄金 (Gold)
+- Raw Materials / Member 4: 铜 (Copper)
+- Raw Materials / Member 5: 咖啡豆 (Coffee Beans)
+- Raw Materials / Member 5: 棉花 (Cotton)
 
-All current country prices and trend charts are fictional coursework examples. News links are real; they do not substantiate those prices. Existing global benchmarks are separate from these examples.
-
-Before publishing real research: add dated observations, retailer/source links, exact product specifications, price currency/unit, report publication date, author and review date. Update editorial.js to render these fields and remove demo labels only for verified entries. Do not simply replace numbers and imply they are verified. Keep missing cities explicitly unavailable rather than inventing comparisons.
-
-For shuttlecocks compare the same brand, feather grade and tube size. For petrol distinguish crude oil from pump petrol. Gold country comparisons are dealer quotes, not country spot prices. RAM must use a matched SKU. Coffee must match cup size and milk type.
-
-Preserve original reporting vs your causal interpretation as separate sections. Temporal correlation alone does not establish causation.
-
-
-Country selector: Australia (AUD) and China (CNY). The four categories are shuttlecocks, fuel, gold and RAM; coffee is removed. Values are independent fictional examples, not currency conversions or national averages. China analysis uses chinaAnalysis; Australia uses analysis. Add China-specific sources before replacing draft explanations with verified reporting. Australian sources do not establish Chinese pricing mechanisms.
-
-China hero photo: Jeremy Huang / Unsplash https://unsplash.com/photos/a-stone-wall-on-a-hill-eTcSiwZYA-k
+Edit editorial-data.js to add each original report and the team's interpretation. The country series are illustrative examples in AUD and CNY. Keep dated evidence and matching product grades and units when replacing examples with observations.

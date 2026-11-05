@@ -1,8 +1,8 @@
 window.EDITORIAL_CASES = [
   {
     "id": "shuttle",
-    "category": "Everyday & sport",
-    "name": "Feather shuttlecocks",
+    "category": "Everyday Consumer Goods",
+    "name": "Shuttlecocks",
     "unit": "AUD / dozen",
     "source": "https://www.channelnewsasia.com/east-asia/china-badminton-shuttlecocks-price-hike-feathers-pork-prices-4475371",
     "publisher": "CNA",
@@ -28,74 +28,74 @@ window.EDITORIAL_CASES = [
       120,
       135
     ],
-    "chinaAnalysis": "For China, the linked report discusses feather supply and shuttlecock costs directly. Retail effects still depend on brand, feather grade and stock. The plotted values are fictional examples, not prices reported by CNA."
+    "chinaAnalysis": "For China, the linked report discusses feather supply and shuttlecock costs directly. Retail effects still depend on brand, feather grade and stock. The plotted values are fictional examples, not prices reported by CNA.",
+    "cn": "羽毛球",
+    "member": 1
   },
   {
-    "id": "fuel",
-    "category": "Energy & transport",
-    "name": "Petrol / crude oil",
-    "unit": "AUD / litre (petrol)",
-    "source": "https://www.accc.gov.au/consumers/petrol-and-fuel/what-affects-fuel-prices",
-    "publisher": "ACCC · explanatory source",
-    "headline": "How international benchmarks affect Australian fuel prices",
-    "summary": "The ACCC explains the roles of international refined-fuel prices and the Australian dollar in local pump prices. This is a background explainer, not a dated news event.",
-    "steps": [
-      "International fuel benchmark changes",
-      "AUD import costs change",
-      "Pump prices adjust"
-    ],
-    "analysis": "Crude oil is an input to refined petrol. Australian petrol prices relate more directly to refined-fuel benchmarks and AUD exchange rates, so crude prices and pump prices need not move together on the same day.",
-    "other": "Local price cycles, taxes, competition and inventory timing matter. A barrel of crude and a litre of petrol are different products.",
-    "evidence": "Replace this explainer with a dated event report; match city pump-price observations to refined-fuel benchmarks and exchange-rate dates.",
+    "unit": "AUD / kg",
     "australia": [
-      1.78,
-      1.95,
-      1.84,
-      1.89
+      20,
+      21,
+      22,
+      23
     ],
     "china": [
-      7.2,
-      7.7,
-      7.4,
-      7.6
+      60,
+      62,
+      64,
+      63
     ],
-    "chinaAnalysis": "The ACCC source explains Australia only. For China, the team should add a China-specific source on fuel pricing and record matched petrol-grade prices before drawing a causal conclusion."
+    "id": "beef",
+    "cn": "牛肉",
+    "name": "Beef",
+    "member": 1,
+    "category": "Everyday Consumer Goods"
   },
   {
-    "id": "gold",
-    "category": "Precious metals",
-    "name": "Gold bullion",
-    "unit": "AUD / troy oz",
-    "source": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2025",
-    "publisher": "World Gold Council",
-    "headline": "Investment demand features in the 2025 gold market",
-    "summary": "The World Gold Council reports strong investment demand in its review of the 2025 gold market.",
-    "steps": [
-      "Investment demand strengthens",
-      "Global gold price responds",
-      "AUD bullion quotes adjust"
-    ],
-    "analysis": "Australian bullion quotes combine the international gold price, the AUD exchange rate and a dealer premium. Country examples are illustrative dealer quotes in local currencies, not directly comparable national averages.",
-    "other": "Interest rates, investor selling, currency movements and dealer buy/sell spreads can offset other influences.",
-    "evidence": "Record the same bullion weight, purity and dealer sell-price definition; retain timestamped spot and exchange-rate sources.",
+    "unit": "AUD / litre",
     "australia": [
-      4200,
-      4400,
-      4350,
-      4600
+      1.6,
+      1.7,
+      1.75,
+      1.8
     ],
     "china": [
-      19500,
-      20200,
-      19900,
-      21000
+      10,
+      10.5,
+      11,
+      10.8
     ],
-    "chinaAnalysis": "For China, investigate global gold prices, currency movements and local dealer premiums. The international report is background; it does not verify the fictional CNY prices shown here."
+    "id": "milk",
+    "cn": "牛奶",
+    "name": "Milk",
+    "member": 2,
+    "category": "Everyday Consumer Goods"
+  },
+  {
+    "unit": "AUD / shirt",
+    "australia": [
+      20,
+      21,
+      22,
+      21
+    ],
+    "china": [
+      65,
+      68,
+      70,
+      69
+    ],
+    "id": "shirt",
+    "cn": "T恤",
+    "name": "T-shirt",
+    "member": 2,
+    "category": "Everyday Consumer Goods"
   },
   {
     "id": "memory",
-    "category": "Technology",
-    "name": "DDR5 memory · 16GB",
+    "category": "Everyday Consumer Goods",
+    "name": "RAM",
     "unit": "AUD / module",
     "source": "https://www.trendforce.com/presscenter/news/20250924-12733.html",
     "publisher": "TrendForce",
@@ -121,6 +121,121 @@ window.EDITORIAL_CASES = [
       410,
       450
     ],
-    "chinaAnalysis": "Global memory supply changes may influence Chinese module costs, but brand, specification, inventory and promotions also matter. The TrendForce outlook does not verify the fictional CNY retail series."
+    "chinaAnalysis": "Global memory supply changes may influence Chinese module costs, but brand, specification, inventory and promotions also matter. The TrendForce outlook does not verify the fictional CNY retail series.",
+    "cn": "内存条",
+    "member": 3
+  },
+  {
+    "unit": "AUD / barrel",
+    "australia": [
+      105,
+      111,
+      108,
+      114
+    ],
+    "china": [
+      490,
+      510,
+      500,
+      520
+    ],
+    "id": "crude",
+    "cn": "原油",
+    "name": "Crude Oil",
+    "member": 3,
+    "category": "Raw Materials"
+  },
+  {
+    "id": "gold",
+    "category": "Raw Materials",
+    "name": "Gold",
+    "unit": "AUD / troy oz",
+    "source": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2025",
+    "publisher": "World Gold Council",
+    "headline": "Investment demand features in the 2025 gold market",
+    "summary": "The World Gold Council reports strong investment demand in its review of the 2025 gold market.",
+    "steps": [
+      "Investment demand strengthens",
+      "Global gold price responds",
+      "AUD bullion quotes adjust"
+    ],
+    "analysis": "Australian bullion quotes combine the international gold price, the AUD exchange rate and a dealer premium. Country examples are illustrative dealer quotes in local currencies, not directly comparable national averages.",
+    "other": "Interest rates, investor selling, currency movements and dealer buy/sell spreads can offset other influences.",
+    "evidence": "Record the same bullion weight, purity and dealer sell-price definition; retain timestamped spot and exchange-rate sources.",
+    "australia": [
+      4200,
+      4400,
+      4350,
+      4600
+    ],
+    "china": [
+      19500,
+      20200,
+      19900,
+      21000
+    ],
+    "chinaAnalysis": "For China, investigate global gold prices, currency movements and local dealer premiums. The international report is background; it does not verify the fictional CNY prices shown here.",
+    "cn": "黄金",
+    "member": 4
+  },
+  {
+    "unit": "AUD / tonne",
+    "australia": [
+      14000,
+      14300,
+      14100,
+      14500
+    ],
+    "china": [
+      69000,
+      71000,
+      70500,
+      72000
+    ],
+    "id": "copper",
+    "cn": "铜",
+    "name": "Copper",
+    "member": 4,
+    "category": "Raw Materials"
+  },
+  {
+    "unit": "AUD / kg of green beans",
+    "australia": [
+      8,
+      8.5,
+      9,
+      9.2
+    ],
+    "china": [
+      38,
+      40,
+      42,
+      44
+    ],
+    "id": "beans",
+    "cn": "咖啡豆",
+    "name": "Coffee Beans",
+    "member": 5,
+    "category": "Raw Materials"
+  },
+  {
+    "unit": "AUD / kg of raw cotton",
+    "australia": [
+      2.5,
+      2.6,
+      2.55,
+      2.7
+    ],
+    "china": [
+      12,
+      12.5,
+      12.3,
+      13
+    ],
+    "id": "cotton",
+    "cn": "棉花",
+    "name": "Cotton",
+    "member": 5,
+    "category": "Raw Materials"
   }
 ];
