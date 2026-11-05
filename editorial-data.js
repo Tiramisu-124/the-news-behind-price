@@ -1,22 +1,9 @@
-// Replace draft entries with team reporting. See CONTENT_GUIDE.md.
 window.EDITORIAL_CASES = [
   {
     "id": "shuttle",
     "category": "Everyday & sport",
     "name": "Feather shuttlecocks",
     "unit": "AUD / dozen",
-    "sydney": [
-      32,
-      34,
-      37,
-      39.9
-    ],
-    "melbourne": [
-      31,
-      33,
-      35,
-      37.5
-    ],
     "source": "https://www.channelnewsasia.com/east-asia/china-badminton-shuttlecocks-price-hike-feathers-pork-prices-4475371",
     "publisher": "CNA",
     "headline": "Shuttlecock price increases linked to feather supply",
@@ -28,25 +15,26 @@ window.EDITORIAL_CASES = [
     ],
     "analysis": "Australian clubs buy feather shuttles through importers and retailers. Higher factory costs could reach local buyers as stock is replenished. This is a proposed transmission mechanism, not evidence that the example Australian prices were caused by this report.",
     "other": "Brand, feather grade, exchange rates, freight, existing stock and retailer margins can also change the price.",
-    "evidence": "Collect dated Australian prices for the same brand, grade and 12-shuttle tube; interview a club or retailer; verify wholesale price changes."
+    "evidence": "Collect dated Australian prices for the same brand, grade and 12-shuttle tube; interview a club or retailer; verify wholesale price changes.",
+    "australia": [
+      32,
+      34,
+      37,
+      39.9
+    ],
+    "china": [
+      95,
+      105,
+      120,
+      135
+    ],
+    "chinaAnalysis": "For China, the linked report discusses feather supply and shuttlecock costs directly. Retail effects still depend on brand, feather grade and stock. The plotted values are fictional examples, not prices reported by CNA."
   },
   {
     "id": "fuel",
     "category": "Energy & transport",
     "name": "Petrol / crude oil",
     "unit": "AUD / litre (petrol)",
-    "sydney": [
-      1.78,
-      1.95,
-      1.84,
-      1.89
-    ],
-    "melbourne": [
-      1.74,
-      1.9,
-      1.79,
-      1.82
-    ],
     "source": "https://www.accc.gov.au/consumers/petrol-and-fuel/what-affects-fuel-prices",
     "publisher": "ACCC · explanatory source",
     "headline": "How international benchmarks affect Australian fuel prices",
@@ -58,25 +46,26 @@ window.EDITORIAL_CASES = [
     ],
     "analysis": "Crude oil is an input to refined petrol. Australian petrol prices relate more directly to refined-fuel benchmarks and AUD exchange rates, so crude prices and pump prices need not move together on the same day.",
     "other": "Local price cycles, taxes, competition and inventory timing matter. A barrel of crude and a litre of petrol are different products.",
-    "evidence": "Replace this explainer with a dated event report; match city pump-price observations to refined-fuel benchmarks and exchange-rate dates."
+    "evidence": "Replace this explainer with a dated event report; match city pump-price observations to refined-fuel benchmarks and exchange-rate dates.",
+    "australia": [
+      1.78,
+      1.95,
+      1.84,
+      1.89
+    ],
+    "china": [
+      7.2,
+      7.7,
+      7.4,
+      7.6
+    ],
+    "chinaAnalysis": "The ACCC source explains Australia only. For China, the team should add a China-specific source on fuel pricing and record matched petrol-grade prices before drawing a causal conclusion."
   },
   {
     "id": "gold",
     "category": "Precious metals",
     "name": "Gold bullion",
     "unit": "AUD / troy oz",
-    "sydney": [
-      4200,
-      4400,
-      4350,
-      4600
-    ],
-    "melbourne": [
-      4195,
-      4390,
-      4345,
-      4590
-    ],
     "source": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2025",
     "publisher": "World Gold Council",
     "headline": "Investment demand features in the 2025 gold market",
@@ -86,27 +75,28 @@ window.EDITORIAL_CASES = [
       "Global gold price responds",
       "AUD bullion quotes adjust"
     ],
-    "analysis": "Australian bullion quotes combine the international gold price, the AUD exchange rate and a dealer premium. City differences in this demo represent illustrative dealer quotes, not distinct city spot markets.",
+    "analysis": "Australian bullion quotes combine the international gold price, the AUD exchange rate and a dealer premium. Country examples are illustrative dealer quotes in local currencies, not directly comparable national averages.",
     "other": "Interest rates, investor selling, currency movements and dealer buy/sell spreads can offset other influences.",
-    "evidence": "Record the same bullion weight, purity and dealer sell-price definition; retain timestamped spot and exchange-rate sources."
+    "evidence": "Record the same bullion weight, purity and dealer sell-price definition; retain timestamped spot and exchange-rate sources.",
+    "australia": [
+      4200,
+      4400,
+      4350,
+      4600
+    ],
+    "china": [
+      19500,
+      20200,
+      19900,
+      21000
+    ],
+    "chinaAnalysis": "For China, investigate global gold prices, currency movements and local dealer premiums. The international report is background; it does not verify the fictional CNY prices shown here."
   },
   {
     "id": "memory",
     "category": "Technology",
     "name": "DDR5 memory · 16GB",
     "unit": "AUD / module",
-    "sydney": [
-      89,
-      95,
-      102,
-      109
-    ],
-    "melbourne": [
-      87,
-      92,
-      100,
-      105
-    ],
     "source": "https://www.trendforce.com/presscenter/news/20250924-12733.html",
     "publisher": "TrendForce",
     "headline": "Server demand and capacity allocation influence DRAM supply",
@@ -118,36 +108,19 @@ window.EDITORIAL_CASES = [
     ],
     "analysis": "Changes in chip costs can affect imported memory modules after manufacturing and distribution delays. Australian retail modules are not the same product as upstream DRAM chips.",
     "other": "Module speed, brand, promotions, exchange rates and inventory can produce different retail outcomes.",
-    "evidence": "Track one exact 16GB SKU at Australian stores; distinguish forecast, contract, spot and retail prices."
-  },
-  {
-    "id": "coffee",
-    "category": "Food & drink",
-    "name": "Flat white",
-    "unit": "AUD / cup",
-    "sydney": [
-      4.6,
-      4.8,
-      5,
-      5.2
+    "evidence": "Track one exact 16GB SKU at Australian stores; distinguish forecast, contract, spot and retail prices.",
+    "australia": [
+      89,
+      95,
+      102,
+      109
     ],
-    "melbourne": [
-      4.4,
-      4.6,
-      4.8,
-      4.9
+    "china": [
+      350,
+      380,
+      410,
+      450
     ],
-    "source": "https://www.abc.net.au/news/2025-01-14/australian-coffee-growers-struggle-to-capitalise-on-high-prices/104802932",
-    "publisher": "ABC News",
-    "headline": "Weather disruption puts pressure on coffee supply",
-    "summary": "ABC reports weather-related pressure on coffee production in Brazil and Vietnam and examines Australian growers.",
-    "steps": [
-      "Weather disrupts coffee crops",
-      "Imported bean costs rise",
-      "Cafe costs face pressure"
-    ],
-    "analysis": "Australian cafes may face higher roasted-bean costs when imported beans become more expensive. The final cup price also pays for labour, rent and milk; it does not rise proportionally with the bean price.",
-    "other": "Cup size, milk choice, wages, rent, supplier contracts and cafe location also matter.",
-    "evidence": "Compare the same cup size and milk type over time; ask cafes for dated supplier-cost evidence and pricing decisions."
+    "chinaAnalysis": "Global memory supply changes may influence Chinese module costs, but brand, specification, inventory and promotions also matter. The TrendForce outlook does not verify the fictional CNY retail series."
   }
 ];
