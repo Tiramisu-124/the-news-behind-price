@@ -16,6 +16,7 @@ function drawPriceChart(item, quote) {
 }
 window.addEventListener('resize',()=>priceChart?.resize());
 let selected = catalog[0];
+let activeCategory = selected.category;
 function showStory(item) {
   if (priceChart) { priceChart.dispose(); priceChart = null; }
   selected = item;
@@ -30,7 +31,8 @@ function showStory(item) {
 }
 function renderRails() {
   const groups = [...new Set(catalog.map(item=>item.category))];
-  byId('case-filters').innerHTML = groups.map((group,i)=>{
+  const tabs = '<div class="category-tabs" aria-label="Product categories">'+groups.map(group=>'<button type="button" data-category="'+escapeText(group)+'" aria-pressed="'+(group===activeCategory)+'" aria-controls="category-products">'+escapeText(group)+'</button>').join('')+'</div>';
+  byId('case-filters').innerHTML = tabs + '<div id="category-products">' + groups.filter(group=>group===activeCategory).map((group,i)=>{
     const cards=catalog.filter(item=>item.category===group).map(item=>{
       const q=item.quotes[country()];
       return '<button class="quote-card" data-product="'+item.id+'"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+item.icon+'.svg"><span><b>'+item.name+'</b><small>'+escapeText(q.label)+'</small><strong>'+format(q.price)+' '+q.unit+'</strong><small>'+q.date+'</small></span></button>';
@@ -50,6 +52,6 @@ byId('searchForm').onsubmit=event=>{
  const key=byId('search').value.trim().toLowerCase();
  const item=catalog.find(x=>(x.name+' '+x.id+' '+x.category).toLowerCase().includes(key));
  if(!item){byId('search').setCustomValidity('No matching product.');byId('search').reportValidity();return;}
- showStory(item);document.querySelector('[data-product="'+item.id+'"]').scrollIntoView({block:'center',inline:'center'});
+ activeCategory=item.category;selected=item;renderRails();document.querySelector('[data-product="'+item.id+'"]').scrollIntoView({block:'center',inline:'center'});
 };
 renderRails();
