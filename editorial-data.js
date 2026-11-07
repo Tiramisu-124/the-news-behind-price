@@ -10581,45 +10581,3153 @@ window.EDITORIAL_CASES = [
     "icon": "2615",
     "quotes": {
       "australia": {
-        "price": 330.1219,
-        "unit": "US cents / lb",
-        "label": "Other Mild Arabica · IMF",
-        "url": "https://fred.stlouisfed.org/series/PCOFFOTMUSDM",
-        "date": "Sep 2026",
+        "price": 6.64908,
+        "unit": "USD/kg",
+        "label": "Australia生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+        "date": "2026-08-01",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
         "history": [
           [
-            "Jul",
-            359.16227
+            "2024-01-01",
+            3.983226
           ],
           [
-            "Aug",
-            360.6319
+            "2024-02-01",
+            3.730323
           ],
           [
-            "Sep",
-            330.1219
+            "2024-03-01",
+            4.216106
+          ],
+          [
+            "2024-04-01",
+            4.135386
+          ],
+          [
+            "2024-05-01",
+            4.67427
+          ],
+          [
+            "2024-06-01",
+            5.069253
+          ],
+          [
+            "2024-07-01",
+            5.300461
+          ],
+          [
+            "2024-08-01",
+            5.428151
+          ],
+          [
+            "2024-09-01",
+            5.56544
+          ],
+          [
+            "2024-10-01",
+            5.44012
+          ],
+          [
+            "2024-11-01",
+            5.505832
+          ],
+          [
+            "2024-12-01",
+            5.373256
+          ],
+          [
+            "2025-01-01",
+            5.64138
+          ],
+          [
+            "2025-02-01",
+            6.300261
+          ],
+          [
+            "2025-03-01",
+            7.041112
+          ],
+          [
+            "2025-04-01",
+            6.820656
+          ],
+          [
+            "2025-05-01",
+            7.293573
+          ],
+          [
+            "2025-06-01",
+            7.634608
+          ],
+          [
+            "2025-07-01",
+            7.928011
+          ],
+          [
+            "2025-08-01",
+            7.653635
+          ],
+          [
+            "2025-09-01",
+            7.209282
+          ],
+          [
+            "2025-10-01",
+            7.468583
+          ],
+          [
+            "2025-11-01",
+            7.598815
+          ],
+          [
+            "2025-12-01",
+            7.320069
+          ],
+          [
+            "2026-01-01",
+            7.574096
+          ],
+          [
+            "2026-02-01",
+            7.521307
+          ],
+          [
+            "2026-03-01",
+            7.24047
+          ],
+          [
+            "2026-04-01",
+            6.860409
+          ],
+          [
+            "2026-05-01",
+            6.646142
+          ],
+          [
+            "2026-06-01",
+            6.369387
+          ],
+          [
+            "2026-07-01",
+            6.667367
+          ],
+          [
+            "2026-08-01",
+            6.64908
           ]
         ]
       },
       "china": {
-        "price": 330.1219,
-        "unit": "US cents / lb",
-        "label": "Other Mild Arabica · IMF",
-        "url": "https://fred.stlouisfed.org/series/PCOFFOTMUSDM",
-        "date": "Sep 2026",
+        "price": 41.45,
+        "unit": "CNY/kg",
+        "label": "Yunnan commercial green coffee: monitored monthly mean",
+        "date": "2026-08-01",
+        "url": "https://cloud.abeedata.com/home/article/detail/id/32209",
         "history": [
           [
-            "Jul",
-            359.16227
+            "2025-12-01",
+            60.96
           ],
           [
-            "Aug",
-            360.6319
+            "2026-01-01",
+            56.86
           ],
           [
-            "Sep",
-            330.1219
+            "2026-02-01",
+            52.6
+          ],
+          [
+            "2026-03-01",
+            50.21
+          ],
+          [
+            "2026-04-01",
+            47.15
+          ],
+          [
+            "2026-05-01",
+            43.73
+          ],
+          [
+            "2026-06-01",
+            42.65
+          ],
+          [
+            "2026-07-01",
+            43
+          ],
+          [
+            "2026-08-01",
+            41.45
           ]
+        ]
+      }
+    },
+    "bundleRegions": {
+      "china": {
+        "series": [
+          {
+            "series_id": "coffee_cn_commercial",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "frequency": "monthly",
+            "label_zh": "云南商业咖啡生豆监测月均价",
+            "label_en": "Yunnan commercial green coffee: monitored monthly mean",
+            "unit": "CNY/kg",
+            "measure_type": "monthly_mean_price",
+            "proxy_for_commodity": false,
+            "seasonal_adjustment": "not seasonally adjusted / 未做额外季调",
+            "limitations": [
+              "9个连续月点含2025-12基期；2026-01至08为主展示窗",
+              "监测主要为思茅、隆阳商业生豆；不是零售烘焙豆；权重及样本变化不完全透明",
+              "同一报告上月值是已报告数据，不是根据百分比反推"
+            ],
+            "observations": [
+              {
+                "period": "2025-12",
+                "value": 60.96,
+                "source_ids": [
+                  "S01"
+                ],
+                "source_locator": "表1上月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": null,
+                "evidence_grade": "B",
+                "date": "2025-12-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30330"
+              },
+              {
+                "period": "2026-01",
+                "value": 56.86,
+                "source_ids": [
+                  "S01"
+                ],
+                "source_locator": "表1本月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -6.73,
+                "evidence_grade": "B",
+                "date": "2026-01-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30330"
+              },
+              {
+                "period": "2026-02",
+                "value": 52.6,
+                "source_ids": [
+                  "S02"
+                ],
+                "source_locator": "表1上月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -7.49,
+                "evidence_grade": "B",
+                "date": "2026-02-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30689"
+              },
+              {
+                "period": "2026-03",
+                "value": 50.21,
+                "source_ids": [
+                  "S02"
+                ],
+                "source_locator": "表1本月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -4.54,
+                "evidence_grade": "B",
+                "date": "2026-03-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30689"
+              },
+              {
+                "period": "2026-04",
+                "value": 47.15,
+                "source_ids": [
+                  "S03"
+                ],
+                "source_locator": "表1上月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -6.09,
+                "evidence_grade": "B",
+                "date": "2026-04-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/31303"
+              },
+              {
+                "period": "2026-05",
+                "value": 43.73,
+                "source_ids": [
+                  "S03"
+                ],
+                "source_locator": "表1本月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -7.25,
+                "evidence_grade": "B",
+                "date": "2026-05-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/31303"
+              },
+              {
+                "period": "2026-06",
+                "value": 42.65,
+                "source_ids": [
+                  "S04"
+                ],
+                "source_locator": "表1上月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -2.47,
+                "evidence_grade": "B",
+                "date": "2026-06-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/31884"
+              },
+              {
+                "period": "2026-07",
+                "value": 43,
+                "source_ids": [
+                  "S04"
+                ],
+                "source_locator": "表1本月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": 0.82,
+                "evidence_grade": "B",
+                "date": "2026-07-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/31884"
+              },
+              {
+                "period": "2026-08",
+                "value": 41.45,
+                "source_ids": [
+                  "S05"
+                ],
+                "source_locator": "表1本月",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -3.6,
+                "evidence_grade": "B",
+                "date": "2026-08-01",
+                "url": "https://cloud.abeedata.com/home/article/detail/id/32209"
+              }
+            ],
+            "quote": {
+              "price": 41.45,
+              "unit": "CNY/kg",
+              "label": "Yunnan commercial green coffee: monitored monthly mean",
+              "date": "2026-08-01",
+              "url": "https://cloud.abeedata.com/home/article/detail/id/32209",
+              "history": [
+                [
+                  "2025-12-01",
+                  60.96
+                ],
+                [
+                  "2026-01-01",
+                  56.86
+                ],
+                [
+                  "2026-02-01",
+                  52.6
+                ],
+                [
+                  "2026-03-01",
+                  50.21
+                ],
+                [
+                  "2026-04-01",
+                  47.15
+                ],
+                [
+                  "2026-05-01",
+                  43.73
+                ],
+                [
+                  "2026-06-01",
+                  42.65
+                ],
+                [
+                  "2026-07-01",
+                  43
+                ],
+                [
+                  "2026-08-01",
+                  41.45
+                ]
+              ]
+            }
+          },
+          {
+            "series_id": "coffee_cn_composite_selected",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "label_zh": "云南生豆市场综合均价：公开图表已核实月份（有缺口）",
+            "unit": "CNY/kg",
+            "frequency": "monthly",
+            "measure_type": "composite_market_price",
+            "latest_valid_period": "2026-03",
+            "limitations": [
+              "与商业生豆监测不是同口径，禁止合并",
+              "仅收录图表明确标签；2025-04至09未在该图显示，保持缺失",
+              "底层统计机构由制作者注明为农垦局；本次未找到其原始发布页面，所以证据B而非声称原始官方数据已读",
+              "本次仅核实图表明确标注月份；2024-04至09、2025-04至09、2026-04至10等尚缺，不插补"
+            ],
+            "observations": [
+              {
+                "period": "2024-01",
+                "value": 29,
+                "source_ids": [
+                  "COMPOSITE25"
+                ],
+                "source_locator": "第6张图片图表5绿色云南标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2024-01-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/29333"
+              },
+              {
+                "period": "2024-02",
+                "value": 29.9,
+                "source_ids": [
+                  "COMPOSITE25"
+                ],
+                "source_locator": "第6张图片图表5绿色云南标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2024-02-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/29333"
+              },
+              {
+                "period": "2024-03",
+                "value": 29.5,
+                "source_ids": [
+                  "COMPOSITE25"
+                ],
+                "source_locator": "第6张图片图表5绿色云南标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2024-03-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/29333"
+              },
+              {
+                "period": "2024-10",
+                "value": 39,
+                "source_ids": [
+                  "COMPOSITE25"
+                ],
+                "source_locator": "第6张图片图表5绿色云南标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2024-10-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/29333"
+              },
+              {
+                "period": "2024-11",
+                "value": 44.4,
+                "source_ids": [
+                  "COMPOSITE25"
+                ],
+                "source_locator": "第6张图片图表5绿色云南标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2024-11-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/29333"
+              },
+              {
+                "period": "2024-12",
+                "value": 50.9,
+                "source_ids": [
+                  "COMPOSITE25"
+                ],
+                "source_locator": "第6张图片图表5绿色云南标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2024-12-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/29333"
+              },
+              {
+                "period": "2025-01",
+                "value": 52.9,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2025-01-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2025-02",
+                "value": 63.8,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2025-02-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2025-03",
+                "value": 61.8,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2025-03-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2025-10",
+                "value": 61.1,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2025-10-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2025-11",
+                "value": 63.5,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2025-11-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2025-12",
+                "value": 57.9,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2025-12-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2026-01",
+                "value": 54.5,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2026-01-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2026-02",
+                "value": 45.4,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2026-02-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              },
+              {
+                "period": "2026-03",
+                "value": 45.6,
+                "source_ids": [
+                  "COMPOSITE"
+                ],
+                "source_locator": "图表5数字标签",
+                "evidence_grade": "B",
+                "status": "verified_chart_label",
+                "date": "2026-03-01",
+                "url": "https://www.abeedata.com/home/article/detail/id/30752"
+              }
+            ],
+            "quote": {
+              "price": 45.6,
+              "unit": "CNY/kg",
+              "label": "云南生豆市场综合均价：公开图表已核实月份（有缺口）",
+              "date": "2026-03-01",
+              "url": "https://www.abeedata.com/home/article/detail/id/30752",
+              "history": [
+                [
+                  "2024-01-01",
+                  29
+                ],
+                [
+                  "2024-02-01",
+                  29.9
+                ],
+                [
+                  "2024-03-01",
+                  29.5
+                ],
+                [
+                  "2024-10-01",
+                  39
+                ],
+                [
+                  "2024-11-01",
+                  44.4
+                ],
+                [
+                  "2024-12-01",
+                  50.9
+                ],
+                [
+                  "2025-01-01",
+                  52.9
+                ],
+                [
+                  "2025-02-01",
+                  63.8
+                ],
+                [
+                  "2025-03-01",
+                  61.8
+                ],
+                [
+                  "2025-10-01",
+                  61.1
+                ],
+                [
+                  "2025-11-01",
+                  63.5
+                ],
+                [
+                  "2025-12-01",
+                  57.9
+                ],
+                [
+                  "2026-01-01",
+                  54.5
+                ],
+                [
+                  "2026-02-01",
+                  45.4
+                ],
+                [
+                  "2026-03-01",
+                  45.6
+                ]
+              ]
+            }
+          },
+          {
+            "series_id": "coffee_cn_import",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "label_zh": "China生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+            "frequency": "monthly",
+            "unit": "USD/kg",
+            "measure_type": "trade_unit_value_not_spot_price",
+            "hs_code": "090111",
+            "reporter_code": 156,
+            "flow_code": "M",
+            "partner_code": 0,
+            "valuation": "imports: primaryValue, normally CIF",
+            "formula": "primaryValue (USD) / netWgt (kg)",
+            "requested_window": "2024-01 to 2026-10",
+            "latest_valid_period": "2024-12",
+            "valid_months": 12,
+            "missing_months": [
+              "2025-01",
+              "2025-02",
+              "2025-03",
+              "2025-04",
+              "2025-05",
+              "2025-06",
+              "2025-07",
+              "2025-08",
+              "2025-09",
+              "2025-10",
+              "2025-11",
+              "2025-12",
+              "2026-01",
+              "2026-02",
+              "2026-03",
+              "2026-04",
+              "2026-05",
+              "2026-06",
+              "2026-07",
+              "2026-08",
+              "2026-09",
+              "2026-10"
+            ],
+            "limitations": [
+              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
+              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
+              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
+              "CIF不等于含进口关税成本；FOB不含国际运保费",
+              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
+              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
+              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+            ],
+            "observations": [
+              {
+                "period": "2024-01",
+                "value": 3.69255,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202401.json",
+                "raw_trade_value_usd": 137122440,
+                "raw_net_weight_kg": 37134893.145,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-02",
+                "value": 3.930028,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202402.json",
+                "raw_trade_value_usd": 83967572,
+                "raw_net_weight_kg": 21365642.651,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 6.43,
+                "date": "2024-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-03",
+                "value": 4.016643,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202403.json",
+                "raw_trade_value_usd": 86200810,
+                "raw_net_weight_kg": 21460908,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 2.2,
+                "date": "2024-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-04",
+                "value": 4.350824,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202404.json",
+                "raw_trade_value_usd": 51628241,
+                "raw_net_weight_kg": 11866313,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 8.32,
+                "date": "2024-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-05",
+                "value": 5.009088,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202405.json",
+                "raw_trade_value_usd": 67577365,
+                "raw_net_weight_kg": 13490951.782,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 15.13,
+                "date": "2024-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-06",
+                "value": 5.120388,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202406.json",
+                "raw_trade_value_usd": 53571041,
+                "raw_net_weight_kg": 10462301.991,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 2.22,
+                "date": "2024-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-07",
+                "value": 5.430656,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202407.json",
+                "raw_trade_value_usd": 67128486,
+                "raw_net_weight_kg": 12361026,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 6.06,
+                "date": "2024-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-08",
+                "value": 5.643948,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202408.json",
+                "raw_trade_value_usd": 72080312,
+                "raw_net_weight_kg": 12771257.694,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 3.93,
+                "date": "2024-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-09",
+                "value": 5.417029,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202409.json",
+                "raw_trade_value_usd": 51919014,
+                "raw_net_weight_kg": 9584408,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -4.02,
+                "date": "2024-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-10",
+                "value": 5.171493,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202410.json",
+                "raw_trade_value_usd": 48868335,
+                "raw_net_weight_kg": 9449560,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -4.53,
+                "date": "2024-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-11",
+                "value": 5.527377,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202411.json",
+                "raw_trade_value_usd": 49343140,
+                "raw_net_weight_kg": 8927044,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 6.88,
+                "date": "2024-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-12",
+                "value": 5.446152,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202412.json",
+                "raw_trade_value_usd": 67362334,
+                "raw_net_weight_kg": 12368794,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.47,
+                "date": "2024-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-01",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202501.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-02",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202502.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-03",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202503.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-04",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202504.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-05",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202505.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-06",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202506.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-07",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202507.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-08",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202508.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202509.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-10",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202510.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-11",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202511.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-12",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202512.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-01",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202601.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-02",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202602.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-03",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202603.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-04",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202604.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-05",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202605.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-06",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202606.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-07",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202607.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-08",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202608.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202609.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-10",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202610.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              }
+            ],
+            "quarterly": [
+              {
+                "period": "2024-Q1",
+                "value": 3.842987,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-01",
+                  "2024-02",
+                  "2024-03"
+                ]
+              },
+              {
+                "period": "2024-Q2",
+                "value": 4.823527,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-04",
+                  "2024-05",
+                  "2024-06"
+                ]
+              },
+              {
+                "period": "2024-Q3",
+                "value": 5.505358,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-07",
+                  "2024-08",
+                  "2024-09"
+                ]
+              },
+              {
+                "period": "2024-Q4",
+                "value": 5.38532,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-10",
+                  "2024-11",
+                  "2024-12"
+                ]
+              },
+              {
+                "period": "2025-Q1",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-01",
+                  "2025-02",
+                  "2025-03"
+                ]
+              },
+              {
+                "period": "2025-Q2",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-04",
+                  "2025-05",
+                  "2025-06"
+                ]
+              },
+              {
+                "period": "2025-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-07",
+                  "2025-08",
+                  "2025-09"
+                ]
+              },
+              {
+                "period": "2025-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-10",
+                  "2025-11",
+                  "2025-12"
+                ]
+              },
+              {
+                "period": "2026-Q1",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-01",
+                  "2026-02",
+                  "2026-03"
+                ]
+              },
+              {
+                "period": "2026-Q2",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-04",
+                  "2026-05",
+                  "2026-06"
+                ]
+              },
+              {
+                "period": "2026-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-07",
+                  "2026-08",
+                  "2026-09"
+                ]
+              },
+              {
+                "period": "2026-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-10",
+                  "2026-11",
+                  "2026-12"
+                ]
+              }
+            ],
+            "quote": {
+              "price": 5.446152,
+              "unit": "USD/kg",
+              "label": "China生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+              "date": "2024-12-01",
+              "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+              "history": [
+                [
+                  "2024-01-01",
+                  3.69255
+                ],
+                [
+                  "2024-02-01",
+                  3.930028
+                ],
+                [
+                  "2024-03-01",
+                  4.016643
+                ],
+                [
+                  "2024-04-01",
+                  4.350824
+                ],
+                [
+                  "2024-05-01",
+                  5.009088
+                ],
+                [
+                  "2024-06-01",
+                  5.120388
+                ],
+                [
+                  "2024-07-01",
+                  5.430656
+                ],
+                [
+                  "2024-08-01",
+                  5.643948
+                ],
+                [
+                  "2024-09-01",
+                  5.417029
+                ],
+                [
+                  "2024-10-01",
+                  5.171493
+                ],
+                [
+                  "2024-11-01",
+                  5.527377
+                ],
+                [
+                  "2024-12-01",
+                  5.446152
+                ]
+              ]
+            }
+          }
+        ],
+        "stories": [
+          {
+            "story_id": "NC1",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "headline_original": "云新闻深度丨国际咖啡豆价格狂飙，对云南咖啡影响几何？",
+            "source_id": "NC1",
+            "related_source_ids": [],
+            "facts_confirmed": "报道引述产业专家，将主产国灾害、运输滞留和资金交易列为国际豆价上涨因素，并描述云南企业原料成本压力。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "主产区灾害和供应链障碍，被受访专家认为收紧可用供应",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "国际豆价走高，云南企业面临原料成本压力",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "进口豆与云南豆存在替代采购，可能抬高云南生豆采购报价",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "咖农收入可能改善，但净利润取决于产量与投入成本",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "对生豆采购价有上行压力",
+            "possible_lag": "采购与库存周期可能跨月；本包未估计",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "专家归因不等于因果识别；不能用2024期货涨幅代替云南生豆涨幅。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_cn_commercial",
+              "coffee_cn_composite_selected",
+              "coffee_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.yndaily.com/html/2025/yunxinwen_0227/133033.html",
+            "publisher": "云南日报—云新闻",
+            "published": "2025-02-27"
+          },
+          {
+            "story_id": "NC2",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "headline_original": "云南泸水：一杯精品咖啡背后的乡村振兴之路",
+            "source_id": "NC2",
+            "related_source_ids": [],
+            "facts_confirmed": "报道当地推广品种、加工与品质管控，并称怒江精品生豆价格提高。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "当地推动品种与加工升级，完善品质管控",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "品质与可追溯性可能提高采购者支付意愿",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "精品生豆可能取得溢价，销售组合也随之改变",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "混合商品进口单位价值不一定反映这种本地精品溢价",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "对特定精品豆可能上行；全国平均不确定",
+            "possible_lag": "品质投入到收益通常需跨产季；未量化",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "地区个案；前后价格并非同一等级连续交易样本，不放入月线。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_cn_commercial",
+              "coffee_cn_composite_selected",
+              "coffee_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.yn.xinhuanet.com/20250912/84564c2d5c2442f38412691bd162cfa3/c.html",
+            "publisher": "新华网云南频道（来源：泸水市融媒体中心）",
+            "published": "2025-09-12"
+          },
+          {
+            "story_id": "NC3",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "headline_original": "“云南咖啡还是代表着中国的”",
+            "source_id": "NC3",
+            "related_source_ids": [],
+            "facts_confirmed": "报道云南从原料供应向精品化、加工及品牌发展。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "生产端与本土品牌加强品质、加工和直采联系",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "差异化可能降低完全按国际大宗豆价定价的程度",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "精品豆报价可能更有韧性，商业豆仍可能随大宗行情回落",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "因此本地不同等级生豆价格可出现分化",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "品质溢价可能扩大；总体方向不确定",
+            "possible_lag": "长期产业变化，不是单月冲击",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "产业宣传与采访背景，不证明精品化导致某月涨价；不采用文内不一致的种植面积数字。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_cn_commercial",
+              "coffee_cn_composite_selected",
+              "coffee_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://society.yunnan.cn/system/2026/01/09/033821397.shtml",
+            "publisher": "云南网",
+            "published": "2026-01-09"
+          },
+          {
+            "story_id": "NC4",
+            "region": "China",
+            "commodity": "Coffee Beans",
+            "headline_original": "云咖丰收 价格下调",
+            "source_id": "NC4",
+            "related_source_ids": [],
+            "facts_confirmed": "报道新产季咖啡鲜果收购回落；受访品牌负责人将其与巴西供应恢复及国际期货回调联系。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "受访者认为主产区供应恢复，国际期货承压",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "报道观察到云南新产季鲜果收购价回落",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "鲜果原料成本下降可能传导至后续商业生豆采购定价",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "传导受出米率、处理方式、库存和品质影响，不会机械等比例",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "商业生豆存在下行压力，尚未核实具体幅度",
+            "possible_lag": "新产季交货与加工后；不可视为11月完整月均",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "报道价格是鲜果，不能混入生豆曲线；巴西产量归因为采访判断，不作独立已证实供给统计。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_cn_commercial",
+              "coffee_cn_composite_selected",
+              "coffee_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.yn.news.cn/20261103/b5b4db1daa824f7b84b6ad0033ce0b8b/c.html",
+            "publisher": "新华网云南频道",
+            "published": "2026-11-03"
+          }
+        ]
+      },
+      "australia": {
+        "series": [
+          {
+            "series_id": "coffee_au_import",
+            "region": "Australia",
+            "commodity": "Coffee Beans",
+            "label_zh": "Australia生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+            "frequency": "monthly",
+            "unit": "USD/kg",
+            "measure_type": "trade_unit_value_not_spot_price",
+            "hs_code": "090111",
+            "reporter_code": 36,
+            "flow_code": "M",
+            "partner_code": 0,
+            "valuation": "imports: primaryValue, normally CIF",
+            "formula": "primaryValue (USD) / netWgt (kg)",
+            "requested_window": "2024-01 to 2026-10",
+            "latest_valid_period": "2026-08",
+            "valid_months": 32,
+            "missing_months": [
+              "2026-09",
+              "2026-10"
+            ],
+            "limitations": [
+              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
+              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
+              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
+              "CIF不等于含进口关税成本；FOB不含国际运保费",
+              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
+              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
+              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+            ],
+            "observations": [
+              {
+                "period": "2024-01",
+                "value": 3.983226,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202401.json",
+                "raw_trade_value_usd": 34970965.235,
+                "raw_net_weight_kg": 8779558.61,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-02",
+                "value": 3.730323,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202402.json",
+                "raw_trade_value_usd": 31457206.277,
+                "raw_net_weight_kg": 8432837.21,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -6.35,
+                "date": "2024-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-03",
+                "value": 4.216106,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202403.json",
+                "raw_trade_value_usd": 31884154.994,
+                "raw_net_weight_kg": 7562464.91,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 13.02,
+                "date": "2024-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-04",
+                "value": 4.135386,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202404.json",
+                "raw_trade_value_usd": 37701965.14,
+                "raw_net_weight_kg": 9116914.5,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.91,
+                "date": "2024-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-05",
+                "value": 4.67427,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202405.json",
+                "raw_trade_value_usd": 42646126.461,
+                "raw_net_weight_kg": 9123591.58,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 13.03,
+                "date": "2024-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-06",
+                "value": 5.069253,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202406.json",
+                "raw_trade_value_usd": 28840214.756,
+                "raw_net_weight_kg": 5689243.67,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 8.45,
+                "date": "2024-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-07",
+                "value": 5.300461,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202407.json",
+                "raw_trade_value_usd": 35103754.75,
+                "raw_net_weight_kg": 6622774.3,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 4.56,
+                "date": "2024-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-08",
+                "value": 5.428151,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202408.json",
+                "raw_trade_value_usd": 35548204.659,
+                "raw_net_weight_kg": 6548860.56,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 2.41,
+                "date": "2024-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-09",
+                "value": 5.56544,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202409.json",
+                "raw_trade_value_usd": 39577581.543,
+                "raw_net_weight_kg": 7111311.7,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 2.53,
+                "date": "2024-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-10",
+                "value": 5.44012,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202410.json",
+                "raw_trade_value_usd": 45582440.227,
+                "raw_net_weight_kg": 8378939.66,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -2.25,
+                "date": "2024-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-11",
+                "value": 5.505832,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202411.json",
+                "raw_trade_value_usd": 56272179.574,
+                "raw_net_weight_kg": 10220467.8,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 1.21,
+                "date": "2024-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-12",
+                "value": 5.373256,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202412.json",
+                "raw_trade_value_usd": 50477235.787,
+                "raw_net_weight_kg": 9394161.92,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -2.41,
+                "date": "2024-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-01",
+                "value": 5.64138,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202501.json",
+                "raw_trade_value_usd": 51038612.997,
+                "raw_net_weight_kg": 9047185.7,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 4.99,
+                "date": "2025-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-02",
+                "value": 6.300261,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202502.json",
+                "raw_trade_value_usd": 59975561.145,
+                "raw_net_weight_kg": 9519535.4,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 11.68,
+                "date": "2025-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-03",
+                "value": 7.041112,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202503.json",
+                "raw_trade_value_usd": 60999092.491,
+                "raw_net_weight_kg": 8663275.6,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 11.76,
+                "date": "2025-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-04",
+                "value": 6.820656,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202504.json",
+                "raw_trade_value_usd": 71041585.316,
+                "raw_net_weight_kg": 10415652.185,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.13,
+                "date": "2025-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-05",
+                "value": 7.293573,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202505.json",
+                "raw_trade_value_usd": 78022292.781,
+                "raw_net_weight_kg": 10697403.28,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 6.93,
+                "date": "2025-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-06",
+                "value": 7.634608,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202506.json",
+                "raw_trade_value_usd": 67755322.795,
+                "raw_net_weight_kg": 8874761.05,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 4.68,
+                "date": "2025-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-07",
+                "value": 7.928011,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202507.json",
+                "raw_trade_value_usd": 75359242.283,
+                "raw_net_weight_kg": 9505441.28,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 3.84,
+                "date": "2025-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-08",
+                "value": 7.653635,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202508.json",
+                "raw_trade_value_usd": 70753912.862,
+                "raw_net_weight_kg": 9244484.445,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.46,
+                "date": "2025-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-09",
+                "value": 7.209282,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202509.json",
+                "raw_trade_value_usd": 73764859.323,
+                "raw_net_weight_kg": 10231928.8,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -5.81,
+                "date": "2025-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-10",
+                "value": 7.468583,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202510.json",
+                "raw_trade_value_usd": 71383094.848,
+                "raw_net_weight_kg": 9557783.496,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 3.6,
+                "date": "2025-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-11",
+                "value": 7.598815,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202511.json",
+                "raw_trade_value_usd": 53888754.007,
+                "raw_net_weight_kg": 7091730.82,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 1.74,
+                "date": "2025-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-12",
+                "value": 7.320069,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202512.json",
+                "raw_trade_value_usd": 65781787.254,
+                "raw_net_weight_kg": 8986497.903,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.67,
+                "date": "2025-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-01",
+                "value": 7.574096,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202601.json",
+                "raw_trade_value_usd": 60058522.881,
+                "raw_net_weight_kg": 7929464.027,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 3.47,
+                "date": "2026-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-02",
+                "value": 7.521307,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202602.json",
+                "raw_trade_value_usd": 42736303.373,
+                "raw_net_weight_kg": 5682031.136,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.7,
+                "date": "2026-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-03",
+                "value": 7.24047,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202603.json",
+                "raw_trade_value_usd": 54923226.658,
+                "raw_net_weight_kg": 7585588.39,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.73,
+                "date": "2026-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-04",
+                "value": 6.860409,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202604.json",
+                "raw_trade_value_usd": 52360432.661,
+                "raw_net_weight_kg": 7632261.156,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -5.25,
+                "date": "2026-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-05",
+                "value": 6.646142,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202605.json",
+                "raw_trade_value_usd": 52191681.544,
+                "raw_net_weight_kg": 7852928.814,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.12,
+                "date": "2026-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-06",
+                "value": 6.369387,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202606.json",
+                "raw_trade_value_usd": 66600967.259,
+                "raw_net_weight_kg": 10456417.214,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -4.16,
+                "date": "2026-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-07",
+                "value": 6.667367,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202607.json",
+                "raw_trade_value_usd": 62326014.433,
+                "raw_net_weight_kg": 9347920.397,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 4.68,
+                "date": "2026-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-08",
+                "value": 6.64908,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202608.json",
+                "raw_trade_value_usd": 67048943.385,
+                "raw_net_weight_kg": 10083943.448,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.27,
+                "date": "2026-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202609.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-10",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202610.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              }
+            ],
+            "quarterly": [
+              {
+                "period": "2024-Q1",
+                "value": 3.968229,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-01",
+                  "2024-02",
+                  "2024-03"
+                ]
+              },
+              {
+                "period": "2024-Q2",
+                "value": 4.562869,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-04",
+                  "2024-05",
+                  "2024-06"
+                ]
+              },
+              {
+                "period": "2024-Q3",
+                "value": 5.434592,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-07",
+                  "2024-08",
+                  "2024-09"
+                ]
+              },
+              {
+                "period": "2024-Q4",
+                "value": 5.441673,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-10",
+                  "2024-11",
+                  "2024-12"
+                ]
+              },
+              {
+                "period": "2025-Q1",
+                "value": 6.317051,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2025-01",
+                  "2025-02",
+                  "2025-03"
+                ]
+              },
+              {
+                "period": "2025-Q2",
+                "value": 7.230243,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2025-04",
+                  "2025-05",
+                  "2025-06"
+                ]
+              },
+              {
+                "period": "2025-Q3",
+                "value": 7.586748,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2025-07",
+                  "2025-08",
+                  "2025-09"
+                ]
+              },
+              {
+                "period": "2025-Q4",
+                "value": 7.452549,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2025-10",
+                  "2025-11",
+                  "2025-12"
+                ]
+              },
+              {
+                "period": "2026-Q1",
+                "value": 7.440554,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2026-01",
+                  "2026-02",
+                  "2026-03"
+                ]
+              },
+              {
+                "period": "2026-Q2",
+                "value": 6.597628,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2026-04",
+                  "2026-05",
+                  "2026-06"
+                ]
+              },
+              {
+                "period": "2026-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-07",
+                  "2026-08",
+                  "2026-09"
+                ]
+              },
+              {
+                "period": "2026-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-10",
+                  "2026-11",
+                  "2026-12"
+                ]
+              }
+            ],
+            "quote": {
+              "price": 6.64908,
+              "unit": "USD/kg",
+              "label": "Australia生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+              "date": "2026-08-01",
+              "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+              "history": [
+                [
+                  "2024-01-01",
+                  3.983226
+                ],
+                [
+                  "2024-02-01",
+                  3.730323
+                ],
+                [
+                  "2024-03-01",
+                  4.216106
+                ],
+                [
+                  "2024-04-01",
+                  4.135386
+                ],
+                [
+                  "2024-05-01",
+                  4.67427
+                ],
+                [
+                  "2024-06-01",
+                  5.069253
+                ],
+                [
+                  "2024-07-01",
+                  5.300461
+                ],
+                [
+                  "2024-08-01",
+                  5.428151
+                ],
+                [
+                  "2024-09-01",
+                  5.56544
+                ],
+                [
+                  "2024-10-01",
+                  5.44012
+                ],
+                [
+                  "2024-11-01",
+                  5.505832
+                ],
+                [
+                  "2024-12-01",
+                  5.373256
+                ],
+                [
+                  "2025-01-01",
+                  5.64138
+                ],
+                [
+                  "2025-02-01",
+                  6.300261
+                ],
+                [
+                  "2025-03-01",
+                  7.041112
+                ],
+                [
+                  "2025-04-01",
+                  6.820656
+                ],
+                [
+                  "2025-05-01",
+                  7.293573
+                ],
+                [
+                  "2025-06-01",
+                  7.634608
+                ],
+                [
+                  "2025-07-01",
+                  7.928011
+                ],
+                [
+                  "2025-08-01",
+                  7.653635
+                ],
+                [
+                  "2025-09-01",
+                  7.209282
+                ],
+                [
+                  "2025-10-01",
+                  7.468583
+                ],
+                [
+                  "2025-11-01",
+                  7.598815
+                ],
+                [
+                  "2025-12-01",
+                  7.320069
+                ],
+                [
+                  "2026-01-01",
+                  7.574096
+                ],
+                [
+                  "2026-02-01",
+                  7.521307
+                ],
+                [
+                  "2026-03-01",
+                  7.24047
+                ],
+                [
+                  "2026-04-01",
+                  6.860409
+                ],
+                [
+                  "2026-05-01",
+                  6.646142
+                ],
+                [
+                  "2026-06-01",
+                  6.369387
+                ],
+                [
+                  "2026-07-01",
+                  6.667367
+                ],
+                [
+                  "2026-08-01",
+                  6.64908
+                ]
+              ]
+            }
+          }
+        ],
+        "stories": [
+          {
+            "story_id": "NA1",
+            "region": "Australia",
+            "commodity": "Coffee Beans",
+            "headline_original": "Australian coffee growers struggle to capitalise as global prices soar",
+            "source_id": "NA1",
+            "related_source_ids": [],
+            "facts_confirmed": "报道国际供应问题与本地种植扩产瓶颈，指出澳洲供应难以迅速扩大。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "国际供应紧张抬高生豆价格，是报道明确讨论的因素",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "本地种植者表示短期难以提供大规模额外产量",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "本地替代供给有限，进口商仍承受国际采购成本",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "该压力可能体现在随后进口单位价值；合同与来源组合会改变幅度",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "进口生豆成本上行压力",
+            "possible_lag": "合同更新与船运抵港后，可能跨月",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "本地种植受访者不代表全行业；不能将国际期货单日高价当澳洲进口月均。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_au_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.abc.net.au/news/2025-01-14/australian-coffee-growers-struggle-to-capitalise-on-high-prices/104802932",
+            "publisher": "ABC News",
+            "published": "2025-01-14"
+          },
+          {
+            "story_id": "NA2",
+            "region": "Australia",
+            "commodity": "Coffee Beans",
+            "headline_original": "Why don't Australians source more coffee from the Asia-Pacific region?",
+            "source_id": "NA2",
+            "related_source_ids": [],
+            "facts_confirmed": "报道巴西天气冲击，并解释邻近产地面临规模、品质和内陆运输障碍。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "报道将巴西恶劣天气与国际供应压力联系",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "邻近产地的规模与运输障碍限制即时替代",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "进口商难以仅凭地理距离迅速切换到更便宜货源",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "CIF生豆单位价值可能受商品采购价与运保费共同影响",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "采购与运输成本上行压力，替代效果不确定",
+            "possible_lag": "替代供应链建立需更长时间；当期传导未估计",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "同一HS内品种、品质和来源变化会影响单位价值；本文不能区分运费贡献。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_au_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.abc.net.au/news/2025-01-21/why-dont-australians-source-more-coffee-from-our-region-/104818076",
+            "publisher": "ABC News",
+            "published": "2025-01-21"
+          },
+          {
+            "story_id": "NA3",
+            "region": "Australia",
+            "commodity": "Coffee Beans",
+            "headline_original": "Australian growers aim for 'specialty coffee' status as price of international beans rises",
+            "source_id": "NA3",
+            "related_source_ids": [],
+            "facts_confirmed": "报道北昆士兰生产者与研究者改良风味、争取精品市场。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "生产者与研究人员尝试提高本土生豆品质",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "更高风味认可可能扩大本土精品豆需求与溢价",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "国际成本较高时，本土豆相对竞争力可能改善",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "本土规模较小，不足以据此推断全国进口价将下降",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "本土精品溢价可能提高；进口成本方向未确定",
+            "possible_lag": "跨产季与采购测试；未量化",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "这是品质与替代机制，不是进口价格已经下降的证据。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "coffee_au_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.abc.net.au/news/2025-06-01/can-australian-coffee-beans-compete-in-an-international-roast/105359488",
+            "publisher": "ABC News",
+            "published": "2025-06-01"
+          }
         ]
       }
     }
@@ -10632,45 +13740,3350 @@ window.EDITORIAL_CASES = [
     "icon": "1f33f",
     "quotes": {
       "australia": {
-        "price": 95.84048,
-        "unit": "US cents / lb",
-        "label": "IMF monthly benchmark",
-        "url": "https://fred.stlouisfed.org/series/PCOTTINDUSDM",
-        "date": "Sep 2026",
+        "price": 1.99054,
+        "unit": "USD/kg",
+        "label": "Australia原棉（未梳或未精梳）出口单位价值",
+        "date": "2026-08-01",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
         "history": [
           [
-            "Jul",
-            88.775
+            "2024-01-01",
+            2.041434
           ],
           [
-            "Aug",
-            95.61429
+            "2024-02-01",
+            2.056309
           ],
           [
-            "Sep",
-            95.84048
+            "2024-03-01",
+            2.126535
+          ],
+          [
+            "2024-04-01",
+            2.22014
+          ],
+          [
+            "2024-05-01",
+            2.215945
+          ],
+          [
+            "2024-06-01",
+            2.133429
+          ],
+          [
+            "2024-07-01",
+            2.067856
+          ],
+          [
+            "2024-08-01",
+            2.023361
+          ],
+          [
+            "2024-10-01",
+            1.962917
+          ],
+          [
+            "2024-12-01",
+            1.859572
+          ],
+          [
+            "2025-02-01",
+            1.83183
+          ],
+          [
+            "2025-04-01",
+            1.848819
+          ],
+          [
+            "2025-06-01",
+            1.845187
+          ],
+          [
+            "2025-07-01",
+            1.834622
+          ],
+          [
+            "2025-08-01",
+            1.802172
+          ],
+          [
+            "2025-09-01",
+            1.766993
+          ],
+          [
+            "2025-10-01",
+            1.720277
+          ],
+          [
+            "2025-11-01",
+            1.704325
+          ],
+          [
+            "2025-12-01",
+            1.675825
+          ],
+          [
+            "2026-01-01",
+            1.663144
+          ],
+          [
+            "2026-02-01",
+            1.674813
+          ],
+          [
+            "2026-03-01",
+            1.751965
+          ],
+          [
+            "2026-04-01",
+            1.732617
+          ],
+          [
+            "2026-05-01",
+            1.888983
+          ],
+          [
+            "2026-06-01",
+            1.918689
+          ],
+          [
+            "2026-07-01",
+            1.945827
+          ],
+          [
+            "2026-08-01",
+            1.99054
           ]
         ]
       },
       "china": {
-        "price": 95.84048,
-        "unit": "US cents / lb",
-        "label": "IMF monthly benchmark",
-        "url": "https://fred.stlouisfed.org/series/PCOTTINDUSDM",
-        "date": "Sep 2026",
+        "price": 17504,
+        "unit": "CNY/tonne",
+        "label": "中国3128B级原棉季度均价",
+        "date": "2026-04-01",
+        "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf",
         "history": [
           [
-            "Jul",
-            88.775
+            "2024-01-01",
+            16991
           ],
           [
-            "Aug",
-            95.61429
+            "2024-04-01",
+            16492.67
           ],
           [
-            "Sep",
-            95.84048
+            "2024-07-01",
+            15218.67
+          ],
+          [
+            "2024-10-01",
+            15268.33
+          ],
+          [
+            "2025-01-01",
+            14835
+          ],
+          [
+            "2025-04-01",
+            14545
+          ],
+          [
+            "2025-07-01",
+            15279
+          ],
+          [
+            "2025-10-01",
+            14916
+          ],
+          [
+            "2026-01-01",
+            16096
+          ],
+          [
+            "2026-04-01",
+            17504
           ]
+        ]
+      }
+    },
+    "bundleRegions": {
+      "china": {
+        "series": [
+          {
+            "series_id": "cotton_cn_domestic_quarterly",
+            "region": "China",
+            "commodity": "Cotton",
+            "label_zh": "中国3128B级原棉季度均价",
+            "unit": "CNY/tonne",
+            "frequency": "quarterly",
+            "measure_type": "domestic_grade_price",
+            "latest_valid_period": "2026-Q2",
+            "limitations": [
+              "2024季度和2025Q4/2026Q1Q2用3个月均价简单平均，非按天/成交量加权；2025Q1Q2Q3为报告给定季度均价，官方季度聚合算法未单独核验",
+              "2026Q3因9月仅截至21日，不计算完整季度",
+              "与进口单位价值完全不同，不可接成一条线"
+            ],
+            "observations": [
+              {
+                "period": "2024-Q1",
+                "value": 16991,
+                "source_ids": [
+                  "S13"
+                ],
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2024-01-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-Q2",
+                "value": 16492.67,
+                "source_ids": [
+                  "S13"
+                ],
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2024-04-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-Q3",
+                "value": 15218.67,
+                "source_ids": [
+                  "S13"
+                ],
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2024-07-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-Q4",
+                "value": 15268.33,
+                "source_ids": [
+                  "S13"
+                ],
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2024-10-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2025-Q1",
+                "value": 14835,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行",
+                "status": "reported_quarter",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2025-01-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2025-Q2",
+                "value": 14545,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行",
+                "status": "reported_quarter",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2025-04-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2025-Q3",
+                "value": 15279,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行",
+                "status": "reported_quarter",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2025-07-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2025-Q4",
+                "value": 14916,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行",
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2025-10-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-Q1",
+                "value": 16096,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行",
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2026-01-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-Q2",
+                "value": 17504,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行",
+                "status": "derived_simple_mean_of_3_months",
+                "evidence_grade": "A-source/B-aggregation",
+                "date": "2026-04-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              }
+            ],
+            "quote": {
+              "price": 17504,
+              "unit": "CNY/tonne",
+              "label": "中国3128B级原棉季度均价",
+              "date": "2026-04-01",
+              "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf",
+              "history": [
+                [
+                  "2024-01-01",
+                  16991
+                ],
+                [
+                  "2024-04-01",
+                  16492.67
+                ],
+                [
+                  "2024-07-01",
+                  15218.67
+                ],
+                [
+                  "2024-10-01",
+                  15268.33
+                ],
+                [
+                  "2025-01-01",
+                  14835
+                ],
+                [
+                  "2025-04-01",
+                  14545
+                ],
+                [
+                  "2025-07-01",
+                  15279
+                ],
+                [
+                  "2025-10-01",
+                  14916
+                ],
+                [
+                  "2026-01-01",
+                  16096
+                ],
+                [
+                  "2026-04-01",
+                  17504
+                ]
+              ]
+            }
+          },
+          {
+            "series_id": "cotton_cn_domestic_recent_monthly",
+            "region": "China",
+            "commodity": "Cotton",
+            "label_zh": "中国3128B级原棉近期月均价",
+            "unit": "CNY/tonne",
+            "frequency": "monthly",
+            "measure_type": "domestic_grade_price",
+            "latest_valid_period": "2026-08",
+            "limitations": [
+              "9月仅截至21日，单列部分月；10月未从此附件取得",
+              "不把2025前三季度均价拆成每个月重复值"
+            ],
+            "observations": [
+              {
+                "period": "2025-10",
+                "value": 14764,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2025-10-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2025-11",
+                "value": 14831,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2025-11-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2025-12",
+                "value": 15153,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2025-12-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-01",
+                "value": 15884,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-01-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-02",
+                "value": 16174,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-02-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-03",
+                "value": 16230,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-03-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-04",
+                "value": 17176,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-04-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-05",
+                "value": 17789,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-05-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-06",
+                "value": 17547,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-06-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-07",
+                "value": 17684,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-07-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-08",
+                "value": 17963,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "reported_month",
+                "evidence_grade": "A",
+                "date": "2026-08-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              },
+              {
+                "period": "2026-09",
+                "value": 17910,
+                "source_ids": [
+                  "MOA26"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "status": "partial_month_until_2026-09-21",
+                "evidence_grade": "A",
+                "date": "2026-09-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf"
+              }
+            ],
+            "quote": {
+              "price": 17963,
+              "unit": "CNY/tonne",
+              "label": "中国3128B级原棉近期月均价",
+              "date": "2026-08-01",
+              "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf",
+              "history": [
+                [
+                  "2025-10-01",
+                  14764
+                ],
+                [
+                  "2025-11-01",
+                  14831
+                ],
+                [
+                  "2025-12-01",
+                  15153
+                ],
+                [
+                  "2026-01-01",
+                  15884
+                ],
+                [
+                  "2026-02-01",
+                  16174
+                ],
+                [
+                  "2026-03-01",
+                  16230
+                ],
+                [
+                  "2026-04-01",
+                  17176
+                ],
+                [
+                  "2026-05-01",
+                  17789
+                ],
+                [
+                  "2026-06-01",
+                  17547
+                ],
+                [
+                  "2026-07-01",
+                  17684
+                ],
+                [
+                  "2026-08-01",
+                  17963
+                ],
+                [
+                  "2026-09-01",
+                  17910
+                ]
+              ]
+            }
+          },
+          {
+            "series_id": "cotton_cn_import",
+            "region": "China",
+            "commodity": "Cotton",
+            "label_zh": "China原棉（未梳或未精梳）进口单位价值",
+            "frequency": "monthly",
+            "unit": "USD/kg",
+            "measure_type": "trade_unit_value_not_spot_price",
+            "hs_code": "5201",
+            "reporter_code": 156,
+            "flow_code": "M",
+            "partner_code": 0,
+            "valuation": "imports: primaryValue, normally CIF",
+            "formula": "primaryValue (USD) / netWgt (kg)",
+            "requested_window": "2024-01 to 2026-10",
+            "latest_valid_period": "2024-12",
+            "valid_months": 12,
+            "missing_months": [
+              "2025-01",
+              "2025-02",
+              "2025-03",
+              "2025-04",
+              "2025-05",
+              "2025-06",
+              "2025-07",
+              "2025-08",
+              "2025-09",
+              "2025-10",
+              "2025-11",
+              "2025-12",
+              "2026-01",
+              "2026-02",
+              "2026-03",
+              "2026-04",
+              "2026-05",
+              "2026-06",
+              "2026-07",
+              "2026-08",
+              "2026-09",
+              "2026-10"
+            ],
+            "limitations": [
+              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
+              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
+              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
+              "CIF不等于含进口关税成本；FOB不含国际运保费",
+              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
+              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
+              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+            ],
+            "observations": [
+              {
+                "period": "2024-01",
+                "value": 2.075568,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202401.json",
+                "raw_trade_value_usd": 715536035,
+                "raw_net_weight_kg": 344742354,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-02",
+                "value": 2.065331,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202402.json",
+                "raw_trade_value_usd": 608705349,
+                "raw_net_weight_kg": 294725299,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.49,
+                "date": "2024-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-03",
+                "value": 2.076328,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202403.json",
+                "raw_trade_value_usd": 824284282,
+                "raw_net_weight_kg": 396991303,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 0.53,
+                "date": "2024-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-04",
+                "value": 2.069415,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202404.json",
+                "raw_trade_value_usd": 707559211,
+                "raw_net_weight_kg": 341912605,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.33,
+                "date": "2024-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-05",
+                "value": 2.080797,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202405.json",
+                "raw_trade_value_usd": 540231438,
+                "raw_net_weight_kg": 259627142,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 0.55,
+                "date": "2024-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-06",
+                "value": 2.086709,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202406.json",
+                "raw_trade_value_usd": 323033462,
+                "raw_net_weight_kg": 154805234,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 0.28,
+                "date": "2024-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-07",
+                "value": 2.049944,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202407.json",
+                "raw_trade_value_usd": 408297405,
+                "raw_net_weight_kg": 199174946,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.76,
+                "date": "2024-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-08",
+                "value": 1.993977,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202408.json",
+                "raw_trade_value_usd": 298452716,
+                "raw_net_weight_kg": 149677137,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -2.73,
+                "date": "2024-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-09",
+                "value": 1.97051,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202409.json",
+                "raw_trade_value_usd": 231054630,
+                "raw_net_weight_kg": 117256286,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.18,
+                "date": "2024-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-10",
+                "value": 1.888313,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202410.json",
+                "raw_trade_value_usd": 199632648,
+                "raw_net_weight_kg": 105720115,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -4.17,
+                "date": "2024-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-11",
+                "value": 1.857722,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202411.json",
+                "raw_trade_value_usd": 200951750,
+                "raw_net_weight_kg": 108171046,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.62,
+                "date": "2024-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-12",
+                "value": 1.888884,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202412.json",
+                "raw_trade_value_usd": 256422366,
+                "raw_net_weight_kg": 135753393,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 1.68,
+                "date": "2024-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-01",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202501.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-02",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202502.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-03",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202503.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-04",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202504.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-05",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202505.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-06",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202506.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-07",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202507.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-08",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202508.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202509.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-10",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202510.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-11",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202511.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-12",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202512.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2025-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-01",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202601.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-02",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202602.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-03",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202603.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-04",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202604.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-05",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202605.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-06",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202606.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-07",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202607.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-08",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202608.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202609.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-10",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202610.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              }
+            ],
+            "quarterly": [
+              {
+                "period": "2024-Q1",
+                "value": 2.072948,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-01",
+                  "2024-02",
+                  "2024-03"
+                ]
+              },
+              {
+                "period": "2024-Q2",
+                "value": 2.076862,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-04",
+                  "2024-05",
+                  "2024-06"
+                ]
+              },
+              {
+                "period": "2024-Q3",
+                "value": 2.011989,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-07",
+                  "2024-08",
+                  "2024-09"
+                ]
+              },
+              {
+                "period": "2024-Q4",
+                "value": 1.87907,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-10",
+                  "2024-11",
+                  "2024-12"
+                ]
+              },
+              {
+                "period": "2025-Q1",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-01",
+                  "2025-02",
+                  "2025-03"
+                ]
+              },
+              {
+                "period": "2025-Q2",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-04",
+                  "2025-05",
+                  "2025-06"
+                ]
+              },
+              {
+                "period": "2025-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-07",
+                  "2025-08",
+                  "2025-09"
+                ]
+              },
+              {
+                "period": "2025-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-10",
+                  "2025-11",
+                  "2025-12"
+                ]
+              },
+              {
+                "period": "2026-Q1",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-01",
+                  "2026-02",
+                  "2026-03"
+                ]
+              },
+              {
+                "period": "2026-Q2",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-04",
+                  "2026-05",
+                  "2026-06"
+                ]
+              },
+              {
+                "period": "2026-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-07",
+                  "2026-08",
+                  "2026-09"
+                ]
+              },
+              {
+                "period": "2026-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-10",
+                  "2026-11",
+                  "2026-12"
+                ]
+              }
+            ],
+            "quote": {
+              "price": 1.888884,
+              "unit": "USD/kg",
+              "label": "China原棉（未梳或未精梳）进口单位价值",
+              "date": "2024-12-01",
+              "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+              "history": [
+                [
+                  "2024-01-01",
+                  2.075568
+                ],
+                [
+                  "2024-02-01",
+                  2.065331
+                ],
+                [
+                  "2024-03-01",
+                  2.076328
+                ],
+                [
+                  "2024-04-01",
+                  2.069415
+                ],
+                [
+                  "2024-05-01",
+                  2.080797
+                ],
+                [
+                  "2024-06-01",
+                  2.086709
+                ],
+                [
+                  "2024-07-01",
+                  2.049944
+                ],
+                [
+                  "2024-08-01",
+                  1.993977
+                ],
+                [
+                  "2024-09-01",
+                  1.97051
+                ],
+                [
+                  "2024-10-01",
+                  1.888313
+                ],
+                [
+                  "2024-11-01",
+                  1.857722
+                ],
+                [
+                  "2024-12-01",
+                  1.888884
+                ]
+              ]
+            }
+          },
+          {
+            "series_id": "cotton_cn_domestic_2024",
+            "region": "China",
+            "commodity": "Cotton",
+            "frequency": "monthly",
+            "label_zh": "中国3128B级棉花国内月均价",
+            "label_en": "China domestic grade 3128B cotton: monthly mean",
+            "unit": "CNY/tonne",
+            "measure_type": "monthly_mean_price",
+            "proxy_for_commodity": false,
+            "seasonal_adjustment": "not seasonally adjusted / 未做额外季调",
+            "limitations": [
+              "同一S13表内完整2024年；不是郑棉期货或衣服价格",
+              "原始来源中国棉花信息网，官方汇编转引；不把它擅自重命名为所有月份CCIndex",
+              "NT4解释同等级行情但11月隐含数值与汇编差1元；保留S13数值"
+            ],
+            "observations": [
+              {
+                "period": "2024-01",
+                "value": 16690,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": null,
+                "evidence_grade": "A",
+                "date": "2024-01-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-02",
+                "value": 17107,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": 2.5,
+                "evidence_grade": "A",
+                "date": "2024-02-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-03",
+                "value": 17176,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": 0.4,
+                "evidence_grade": "A",
+                "date": "2024-03-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-04",
+                "value": 17007,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -0.98,
+                "evidence_grade": "A",
+                "date": "2024-04-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-05",
+                "value": 16442,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -3.32,
+                "evidence_grade": "A",
+                "date": "2024-05-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-06",
+                "value": 16029,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -2.51,
+                "evidence_grade": "A",
+                "date": "2024-06-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-07",
+                "value": 15674,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -2.21,
+                "evidence_grade": "A",
+                "date": "2024-07-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-08",
+                "value": 14957,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -4.57,
+                "evidence_grade": "A",
+                "date": "2024-08-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-09",
+                "value": 15025,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": 0.45,
+                "evidence_grade": "A",
+                "date": "2024-09-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-10",
+                "value": 15528,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": 3.35,
+                "evidence_grade": "A",
+                "date": "2024-10-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-11",
+                "value": 15328,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -1.29,
+                "evidence_grade": "A",
+                "date": "2024-11-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              },
+              {
+                "period": "2024-12",
+                "value": 14949,
+                "source_ids": [
+                  "S13"
+                ],
+                "source_locator": "附表1棉花国内行；注5",
+                "observation_type": "reported",
+                "status": "verified",
+                "mom_pct_calculated": -2.47,
+                "evidence_grade": "A",
+                "date": "2024-12-01",
+                "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf"
+              }
+            ],
+            "quote": {
+              "price": 14949,
+              "unit": "CNY/tonne",
+              "label": "China domestic grade 3128B cotton: monthly mean",
+              "date": "2024-12-01",
+              "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf",
+              "history": [
+                [
+                  "2024-01-01",
+                  16690
+                ],
+                [
+                  "2024-02-01",
+                  17107
+                ],
+                [
+                  "2024-03-01",
+                  17176
+                ],
+                [
+                  "2024-04-01",
+                  17007
+                ],
+                [
+                  "2024-05-01",
+                  16442
+                ],
+                [
+                  "2024-06-01",
+                  16029
+                ],
+                [
+                  "2024-07-01",
+                  15674
+                ],
+                [
+                  "2024-08-01",
+                  14957
+                ],
+                [
+                  "2024-09-01",
+                  15025
+                ],
+                [
+                  "2024-10-01",
+                  15528
+                ],
+                [
+                  "2024-11-01",
+                  15328
+                ],
+                [
+                  "2024-12-01",
+                  14949
+                ]
+              ]
+            }
+          }
+        ],
+        "stories": [
+          {
+            "story_id": "NT1",
+            "region": "China",
+            "commodity": "Cotton",
+            "headline_original": "2024年全國棉花產量同比增長9.7%",
+            "source_id": "NT1",
+            "related_source_ids": [
+              "OFF1"
+            ],
+            "facts_confirmed": "报道国家统计局公布2024年棉花产量增长；官方公告可交叉核实。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "国家统计局确认2024年全国棉花产量增加",
+                "evidence_grade": "A",
+                "status": "official_fact"
+              },
+              {
+                "mechanism": "其他因素不变时，国内原棉供应增加可能减轻采购紧张",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "纺企可能减少或调整进口采购",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "进口数量和来源构成变化可改变贸易单位价值，不保证其必然下降",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "国内现货有下行压力；进口单位价值方向不唯一",
+            "possible_lag": "采收加工、库存消化与进口订单更新后",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "产量同比并非月度供给冲击；国内价与进口价不可视为同一序列。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_cn_domestic_quarterly",
+              "cotton_cn_domestic_recent_monthly",
+              "cotton_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://hb.people.com.cn/BIG5/n2/2024/1227/c194063-41089203.html",
+            "publisher": "人民日报 / 人民网",
+            "published": "2024-12-27"
+          },
+          {
+            "story_id": "NT2",
+            "region": "China",
+            "commodity": "Cotton",
+            "headline_original": "我国自3月10日起对原产于美国的部分进口商品加征关税",
+            "source_id": "NT2",
+            "related_source_ids": [],
+            "facts_confirmed": "报道当时宣布对美国产棉花等加征关税，自2025-03-10起实施，并载明在途豁免。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "报道确认当时对美国产棉花的新增税收措施与适用时间",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "适用交易的税后进口成本可能提高",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "采购者可能转向其他原产地，改变来源与合同",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "世界伙伴合计CIF单位价值未含进口关税，不能当作税后成本涨幅",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "美棉税后成本上行；进口平均CIF方向不确定",
+            "possible_lag": "受在途豁免、合同和后续政策影响",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "仅作2025-03历史政策；不声称该税率仍为2026-11当前税率；不计算当月因果贡献。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_cn_domestic_quarterly",
+              "cotton_cn_domestic_recent_monthly",
+              "cotton_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.xinhuanet.com/fortune/20250304/d1102d5c256d4ceebaa155476f94b26a/c.html",
+            "publisher": "新华社",
+            "published": "2025-03-04"
+          },
+          {
+            "story_id": "NT3",
+            "region": "China",
+            "commodity": "Cotton",
+            "headline_original": "两部门：2026—2028年新疆棉花目标价格为每吨18600元",
+            "source_id": "NT3",
+            "related_source_ids": [],
+            "facts_confirmed": "报道继续实施新疆棉花目标价格政策，涉及补贴及种植布局。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "报道说明政策旨在保障收益和稳定生产",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "收益预期可能影响种植积极性与中期供应",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "国内供给变化可能改变进口需求",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "补贴支持不等于市场报价下限，也不固定进口单位价值",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "中期供应稳定作用；价格净方向不确定",
+            "possible_lag": "跨种植季而非当月机械生效",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "18600元/吨是政策目标价，不能作为现货价或补进月线；非法律适用建议。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_cn_domestic_quarterly",
+              "cotton_cn_domestic_recent_monthly",
+              "cotton_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www1.xinhuanet.com/20260525/1b268d4488ae49a191b4f10406d1e5cd/c.html",
+            "publisher": "新华社",
+            "published": "2026-05-25"
+          },
+          {
+            "story_id": "NT4",
+            "region": "China",
+            "commodity": "Cotton",
+            "headline_original": "纺织淡季特征加深 国内棉价继续走低——中国棉花价格指数（CCIndex）月度报告（2024年12月）",
+            "source_id": "NT4",
+            "related_source_ids": [],
+            "facts_confirmed": "行业月报描述新棉供给增加、订单不足与库存压力。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "报告观察国内供应增加、订单和库存压力",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "报告认为采购意愿偏弱使现货价格承压",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "国内原料便宜可能降低部分进口棉的替代吸引力",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "但进口单位价值还受交货合同与品质影响",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "国内现货下行压力；进口价不必同步",
+            "possible_lag": "订单与交货周期跨月",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "行业报告不是独立记者新闻；托管转载已标明。该组仍含3条独立新闻报道。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_cn_domestic_quarterly",
+              "cotton_cn_domestic_recent_monthly",
+              "cotton_cn_import"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://npo193491.npoall.com/news/itemid-93855.html",
+            "publisher": "中国棉花协会署名报告（商协汇托管）",
+            "published": "2025-01-20"
+          }
+        ]
+      },
+      "australia": {
+        "series": [
+          {
+            "series_id": "cotton_au_export",
+            "region": "Australia",
+            "commodity": "Cotton",
+            "label_zh": "Australia原棉（未梳或未精梳）出口单位价值",
+            "frequency": "monthly",
+            "unit": "USD/kg",
+            "measure_type": "trade_unit_value_not_spot_price",
+            "hs_code": "5201",
+            "reporter_code": 36,
+            "flow_code": "X",
+            "partner_code": 0,
+            "valuation": "exports: primaryValue, normally FOB",
+            "formula": "primaryValue (USD) / netWgt (kg)",
+            "requested_window": "2024-01 to 2026-10",
+            "latest_valid_period": "2026-08",
+            "valid_months": 27,
+            "missing_months": [
+              "2024-09",
+              "2024-11",
+              "2025-01",
+              "2025-03",
+              "2025-05",
+              "2026-09",
+              "2026-10"
+            ],
+            "limitations": [
+              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
+              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
+              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
+              "CIF不等于含进口关税成本；FOB不含国际运保费",
+              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
+              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
+              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+            ],
+            "observations": [
+              {
+                "period": "2024-01",
+                "value": 2.041434,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202401.json",
+                "raw_trade_value_usd": 102396070.921,
+                "raw_net_weight_kg": 50158902,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-02",
+                "value": 2.056309,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202402.json",
+                "raw_trade_value_usd": 83524352.155,
+                "raw_net_weight_kg": 40618590,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 0.73,
+                "date": "2024-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-03",
+                "value": 2.126535,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202403.json",
+                "raw_trade_value_usd": 76859447.32,
+                "raw_net_weight_kg": 36143040,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 3.42,
+                "date": "2024-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-04",
+                "value": 2.22014,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202404.json",
+                "raw_trade_value_usd": 58070952.003,
+                "raw_net_weight_kg": 26156438.2,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 4.4,
+                "date": "2024-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-05",
+                "value": 2.215945,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202405.json",
+                "raw_trade_value_usd": 78947543.644,
+                "raw_net_weight_kg": 35627029.69,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.19,
+                "date": "2024-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-06",
+                "value": 2.133429,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202406.json",
+                "raw_trade_value_usd": 302882927.659,
+                "raw_net_weight_kg": 141969978,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.72,
+                "date": "2024-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-07",
+                "value": 2.067856,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202407.json",
+                "raw_trade_value_usd": 365417391.292,
+                "raw_net_weight_kg": 176713206,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -3.07,
+                "date": "2024-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-08",
+                "value": 2.023361,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202408.json",
+                "raw_trade_value_usd": 385226538.029,
+                "raw_net_weight_kg": 190389419.854,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -2.15,
+                "date": "2024-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "missing_positive_net_weight_or_value",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202409.json",
+                "raw_trade_value_usd": 389538755.621,
+                "raw_net_weight_kg": null,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-10",
+                "value": 1.962917,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202410.json",
+                "raw_trade_value_usd": 271392994.58,
+                "raw_net_weight_kg": 138260040.7,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-11",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "missing_positive_net_weight_or_value",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202411.json",
+                "raw_trade_value_usd": 182307880.346,
+                "raw_net_weight_kg": null,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2024-12",
+                "value": 1.859572,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202412.json",
+                "raw_trade_value_usd": 143538211.541,
+                "raw_net_weight_kg": 77188852.56,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2024-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-01",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "missing_positive_net_weight_or_value",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202501.json",
+                "raw_trade_value_usd": 68593836.587,
+                "raw_net_weight_kg": null,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2025-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-02",
+                "value": 1.83183,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202502.json",
+                "raw_trade_value_usd": 72737968.484,
+                "raw_net_weight_kg": 39707822,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2025-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-03",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "missing_positive_net_weight_or_value",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202503.json",
+                "raw_trade_value_usd": 40051185.91,
+                "raw_net_weight_kg": null,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2025-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-04",
+                "value": 1.848819,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202504.json",
+                "raw_trade_value_usd": 23585684.76,
+                "raw_net_weight_kg": 12757161,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2025-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-05",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "missing_positive_net_weight_or_value",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202505.json",
+                "raw_trade_value_usd": 76587069.237,
+                "raw_net_weight_kg": null,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2025-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-06",
+                "value": 1.845187,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202506.json",
+                "raw_trade_value_usd": 219895341.043,
+                "raw_net_weight_kg": 119172387,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": null,
+                "date": "2025-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-07",
+                "value": 1.834622,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202507.json",
+                "raw_trade_value_usd": 325877135.478,
+                "raw_net_weight_kg": 177626315,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.57,
+                "date": "2025-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-08",
+                "value": 1.802172,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202508.json",
+                "raw_trade_value_usd": 328880584.098,
+                "raw_net_weight_kg": 182491188,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.77,
+                "date": "2025-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-09",
+                "value": 1.766993,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202509.json",
+                "raw_trade_value_usd": 299286482.286,
+                "raw_net_weight_kg": 169376184.028,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": true,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 6
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "quantity_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.95,
+                "date": "2025-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-10",
+                "value": 1.720277,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202510.json",
+                "raw_trade_value_usd": 352124323.603,
+                "raw_net_weight_kg": 204690451.54,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -2.64,
+                "date": "2025-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-11",
+                "value": 1.704325,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202511.json",
+                "raw_trade_value_usd": 219996686.959,
+                "raw_net_weight_kg": 129081389.06,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.93,
+                "date": "2025-11-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2025-12",
+                "value": 1.675825,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202512.json",
+                "raw_trade_value_usd": 159939543.09,
+                "raw_net_weight_kg": 95439302.67,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.67,
+                "date": "2025-12-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-01",
+                "value": 1.663144,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202601.json",
+                "raw_trade_value_usd": 88580255.923,
+                "raw_net_weight_kg": 53260735.37,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -0.76,
+                "date": "2026-01-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-02",
+                "value": 1.674813,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202602.json",
+                "raw_trade_value_usd": 74887053.654,
+                "raw_net_weight_kg": 44713673.43,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 0.7,
+                "date": "2026-02-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-03",
+                "value": 1.751965,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202603.json",
+                "raw_trade_value_usd": 43811182.739,
+                "raw_net_weight_kg": 25006881.3,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 4.61,
+                "date": "2026-03-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-04",
+                "value": 1.732617,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202604.json",
+                "raw_trade_value_usd": 18665912.44,
+                "raw_net_weight_kg": 10773249.484,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": true,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 4
+                },
+                "quality_flags": [
+                  "net_weight_estimated_by_source",
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": -1.1,
+                "date": "2026-04-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-05",
+                "value": 1.888983,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202605.json",
+                "raw_trade_value_usd": 84401639.32,
+                "raw_net_weight_kg": 44681002.06,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 9.02,
+                "date": "2026-05-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-06",
+                "value": 1.918689,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202606.json",
+                "raw_trade_value_usd": 244652761.592,
+                "raw_net_weight_kg": 127510386.19,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 1.57,
+                "date": "2026-06-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-07",
+                "value": 1.945827,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202607.json",
+                "raw_trade_value_usd": 245351520.236,
+                "raw_net_weight_kg": 126091125.48,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 1.41,
+                "date": "2026-07-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-08",
+                "value": 1.99054,
+                "unit": "USD/kg",
+                "status": "derived_from_official_trade",
+                "evidence_grade": "A-source/B-derived-price-proxy",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202608.json",
+                "raw_trade_value_usd": 264162652.823,
+                "raw_net_weight_kg": 132709032.18,
+                "source_flags": {
+                  "classificationCode": "H6",
+                  "isOriginalClassification": true,
+                  "isNetWgtEstimated": false,
+                  "isQtyEstimated": false,
+                  "isReported": false,
+                  "isAggregate": true,
+                  "legacyEstimationFlag": 0
+                },
+                "quality_flags": [
+                  "isReported_false_aggregated_or_processed_record",
+                  "isAggregate_true"
+                ],
+                "mom_pct": 2.3,
+                "date": "2026-08-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-09",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202609.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-09-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              },
+              {
+                "period": "2026-10",
+                "value": null,
+                "unit": "USD/kg",
+                "status": "no_record_in_query",
+                "evidence_grade": "U",
+                "source_id": "UNAPI",
+                "source_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "raw_file": "原始数据/202610.json",
+                "raw_trade_value_usd": null,
+                "raw_net_weight_kg": null,
+                "source_flags": null,
+                "quality_flags": [],
+                "mom_pct": null,
+                "date": "2026-10-01",
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+              }
+            ],
+            "quarterly": [
+              {
+                "period": "2024-Q1",
+                "value": 2.070428,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-01",
+                  "2024-02",
+                  "2024-03"
+                ]
+              },
+              {
+                "period": "2024-Q2",
+                "value": 2.158989,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2024-04",
+                  "2024-05",
+                  "2024-06"
+                ]
+              },
+              {
+                "period": "2024-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2024-07",
+                  "2024-08",
+                  "2024-09"
+                ]
+              },
+              {
+                "period": "2024-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2024-10",
+                  "2024-11",
+                  "2024-12"
+                ]
+              },
+              {
+                "period": "2025-Q1",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-01",
+                  "2025-02",
+                  "2025-03"
+                ]
+              },
+              {
+                "period": "2025-Q2",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2025-04",
+                  "2025-05",
+                  "2025-06"
+                ]
+              },
+              {
+                "period": "2025-Q3",
+                "value": 1.801805,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2025-07",
+                  "2025-08",
+                  "2025-09"
+                ]
+              },
+              {
+                "period": "2025-Q4",
+                "value": 1.705595,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2025-10",
+                  "2025-11",
+                  "2025-12"
+                ]
+              },
+              {
+                "period": "2026-Q1",
+                "value": 1.685447,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2026-01",
+                  "2026-02",
+                  "2026-03"
+                ]
+              },
+              {
+                "period": "2026-Q2",
+                "value": 1.900478,
+                "status": "complete_quarter_weighted_unit_value",
+                "months": [
+                  "2026-04",
+                  "2026-05",
+                  "2026-06"
+                ]
+              },
+              {
+                "period": "2026-Q3",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-07",
+                  "2026-08",
+                  "2026-09"
+                ]
+              },
+              {
+                "period": "2026-Q4",
+                "value": null,
+                "status": "incomplete_no_value",
+                "months": [
+                  "2026-10",
+                  "2026-11",
+                  "2026-12"
+                ]
+              }
+            ],
+            "quote": {
+              "price": 1.99054,
+              "unit": "USD/kg",
+              "label": "Australia原棉（未梳或未精梳）出口单位价值",
+              "date": "2026-08-01",
+              "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+              "history": [
+                [
+                  "2024-01-01",
+                  2.041434
+                ],
+                [
+                  "2024-02-01",
+                  2.056309
+                ],
+                [
+                  "2024-03-01",
+                  2.126535
+                ],
+                [
+                  "2024-04-01",
+                  2.22014
+                ],
+                [
+                  "2024-05-01",
+                  2.215945
+                ],
+                [
+                  "2024-06-01",
+                  2.133429
+                ],
+                [
+                  "2024-07-01",
+                  2.067856
+                ],
+                [
+                  "2024-08-01",
+                  2.023361
+                ],
+                [
+                  "2024-10-01",
+                  1.962917
+                ],
+                [
+                  "2024-12-01",
+                  1.859572
+                ],
+                [
+                  "2025-02-01",
+                  1.83183
+                ],
+                [
+                  "2025-04-01",
+                  1.848819
+                ],
+                [
+                  "2025-06-01",
+                  1.845187
+                ],
+                [
+                  "2025-07-01",
+                  1.834622
+                ],
+                [
+                  "2025-08-01",
+                  1.802172
+                ],
+                [
+                  "2025-09-01",
+                  1.766993
+                ],
+                [
+                  "2025-10-01",
+                  1.720277
+                ],
+                [
+                  "2025-11-01",
+                  1.704325
+                ],
+                [
+                  "2025-12-01",
+                  1.675825
+                ],
+                [
+                  "2026-01-01",
+                  1.663144
+                ],
+                [
+                  "2026-02-01",
+                  1.674813
+                ],
+                [
+                  "2026-03-01",
+                  1.751965
+                ],
+                [
+                  "2026-04-01",
+                  1.732617
+                ],
+                [
+                  "2026-05-01",
+                  1.888983
+                ],
+                [
+                  "2026-06-01",
+                  1.918689
+                ],
+                [
+                  "2026-07-01",
+                  1.945827
+                ],
+                [
+                  "2026-08-01",
+                  1.99054
+                ]
+              ]
+            }
+          }
+        ],
+        "stories": [
+          {
+            "story_id": "NX1",
+            "region": "Australia",
+            "commodity": "Cotton",
+            "headline_original": "Cotton exported from Darwin Port in major milestone for new gin near Katherine",
+            "source_id": "NX1",
+            "related_source_ids": [],
+            "facts_confirmed": "报道Katherine新轧花厂棉花从Darwin出口；贸易商解释减少长途内陆运输的成本意义。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "本地加工和Darwin出口减少部分原有内陆运输距离",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "贸易商预计随着规模提高，出口成本效率改善",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "较低物流成本可能提高农户净回款或报价竞争力",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "节省也可能留在利润中，不能推断全国FOB单位价值必然下降",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "物流成本可能下降；FOB单价净影响不确定",
+            "possible_lag": "当地供应链运行和规模形成后",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "地区个案；FOB不含国际运保费，不能用本文计算全国价格下降幅度。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_au_export"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.abc.net.au/news/2024-09-12/cotton-exported-from-darwin-port-nt/104336342",
+            "publisher": "ABC News",
+            "published": "2024-09-12"
+          },
+          {
+            "story_id": "NX2",
+            "region": "Australia",
+            "commodity": "Cotton",
+            "headline_original": "Kimberley cotton hits record high in first season with new processing gin in Kununurra",
+            "source_id": "NX2",
+            "related_source_ids": [],
+            "facts_confirmed": "报道当地轧花首季完成、本地加工替代跨州运输，采访亦提及低迷原棉价格。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "本地轧花替代部分跨州长途运输",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "加工物流成本和交付时长可能减少",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "成本改善可能增强当地供给能力和回款",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "全国出口FOB单位价值仍由市场、品质和销售组合共同影响",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "成本减轻；全国价格方向不确定",
+            "possible_lag": "地区交货周期与后续产季",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "报道的澳元/包采访范围不是全国连续月度价格；不将其逐月重复填充。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_au_export"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.abc.net.au/news/2026-02-09/kimberley-growers-wrap-up-first-season-processing-cotton-locally/106303718",
+            "publisher": "ABC News",
+            "published": "2026-02-09"
+          },
+          {
+            "story_id": "NX3",
+            "region": "Australia",
+            "commodity": "Cotton",
+            "headline_original": "Cotton Australia says demand high for its licensing as growers face lower yields",
+            "source_id": "NX3",
+            "related_source_ids": [],
+            "facts_confirmed": "报道澳棉标识许可使用增加，同时行业面对产量问题。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "报道观察到澳棉品牌许可使用增加",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "来源认可与可追溯性可能提高部分买家的支付意愿",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "差异化采购可能支持澳棉质量或来源溢价",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "该溢价是否进入全国出口平均单位价值取决于销量和合同",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "特定市场溢价可能上行；总体未知",
+            "possible_lag": "品牌采用、采购与订单周期后",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "许可商品数量不等于原棉新增吨数；没有估计溢价。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_au_export"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.abc.net.au/news/rural/2024-02-13/cotton-australia-demand-high-licensing-growers-lower-yields/103447400",
+            "publisher": "ABC News",
+            "published": "2024-02-13"
+          },
+          {
+            "story_id": "NX4",
+            "region": "Australia",
+            "commodity": "Cotton",
+            "headline_original": "我国自3月10日起对原产于美国的部分进口商品加征关税",
+            "source_id": "NX4",
+            "related_source_ids": [],
+            "facts_confirmed": "同一条国际原始新闻，在澳洲版本解释潜在的采购来源替代。",
+            "how_does_the_story_affect_prices": [
+              {
+                "mechanism": "报道确认当时中国针对美国产棉花的关税变化",
+                "evidence_grade": "B",
+                "status": "reported_factor"
+              },
+              {
+                "mechanism": "美棉税后竞争力可能改变",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "中国采购者可能考虑澳洲等替代供给",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              },
+              {
+                "mechanism": "若替代订单增加，可能支持澳棉出口需求和议价；实际幅度未证实",
+                "evidence_grade": "C",
+                "status": "possible_mechanism"
+              }
+            ],
+            "expected_direction": "潜在需求支持；全球需求走弱可能抵消",
+            "possible_lag": "采购改向到装船交付可能跨月",
+            "causal_strength": "reported_factors_plus_possible_chain",
+            "limitations": "不能说关税直接征在澳棉上，也不能声称澳洲必然获益；历史政策，不代表当前税率。",
+            "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
+            "event_date": null,
+            "related_series_ids": [
+              "cotton_au_export"
+            ],
+            "price_effect_estimate": null,
+            "causality_proven": false,
+            "url": "https://www.xinhuanet.com/fortune/20250304/d1102d5c256d4ceebaa155476f94b26a/c.html",
+            "publisher": "新华社",
+            "published": "2025-03-04"
+          }
         ]
       }
     }

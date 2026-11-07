@@ -1,8 +1,10 @@
 const items=window.EDITORIAL_CASES,$=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),fmt=v=>v.toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:2});
+let seriesChoices={};
 let active=items[0],category=active.category,chart=echarts.init($('chart')),saved=[];
 try{saved=JSON.parse(localStorage.getItem('followed-products')||'[]')}catch{}
 function render(){
- const q=active.quotes[$('city').value];
+ const bundle=active.bundleRegions?.[$('city').value];const seriesKey=active.id+'-'+$('city').value;const series=bundle?.series.find(s=>s.series_id===seriesChoices[seriesKey])||bundle?.series[0];
+ const q=series?.quote||active.quotes[$('city').value];
  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('selected',b.dataset.filter===category));
  $('products').innerHTML=items.filter(x=>x.category===category).map(x=>{const p=x.quotes[$('city').value];return '<button data-product="'+x.id+'" aria-pressed="'+(x.id===active.id)+'"><div class="product-illustration"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+x.icon+'.svg"></div><h3>'+esc(x.name)+'</h3><small>'+esc(p.label)+'</small><strong>'+(x.priceDisplay||fmt(p.price))+'</strong><small>'+esc(p.unit)+' · '+esc(p.date)+'</small></button>'}).join('');
  document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>{active=items.find(x=>x.id===b.dataset.product);render()});
@@ -25,6 +27,19 @@ function render(){
  if(active.priceContext)$('editorExplanation').innerHTML+='<details><summary>Price events and sources · 2024–2026</summary>'+active.priceContext.map(t=>/^https:\/\//.test(t)?'<p><a href="'+esc(t)+'" target="_blank" rel="noopener noreferrer">Price report ↗</a></p>':'<p>'+esc(t)+'</p>').join('')+'</details>';
  if(active.regionExplanation)$('editorExplanation').innerHTML+='<h4>China and Australia</h4><p>'+esc(active.regionExplanation)+'</p><p>'+esc(active.conclusion)+'</p>';
  if(active.news)$('story').innerHTML='<p>'+esc(active.intro)+'</p>'+active.news.map(n=>'<article class="news-entry"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
+ if(bundle){
+ let picker=$('seriesPicker');if(!picker){picker=document.createElement('div');picker.id='seriesPicker';$('chart').before(picker);}
+ picker.innerHTML='<label for="seriesSelect">Price series </label><select id="seriesSelect">'+bundle.series.map(s=>'<option value="'+s.series_id+'" '+(s===series?'selected':'')+'>'+esc(s.label_en||s.label_zh)+'</option>').join('')+'</select>';
+ $('seriesSelect').onchange=()=>{seriesChoices[seriesKey]=$('seriesSelect').value;render()};
+ const obs=series.observations;const monthly=series.frequency==='monthly';const dates=new Map(obs.map(o=>[o.date,o]));let plot=obs.map(o=>[Date.parse(o.date),o.value]);
+ if(monthly){plot=[];for(let time=Date.parse(obs[0].date);time<=Date.parse(obs.at(-1).date);){const d=new Date(time).toISOString().slice(0,10);plot.push([time,dates.get(d)?.value??null]);const next=new Date(time);next.setUTCMonth(next.getUTCMonth()+1);time=next.getTime();}}
+ const valid=plot.filter(p=>Number.isFinite(p[1])),values=valid.map(p=>p[1]);const key=[...new Set([0,valid.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])];
+ chart.setOption({animation:false,grid:{left:55,right:20,top:25,bottom:55},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:v=>v==null?'No data':fmt(v)+' '+q.unit},xAxis:{type:'time'},yAxis:{type:'value',scale:true},dataZoom:[{type:'slider',height:18,bottom:0}],series:[{type:'line',connectNulls:false,showSymbol:false,data:plot,lineStyle:{color:'#3269ff',width:3},markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:key.map(i=>({coord:valid[i]}))}}]},true);
+ $('dataNote').textContent=series.limitations.join(' ')+(series.missing_months?.length?' Missing months: '+series.missing_months.join(', '):'');
+ $('table').innerHTML=obs.map(o=>'<tr><td>'+esc(o.period)+(o.status?.includes('partial')?' (partial month through 21 Sep)':'')+'</td><td>'+(o.value==null?'No data':fmt(o.value)+' '+esc(q.unit))+'</td><td><a href="'+esc(o.url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a><small>'+esc(o.status)+' '+esc((o.quality_flags||[]).join(', '))+'</small></td></tr>').join('');
+ $('story').innerHTML=bundle.stories.map(s=>'<article class="news-entry"><small>'+esc(s.publisher)+' · '+esc(s.published)+'</small><h3>'+esc(s.headline_original)+'</h3><p>'+esc(s.facts_confirmed)+'</p><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
+ $('editorExplanation').innerHTML=bundle.stories.map(s=>'<section><h4>'+esc(s.headline_original)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?'（可能机制，尚未证实因果）':'（资料中已报道）')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'；'+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
+ }else{ $('seriesPicker')?.remove(); }
  $('save').textContent=saved.includes(active.id)?'★ Following':'☆ Follow';$('save').setAttribute('aria-pressed',saved.includes(active.id));
 }
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);render()});
