@@ -13,10 +13,10 @@ function render(){
  $('table').innerHTML=points.map(([d,v])=>'<tr><td>'+esc(d)+'</td><td>'+fmt(v)+' '+esc(q.unit)+'</td><td><a href="'+esc(q.url)+'" target="_blank" rel="noopener noreferrer">Price source ↗</a></td></tr>').join('');
  chart.setOption({animation:false,grid:{left:18,right:20,top:25,bottom:55,containLabel:true},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:v=>fmt(v)+' '+q.unit},xAxis:{type:'time'},yAxis:{type:'value',scale:true},dataZoom:points.length>1?[{type:'slider',height:18,bottom:0}]:[],series:[{type:'line',data:points.map(([d,v])=>[Date.parse(d),v]),symbolSize:9,lineStyle:{color:'#3269ff',width:3},itemStyle:{color:'#3269ff'},areaStyle:{color:'#dce7ff',opacity:.5}}]},true);
  if(active.chartKind==='dram-index'){
- $('dateRange').textContent='Q4 2025 → Q1 2026';$('change').textContent='Reported quarterly increase';
- $('dataNote').textContent='Derived index: Q4 2025 = 100; Q1 2026 = 193–198, from a reported 93–98% rise. Global DRAM contracts, not retail RAM prices. Lines connect two quarters only.';
- chart.setOption({animation:false,tooltip:{trigger:'axis'},grid:{left:50,right:25,bottom:40},xAxis:{type:'category',data:['Q4 2025','Q1 2026']},yAxis:{type:'value',name:'Index (Q4 2025 = 100)',min:0},series:[{name:'Lower bound',type:'line',data:[100,193]},{name:'Upper bound',type:'line',data:[100,198],lineStyle:{type:'dashed'}}]},true);
- $('table').innerHTML='<tr><td>Q4 2025</td><td>100 (baseline)</td><td>Derived index</td></tr><tr><td>Q1 2026</td><td>193–198 (index)</td><td><a href="'+active.indexSource+'">TrendForce ↗</a></td></tr>';
+ $('dateRange').textContent='Q1 2026 · reported change';$('change').textContent='Historical price table pending';
+ $('dataNote').textContent='The document reports a 93–98% quarterly rise in global DRAM contract prices. A retail price history will be plotted once the dated price table is supplied.';
+ chart.clear();chart.setOption({graphic:{type:'text',left:'center',top:'middle',style:{text:'RAM price history awaiting data',fill:'#65715e',fontSize:16}}});
+ $('table').innerHTML='<tr><td>Q1 2026</td><td>+93–98% QoQ (contract-price change)</td><td><a href="'+active.indexSource+'">TrendForce ↗</a></td></tr>';
  }
  const explanation=($('city').value==='china'?active.chinaAnalysis:active.analysis)||active.analysis||'Editorial explanation is being prepared.';
  $('editorExplanation').innerHTML='<p>'+esc(explanation)+'</p>'+(active.steps?'<ol>'+active.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol>':'')+(active.other?'<p>'+esc(active.other)+'</p>':'');
