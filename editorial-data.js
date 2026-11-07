@@ -70,20 +70,104 @@ window.EDITORIAL_CASES = [
     "icon": "1f95b",
     "quotes": {
       "australia": {
-        "price": 1.75,
-        "unit": "AUD / litre",
-        "label": "Full cream long-life milk · Coles",
-        "url": "https://www.coles.com.au/promotion/everyday-17089651/dairy-eggs-fridge",
-        "date": "Listing checked 6 Nov 2026",
-        "history": []
+        "price": 1.55,
+        "unit": "AUD / pack",
+        "label": "Generic supermarket fresh milk · September 2024 reduction",
+        "date": "2024-09-01",
+        "url": "https://www.abc.net.au/news/2024-10-08/supermarket-dairy-price-drop-farmers-fear-return-of-milk-wars/104445180",
+        "history": [
+          [
+            "2024-09-01",
+            1.55
+          ]
+        ]
       },
       "china": {
-        "price": 3.1,
+        "price": 3.11,
         "unit": "CNY / kg",
-        "label": "Raw milk · ten producing provinces",
-        "url": "https://xmsyj.moa.gov.cn/jcyj/202610/t20261008_6488387.htm",
-        "date": "30 Sep 2026",
-        "history": []
+        "label": "Raw milk · ten major dairy-producing provinces",
+        "date": "2024-12-31",
+        "url": "https://mp.weixin.qq.com/s/7EdJ3heRork5wwwDzjCXQQ",
+        "history": [
+          [
+            "2024-12-31",
+            3.11
+          ]
+        ]
+      }
+    },
+    "news": [
+      {
+        "title": "China's milk oversupply continues",
+        "summary": "Reuters · 20 December 2024 Reuters reported that China's milk oversupply was expected to remain significant during the first half of 2025. The report identified weak consumer demand and relatively high milk production as major factors behind the oversupply. Falling birth rates and increasingly price-conscious consumers also affected demand for some dairy products. The Ministry of Agriculture encouraged farmers to adjust production and improve herd structures to address the imbalance between supply and demand.",
+        "url": "https://www.reuters.com/markets/asia/chinas-milk-oversupply-persist-first-half-2025-says-agri-ministry-2024-12-20/"
+      },
+      {
+        "title": "Australian supermarkets reduce milk prices",
+        "summary": "ABC News · 8 October 2024 Coles and Woolworths reduced their generic fresh milk prices by 5 cents per litre in September 2024. The reduction attracted criticism from dairy farmers, who were concerned that lower supermarket prices could devalue milk and put further pressure on producers. However, the supermarkets gave different explanations for the price reduction. Coles said it had not changed the price it paid farmers, while Woolworths attributed its price reduction to savings from processors.",
+        "url": "https://www.abc.net.au/news/2024-10-08/supermarket-dairy-price-drop-farmers-fear-return-of-milk-wars/104445180"
+      }
+    ],
+    "analysis": "Supply and demand\nWhen milk production exceeds consumer demand, excess supply can put downward pressure on farm-gate prices.\nFeed costs\nChanges in animal feed prices, such as corn and soybean meal, affect dairy farming expenses.\nProduction costs\nLabour, electricity, equipment and farm maintenance contribute to milk production costs.\nSupermarket pricing\nRetail promotions and price competition influence the prices consumers pay.\nConsumer demand\nChanges in household purchasing power and consumption habits affect dairy demand.\nFor example, China's milk oversupply contributed to downward pressure on raw milk prices in 2024. In Australia, supermarket price reductions affected retail prices, while the effect on farmers depended on the prices paid by processors and retailers.\n4. Understanding the Dairy Supply Chain\nMilk prices are not determined by one single market price.\nThe farm-gate price represents the amount paid to dairy farmers, while the retail price includes additional costs such as processing, packaging, transportation and supermarket operations.\nTherefore, a reduction in supermarket milk prices does not necessarily mean that farmers receive less money for their milk.\nSimilarly, changes in raw milk prices may not immediately appear in supermarket prices because processors and retailers operate under different contracts and pricing arrangements.",
+    "chinaAnalysis": "Supply and demand\nWhen milk production exceeds consumer demand, excess supply can put downward pressure on farm-gate prices.\nFeed costs\nChanges in animal feed prices, such as corn and soybean meal, affect dairy farming expenses.\nProduction costs\nLabour, electricity, equipment and farm maintenance contribute to milk production costs.\nSupermarket pricing\nRetail promotions and price competition influence the prices consumers pay.\nConsumer demand\nChanges in household purchasing power and consumption habits affect dairy demand.\nFor example, China's milk oversupply contributed to downward pressure on raw milk prices in 2024. In Australia, supermarket price reductions affected retail prices, while the effect on farmers depended on the prices paid by processors and retailers.\n4. Understanding the Dairy Supply Chain\nMilk prices are not determined by one single market price.\nThe farm-gate price represents the amount paid to dairy farmers, while the retail price includes additional costs such as processing, packaging, transportation and supermarket operations.\nTherefore, a reduction in supermarket milk prices does not necessarily mean that farmers receive less money for their milk.\nSimilarly, changes in raw milk prices may not immediately appear in supermarket prices because processors and retailers operate under different contracts and pricing arrangements.",
+    "conclusion": "Milk prices are influenced by agricultural production conditions and retail market competition.\nIn China, oversupply and weaker demand contributed to a significant decline in raw milk prices in 2024. In Australia, farm-gate prices decreased slightly in NSW during 2024–25, while supermarket price reductions attracted attention from dairy farmers.\nThese examples demonstrate how supply, production costs and retail pricing can affect different stages of the dairy supply chain.",
+    "intro": "Milk is an essential dairy product consumed by households every day. Its price is influenced by production costs, supply and demand, processing, transportation and supermarket pricing strategies. The dairy supply chain includes farmers, processors, distributors and retailers. Therefore, the price received by dairy farmers and the retail price paid by consumers do not necessarily change at the same rate. 1. Price Fluctuations and Market Trends",
+    "docViews": {
+      "china": {
+        "title": "Raw milk · ten major dairy-producing provinces",
+        "unit": "CNY / kg",
+        "date": "2024-12-31",
+        "url": "https://mp.weixin.qq.com/s/7EdJ3heRork5wwwDzjCXQQ",
+        "type": "bar",
+        "labels": [
+          "2024 annual mean",
+          "End of Dec 2024"
+        ],
+        "series": [
+          {
+            "name": "Raw milk selling price",
+            "data": [
+              3.32,
+              3.11
+            ]
+          }
+        ],
+        "note": "Different statistical periods: annual mean and year-end observation. Not a monthly time series. Annual mean fell 13.42% year-on-year; year-end price fell 15.03%. Average monitored production cost was CNY 3.46/kg; this does not imply every farm made a loss."
+      },
+      "australia": {
+        "title": "Generic supermarket fresh milk · September 2024 reduction",
+        "unit": "AUD / pack",
+        "date": "2024-09-01",
+        "url": "https://www.abc.net.au/news/2024-10-08/supermarket-dairy-price-drop-farmers-fear-return-of-milk-wars/104445180",
+        "type": "line",
+        "labels": [
+          "Before September reduction",
+          "After September reduction"
+        ],
+        "series": [
+          {
+            "name": "1 litre",
+            "data": [
+              1.6,
+              1.55
+            ]
+          },
+          {
+            "name": "2 litres",
+            "data": [
+              3.1,
+              3
+            ]
+          },
+          {
+            "name": "3 litres",
+            "data": [
+              4.5,
+              4.35
+            ]
+          }
+        ],
+        "note": "Reported before/after retail prices, not a monthly series. Each line refers to a different pack size. NSW 2024–25 farm-gate estimates: 80.5 cents/L (central and south coast), 88.3 cents/L (northern NSW); these are not supermarket prices."
       }
     }
   },
@@ -95,20 +179,95 @@ window.EDITORIAL_CASES = [
     "icon": "1f455",
     "quotes": {
       "australia": {
-        "price": 9.9,
-        "unit": "AUD / shirt",
-        "label": "Uniqlo U crew neck · selected colours and sizes on sale",
-        "url": "https://www.uniqlo.com/au/en/men/tops/t-shirts?tagDesign=crew-neck",
-        "date": "Listing checked 6 Nov 2026",
-        "history": []
+        "price": 3.4570117492814276,
+        "unit": "USD / imported item",
+        "label": "Cotton apparel HS610910 · derived annual import unit value",
+        "date": "2025-01-01",
+        "url": "https://wits.worldbank.org/trade/comtrade/en/country/AUS/year/2025/tradeflow/Imports/partner/ALL/product/610910",
+        "history": [
+          [
+            "2025-01-01",
+            3.4570117492814276
+          ]
+        ]
       },
       "china": {
-        "price": 79,
-        "unit": "CNY / shirt",
-        "label": "Uniqlo U crew neck · item 483456",
-        "url": "https://www.uniqlo.cn/product-detail.html?productCode=u0000000067052",
-        "date": "Listing checked 6 Nov 2026",
-        "history": []
+        "price": 82.18,
+        "unit": "US cents / lb",
+        "label": "Cotton input cost · China import benchmark (not T-shirt retail price)",
+        "date": "2025-01-01",
+        "url": "https://www.cotlook.com/download/china-cotton-industry-development-summit-forum-chongqing-2026/?wpdmdl=341448&refresh=6aeef01c6fb6e1794043932",
+        "history": [
+          [
+            "2025-01-01",
+            82.18
+          ]
+        ]
+      }
+    },
+    "news": [
+      {
+        "title": "Changes in Australia's cotton clothing imports",
+        "summary": "World Bank WITS · 2024–2025 trade data WITS data shows that Australia's import value for cotton T-shirts, singlets and other cotton vests increased from approximately USD 661 million in 2024 to USD 686 million in 2025. However, the total import quantity decreased slightly over the same period. This demonstrates that import value and import quantity do not always move in the same direction. The data provides evidence of changes in the import market, but does not establish the exact reasons for those changes.",
+        "url": "https://wits.worldbank.org/trade/comtrade/en/country/AUS/year/2025/tradeflow/Imports/partner/ALL/product/610910"
+      },
+      {
+        "title": "Declining cotton import prices",
+        "summary": "Cotlook · China Cotton Industry 2026 The Cotlook report recorded a decline in China's average cotton import price from 92.34 US cents per pound in 2024 to 82.18 US cents per pound in 2025. Cotton is an important input in textile production. Changes in cotton prices can influence the cost of producing cotton fabrics and garments. However, the extent to which these changes affect clothing prices depends on other production and retail costs.",
+        "url": "https://www.cotlook.com/download/china-cotton-industry-development-summit-forum-chongqing-2026/?wpdmdl=341448&refresh=6aeef01c6fb6e1794043932"
+      },
+      {
+        "title": "Australian clothing and footwear price movements",
+        "summary": "Australian Bureau of Statistics · September 2026 According to the Australian Bureau of Statistics (ABS), the clothing and footwear category recorded the following changes in September 2026: Monthly change: -2.7%. Annual change: +0.4%.",
+        "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+      }
+    ],
+    "analysis": "Cotton prices\nChanges in cotton prices may affect textile production costs.\nLabour costs\nManufacturing wages influence garment production expenses.\nTransportation\nShipping and logistics expenses affect imported clothing costs.\nExchange rates\nCurrency fluctuations can change the cost of purchasing imported products.\nImport sources\nDifferent manufacturing countries have different production costs and supply conditions.\nRetail pricing\nBrand positioning, promotions and retailer margins influence final consumer prices.\nFor example, a decline in cotton prices may reduce one component of production costs. However, if labour, transportation or other expenses increase, the final retail price may not necessarily decrease.",
+    "chinaAnalysis": "Cotton prices\nChanges in cotton prices may affect textile production costs.\nLabour costs\nManufacturing wages influence garment production expenses.\nTransportation\nShipping and logistics expenses affect imported clothing costs.\nExchange rates\nCurrency fluctuations can change the cost of purchasing imported products.\nImport sources\nDifferent manufacturing countries have different production costs and supply conditions.\nRetail pricing\nBrand positioning, promotions and retailer margins influence final consumer prices.\nFor example, a decline in cotton prices may reduce one component of production costs. However, if labour, transportation or other expenses increase, the final retail price may not necessarily decrease.",
+    "conclusion": "Cotton T-shirt prices are influenced by raw material markets and the wider global clothing supply chain.\nThe available data shows that China's average cotton import price decreased in 2025, while Australia's import value for cotton clothing increased and import quantity declined slightly.\nThese trends highlight the complexity of clothing prices. Changes in raw material costs do not automatically translate into equivalent changes in retail prices, as manufacturing, labour, transportation and retail expenses also play important roles.",
+    "intro": "Background Cotton T-shirts are common clothing products in the global apparel market. Their production involves several stages, including cotton cultivation, textile manufacturing, garment production, international transportation and retail distribution. The final retail price of a T-shirt is influenced by raw material costs, manufacturing expenses, labour costs, transportation, exchange rates and brand pricing strategies.",
+    "docViews": {
+      "australia": {
+        "title": "Cotton apparel HS610910 · derived annual import unit value",
+        "unit": "USD / imported item",
+        "date": "2025-01-01",
+        "url": "https://wits.worldbank.org/trade/comtrade/en/country/AUS/year/2025/tradeflow/Imports/partner/ALL/product/610910",
+        "type": "line",
+        "labels": [
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Import unit value",
+            "data": [
+              3.3090863579474346,
+              3.4570117492814276
+            ]
+          }
+        ],
+        "note": "Calculated from rounded document totals: USD 660.99m / 199.75m items (2024); USD 685.56m / 198.31m items (2025). Includes cotton T-shirts, singlets and vests. Not retail prices; product mix can affect the average. Imports from China: USD 246.50m → 267.52m; Bangladesh: USD 213.59m → 209.71m. September 2026 clothing/footwear CPI: −2.7% monthly, +0.4% annual; not T-shirt-specific."
+      },
+      "china": {
+        "title": "Cotton input cost · China import benchmark (not T-shirt retail price)",
+        "unit": "US cents / lb",
+        "date": "2025-01-01",
+        "url": "https://www.cotlook.com/download/china-cotton-industry-development-summit-forum-chongqing-2026/?wpdmdl=341448&refresh=6aeef01c6fb6e1794043932",
+        "type": "line",
+        "labels": [
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Cotton import price",
+            "data": [
+              92.34,
+              82.18
+            ]
+          }
+        ],
+        "note": "Annual average imported cotton price from the document. About 11% lower in 2025. This is a raw-material indicator, not a Chinese T-shirt retail price or a comparison of identical garments in China and Australia."
       }
     }
   },

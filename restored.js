@@ -40,6 +40,12 @@ function render(){
  $('story').innerHTML=bundle.stories.map(s=>'<article class="news-entry"><small>'+esc(s.publisher)+' · '+esc(s.published)+'</small><h3>'+esc(s.headline_original)+'</h3><p>'+esc(s.facts_confirmed)+'</p><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
  $('editorExplanation').innerHTML=bundle.stories.map(s=>'<section><h4>'+esc(s.headline_original)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?'（可能机制，尚未证实因果）':'（资料中已报道）')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'；'+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
  }else{ $('seriesPicker')?.remove(); }
+ if(active.docViews){const v=active.docViews[$('city').value];
+ $('dateRange').textContent=v.labels.join(' → ');$('change').textContent=v.type==='bar'?'Different reference periods':'Reported comparison';
+ $('dataNote').textContent=v.note;
+ chart.setOption({animation:false,legend:{bottom:0},grid:{left:55,right:20,top:30,bottom:75},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:n=>fmt(n)+' '+v.unit},xAxis:{type:'category',data:v.labels,axisLabel:{interval:0,overflow:'break',width:140}},yAxis:{type:'value',scale:v.type==='line'},series:v.series.map(t=>({...t,type:v.type,showSymbol:true,symbolSize:6,lineStyle:{width:3},barMaxWidth:80}))},true);
+ $('table').innerHTML=v.series.flatMap(t=>t.data.map((value,i)=>'<tr><td>'+esc(v.labels[i])+' · '+esc(t.name)+'</td><td>'+fmt(value)+' '+esc(v.unit)+'</td><td><a href="'+esc(v.url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a></td></tr>')).join('');
+ }
  $('save').textContent=saved.includes(active.id)?'★ Following':'☆ Follow';$('save').setAttribute('aria-pressed',saved.includes(active.id));
 }
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);render()});
