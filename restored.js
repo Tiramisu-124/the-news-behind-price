@@ -1,4 +1,4 @@
-const items=window.EDITORIAL_CASES,$=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),fmt=v=>v.toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:2});
+const items=window.EDITORIAL_CASES,$=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),fmt=v=>!Number.isFinite(v)?'Not available':v.toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:2});
 let seriesChoices={};
 let active=items[0],category=active.category,chart=echarts.init($('chart')),saved=[];
 try{saved=JSON.parse(localStorage.getItem('followed-products')||'[]')}catch{}
@@ -14,8 +14,8 @@ function render(){
  $('dateRange').textContent=points[0][0]+' — '+points.at(-1)[0];$('change').textContent=points.length>1?'Period '+((points.at(-1)[1]/points[0][1]-1)*100).toFixed(1)+'%':'Single quote';
  $('dataNote').textContent=points.length>1?'Lines connect recorded observations; intermediate prices are not measured.':'Only one dated quote is available; this does not establish a trend.';
  $('table').innerHTML=points.map(([d,v])=>'<tr><td>'+esc(d)+'</td><td>'+fmt(v)+' '+esc(q.unit)+'</td><td><a href="'+esc(q.url)+'" target="_blank" rel="noopener noreferrer">Price source ↗</a></td></tr>').join('');
- const values=points.map(p=>p[1]);const keys=[...new Set([0,points.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])];
- chart.setOption({animation:false,grid:{left:18,right:20,top:25,bottom:55,containLabel:true},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:v=>fmt(v)+' '+q.unit},xAxis:{type:'time'},yAxis:{type:'value',scale:true},dataZoom:points.length>1?[{type:'slider',height:18,bottom:0}]:[],series:[{type:'line',data:points.map(([d,v])=>[Date.parse(d),v]),showSymbol:false,symbolSize:7,markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:keys.map(i=>({coord:[Date.parse(points[i][0]),points[i][1]],value:points[i][1]}))},lineStyle:{color:'#3269ff',width:3},itemStyle:{color:'#3269ff'},areaStyle:{color:'#dce7ff',opacity:.5}}]},true);
+ const values=points.map(p=>p[1]);const keys=[...new Set([0,points.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])].filter(i=>i>=0);
+ if(!q.missingLocal) chart.setOption({animation:false,grid:{left:18,right:20,top:25,bottom:55,containLabel:true},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:v=>fmt(v)+' '+q.unit},xAxis:{type:'time'},yAxis:{type:'value',scale:true},dataZoom:points.length>1?[{type:'slider',height:18,bottom:0}]:[],series:[{type:'line',data:points.map(([d,v])=>[Date.parse(d),v]),showSymbol:false,symbolSize:7,markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:keys.map(i=>({coord:[Date.parse(points[i][0]),points[i][1]],value:points[i][1]}))},lineStyle:{color:'#3269ff',width:3},itemStyle:{color:'#3269ff'},areaStyle:{color:'#dce7ff',opacity:.5}}]},true);
  if(active.chartKind==='dram-index'){
  $('dateRange').textContent='Q1 2026 · reported change';$('change').textContent='Historical price table pending';
  $('dataNote').textContent='The document reports a 93–98% quarterly rise in global DRAM contract prices. A retail price history will be plotted once the dated price table is supplied.';
@@ -41,7 +41,7 @@ function render(){
  $('story').innerHTML=bundle.stories.map(s=>'<article class="news-entry"><small>'+esc(s.publisher)+' · '+esc(s.published)+'</small><h3>'+esc(s.headline_original)+'</h3><p>'+esc(s.facts_confirmed)+'</p><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
  $('editorExplanation').innerHTML=bundle.stories.map(s=>'<section><h4>'+esc(s.headline_original)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?' (possible mechanism; causality not established)':' (reported evidence)')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'; '+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
  }else{ $('seriesPicker')?.remove(); }
- if(active.docViews){const v=active.docViews[$('city').value];
+ if(active.docViews?.[$('city').value]){const v=active.docViews[$('city').value];
  $('dateRange').textContent=v.labels.join(' → ');$('change').textContent=v.type==='bar'?'Different reference periods':'Reported comparison';
  $('dataNote').textContent=v.note;
  chart.setOption({animation:false,legend:{bottom:0},grid:{left:55,right:20,top:30,bottom:75},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:n=>fmt(n)+' '+v.unit},xAxis:{type:'category',data:v.labels,axisLabel:{interval:0,overflow:'break',width:140}},yAxis:{type:'value',scale:v.type==='line'},series:v.series.map(t=>({...t,type:v.type,showSymbol:true,symbolSize:6,lineStyle:{width:3},barMaxWidth:80}))},true);
@@ -59,6 +59,7 @@ function render(){
  }else{$('viewPicker')?.remove();}
  if(q.fxNote&&!bundle&&!selectedView&&!active.docViews)$('dataNote').textContent+=' '+q.fxNote;
  if(q.fxNote||series?.fxNote||selectedView?.fxNote||active.docViews?.[$('city').value]?.fxNote)$('dataNote').innerHTML=esc($('dataNote').textContent)+' <a href="https://www.rba.gov.au/statistics/tables/csv/f11-data.csv" target="_blank" rel="noopener noreferrer">RBA exchange-rate source ↗</a>';
+ renderLocalProvenance(active,$('city').value,q,series,selectedView);
  $('save').textContent=saved.includes(active.id)?'★ Following':'☆ Follow';$('save').setAttribute('aria-pressed',saved.includes(active.id));
 }
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);render()});

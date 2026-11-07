@@ -13,3 +13,5 @@
 #seriesPicker{margin:18px 0}#seriesPicker select{max-width:100%;padding:10px;border:1px solid #ccd6bf;border-radius:8px;background:white}.table-wrap small{display:block;font-size:11px}
 
 #viewPicker{margin:18px 0}#viewPicker select{max-width:100%;padding:10px;border:1px solid #ccd6bf;border-radius:8px;background:white}
+
+.source-panel{margin:16px 0;padding:16px;background:#f1f5eb;border-radius:12px;font-size:13px;overflow-wrap:anywhere}.source-panel p{margin:7px 0;line-height:1.6}.source-panel a{text-decoration:underline}#marketAvailability{border-left:3px solid #a28a49;padding-left:12px}
