@@ -10046,35 +10046,262 @@ window.EDITORIAL_CASES = [
     "publisher": "World Gold Council",
     "headline": "Investment demand features in the 2025 gold market",
     "summary": "The World Gold Council reports strong investment demand in its review of the 2025 gold market.",
-    "steps": [
-      "Investment demand strengthens",
-      "Global gold price responds",
-      "AUD bullion quotes adjust"
-    ],
-    "analysis": "Australian bullion quotes combine the international gold price, the AUD exchange rate and a dealer premium. Country examples are illustrative dealer quotes in local currencies, not directly comparable national averages.",
-    "other": "Interest rates, investor selling, currency movements and dealer buy/sell spreads can offset other influences.",
+    "analysis": "US tariff policies raised uncertainty about trade, inflation and growth. Investors sought safe-haven assets, increasing investment demand for gold and putting upward pressure on prices.",
     "evidence": "Record the same bullion weight, purity and dealer sell-price definition; retain timestamped spot and exchange-rate sources.",
-    "chinaAnalysis": "For China, investigate global gold prices, currency movements and local dealer premiums. The international report is background; it does not verify the fictional CNY prices shown here.",
+    "chinaAnalysis": "US tariff policies raised uncertainty about trade, inflation and growth. Investors sought safe-haven assets, increasing investment demand for gold and putting upward pressure on prices.",
     "member": 4,
     "icon": "1fa99",
     "quotes": {
       "australia": {
-        "price": 6008,
+        "price": 6912.47,
         "unit": "AUD / troy oz",
-        "label": "Gold benchmark · World Gold Council",
-        "url": "https://www.gold.org/goldhub/research/gold-market-commentary-september-2026",
-        "date": "30 Sep 2026",
-        "history": []
+        "label": "International gold benchmark in AUD · monthly average",
+        "date": "2026-03-01",
+        "url": "https://www.indexmundi.com/commodities/?commodity=gold&months=60&currency=aud",
+        "history": [
+          [
+            "2024-01-01",
+            3058.98
+          ],
+          [
+            "2024-02-01",
+            3098.76
+          ],
+          [
+            "2024-03-01",
+            3291.69
+          ],
+          [
+            "2024-04-01",
+            3580.79
+          ],
+          [
+            "2024-05-01",
+            3553.35
+          ],
+          [
+            "2024-06-01",
+            3500.3
+          ],
+          [
+            "2024-07-01",
+            3597.08
+          ],
+          [
+            "2024-08-01",
+            3709.11
+          ],
+          [
+            "2024-09-01",
+            3798.13
+          ],
+          [
+            "2024-10-01",
+            4010.56
+          ],
+          [
+            "2024-11-01",
+            4055.79
+          ],
+          [
+            "2024-12-01",
+            4156.49
+          ],
+          [
+            "2025-01-01",
+            4351.9
+          ],
+          [
+            "2025-02-01",
+            4599.4
+          ],
+          [
+            "2025-03-01",
+            4738.25
+          ],
+          [
+            "2025-04-01",
+            5127.29
+          ],
+          [
+            "2025-05-01",
+            5141.17
+          ],
+          [
+            "2025-06-01",
+            5159.3
+          ],
+          [
+            "2025-07-01",
+            5105.29
+          ],
+          [
+            "2025-08-01",
+            5188.54
+          ],
+          [
+            "2025-09-01",
+            5561.1
+          ],
+          [
+            "2025-10-01",
+            6200.27
+          ],
+          [
+            "2025-11-01",
+            6284.54
+          ],
+          [
+            "2025-12-01",
+            6507.13
+          ],
+          [
+            "2026-01-01",
+            7083.91
+          ],
+          [
+            "2026-02-01",
+            7118.24
+          ],
+          [
+            "2026-03-01",
+            6912.47
+          ]
+        ]
       },
       "china": {
-        "price": 908,
-        "unit": "CNY / gram",
-        "label": "Gold benchmark · World Gold Council",
-        "url": "https://www.gold.org/goldhub/research/gold-market-commentary-september-2026",
-        "date": "30 Sep 2026",
-        "history": []
+        "price": 33478.95,
+        "unit": "CNY / troy oz",
+        "label": "International gold benchmark in CNY · monthly average",
+        "date": "2026-03-01",
+        "url": "https://www.indexmundi.com/commodities/?commodity=gold&months=60&currency=cny",
+        "history": [
+          [
+            "2024-01-01",
+            14586.96
+          ],
+          [
+            "2024-02-01",
+            14553.5
+          ],
+          [
+            "2024-03-01",
+            15542.86
+          ],
+          [
+            "2024-04-01",
+            16878.53
+          ],
+          [
+            "2024-05-01",
+            17005.49
+          ],
+          [
+            "2024-06-01",
+            16880.02
+          ],
+          [
+            "2024-07-01",
+            17417.3
+          ],
+          [
+            "2024-08-01",
+            17668.07
+          ],
+          [
+            "2024-09-01",
+            18187.38
+          ],
+          [
+            "2024-10-01",
+            19107.21
+          ],
+          [
+            "2024-11-01",
+            19100.51
+          ],
+          [
+            "2024-12-01",
+            19268.74
+          ],
+          [
+            "2025-01-01",
+            19805.38
+          ],
+          [
+            "2025-02-01",
+            21070.4
+          ],
+          [
+            "2025-03-01",
+            21632.82
+          ],
+          [
+            "2025-04-01",
+            23494.49
+          ],
+          [
+            "2025-05-01",
+            23858.5
+          ],
+          [
+            "2025-06-01",
+            24075.38
+          ],
+          [
+            "2025-07-01",
+            23958.3
+          ],
+          [
+            "2025-08-01",
+            24164.56
+          ],
+          [
+            "2025-09-01",
+            26130.33
+          ],
+          [
+            "2025-10-01",
+            28893.53
+          ],
+          [
+            "2025-11-01",
+            29066.44
+          ],
+          [
+            "2025-12-01",
+            30353.1
+          ],
+          [
+            "2026-01-01",
+            33152.61
+          ],
+          [
+            "2026-02-01",
+            34681.36
+          ],
+          [
+            "2026-03-01",
+            33478.95
+          ]
+        ]
       }
-    }
+    },
+    "intro": "From 2024 to 2026, gold prices experienced a substantial overall increase, despite occasional short-term declines. Major influences included global economic uncertainty, geopolitical tensions, US interest rate policies, central bank gold purchases and exchange rate movements. Gold prices in China and Australia are closely linked to the international gold market. However, movements in the Chinese yuan and Australian dollar can lead to different price changes when gold is measured in local currencies.",
+    "news": [
+      {
+        "title": "US Tariff Policies and Gold Prices",
+        "summary": "In April 2025, US tariff policies raised concerns about global trade, inflation and economic growth. Investors increased demand for safe-haven assets such as gold, contributing to higher gold prices.",
+        "url": "https://www.reuters.com/markets/commodities/gold-hits-all-time-high-trumps-tariff-plans-stir-inflation-worries-2025-04-01/?utm_source=chatgpt.com"
+      },
+      {
+        "title": "Rising Gold Investment Demand in China",
+        "summary": "According to the World Gold Council's May 2025 report, gold investment demand in China strengthened in April. Chinese gold ETFs recorded significant inflows, while the Shanghai Gold Benchmark Price rose by approximately 6.9%.",
+        "url": "https://www.gold.org/goldhub/gold-focus/2025/05/china-gold-market-update-unseen-investment-passion?utm_source=chatgpt.com"
+      }
+    ],
+    "regionExplanation": "Gold is primarily priced internationally in US dollars. Therefore, gold prices expressed in Chinese yuan and Australian dollars are affected by both international gold prices and exchange rate movements. Even when the international gold price changes by the same amount, the price movements in CNY and AUD may differ.\nApril 2025 event in the supplied document: Shanghai Gold Benchmark Price +6.9%; AUD-denominated gold benchmark +3.4%. These are distinct benchmarks, not local retail quotes.",
+    "conclusion": "From 2024 to early 2026, gold prices increased substantially overall. US trade policies, economic uncertainty, safe-haven investment demand and central bank purchases were among the factors influencing the gold market. April 2025 provides a particularly clear news-supported example of a price increase. Gold prices expressed in Chinese yuan and Australian dollars followed broadly similar trends, although exchange rate movements contributed to differences in their rates of change."
   },
   {
     "id": "copper",
@@ -10084,48 +10311,267 @@ window.EDITORIAL_CASES = [
     "icon": "1f9f1",
     "quotes": {
       "australia": {
-        "price": 14473.05591,
-        "unit": "USD / tonne",
-        "label": "IMF monthly benchmark",
-        "url": "https://fred.stlouisfed.org/series/PCOPPUSDM",
-        "date": "Sep 2026",
+        "price": 17836.18,
+        "unit": "AUD / tonne",
+        "label": "International copper benchmark in AUD · monthly average",
+        "date": "2026-03-01",
+        "url": "https://www.indexmundi.com/commodities/?commodity=copper&months=60&currency=aud",
         "history": [
           [
-            "Jul",
-            13542.82087
+            "2024-01-01",
+            12540.77
           ],
           [
-            "Aug",
-            14331.26476
+            "2024-02-01",
+            12719.7
           ],
           [
-            "Sep",
-            14473.05591
+            "2024-03-01",
+            13253.83
+          ],
+          [
+            "2024-04-01",
+            14536.08
+          ],
+          [
+            "2024-05-01",
+            15323.95
+          ],
+          [
+            "2024-06-01",
+            14516.36
+          ],
+          [
+            "2024-07-01",
+            14077.12
+          ],
+          [
+            "2024-08-01",
+            13472.05
+          ],
+          [
+            "2024-09-01",
+            13648.87
+          ],
+          [
+            "2024-10-01",
+            14213.95
+          ],
+          [
+            "2024-11-01",
+            13884.38
+          ],
+          [
+            "2024-12-01",
+            13995.64
+          ],
+          [
+            "2025-01-01",
+            14440.67
+          ],
+          [
+            "2025-02-01",
+            14825.25
+          ],
+          [
+            "2025-03-01",
+            15469.37
+          ],
+          [
+            "2025-04-01",
+            14623.16
+          ],
+          [
+            "2025-05-01",
+            14809.13
+          ],
+          [
+            "2025-06-01",
+            15134.86
+          ],
+          [
+            "2025-07-01",
+            14933.95
+          ],
+          [
+            "2025-08-01",
+            14896.21
+          ],
+          [
+            "2025-09-01",
+            15137.86
+          ],
+          [
+            "2025-10-01",
+            16408.32
+          ],
+          [
+            "2025-11-01",
+            16624.78
+          ],
+          [
+            "2025-12-01",
+            17796.24
+          ],
+          [
+            "2026-01-01",
+            19394.2
+          ],
+          [
+            "2026-02-01",
+            18364.81
+          ],
+          [
+            "2026-03-01",
+            17836.18
           ]
         ]
       },
       "china": {
-        "price": 14473.05591,
-        "unit": "USD / tonne",
-        "label": "IMF monthly benchmark",
-        "url": "https://fred.stlouisfed.org/series/PCOPPUSDM",
-        "date": "Sep 2026",
+        "price": 86385.45,
+        "unit": "CNY / tonne",
+        "label": "International copper benchmark in CNY · monthly average",
+        "date": "2026-03-01",
+        "url": "https://www.indexmundi.com/commodities/?commodity=copper&months=60&currency=cny",
         "history": [
           [
-            "Jul",
-            13542.82087
+            "2024-01-01",
+            59801.64
           ],
           [
-            "Aug",
-            14331.26476
+            "2024-02-01",
+            59738.87
           ],
           [
-            "Sep",
-            14473.05591
+            "2024-03-01",
+            62582.63
+          ],
+          [
+            "2024-04-01",
+            68517.74
+          ],
+          [
+            "2024-05-01",
+            73336.76
+          ],
+          [
+            "2024-06-01",
+            70004.49
+          ],
+          [
+            "2024-07-01",
+            68162.29
+          ],
+          [
+            "2024-08-01",
+            64173.13
+          ],
+          [
+            "2024-09-01",
+            65357.84
+          ],
+          [
+            "2024-10-01",
+            67718.4
+          ],
+          [
+            "2024-11-01",
+            65387.63
+          ],
+          [
+            "2024-12-01",
+            64881.27
+          ],
+          [
+            "2025-01-01",
+            65719.06
+          ],
+          [
+            "2025-02-01",
+            67916.34
+          ],
+          [
+            "2025-03-01",
+            70626.59
+          ],
+          [
+            "2025-04-01",
+            67006.94
+          ],
+          [
+            "2025-05-01",
+            68724.37
+          ],
+          [
+            "2025-06-01",
+            70625.43
+          ],
+          [
+            "2025-07-01",
+            70082.64
+          ],
+          [
+            "2025-08-01",
+            69376.05
+          ],
+          [
+            "2025-09-01",
+            71129.37
+          ],
+          [
+            "2025-10-01",
+            76463.46
+          ],
+          [
+            "2025-11-01",
+            76890.77
+          ],
+          [
+            "2025-12-01",
+            83012.25
+          ],
+          [
+            "2026-01-01",
+            90764.66
+          ],
+          [
+            "2026-02-01",
+            89476.71
+          ],
+          [
+            "2026-03-01",
+            86385.45
           ]
         ]
       }
-    }
+    },
+    "intro": "Copper is an essential industrial raw material widely used in construction, electricity networks, electric vehicles, electronics and renewable energy infrastructure. Unlike gold, copper prices are closely linked to industrial demand, mine production, supply disruptions and international trade policies. Between 2024 and 2026, copper markets were influenced by the energy transition, electricity infrastructure investment, mining disruptions and US trade policies. China is a major copper-consuming market, while Australia is a copper-producing country.",
+    "news": [
+      {
+        "title": "US Copper Tariff Announcement",
+        "summary": "President Trump announced plans for a 50% tariff on copper imports, triggering a surge of more than 12% in US COMEX copper prices. The announcement highlighted differences between regional copper markets.",
+        "url": "https://www.investing.com/news/commodities-news/comex-copper-hits-record-after-trump-says-he-will-impose-50-tariff-on-copper-imports-4127152?utm_source=chatgpt.com"
+      },
+      {
+        "title": "Chinese Copper Import Demand",
+        "summary": "Following the US tariff announcement, China's Yangshan copper premium rose from $29 to $40 per tonne, indicating a change in Chinese import demand conditions. London copper prices also came under pressure.",
+        "url": "https://www.investing.com/news/commodities-news/indicator-of-chinese-copper-import-demand-jumps-38-after-trump-tariff-announcement-4128735?utm_source=chatgpt.com"
+      },
+      {
+        "title": "Grasberg Mine Disruption",
+        "summary": "A major disruption at Indonesia's Grasberg mine led Freeport-McMoRan to declare force majeure. Concerns about reduced copper supply contributed to a rise of more than 3% in London copper prices following the announcement.",
+        "url": "https://au.investing.com/news/stock-market-news/freeportmcmoran-expects-lower-consolidated-sales-for-copper-gold-in-third-quarter-4032894?utm_source=chatgpt.com"
+      },
+      {
+        "title": "Lower Global Copper Supply Forecast",
+        "summary": "Goldman Sachs lowered its global copper mine supply forecasts for 2025 and 2026 following the Grasberg disruption, reinforcing concerns about future supply constraints.",
+        "url": "https://au.investing.com/news/stock-market-news/goldman-sachs-downgrades-copper-supply-forecast-after-grasberg-mine-disruption-4033892?utm_source=chatgpt.com"
+      }
+    ],
+    "analysis": "Mining disruptions reduce expected copper supply and can put upward pressure on prices. Proposed US copper import tariffs encouraged traders to redirect supplies towards the US, widening regional price differences. A COMEX price jump is not the same as a change in the international benchmark shown here.",
+    "chinaAnalysis": "Mining disruptions reduce expected copper supply and can put upward pressure on prices. Proposed US copper import tariffs encouraged traders to redirect supplies towards the US, widening regional price differences. A COMEX price jump is not the same as a change in the international benchmark shown here.",
+    "regionExplanation": "International copper benchmark prices are generally quoted in US dollars. Exchange rate movements can therefore affect copper prices expressed in Chinese yuan and Australian dollars.\nChina is a major copper-consuming market, where manufacturing demand and domestic inventories influence local prices. Australia is a copper-producing country, where export markets and mining supply conditions play important roles.\nImportant distinction: The historical price series in this report measures the same international copper benchmark in two currencies. It does not independently measure Chinese SHFE prices and Australian domestic copper transaction prices.",
+    "conclusion": "Between January 2024 and March 2026, the international copper benchmark rose by approximately 44.5% in Chinese yuan and 42.2% in Australian dollars, despite significant fluctuations.\nThe July 2025 US copper tariff announcement demonstrated how trade policies can influence regional copper prices and trade flows. The September 2025 Grasberg mine disruption showed how reduced mining supply can raise concerns about future copper availability and put upward pressure on prices."
   },
   {
     "id": "beans",
