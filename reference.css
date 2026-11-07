@@ -11,3 +11,5 @@
 .hero{background-size:cover;background-position:center;border-radius:20px;padding-left:28px;padding-right:28px}.hero-decoration{display:none}.hero .search,.hero .suggestions,.hero .region-picker{position:relative;z-index:1}.news-entry{border-top:1px solid #dce4d2;padding-top:20px;margin-top:20px}.news-entry h3{font-size:21px}.story-panel{min-width:0}.editor-note p{white-space:pre-line}
 
 #seriesPicker{margin:18px 0}#seriesPicker select{max-width:100%;padding:10px;border:1px solid #ccd6bf;border-radius:8px;background:white}.table-wrap small{display:block;font-size:11px}
+
+#viewPicker{margin:18px 0}#viewPicker select{max-width:100%;padding:10px;border:1px solid #ccd6bf;border-radius:8px;background:white}

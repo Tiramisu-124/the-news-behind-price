@@ -4,11 +4,12 @@ let active=items[0],category=active.category,chart=echarts.init($('chart')),save
 try{saved=JSON.parse(localStorage.getItem('followed-products')||'[]')}catch{}
 function render(){
  const bundle=active.bundleRegions?.[$('city').value];const seriesKey=active.id+'-'+$('city').value;const series=bundle?.series.find(s=>s.series_id===seriesChoices[seriesKey])||bundle?.series[0];
- const q=series?.quote||active.quotes[$('city').value];
+ const views=active.researchViews?.[$('city').value];const selectedView=views?.[Number(seriesChoices[seriesKey])||0]||views?.[0];
+ const q=selectedView?.quote||series?.quote||active.quotes[$('city').value];
  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('selected',b.dataset.filter===category));
- $('products').innerHTML=items.filter(x=>x.category===category).map(x=>{const p=x.quotes[$('city').value];return '<button data-product="'+x.id+'" aria-pressed="'+(x.id===active.id)+'"><div class="product-illustration"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+x.icon+'.svg"></div><h3>'+esc(x.name)+'</h3><small>'+esc(p.label)+'</small><strong>'+(x.priceDisplay||fmt(p.price))+'</strong><small>'+esc(p.unit)+' · '+esc(p.date)+'</small></button>'}).join('');
+ $('products').innerHTML=items.filter(x=>x.category===category).map(x=>{const p=x.quotes[$('city').value];return '<button data-product="'+x.id+'" aria-pressed="'+(x.id===active.id)+'"><div class="product-illustration"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+x.icon+'.svg"></div><h3>'+esc(x.name)+'</h3><small>'+esc(p.label)+'</small><strong>'+(p.priceDisplay||x.priceDisplay||fmt(p.price))+'</strong><small>'+esc(p.unit)+' · '+esc(p.date)+'</small></button>'}).join('');
  document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>{active=items.find(x=>x.id===b.dataset.product);render()});
- $('category').textContent=active.category;$('productTitle').textContent=active.name;$('description').textContent=q.label;$('price').textContent=active.priceDisplay||fmt(q.price);$('unit').textContent=q.unit;
+ $('category').textContent=active.category;$('productTitle').textContent=active.name;$('description').textContent=q.label;$('price').textContent=q.priceDisplay||active.priceDisplay||fmt(q.price);$('unit').textContent=q.unit;
  const points=(q.history.length?q.history:[[q.date,q.price]]).map(([d,v])=>[d.replace('Listing checked ',''),v]).map(([d,v])=>[/^[A-Za-z]{3}$/.test(d)?d+' '+q.date.match(/\d{4}/)[0]:d,v]);
  $('dateRange').textContent=points[0][0]+' — '+points.at(-1)[0];$('change').textContent=points.length>1?'Period '+((points.at(-1)[1]/points[0][1]-1)*100).toFixed(1)+'%':'Single quote';
  $('dataNote').textContent=points.length>1?'Lines connect recorded observations; intermediate prices are not measured.':'Only one dated quote is available; this does not establish a trend.';
@@ -38,7 +39,7 @@ function render(){
  $('dataNote').textContent=series.limitations.join(' ')+(series.missing_months?.length?' Missing months: '+series.missing_months.join(', '):'');
  $('table').innerHTML=obs.map(o=>'<tr><td>'+esc(o.period)+(o.status?.includes('partial')?' (partial month through 21 Sep)':'')+'</td><td>'+(o.value==null?'No data':fmt(o.value)+' '+esc(q.unit))+'</td><td><a href="'+esc(o.url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a><small>'+esc(o.status)+' '+esc((o.quality_flags||[]).join(', '))+'</small></td></tr>').join('');
  $('story').innerHTML=bundle.stories.map(s=>'<article class="news-entry"><small>'+esc(s.publisher)+' · '+esc(s.published)+'</small><h3>'+esc(s.headline_original)+'</h3><p>'+esc(s.facts_confirmed)+'</p><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
- $('editorExplanation').innerHTML=bundle.stories.map(s=>'<section><h4>'+esc(s.headline_original)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?'（可能机制，尚未证实因果）':'（资料中已报道）')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'；'+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
+ $('editorExplanation').innerHTML=bundle.stories.map(s=>'<section><h4>'+esc(s.headline_original)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?' (possible mechanism; causality not established)':' (reported evidence)')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'; '+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
  }else{ $('seriesPicker')?.remove(); }
  if(active.docViews){const v=active.docViews[$('city').value];
  $('dateRange').textContent=v.labels.join(' → ');$('change').textContent=v.type==='bar'?'Different reference periods':'Reported comparison';
@@ -46,6 +47,18 @@ function render(){
  chart.setOption({animation:false,legend:{bottom:0},grid:{left:55,right:20,top:30,bottom:75},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:n=>fmt(n)+' '+v.unit},xAxis:{type:'category',data:v.labels,axisLabel:{interval:0,overflow:'break',width:140}},yAxis:{type:'value',scale:v.type==='line'},series:v.series.map(t=>({...t,type:v.type,showSymbol:true,symbolSize:6,lineStyle:{width:3},barMaxWidth:80}))},true);
  $('table').innerHTML=v.series.flatMap(t=>t.data.map((value,i)=>'<tr><td>'+esc(v.labels[i])+' · '+esc(t.name)+'</td><td>'+fmt(value)+' '+esc(v.unit)+'</td><td><a href="'+esc(v.url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a></td></tr>')).join('');
  }
+ if(selectedView){const v=selectedView;
+ let picker=$('viewPicker');if(!picker){picker=document.createElement('div');picker.id='viewPicker';$('chart').before(picker);}
+ picker.innerHTML=views.length>1?'<label for="viewSelect">Price series </label><select id="viewSelect">'+views.map((s,i)=>'<option value="'+i+'" '+(s===v?'selected':'')+'>'+esc(s.title)+'</option>').join('')+'</select>':'';
+ if(views.length>1)$('viewSelect').onchange=()=>{seriesChoices[seriesKey]=$('viewSelect').value;render()};
+ $('dateRange').textContent=v.labels.join(' → ');$('change').textContent='Historical observations';$('dataNote').textContent=v.note;
+ if(v.type==='range'){chart.clear();chart.setOption({graphic:{type:'text',left:'center',top:'middle',style:{text:'Earlier recollection: AUD 30–35 per tube\n\nAugust 2026: more than AUD 70 per tube',fontSize:14,fill:'#48556b',lineHeight:24}}});}
+ else{const values=v.values,keys=[...new Set([0,values.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])];chart.setOption({animation:false,grid:{left:60,right:25,bottom:65,top:25},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:n=>fmt(n)+' '+v.unit},xAxis:{type:'category',data:v.labels,axisLabel:{interval:0}},yAxis:{type:'value',scale:true},series:[{type:'line',data:values,showSymbol:false,lineStyle:{width:3,color:'#3269ff'},markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:keys.map(i=>({coord:[v.labels[i],values[i]]}))}}]},true);}
+ $('table').innerHTML=v.labels.map((label,i)=>'<tr><td>'+esc(label)+'</td><td>'+(v.type==='range'?(i?'More than AUD 70':'AUD 30–35'):v.values[i].toLocaleString('en-US',{maximumFractionDigits:4})+' '+esc(v.unit))+'</td><td><a href="'+esc(v.urls[i])+'" target="_blank" rel="noopener noreferrer">Source ↗</a></td></tr>').join('');
+ $('story').innerHTML=active.regionalNews[$('city').value].map(n=>'<article class="news-entry"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
+ }else{$('viewPicker')?.remove();}
+ if(q.fxNote&&!bundle&&!selectedView&&!active.docViews)$('dataNote').textContent+=' '+q.fxNote;
+ if(q.fxNote||series?.fxNote||selectedView?.fxNote||active.docViews?.[$('city').value]?.fxNote)$('dataNote').innerHTML=esc($('dataNote').textContent)+' <a href="https://www.rba.gov.au/statistics/tables/csv/f11-data.csv" target="_blank" rel="noopener noreferrer">RBA exchange-rate source ↗</a>';
  $('save').textContent=saved.includes(active.id)?'★ Following':'☆ Follow';$('save').setAttribute('aria-pressed',saved.includes(active.id));
 }
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);render()});

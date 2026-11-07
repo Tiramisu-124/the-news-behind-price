@@ -7,34 +7,112 @@ window.EDITORIAL_CASES = [
     "publisher": "CNA",
     "headline": "Shuttlecock price increases linked to feather supply",
     "summary": "CNA reports higher shuttlecock prices in China and examines changes in the supply of goose and duck feathers.",
-    "steps": [
-      "Fewer suitable feathers",
-      "Higher manufacturing costs",
-      "Higher import and retail costs"
-    ],
-    "analysis": "Australian clubs buy feather shuttles through importers and retailers. Higher factory costs could reach local buyers as stock is replenished. This is a proposed transmission mechanism, not evidence that the example Australian prices were caused by this report.",
-    "other": "Brand, feather grade, exchange rates, freight, existing stock and retailer margins can also change the price.",
+    "analysis": "Australian players are exposed to changes in international feather supply through importers and retailers. Higher upstream costs can reach local clubs, while freight, exchange rates and the timing of inventory purchases may amplify or delay the effect. The reporting documents cost pressures but does not quantify how much each factor added to the final price.",
     "evidence": "Collect dated Australian prices for the same brand, grade and 12-shuttle tube; interview a club or retailer; verify wholesale price changes.",
-    "chinaAnalysis": "For China, the linked report discusses feather supply and shuttlecock costs directly. Retail effects still depend on brand, feather grade and stock. The plotted values are fictional examples, not prices reported by CNA.",
+    "chinaAnalysis": "Natural feather shuttlecocks require feathers that meet strict specifications. When suitable feathers become harder to obtain and processing costs increase, manufacturers may raise their prices. Those increases can then reach distributors and players. However, brand, grade, inventory and promotions also influence what a customer pays. A price increase for one model should not be presented as the increase for all shuttlecocks.",
     "member": 1,
     "icon": "1f3f8",
     "quotes": {
       "australia": {
-        "price": 52,
-        "unit": "AUD / dozen",
-        "label": "RSL Classic Tourney · Perth Shuttlecocks",
-        "url": "https://perthshuttlecocks.au/shuttlecocks/rsl-classic",
-        "date": "Listing checked 6 Nov 2026",
-        "history": []
+        "price": 70,
+        "unit": "AUD / tube of 12",
+        "label": "Yonex AS-30 · reported range and lower bound",
+        "date": "2026-08-11",
+        "url": "https://www.abc.net.au/news/2026-08-11/bird-flu-unexpected-badminton-shuttlecock-impact/107003336",
+        "history": [],
+        "priceDisplay": ">70"
       },
       "china": {
-        "price": 230,
+        "price": 350,
         "unit": "CNY / tube",
-        "label": "Yonex AS-05 · Beijing dealer quoted by China City News",
+        "label": "Yonex AS-05 · reported prices",
+        "date": "2025-08-01",
         "url": "https://paper.people.com.cn/zgcsb/pc/attachement/202508/25/ffa5b438-3231-489b-9f81-ce43530780dd.pdf",
-        "date": "25 Aug 2025",
         "history": []
       }
+    },
+    "researchViews": {
+      "china": [
+        {
+          "title": "Yonex AS-05 · reported prices",
+          "unit": "CNY / tube",
+          "labels": [
+            "Feb 2024",
+            "Jul 2024",
+            "Aug 2025"
+          ],
+          "values": [
+            210,
+            275,
+            350
+          ],
+          "urls": [
+            "https://www.channelnewsasia.com/east-asia/china-badminton-shuttlecocks-price-hike-feathers-pork-prices-4475371",
+            "https://www.channelnewsasia.com/east-asia/china-badminton-shuttlecocks-price-hike-feathers-pork-prices-4475371",
+            "https://paper.people.com.cn/zgcsb/pc/attachement/202508/25/ffa5b438-3231-489b-9f81-ce43530780dd.pdf"
+          ],
+          "note": "Model-specific reported quotes, not a national average. Sales channels differ. First increase: about 31.0%; 275 to 350: about 27.3%. Intermediate prices were not observed.",
+          "type": "line",
+          "quote": {
+            "price": 350,
+            "unit": "CNY / tube",
+            "label": "Yonex AS-05 · reported prices",
+            "date": "2025-08-01",
+            "url": "https://paper.people.com.cn/zgcsb/pc/attachement/202508/25/ffa5b438-3231-489b-9f81-ce43530780dd.pdf",
+            "history": []
+          }
+        }
+      ],
+      "australia": [
+        {
+          "title": "Yonex AS-30 · reported range and lower bound",
+          "unit": "AUD / tube of 12",
+          "labels": [
+            "About ten years before the interview",
+            "August 2026 interview"
+          ],
+          "values": [
+            null,
+            null
+          ],
+          "urls": [
+            "https://www.abc.net.au/news/2026-08-11/bird-flu-unexpected-badminton-shuttlecock-impact/107003336",
+            "https://www.abc.net.au/news/2026-08-11/bird-flu-unexpected-badminton-shuttlecock-impact/107003336"
+          ],
+          "note": "The earlier AUD 30–35 figure is a recollection with no precise date. The later quote is more than AUD 70, not exactly 70. This is AS-30, not the Chinese AS-05 model.",
+          "type": "range",
+          "quote": {
+            "price": 70,
+            "unit": "AUD / tube of 12",
+            "label": "Yonex AS-30 · reported range and lower bound",
+            "date": "2026-08-11",
+            "url": "https://www.abc.net.au/news/2026-08-11/bird-flu-unexpected-badminton-shuttlecock-impact/107003336",
+            "history": [],
+            "priceDisplay": ">70"
+          }
+        }
+      ]
+    },
+    "regionalNews": {
+      "china": [
+        {
+          "title": "Chinese suppliers raise prices",
+          "summary": "CNA reported that several manufacturers issued price-increase notices as production costs rose. Industry interviewees linked higher prices to the availability and cost of suitable duck and goose feathers. The article also discussed how changes in meat consumption and poultry farming could affect feather supply. These are reported explanations, not a measurement of each factor’s contribution to the price increase.",
+          "url": "https://www.channelnewsasia.com/east-asia/china-badminton-shuttlecocks-price-hike-feathers-pork-prices-4475371"
+        },
+        {
+          "title": "Higher prices reach Chinese retail channels",
+          "summary": "China City News checked price adjustments for AS-05 and other models and confirmed a higher quote at an official online store. This provides evidence that increases reached at least some retail channels. Promotions, older inventory and individual dealers can still produce different prices.",
+          "url": "https://paper.people.com.cn/zgcsb/pc/attachement/202508/25/ffa5b438-3231-489b-9f81-ce43530780dd.pdf"
+        }
+      ],
+      "australia": [
+        {
+          "title": "Australian clubs face higher equipment costs",
+          "summary": "ABC linked feather-supply pressures associated with bird flu to rising shuttlecock costs. Interviews with industry and club representatives described the effect on equipment budgets and participation fees. The report supports a story about cost pressures, but it does not establish a continuous Australian monthly price series.",
+          "url": "https://www.abc.net.au/news/2026-08-11/bird-flu-unexpected-badminton-shuttlecock-impact/107003336"
+        }
+      ]
     }
   },
   {
@@ -45,22 +123,169 @@ window.EDITORIAL_CASES = [
     "icon": "1f969",
     "quotes": {
       "australia": {
-        "price": 7.7,
-        "unit": "AUD / 500 g",
-        "label": "Regular beef mince · Coles special",
-        "url": "https://www.coles.com.au/on-special/meat-seafood?search=beef+mince",
-        "date": "Listing checked 6 Nov 2026",
-        "history": []
+        "price": 6.654,
+        "unit": "AUD / kg carcass weight",
+        "label": "EYCI · upstream cattle indicator",
+        "date": "2025-06-30",
+        "url": "https://www.dpird.nsw.gov.au/about-us/publications/pdi/2025/statistics-tables",
+        "history": [],
+        "originalUnit": "Australian cents / kg carcass weight",
+        "fxNote": "Source Australian cents divided by 100 to display AUD.",
+        "note": " Source Australian cents divided by 100 to display AUD."
       },
       "china": {
-        "price": 73.44,
+        "price": 60.8784,
         "unit": "CNY / kg",
-        "label": "National wholesale beef · Ministry of Agriculture",
-        "url": "https://scs.moa.gov.cn/jcyj/202610/t20261030_6489054.htm",
-        "date": "30 Oct 2026",
+        "label": "China beef wholesale price · quarterly",
+        "date": "2024-10-01",
+        "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
         "history": []
       }
-    }
+    },
+    "researchViews": {
+      "china": [
+        {
+          "title": "China beef wholesale price · quarterly",
+          "unit": "CNY / kg",
+          "labels": [
+            "2024 Q1",
+            "2024 Q2",
+            "2024 Q3",
+            "2024 Q4"
+          ],
+          "values": [
+            69.8495,
+            63.4842,
+            60.8892,
+            60.8784
+          ],
+          "urls": [
+            "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
+            "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
+            "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
+            "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf"
+          ],
+          "note": "Quarterly observations converted from CNY/tonne by dividing by 1,000. Approximately 12.8% lower from Q1 to Q4. Not retail prices; monthly observations are shown separately.",
+          "type": "line",
+          "quote": {
+            "price": 60.8784,
+            "unit": "CNY / kg",
+            "label": "China beef wholesale price · quarterly",
+            "date": "2024-10-01",
+            "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
+            "history": []
+          }
+        },
+        {
+          "title": "China beef wholesale price · monthly",
+          "unit": "CNY / kg",
+          "labels": [
+            "Jan 2025",
+            "Feb 2025"
+          ],
+          "values": [
+            58.4979,
+            57.4374
+          ],
+          "urls": [
+            "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
+            "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf"
+          ],
+          "note": "Two separately reported monthly observations. Do not merge with quarterly averages. Historical observations, not current quotes.",
+          "type": "line",
+          "quote": {
+            "price": 57.4374,
+            "unit": "CNY / kg",
+            "label": "China beef wholesale price · monthly",
+            "date": "2025-02-01",
+            "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250321410515233870.pdf",
+            "history": []
+          }
+        }
+      ],
+      "australia": [
+        {
+          "title": "EYCI · upstream cattle indicator",
+          "unit": "AUD / kg carcass weight",
+          "labels": [
+            "FY 2022–23",
+            "FY 2023–24",
+            "FY 2024–25"
+          ],
+          "values": [
+            8.135,
+            5.525,
+            6.654
+          ],
+          "urls": [
+            "https://www.dpird.nsw.gov.au/about-us/publications/pdi/2025/statistics-tables",
+            "https://www.dpird.nsw.gov.au/about-us/publications/pdi/2025/statistics-tables",
+            "https://www.dpird.nsw.gov.au/about-us/publications/pdi/2025/statistics-tables"
+          ],
+          "note": "Financial-year averages. EYCI is an upstream cattle-market indicator, not supermarket beef. Approximately 20.4% higher in 2024–25 than in 2023–24. Units are cents, not dollars. Source Australian cents divided by 100 to display AUD.",
+          "type": "line",
+          "quote": {
+            "price": 6.654,
+            "unit": "AUD / kg carcass weight",
+            "label": "EYCI · upstream cattle indicator",
+            "date": "2025-06-30",
+            "url": "https://www.dpird.nsw.gov.au/about-us/publications/pdi/2025/statistics-tables",
+            "history": [],
+            "originalUnit": "Australian cents / kg carcass weight",
+            "fxNote": "Source Australian cents divided by 100 to display AUD.",
+            "note": " Source Australian cents divided by 100 to display AUD."
+          },
+          "originalUnit": "Australian cents / kg carcass weight",
+          "fxNote": "Source Australian cents divided by 100 to display AUD."
+        },
+        {
+          "title": "National beef retail price indicator",
+          "unit": "AUD / kg retail weight",
+          "labels": [
+            "2024 annual average"
+          ],
+          "values": [
+            25.66
+          ],
+          "urls": [
+            "https://www.mla.com.au/globalassets/mla-corporate/prices--markets/documents/trends--analysis/soti-report/mla-state-of-the-industry-report-2425-web.pdf"
+          ],
+          "note": "Estimated indicator linked to consumer price indexes; up 0.6% year-on-year. Not a shelf quote for a specific steak or mince product. One annual value cannot establish a trend.",
+          "type": "line",
+          "quote": {
+            "price": 25.66,
+            "unit": "AUD / kg retail weight",
+            "label": "National beef retail price indicator",
+            "date": "2024-01-01",
+            "url": "https://www.mla.com.au/globalassets/mla-corporate/prices--markets/documents/trends--analysis/soti-report/mla-state-of-the-industry-report-2425-web.pdf",
+            "history": []
+          }
+        }
+      ]
+    },
+    "regionalNews": {
+      "china": [
+        {
+          "title": "Chinese beef output increased in 2024",
+          "summary": "On 17 January 2025, China’s National Bureau of Statistics reported beef production of 7.79 million tonnes in 2024, up 3.5% year-on-year. This is official evidence of increased output, but it does not by itself prove that output growth caused the entire decline in wholesale prices.",
+          "url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202501/t20250117_1958344.html"
+        },
+        {
+          "title": "Reports of a Chinese price recovery in spring 2025",
+          "summary": "An April 2025 report discussed a recovery in wholesale beef prices alongside changes in imports and livestock production. It provides context showing that prices did not simply fall without interruption. Daily prices cited in the article should not be appended directly to a quarterly-average series.",
+          "url": "https://union.china.com.cn/kx/txt/2025-04/21/content_43088540.html"
+        }
+      ],
+      "australia": [
+        {
+          "title": "Export demand and drought affect Australian markets",
+          "summary": "ABC reported on 10 May 2025 that Australian beef exports to China and the United States were growing while dry conditions in parts of southern Australia encouraged livestock sales. The report describes additional supply alongside buying demand, rather than a simple one-factor explanation of prices.",
+          "url": "https://www.abc.net.au/news/rural/2025-05-10/australian-beef-exports-surge-china-us-tariffs-trade-war/105272490"
+        }
+      ]
+    },
+    "chinaAnalysis": "When beef supply grows faster than demand, wholesale prices can face downward pressure. The 2024 production and wholesale-price observations are consistent with this mechanism, but imports, inventories, consumer spending and the livestock cycle also matter. Lower wholesale prices do not mean every supermarket or beef cut will become cheaper by the same percentage.",
+    "analysis": "Australian beef prices are influenced by local supply and overseas demand. Drought may encourage producers to sell cattle earlier, increasing short-term supply. At the same time, export processors, feedlots and other producers may support prices through their purchases. More cattle being sold does not therefore guarantee lower prices. Retail prices also include processing, freight and selling costs, so a cattle indicator cannot substitute for supermarket prices."
   },
   {
     "id": "milk",
@@ -179,30 +404,36 @@ window.EDITORIAL_CASES = [
     "icon": "1f455",
     "quotes": {
       "australia": {
-        "price": 3.4570117492814276,
-        "unit": "USD / imported item",
+        "price": 4.910528052956574,
+        "unit": "AUD / imported item",
         "label": "Cotton apparel HS610910 · derived annual import unit value",
         "date": "2025-01-01",
         "url": "https://wits.worldbank.org/trade/comtrade/en/country/AUS/year/2025/tradeflow/Imports/partner/ALL/product/610910",
         "history": [
           [
             "2025-01-01",
-            3.4570117492814276
+            4.910528052956574
           ]
-        ]
+        ],
+        "originalUnit": "USD / imported item",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       },
       "china": {
-        "price": 82.18,
-        "unit": "US cents / lb",
+        "price": 5.472090710227274,
+        "unit": "CNY / lb",
         "label": "Cotton input cost · China import benchmark (not T-shirt retail price)",
         "date": "2025-01-01",
         "url": "https://www.cotlook.com/download/china-cotton-industry-development-summit-forum-chongqing-2026/?wpdmdl=341448&refresh=6aeef01c6fb6e1794043932",
         "history": [
           [
             "2025-01-01",
-            82.18
+            5.472090710227274
           ]
-        ]
+        ],
+        "originalUnit": "US cents / lb",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       }
     },
     "news": [
@@ -229,7 +460,7 @@ window.EDITORIAL_CASES = [
     "docViews": {
       "australia": {
         "title": "Cotton apparel HS610910 · derived annual import unit value",
-        "unit": "USD / imported item",
+        "unit": "AUD / imported item",
         "date": "2025-01-01",
         "url": "https://wits.worldbank.org/trade/comtrade/en/country/AUS/year/2025/tradeflow/Imports/partner/ALL/product/610910",
         "type": "line",
@@ -241,16 +472,18 @@ window.EDITORIAL_CASES = [
           {
             "name": "Import unit value",
             "data": [
-              3.3090863579474346,
-              3.4570117492814276
+              4.700406758448061,
+              4.910528052956574
             ]
           }
         ],
-        "note": "Calculated from rounded document totals: USD 660.99m / 199.75m items (2024); USD 685.56m / 198.31m items (2025). Includes cotton T-shirts, singlets and vests. Not retail prices; product mix can affect the average. Imports from China: USD 246.50m → 267.52m; Bangladesh: USD 213.59m → 209.71m. September 2026 clothing/footwear CPI: −2.7% monthly, +0.4% annual; not T-shirt-specific."
+        "note": "Calculated from rounded document totals: USD 660.99m / 199.75m items (2024); USD 685.56m / 198.31m items (2025). Includes cotton T-shirts, singlets and vests. Not retail prices; product mix can affect the average. Imports from China: USD 246.50m → 267.52m; Bangladesh: USD 213.59m → 209.71m. September 2026 clothing/footwear CPI: −2.7% monthly, +0.4% annual; not T-shirt-specific. Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "originalUnit": "USD / imported item",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       },
       "china": {
         "title": "Cotton input cost · China import benchmark (not T-shirt retail price)",
-        "unit": "US cents / lb",
+        "unit": "CNY / lb",
         "date": "2025-01-01",
         "url": "https://www.cotlook.com/download/china-cotton-industry-development-summit-forum-chongqing-2026/?wpdmdl=341448&refresh=6aeef01c6fb6e1794043932",
         "type": "line",
@@ -262,12 +495,14 @@ window.EDITORIAL_CASES = [
           {
             "name": "Cotton import price",
             "data": [
-              92.34,
-              82.18
+              6.148611051136365,
+              5.472090710227274
             ]
           }
         ],
-        "note": "Annual average imported cotton price from the document. About 11% lower in 2025. This is a raw-material indicator, not a Chinese T-shirt retail price or a comparison of identical garments in China and Australia."
+        "note": "Annual average imported cotton price from the document. About 11% lower in 2025. This is a raw-material indicator, not a Chinese T-shirt retail price or a comparison of identical garments in China and Australia. Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "originalUnit": "US cents / lb",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       }
     }
   },
@@ -353,9806 +588,9812 @@ window.EDITORIAL_CASES = [
     "icon": "1f6e2",
     "quotes": {
       "australia": {
-        "price": 107.03,
-        "unit": "USD / barrel",
+        "price": 152.03125000000003,
+        "unit": "AUD / barrel",
         "label": "Brent spot · EIA via FRED · shared global benchmark",
         "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
         "date": "2026-11-03",
         "history": [
           [
             "2022-01-03",
-            78.25
+            111.1505681818182
           ],
           [
             "2022-01-04",
-            79.39
+            112.76988636363637
           ],
           [
             "2022-01-05",
-            80.6
+            114.48863636363637
           ],
           [
             "2022-01-06",
-            81.99
+            116.46306818181819
           ],
           [
             "2022-01-07",
-            82.28
+            116.87500000000001
           ],
           [
             "2022-01-10",
-            81.56
+            115.85227272727275
           ],
           [
             "2022-01-11",
-            84.98
+            120.7102272727273
           ],
           [
             "2022-01-12",
-            85.83
+            121.91761363636365
           ],
           [
             "2022-01-13",
-            85.8
+            121.87500000000001
           ],
           [
             "2022-01-14",
-            87.17
+            123.82102272727275
           ],
           [
             "2022-01-17",
-            87.82
+            124.74431818181819
           ],
           [
             "2022-01-18",
-            88.83
+            126.17897727272728
           ],
           [
             "2022-01-19",
-            89.64
+            127.32954545454547
           ],
           [
             "2022-01-20",
-            89.75
+            127.48579545454547
           ],
           [
             "2022-01-21",
-            89.75
+            127.48579545454547
           ],
           [
             "2022-01-24",
-            87.74
+            124.63068181818183
           ],
           [
             "2022-01-25",
-            89.49
+            127.11647727272728
           ],
           [
             "2022-01-26",
-            91.22
+            129.57386363636365
           ],
           [
             "2022-01-27",
-            90.7
+            128.83522727272728
           ],
           [
             "2022-01-28",
-            91.47
+            129.92897727272728
           ],
           [
             "2022-01-31",
-            92.35
+            131.17897727272728
           ],
           [
             "2022-02-01",
-            90.24
+            128.1818181818182
           ],
           [
             "2022-02-02",
-            91.43
+            129.87215909090912
           ],
           [
             "2022-02-03",
-            92.99
+            132.0880681818182
           ],
           [
             "2022-02-04",
-            96.86
+            137.58522727272728
           ],
           [
             "2022-02-07",
-            97.28
+            138.1818181818182
           ],
           [
             "2022-02-08",
-            96.07
+            136.4630681818182
           ],
           [
             "2022-02-09",
-            94.95
+            134.87215909090912
           ],
           [
             "2022-02-10",
-            96.37
+            136.88920454545456
           ],
           [
             "2022-02-11",
-            97.5
+            138.4943181818182
           ],
           [
             "2022-02-14",
-            101.66
+            144.4034090909091
           ],
           [
             "2022-02-15",
-            98.43
+            139.81534090909093
           ],
           [
             "2022-02-16",
-            97.44
+            138.40909090909093
           ],
           [
             "2022-02-17",
-            95.28
+            135.34090909090912
           ],
           [
             "2022-02-18",
-            96.18
+            136.61931818181822
           ],
           [
             "2022-02-21",
-            98.95
+            140.5539772727273
           ],
           [
             "2022-02-22",
-            98.73
+            140.2414772727273
           ],
           [
             "2022-02-23",
-            99.29
+            141.03693181818184
           ],
           [
             "2022-02-24",
-            101.29
+            143.87784090909093
           ],
           [
             "2022-02-25",
-            98.56
+            140.00000000000003
           ],
           [
             "2022-02-28",
-            103.08
+            146.42045454545456
           ],
           [
             "2022-03-01",
-            110.93
+            157.57102272727275
           ],
           [
             "2022-03-02",
-            118.94
+            168.94886363636365
           ],
           [
             "2022-03-03",
-            115.36
+            163.86363636363637
           ],
           [
             "2022-03-04",
-            123.86
+            175.93750000000003
           ],
           [
             "2022-03-07",
-            129.02
+            183.2670454545455
           ],
           [
             "2022-03-08",
-            133.18
+            189.1761363636364
           ],
           [
             "2022-03-09",
-            116.58
+            165.59659090909093
           ],
           [
             "2022-03-10",
-            114.54
+            162.69886363636365
           ],
           [
             "2022-03-11",
-            118.11
+            167.76988636363637
           ],
           [
             "2022-03-14",
-            110.39
+            156.80397727272728
           ],
           [
             "2022-03-15",
-            105.14
+            149.34659090909093
           ],
           [
             "2022-03-16",
-            104.61
+            148.59375000000003
           ],
           [
             "2022-03-17",
-            113.5
+            161.22159090909093
           ],
           [
             "2022-03-18",
-            114.32
+            162.38636363636365
           ],
           [
             "2022-03-21",
-            122.29
+            173.7073863636364
           ],
           [
             "2022-03-22",
-            121.53
+            172.62784090909093
           ],
           [
             "2022-03-23",
-            127.52
+            181.13636363636365
           ],
           [
             "2022-03-24",
-            123.98
+            176.10795454545456
           ],
           [
             "2022-03-25",
-            122.67
+            174.24715909090912
           ],
           [
             "2022-03-28",
-            114.5
+            162.64204545454547
           ],
           [
             "2022-03-29",
-            112.79
+            160.21306818181822
           ],
           [
             "2022-03-30",
-            115.59
+            164.19034090909093
           ],
           [
             "2022-03-31",
-            107.29
+            152.40056818181822
           ],
           [
             "2022-04-01",
-            106.13
+            150.75284090909093
           ],
           [
             "2022-04-04",
-            108.15
+            153.62215909090912
           ],
           [
             "2022-04-05",
-            106.6
+            151.42045454545456
           ],
           [
             "2022-04-06",
-            100.81
+            143.19602272727275
           ],
           [
             "2022-04-07",
-            99.83
+            141.80397727272728
           ],
           [
             "2022-04-08",
-            101.26
+            143.8352272727273
           ],
           [
             "2022-04-11",
-            97.92
+            139.09090909090912
           ],
           [
             "2022-04-12",
-            104.42
+            148.32386363636365
           ],
           [
             "2022-04-13",
-            108.49
+            154.10511363636365
           ],
           [
             "2022-04-14",
-            110.83
+            157.42897727272728
           ],
           [
             "2022-04-19",
-            105.49
+            149.84375
           ],
           [
             "2022-04-20",
-            105.05
+            149.21875000000003
           ],
           [
             "2022-04-21",
-            107.2
+            152.2727272727273
           ],
           [
             "2022-04-22",
-            105.15
+            149.3607954545455
           ],
           [
             "2022-04-25",
-            99.27
+            141.00852272727275
           ],
           [
             "2022-04-26",
-            102.89
+            146.15056818181822
           ],
           [
             "2022-04-27",
-            103.3
+            146.73295454545456
           ],
           [
             "2022-04-28",
-            105.78
+            150.25568181818184
           ],
           [
             "2022-04-29",
-            108.36
+            153.92045454545456
           ],
           [
             "2022-05-03",
-            104.94
+            149.06250000000003
           ],
           [
             "2022-05-04",
-            110.53
+            157.00284090909093
           ],
           [
             "2022-05-05",
-            112.11
+            159.24715909090912
           ],
           [
             "2022-05-06",
-            113.86
+            161.73295454545456
           ],
           [
             "2022-05-09",
-            106.67
+            151.51988636363637
           ],
           [
             "2022-05-10",
-            102.61
+            145.75284090909093
           ],
           [
             "2022-05-11",
-            107.7
+            152.98295454545456
           ],
           [
             "2022-05-12",
-            108.06
+            153.49431818181822
           ],
           [
             "2022-05-13",
-            112.12
+            159.26136363636365
           ],
           [
             "2022-05-16",
-            114.86
+            163.15340909090912
           ],
           [
             "2022-05-17",
-            112.89
+            160.35511363636365
           ],
           [
             "2022-05-18",
-            110.04
+            156.30681818181822
           ],
           [
             "2022-05-19",
-            113.22
+            160.82386363636365
           ],
           [
             "2022-05-20",
-            113.63
+            161.40625
           ],
           [
             "2022-05-23",
-            115.13
+            163.53693181818184
           ],
           [
             "2022-05-24",
-            115.77
+            164.44602272727275
           ],
           [
             "2022-05-25",
-            116.41
+            165.35511363636365
           ],
           [
             "2022-05-26",
-            119.81
+            170.18465909090912
           ],
           [
             "2022-05-27",
-            121.19
+            172.14488636363637
           ],
           [
             "2022-05-30",
-            123.01
+            174.73011363636365
           ],
           [
             "2022-05-31",
-            125.53
+            178.30965909090912
           ],
           [
             "2022-06-01",
-            122.2
+            173.57954545454547
           ],
           [
             "2022-06-03",
-            125.68
+            178.5227272727273
           ],
           [
             "2022-06-06",
-            124.99
+            177.54261363636365
           ],
           [
             "2022-06-07",
-            126.89
+            180.2414772727273
           ],
           [
             "2022-06-08",
-            129.2
+            183.52272727272728
           ],
           [
             "2022-06-09",
-            128.47
+            182.48579545454547
           ],
           [
             "2022-06-10",
-            127.44
+            181.02272727272728
           ],
           [
             "2022-06-13",
-            128.44
+            182.44318181818184
           ],
           [
             "2022-06-14",
-            127.02
+            180.42613636363637
           ],
           [
             "2022-06-15",
-            124.96
+            177.5
           ],
           [
             "2022-06-16",
-            125.78
+            178.66477272727275
           ],
           [
             "2022-06-17",
-            119.22
+            169.34659090909093
           ],
           [
             "2022-06-20",
-            118.25
+            167.96875000000003
           ],
           [
             "2022-06-21",
-            118.51
+            168.33806818181822
           ],
           [
             "2022-06-22",
-            115.54
+            164.11931818181822
           ],
           [
             "2022-06-23",
-            114.5
+            162.64204545454547
           ],
           [
             "2022-06-24",
-            117.36
+            166.70454545454547
           ],
           [
             "2022-06-27",
-            119.69
+            170.01420454545456
           ],
           [
             "2022-06-28",
-            122.21
+            173.59375
           ],
           [
             "2022-06-29",
-            120.8
+            171.59090909090912
           ],
           [
             "2022-06-30",
-            119.78
+            170.14204545454547
           ],
           [
             "2022-07-01",
-            119.21
+            169.33238636363637
           ],
           [
             "2022-07-04",
-            121.8
+            173.01136363636365
           ],
           [
             "2022-07-05",
-            110.49
+            156.94602272727275
           ],
           [
             "2022-07-06",
-            108.54
+            154.1761363636364
           ],
           [
             "2022-07-07",
-            113.4
+            161.0795454545455
           ],
           [
             "2022-07-08",
-            113.95
+            161.86079545454547
           ],
           [
             "2022-07-11",
-            114.85
+            163.13920454545456
           ],
           [
             "2022-07-12",
-            106.98
+            151.9602272727273
           ],
           [
             "2022-07-13",
-            107.17
+            152.23011363636365
           ],
           [
             "2022-07-14",
-            107.74
+            153.03977272727275
           ],
           [
             "2022-07-15",
-            112.26
+            159.4602272727273
           ],
           [
             "2022-07-18",
-            117.27
+            166.57670454545456
           ],
           [
             "2022-07-19",
-            114.96
+            163.29545454545456
           ],
           [
             "2022-07-20",
-            115.86
+            164.57386363636365
           ],
           [
             "2022-07-21",
-            112.81
+            160.2414772727273
           ],
           [
             "2022-07-22",
-            106.77
+            151.66193181818184
           ],
           [
             "2022-07-25",
-            108.23
+            153.73579545454547
           ],
           [
             "2022-07-26",
-            107.32
+            152.44318181818184
           ],
           [
             "2022-07-27",
-            109.64
+            155.73863636363637
           ],
           [
             "2022-07-28",
-            109.68
+            155.79545454545456
           ],
           [
             "2022-07-29",
-            111.51
+            158.3948863636364
           ],
           [
             "2022-08-01",
-            106.09
+            150.69602272727275
           ],
           [
             "2022-08-02",
-            106.51
+            151.29261363636365
           ],
           [
             "2022-08-03",
-            101.82
+            144.6306818181818
           ],
           [
             "2022-08-04",
-            97.99
+            139.1903409090909
           ],
           [
             "2022-08-05",
-            100.31
+            142.48579545454547
           ],
           [
             "2022-08-08",
-            103.46
+            146.96022727272728
           ],
           [
             "2022-08-09",
-            103.81
+            147.45738636363637
           ],
           [
             "2022-08-10",
-            105.06
+            149.23295454545456
           ],
           [
             "2022-08-11",
-            107.19
+            152.25852272727275
           ],
           [
             "2022-08-12",
-            103.7
+            147.30113636363637
           ],
           [
             "2022-08-15",
-            98.25
+            139.55965909090912
           ],
           [
             "2022-08-16",
-            95.36
+            135.45454545454547
           ],
           [
             "2022-08-17",
-            97.22
+            138.09659090909093
           ],
           [
             "2022-08-18",
-            96.35
+            136.86079545454547
           ],
           [
             "2022-08-19",
-            96.45
+            137.00284090909093
           ],
           [
             "2022-08-22",
-            95.06
+            135.02840909090912
           ],
           [
             "2022-08-23",
-            99.49
+            141.32102272727275
           ],
           [
             "2022-08-24",
-            99.87
+            141.86079545454547
           ],
           [
             "2022-08-25",
-            98.81
+            140.35511363636365
           ],
           [
             "2022-08-26",
-            101.13
+            143.6505681818182
           ],
           [
             "2022-08-30",
-            99.34
+            141.10795454545456
           ],
           [
             "2022-08-31",
-            96.55
+            137.14488636363637
           ],
           [
             "2022-09-01",
-            92.24
+            131.02272727272728
           ],
           [
             "2022-09-02",
-            93.09
+            132.23011363636365
           ],
           [
             "2022-09-05",
-            94.22
+            133.83522727272728
           ],
           [
             "2022-09-06",
-            91.43
+            129.87215909090912
           ],
           [
             "2022-09-07",
-            86.83
+            123.3380681818182
           ],
           [
             "2022-09-08",
-            87.99
+            124.98579545454547
           ],
           [
             "2022-09-09",
-            91.68
+            130.22727272727275
           ],
           [
             "2022-09-12",
-            93.45
+            132.74147727272728
           ],
           [
             "2022-09-13",
-            92.04
+            130.7386363636364
           ],
           [
             "2022-09-14",
-            92.83
+            131.86079545454547
           ],
           [
             "2022-09-15",
-            89.28
+            126.81818181818184
           ],
           [
             "2022-09-16",
-            89.43
+            127.03125000000003
           ],
           [
             "2022-09-20",
-            89.62
+            127.30113636363639
           ],
           [
             "2022-09-21",
-            89.86
+            127.64204545454547
           ],
           [
             "2022-09-22",
-            90.4
+            128.40909090909093
           ],
           [
             "2022-09-23",
-            84.29
+            119.73011363636365
           ],
           [
             "2022-09-26",
-            82.55
+            117.25852272727273
           ],
           [
             "2022-09-27",
-            85.97
+            122.11647727272728
           ],
           [
             "2022-09-28",
-            89.55
+            127.20170454545456
           ],
           [
             "2022-09-29",
-            89.41
+            127.00284090909092
           ],
           [
             "2022-09-30",
-            88.9
+            126.27840909090912
           ],
           [
             "2022-10-03",
-            90.68
+            128.80681818181822
           ],
           [
             "2022-10-04",
-            93.74
+            133.1534090909091
           ],
           [
             "2022-10-05",
-            94.35
+            134.01988636363637
           ],
           [
             "2022-10-06",
-            95.65
+            135.8664772727273
           ],
           [
             "2022-10-07",
-            98.88
+            140.45454545454547
           ],
           [
             "2022-10-10",
-            97.13
+            137.96875
           ],
           [
             "2022-10-11",
-            95.17
+            135.18465909090912
           ],
           [
             "2022-10-12",
-            93.44
+            132.72727272727275
           ],
           [
             "2022-10-13",
-            95.16
+            135.17045454545456
           ],
           [
             "2022-10-14",
-            92.22
+            130.9943181818182
           ],
           [
             "2022-10-17",
-            91.04
+            129.31818181818184
           ],
           [
             "2022-10-18",
-            89.46
+            127.07386363636364
           ],
           [
             "2022-10-19",
-            91.34
+            129.74431818181822
           ],
           [
             "2022-10-20",
-            91.52
+            130
           ],
           [
             "2022-10-21",
-            91.82
+            130.42613636363637
           ],
           [
             "2022-10-24",
-            91.57
+            130.07102272727275
           ],
           [
             "2022-10-25",
-            91.76
+            130.34090909090912
           ],
           [
             "2022-10-26",
-            92.93
+            132.00284090909093
           ],
           [
             "2022-10-27",
-            94.17
+            133.76420454545456
           ],
           [
             "2022-10-28",
-            94.64
+            134.4318181818182
           ],
           [
             "2022-10-31",
-            93.3
+            132.5284090909091
           ],
           [
             "2022-11-01",
-            95.12
+            135.11363636363637
           ],
           [
             "2022-11-02",
-            96.07
+            136.4630681818182
           ],
           [
             "2022-11-03",
-            95.29
+            135.35511363636365
           ],
           [
             "2022-11-04",
-            99.53
+            141.37784090909093
           ],
           [
             "2022-11-07",
-            99.87
+            141.86079545454547
           ],
           [
             "2022-11-08",
-            96.85
+            137.57102272727275
           ],
           [
             "2022-11-09",
-            93.05
+            132.17329545454547
           ],
           [
             "2022-11-10",
-            94.25
+            133.87784090909093
           ],
           [
             "2022-11-11",
-            96.37
+            136.88920454545456
           ],
           [
             "2022-11-14",
-            93.59
+            132.94034090909093
           ],
           [
             "2022-11-15",
-            94.3
+            133.94886363636365
           ],
           [
             "2022-11-16",
-            92.61
+            131.54829545454547
           ],
           [
             "2022-11-17",
-            91
+            129.26136363636365
           ],
           [
             "2022-11-18",
-            88.93
+            126.32102272727275
           ],
           [
             "2022-11-21",
-            88.44
+            125.62500000000001
           ],
           [
             "2022-11-22",
-            88.65
+            125.92329545454548
           ],
           [
             "2022-11-23",
-            85.9
+            122.01704545454548
           ],
           [
             "2022-11-24",
-            85.59
+            121.57670454545456
           ],
           [
             "2022-11-25",
-            83.4
+            118.46590909090911
           ],
           [
             "2022-11-28",
-            83.5
+            118.60795454545456
           ],
           [
             "2022-11-29",
-            83.22
+            118.21022727272728
           ],
           [
             "2022-11-30",
-            85.61
+            121.60511363636365
           ],
           [
             "2022-12-01",
-            86.28
+            122.5568181818182
           ],
           [
             "2022-12-02",
-            86.54
+            122.92613636363639
           ],
           [
             "2022-12-05",
-            83.36
+            118.40909090909092
           ],
           [
             "2022-12-06",
-            79.92
+            113.5227272727273
           ],
           [
             "2022-12-07",
-            77.11
+            109.53125000000001
           ],
           [
             "2022-12-08",
-            76.02
+            107.98295454545455
           ],
           [
             "2022-12-09",
-            76.37
+            108.48011363636365
           ],
           [
             "2022-12-12",
-            78
+            110.79545454545456
           ],
           [
             "2022-12-13",
-            80.14
+            113.8352272727273
           ],
           [
             "2022-12-14",
-            83.33
+            118.36647727272728
           ],
           [
             "2022-12-15",
-            82.34
+            116.9602272727273
           ],
           [
             "2022-12-16",
-            80.2
+            113.92045454545456
           ],
           [
             "2022-12-19",
-            81.66
+            115.99431818181819
           ],
           [
             "2022-12-20",
-            79.45
+            112.85511363636365
           ],
           [
             "2022-12-21",
-            80.25
+            113.99147727272728
           ],
           [
             "2022-12-22",
-            79.58
+            113.03977272727273
           ],
           [
             "2022-12-23",
-            82.45
+            117.1164772727273
           ],
           [
             "2022-12-28",
-            81.7
+            116.05113636363639
           ],
           [
             "2022-12-29",
-            80.96
+            115
           ],
           [
             "2022-12-30",
-            82.82
+            117.64204545454545
           ],
           [
             "2023-01-03",
-            80.36
+            114.14772727272728
           ],
           [
             "2023-01-04",
-            75.31
+            106.97443181818184
           ],
           [
             "2023-01-05",
-            76.73
+            108.9914772727273
           ],
           [
             "2023-01-06",
-            76.41
+            108.53693181818183
           ],
           [
             "2023-01-09",
-            77.5
+            110.08522727272728
           ],
           [
             "2023-01-10",
-            78.4
+            111.36363636363639
           ],
           [
             "2023-01-11",
-            81.11
+            115.2130681818182
           ],
           [
             "2023-01-12",
-            82.59
+            117.31534090909093
           ],
           [
             "2023-01-13",
-            83.43
+            118.50852272727275
           ],
           [
             "2023-01-16",
-            82.65
+            117.4005681818182
           ],
           [
             "2023-01-17",
-            84.38
+            119.85795454545456
           ],
           [
             "2023-01-18",
-            83.78
+            119.00568181818184
           ],
           [
             "2023-01-19",
-            85.08
+            120.85227272727273
           ],
           [
             "2023-01-20",
-            86.96
+            123.52272727272728
           ],
           [
             "2023-01-23",
-            87.54
+            124.34659090909093
           ],
           [
             "2023-01-24",
-            85.25
+            121.09375000000001
           ],
           [
             "2023-01-25",
-            85.08
+            120.85227272727273
           ],
           [
             "2023-01-26",
-            86.29
+            122.57102272727275
           ],
           [
             "2023-01-27",
-            85.36
+            121.25000000000001
           ],
           [
             "2023-01-30",
-            84.9
+            120.59659090909093
           ],
           [
             "2023-01-31",
-            83.42
+            118.4943181818182
           ],
           [
             "2023-02-01",
-            81.61
+            115.92329545454547
           ],
           [
             "2023-02-02",
-            80.57
+            114.44602272727273
           ],
           [
             "2023-02-03",
-            78.85
+            112.00284090909092
           ],
           [
             "2023-02-06",
-            80.48
+            114.31818181818184
           ],
           [
             "2023-02-07",
-            82.92
+            117.78409090909092
           ],
           [
             "2023-02-08",
-            84.17
+            119.55965909090911
           ],
           [
             "2023-02-09",
-            83.46
+            118.55113636363637
           ],
           [
             "2023-02-10",
-            85.46
+            121.39204545454547
           ],
           [
             "2023-02-13",
-            85.98
+            122.13068181818184
           ],
           [
             "2023-02-14",
-            84.96
+            120.68181818181819
           ],
           [
             "2023-02-15",
-            84.11
+            119.47443181818183
           ],
           [
             "2023-02-16",
-            83.84
+            119.09090909090911
           ],
           [
             "2023-02-17",
-            81.97
+            116.43465909090911
           ],
           [
             "2023-02-20",
-            82.79
+            117.59943181818184
           ],
           [
             "2023-02-21",
-            82.14
+            116.67613636363637
           ],
           [
             "2023-02-22",
-            79.55
+            112.99715909090911
           ],
           [
             "2023-02-23",
-            82.08
+            116.59090909090911
           ],
           [
             "2023-02-24",
-            82.31
+            116.91761363636365
           ],
           [
             "2023-02-27",
-            81.24
+            115.39772727272728
           ],
           [
             "2023-02-28",
-            83.21
+            118.19602272727273
           ],
           [
             "2023-03-01",
-            83.68
+            118.86363636363639
           ],
           [
             "2023-03-02",
-            84.15
+            119.53125000000003
           ],
           [
             "2023-03-03",
-            85.74
+            121.78977272727273
           ],
           [
             "2023-03-06",
-            85.86
+            121.96022727272728
           ],
           [
             "2023-03-07",
-            83.03
+            117.94034090909092
           ],
           [
             "2023-03-08",
-            82.1
+            116.61931818181819
           ],
           [
             "2023-03-09",
-            81
+            115.0568181818182
           ],
           [
             "2023-03-10",
-            82.3
+            116.90340909090911
           ],
           [
             "2023-03-13",
-            79.67
+            113.16761363636365
           ],
           [
             "2023-03-14",
-            76.77
+            109.04829545454547
           ],
           [
             "2023-03-15",
-            74.3
+            105.53977272727273
           ],
           [
             "2023-03-16",
-            73.12
+            103.86363636363639
           ],
           [
             "2023-03-17",
-            71.03
+            100.89488636363637
           ],
           [
             "2023-03-20",
-            72.42
+            102.8693181818182
           ],
           [
             "2023-03-21",
-            74.78
+            106.22159090909092
           ],
           [
             "2023-03-22",
-            76.08
+            108.06818181818183
           ],
           [
             "2023-03-23",
-            74.31
+            105.5539772727273
           ],
           [
             "2023-03-24",
-            73.63
+            104.58806818181819
           ],
           [
             "2023-03-27",
-            76.8
+            109.09090909090911
           ],
           [
             "2023-03-28",
-            78.07
+            110.89488636363637
           ],
           [
             "2023-03-29",
-            77.51
+            110.09943181818184
           ],
           [
             "2023-03-30",
-            78.45
+            111.43465909090911
           ],
           [
             "2023-03-31",
-            79.19
+            112.48579545454547
           ],
           [
             "2023-04-03",
-            85.81
+            121.88920454545456
           ],
           [
             "2023-04-04",
-            85.7
+            121.73295454545456
           ],
           [
             "2023-04-05",
-            85.89
+            122.00284090909092
           ],
           [
             "2023-04-06",
-            86.56
+            122.95454545454547
           ],
           [
             "2023-04-11",
-            87.32
+            124.03409090909092
           ],
           [
             "2023-04-12",
-            88.31
+            125.44034090909093
           ],
           [
             "2023-04-13",
-            86.51
+            122.88352272727275
           ],
           [
             "2023-04-14",
-            87.31
+            124.01988636363639
           ],
           [
             "2023-04-17",
-            85.63
+            121.63352272727273
           ],
           [
             "2023-04-18",
-            85.48
+            121.42045454545456
           ],
           [
             "2023-04-19",
-            85.34
+            121.22159090909093
           ],
           [
             "2023-04-20",
-            83.29
+            118.30965909090912
           ],
           [
             "2023-04-21",
-            83.36
+            118.40909090909092
           ],
           [
             "2023-04-24",
-            84.23
+            119.64488636363639
           ],
           [
             "2023-04-25",
-            82.13
+            116.66193181818183
           ],
           [
             "2023-04-26",
-            79.19
+            112.48579545454547
           ],
           [
             "2023-04-27",
-            80.11
+            113.79261363636365
           ],
           [
             "2023-04-28",
-            81.32
+            115.51136363636364
           ],
           [
             "2023-05-02",
-            76.71
+            108.96306818181819
           ],
           [
             "2023-05-03",
-            72.91
+            103.56534090909092
           ],
           [
             "2023-05-04",
-            73
+            103.69318181818183
           ],
           [
             "2023-05-05",
-            75.85
+            107.74147727272728
           ],
           [
             "2023-05-09",
-            77.76
+            110.45454545454548
           ],
           [
             "2023-05-10",
-            76.7
+            108.94886363636365
           ],
           [
             "2023-05-11",
-            75.32
+            106.98863636363637
           ],
           [
             "2023-05-12",
-            74.54
+            105.88068181818184
           ],
           [
             "2023-05-15",
-            75.46
+            107.1875
           ],
           [
             "2023-05-16",
-            75.15
+            106.74715909090911
           ],
           [
             "2023-05-17",
-            76.98
+            109.34659090909093
           ],
           [
             "2023-05-18",
-            75.75
+            107.59943181818183
           ],
           [
             "2023-05-19",
-            75.42
+            107.13068181818183
           ],
           [
             "2023-05-22",
-            75.77
+            107.62784090909092
           ],
           [
             "2023-05-23",
-            76.66
+            108.89204545454547
           ],
           [
             "2023-05-24",
-            77.99
+            110.78125
           ],
           [
             "2023-05-25",
-            75.66
+            107.47159090909092
           ],
           [
             "2023-05-26",
-            76.33
+            108.42329545454547
           ],
           [
             "2023-05-30",
-            73.38
+            104.23295454545455
           ],
           [
             "2023-05-31",
-            71.98
+            102.2443181818182
           ],
           [
             "2023-06-01",
-            74.18
+            105.3693181818182
           ],
           [
             "2023-06-02",
-            76
+            107.95454545454547
           ],
           [
             "2023-06-05",
-            76.61
+            108.82102272727273
           ],
           [
             "2023-06-06",
-            76.22
+            108.26704545454547
           ],
           [
             "2023-06-07",
-            76.85
+            109.16193181818183
           ],
           [
             "2023-06-08",
-            75.88
+            107.78409090909092
           ],
           [
             "2023-06-09",
-            74.74
+            106.16477272727273
           ],
           [
             "2023-06-12",
-            71.8
+            101.98863636363637
           ],
           [
             "2023-06-13",
-            74.24
+            105.45454545454547
           ],
           [
             "2023-06-14",
-            73.39
+            104.24715909090911
           ],
           [
             "2023-06-15",
-            75.75
+            107.59943181818183
           ],
           [
             "2023-06-16",
-            76.76
+            109.03409090909093
           ],
           [
             "2023-06-19",
-            76.09
+            108.08238636363639
           ],
           [
             "2023-06-20",
-            75.79
+            107.65625000000003
           ],
           [
             "2023-06-21",
-            76.92
+            109.26136363636365
           ],
           [
             "2023-06-22",
-            73.93
+            105.01420454545458
           ],
           [
             "2023-06-23",
-            73.56
+            104.48863636363637
           ],
           [
             "2023-06-26",
-            73.86
+            104.91477272727273
           ],
           [
             "2023-06-27",
-            71.88
+            102.10227272727273
           ],
           [
             "2023-06-28",
-            73.64
+            104.60227272727275
           ],
           [
             "2023-06-29",
-            73.86
+            104.91477272727273
           ],
           [
             "2023-06-30",
-            74.51
+            105.8380681818182
           ],
           [
             "2023-07-03",
-            74.52
+            105.85227272727273
           ],
           [
             "2023-07-04",
-            76.23
+            108.28125000000001
           ],
           [
             "2023-07-05",
-            76.74
+            109.00568181818183
           ],
           [
             "2023-07-06",
-            76.72
+            108.97727272727273
           ],
           [
             "2023-07-07",
-            78.77
+            111.88920454545456
           ],
           [
             "2023-07-10",
-            77.83
+            110.55397727272728
           ],
           [
             "2023-07-11",
-            79.54
+            112.98295454545458
           ],
           [
             "2023-07-12",
-            80.35
+            114.13352272727273
           ],
           [
             "2023-07-13",
-            81.31
+            115.49715909090911
           ],
           [
             "2023-07-14",
-            79.9
+            113.4943181818182
           ],
           [
             "2023-07-17",
-            77.8
+            110.51136363636364
           ],
           [
             "2023-07-18",
-            79.54
+            112.98295454545458
           ],
           [
             "2023-07-19",
-            79.38
+            112.75568181818183
           ],
           [
             "2023-07-20",
-            79.62
+            113.09659090909093
           ],
           [
             "2023-07-21",
-            81.06
+            115.14204545454547
           ],
           [
             "2023-07-24",
-            82.53
+            117.23011363636365
           ],
           [
             "2023-07-25",
-            83.46
+            118.55113636363637
           ],
           [
             "2023-07-26",
-            82.98
+            117.8693181818182
           ],
           [
             "2023-07-27",
-            84.28
+            119.71590909090911
           ],
           [
             "2023-07-28",
-            84.49
+            120.01420454545455
           ],
           [
             "2023-07-31",
-            85.22
+            121.05113636363637
           ],
           [
             "2023-08-01",
-            85.34
+            121.22159090909093
           ],
           [
             "2023-08-02",
-            84.01
+            119.33238636363639
           ],
           [
             "2023-08-03",
-            86.19
+            122.42897727272728
           ],
           [
             "2023-08-04",
-            87.38
+            124.11931818181819
           ],
           [
             "2023-08-07",
-            86.47
+            122.82670454545456
           ],
           [
             "2023-08-08",
-            88
+            125.00000000000001
           ],
           [
             "2023-08-09",
-            89.31
+            126.86079545454547
           ],
           [
             "2023-08-10",
-            87.44
+            124.20454545454547
           ],
           [
             "2023-08-11",
-            87.93
+            124.9005681818182
           ],
           [
             "2023-08-14",
-            87.4
+            124.1477272727273
           ],
           [
             "2023-08-15",
-            86.28
+            122.5568181818182
           ],
           [
             "2023-08-16",
-            84.49
+            120.01420454545455
           ],
           [
             "2023-08-17",
-            85.24
+            121.07954545454547
           ],
           [
             "2023-08-18",
-            85.92
+            122.04545454545456
           ],
           [
             "2023-08-21",
-            85.44
+            121.36363636363637
           ],
           [
             "2023-08-22",
-            84.7
+            120.31250000000001
           ],
           [
             "2023-08-23",
-            83.94
+            119.23295454545456
           ],
           [
             "2023-08-24",
-            84.07
+            119.41761363636364
           ],
           [
             "2023-08-25",
-            85.42
+            121.3352272727273
           ],
           [
             "2023-08-29",
-            86.37
+            122.68465909090911
           ],
           [
             "2023-08-30",
-            86.62
+            123.03977272727275
           ],
           [
             "2023-08-31",
-            87.29
+            123.9914772727273
           ],
           [
             "2023-09-01",
-            89.98
+            127.81250000000003
           ],
           [
             "2023-09-04",
-            90.42
+            128.43750000000003
           ],
           [
             "2023-09-05",
-            91.25
+            129.61647727272728
           ],
           [
             "2023-09-06",
-            91.79
+            130.38352272727275
           ],
           [
             "2023-09-07",
-            91.16
+            129.48863636363637
           ],
           [
             "2023-09-08",
-            91.85
+            130.46875
           ],
           [
             "2023-09-11",
-            91.97
+            130.63920454545456
           ],
           [
             "2023-09-12",
-            93.58
+            132.92613636363637
           ],
           [
             "2023-09-13",
-            93.04
+            132.15909090909093
           ],
           [
             "2023-09-14",
-            95.2
+            135.22727272727275
           ],
           [
             "2023-09-15",
-            95.55
+            135.72443181818184
           ],
           [
             "2023-09-18",
-            95.95
+            136.29261363636365
           ],
           [
             "2023-09-19",
-            96.11
+            136.51988636363637
           ],
           [
             "2023-09-20",
-            94.56
+            134.31818181818184
           ],
           [
             "2023-09-21",
-            93.7
+            133.09659090909093
           ],
           [
             "2023-09-22",
-            93.99
+            133.50852272727275
           ],
           [
             "2023-09-25",
-            94.01
+            133.53693181818184
           ],
           [
             "2023-09-26",
-            94.46
+            134.17613636363637
           ],
           [
             "2023-09-27",
-            97.1
+            137.92613636363637
           ],
           [
             "2023-09-28",
-            96.64
+            137.27272727272728
           ],
           [
             "2023-09-29",
-            95.86
+            136.16477272727275
           ],
           [
             "2023-10-02",
-            91.21
+            129.5596590909091
           ],
           [
             "2023-10-03",
-            94.46
+            134.17613636363637
           ],
           [
             "2023-10-04",
-            89.83
+            127.59943181818183
           ],
           [
             "2023-10-05",
-            88.28
+            125.3977272727273
           ],
           [
             "2023-10-06",
-            87.86
+            124.80113636363637
           ],
           [
             "2023-10-09",
-            91.37
+            129.78693181818184
           ],
           [
             "2023-10-10",
-            90.7
+            128.83522727272728
           ],
           [
             "2023-10-11",
-            87.58
+            124.40340909090911
           ],
           [
             "2023-10-12",
-            88.4
+            125.56818181818184
           ],
           [
             "2023-10-13",
-            94.33
+            133.99147727272728
           ],
           [
             "2023-10-16",
-            90.99
+            129.2471590909091
           ],
           [
             "2023-10-17",
-            92.52
+            131.42045454545456
           ],
           [
             "2023-10-18",
-            91.99
+            130.66761363636365
           ],
           [
             "2023-10-19",
-            93.12
+            132.2727272727273
           ],
           [
             "2023-10-20",
-            93.72
+            133.12500000000003
           ],
           [
             "2023-10-23",
-            91.88
+            130.51136363636365
           ],
           [
             "2023-10-24",
-            88
+            125.00000000000001
           ],
           [
             "2023-10-25",
-            90.14
+            128.03977272727275
           ],
           [
             "2023-10-26",
-            88.45
+            125.63920454545456
           ],
           [
             "2023-10-27",
-            90.73
+            128.87784090909093
           ],
           [
             "2023-10-30",
-            90.73
+            128.87784090909093
           ],
           [
             "2023-10-31",
-            86.82
+            123.32386363636364
           ],
           [
             "2023-11-01",
-            86.92
+            123.46590909090911
           ],
           [
             "2023-11-02",
-            89.02
+            126.44886363636364
           ],
           [
             "2023-11-03",
-            87.55
+            124.36079545454547
           ],
           [
             "2023-11-06",
-            87.31
+            124.01988636363639
           ],
           [
             "2023-11-07",
-            83.43
+            118.50852272727275
           ],
           [
             "2023-11-08",
-            81.46
+            115.71022727272728
           ],
           [
             "2023-11-09",
-            81.74
+            116.10795454545455
           ],
           [
             "2023-11-10",
-            83.66
+            118.83522727272728
           ],
           [
             "2023-11-13",
-            84.09
+            119.44602272727275
           ],
           [
             "2023-11-14",
-            84.2
+            119.60227272727275
           ],
           [
             "2023-11-15",
-            82.4
+            117.04545454545458
           ],
           [
             "2023-11-16",
-            77.73
+            110.41193181818184
           ],
           [
             "2023-11-17",
-            81.22
+            115.3693181818182
           ],
           [
             "2023-11-20",
-            83.25
+            118.25284090909092
           ],
           [
             "2023-11-21",
-            82.42
+            117.07386363636365
           ],
           [
             "2023-11-22",
-            81.76
+            116.13636363636365
           ],
           [
             "2023-11-23",
-            80.85
+            114.84375
           ],
           [
             "2023-11-24",
-            79.82
+            113.38068181818183
           ],
           [
             "2023-11-27",
-            79.49
+            112.91193181818183
           ],
           [
             "2023-11-28",
-            81.66
+            115.99431818181819
           ],
           [
             "2023-11-29",
-            82.98
+            117.8693181818182
           ],
           [
             "2023-11-30",
-            81.72
+            116.07954545454547
           ],
           [
             "2023-12-01",
-            78.72
+            111.81818181818183
           ],
           [
             "2023-12-04",
-            78.16
+            111.02272727272728
           ],
           [
             "2023-12-05",
-            77.27
+            109.75852272727273
           ],
           [
             "2023-12-06",
-            74.33
+            105.58238636363637
           ],
           [
             "2023-12-07",
-            74.21
+            105.41193181818183
           ],
           [
             "2023-12-08",
-            75.94
+            107.86931818181819
           ],
           [
             "2023-12-11",
-            75.75
+            107.59943181818183
           ],
           [
             "2023-12-12",
-            74.11
+            105.26988636363637
           ],
           [
             "2023-12-13",
-            74.14
+            105.31250000000001
           ],
           [
             "2023-12-14",
-            77.05
+            109.44602272727273
           ],
           [
             "2023-12-15",
-            76.84
+            109.1477272727273
           ],
           [
             "2023-12-18",
-            78.89
+            112.05965909090911
           ],
           [
             "2023-12-19",
-            79.82
+            113.38068181818183
           ],
           [
             "2023-12-20",
-            81.1
+            115.19886363636364
           ],
           [
             "2023-12-21",
-            80.73
+            114.67329545454548
           ],
           [
             "2023-12-22",
-            80.23
+            113.9630681818182
           ],
           [
             "2023-12-27",
-            80.97
+            115.01420454545456
           ],
           [
             "2023-12-28",
-            79.04
+            112.2727272727273
           ],
           [
             "2023-12-29",
-            77.69
+            110.35511363636364
           ],
           [
             "2024-01-02",
-            76.24
+            108.29545454545455
           ],
           [
             "2024-01-03",
-            77.18
+            109.63068181818184
           ],
           [
             "2024-01-04",
-            75.79
+            107.65625000000003
           ],
           [
             "2024-01-05",
-            78.31
+            111.23579545454547
           ],
           [
             "2024-01-08",
-            75.47
+            107.20170454545456
           ],
           [
             "2024-01-09",
-            77.97
+            110.75284090909092
           ],
           [
             "2024-01-10",
-            78.46
+            111.44886363636364
           ],
           [
             "2024-01-11",
-            80.21
+            113.9346590909091
           ],
           [
             "2024-01-12",
-            79.89
+            113.48011363636365
           ],
           [
             "2024-01-15",
-            79.76
+            113.29545454545456
           ],
           [
             "2024-01-16",
-            80.15
+            113.84943181818184
           ],
           [
             "2024-01-17",
-            78.88
+            112.04545454545455
           ],
           [
             "2024-01-18",
-            81.04
+            115.11363636363639
           ],
           [
             "2024-01-19",
-            80.71
+            114.64488636363637
           ],
           [
             "2024-01-22",
-            81.7
+            116.05113636363639
           ],
           [
             "2024-01-23",
-            82.04
+            116.53409090909093
           ],
           [
             "2024-01-24",
-            82.15
+            116.69034090909093
           ],
           [
             "2024-01-25",
-            82.33
+            116.94602272727273
           ],
           [
             "2024-01-26",
-            83.34
+            118.38068181818184
           ],
           [
             "2024-01-29",
-            83.99
+            119.30397727272728
           ],
           [
             "2024-01-30",
-            84.14
+            119.51704545454547
           ],
           [
             "2024-01-31",
-            82.98
+            117.8693181818182
           ],
           [
             "2024-02-01",
-            82.2
+            116.76136363636365
           ],
           [
             "2024-02-02",
-            79.54
+            112.98295454545458
           ],
           [
             "2024-02-05",
-            79.3
+            112.64204545454547
           ],
           [
             "2024-02-06",
-            80.46
+            114.28977272727273
           ],
           [
             "2024-02-07",
-            81.18
+            115.31250000000003
           ],
           [
             "2024-02-08",
-            83.01
+            117.91193181818184
           ],
           [
             "2024-02-09",
-            83.58
+            118.72159090909092
           ],
           [
             "2024-02-12",
-            83.88
+            119.14772727272728
           ],
           [
             "2024-02-13",
-            84.72
+            120.34090909090911
           ],
           [
             "2024-02-14",
-            84.41
+            119.90056818181819
           ],
           [
             "2024-02-15",
-            84.33
+            119.78693181818183
           ],
           [
             "2024-02-16",
-            84.88
+            120.56818181818183
           ],
           [
             "2024-02-19",
-            85.52
+            121.47727272727273
           ],
           [
             "2024-02-20",
-            84.78
+            120.42613636363637
           ],
           [
             "2024-02-21",
-            84.77
+            120.41193181818183
           ],
           [
             "2024-02-22",
-            85.84
+            121.9318181818182
           ],
           [
             "2024-02-23",
-            84.18
+            119.57386363636365
           ],
           [
             "2024-02-26",
-            84.01
+            119.33238636363639
           ],
           [
             "2024-02-27",
-            83.8
+            119.03409090909092
           ],
           [
             "2024-02-28",
-            84.08
+            119.4318181818182
           ],
           [
             "2024-02-29",
-            84.57
+            120.12784090909092
           ],
           [
             "2024-03-01",
-            84.82
+            120.48295454545455
           ],
           [
             "2024-03-04",
-            86.58
+            122.98295454545456
           ],
           [
             "2024-03-05",
-            85.82
+            121.9034090909091
           ],
           [
             "2024-03-06",
-            86.59
+            122.99715909090911
           ],
           [
             "2024-03-07",
-            84.88
+            120.56818181818183
           ],
           [
             "2024-03-08",
-            84.29
+            119.73011363636365
           ],
           [
             "2024-03-11",
-            83.44
+            118.52272727272728
           ],
           [
             "2024-03-12",
-            83.66
+            118.83522727272728
           ],
           [
             "2024-03-13",
-            83.95
+            119.24715909090911
           ],
           [
             "2024-03-14",
-            86.16
+            122.38636363636364
           ],
           [
             "2024-03-15",
-            85.39
+            121.29261363636365
           ],
           [
             "2024-03-18",
-            86.47
+            122.82670454545456
           ],
           [
             "2024-03-19",
-            87.36
+            124.09090909090911
           ],
           [
             "2024-03-20",
-            85.77
+            121.83238636363637
           ],
           [
             "2024-03-21",
-            84.92
+            120.62500000000001
           ],
           [
             "2024-03-22",
-            84.87
+            120.5539772727273
           ],
           [
             "2024-03-25",
-            86.18
+            122.41477272727275
           ],
           [
             "2024-03-26",
-            85.91
+            122.03125000000001
           ],
           [
             "2024-03-27",
-            84.94
+            120.65340909090911
           ],
           [
             "2024-03-28",
-            86.17
+            122.4005681818182
           ],
           [
             "2024-04-02",
-            87.63
+            124.47443181818183
           ],
           [
             "2024-04-03",
-            90.6
+            128.6931818181818
           ],
           [
             "2024-04-04",
-            90.32
+            128.29545454545456
           ],
           [
             "2024-04-05",
-            92.81
+            131.83238636363637
           ],
           [
             "2024-04-08",
-            91.73
+            130.29829545454547
           ],
           [
             "2024-04-09",
-            92.13
+            130.86647727272728
           ],
           [
             "2024-04-10",
-            91.57
+            130.07102272727275
           ],
           [
             "2024-04-11",
-            91.49
+            129.95738636363637
           ],
           [
             "2024-04-12",
-            93.12
+            132.2727272727273
           ],
           [
             "2024-04-15",
-            90.84
+            129.03409090909093
           ],
           [
             "2024-04-16",
-            91.29
+            129.67329545454547
           ],
           [
             "2024-04-17",
-            89.54
+            127.18750000000003
           ],
           [
             "2024-04-18",
-            88.34
+            125.48295454545456
           ],
           [
             "2024-04-19",
-            87.96
+            124.94318181818183
           ],
           [
             "2024-04-22",
-            87.3
+            124.00568181818183
           ],
           [
             "2024-04-23",
-            88.29
+            125.41193181818184
           ],
           [
             "2024-04-24",
-            89.02
+            126.44886363636364
           ],
           [
             "2024-04-25",
-            88.1
+            125.14204545454547
           ],
           [
             "2024-04-26",
-            89.95
+            127.76988636363639
           ],
           [
             "2024-04-29",
-            88.44
+            125.62500000000001
           ],
           [
             "2024-04-30",
-            88.23
+            125.32670454545456
           ],
           [
             "2024-05-01",
-            83.55
+            118.67897727272728
           ],
           [
             "2024-05-02",
-            84.81
+            120.46875000000001
           ],
           [
             "2024-05-03",
-            83.6
+            118.75000000000001
           ],
           [
             "2024-05-07",
-            82.69
+            117.45738636363637
           ],
           [
             "2024-05-08",
-            82.44
+            117.10227272727273
           ],
           [
             "2024-05-09",
-            83.27
+            118.28125000000001
           ],
           [
             "2024-05-10",
-            83.39
+            118.45170454545456
           ],
           [
             "2024-05-13",
-            83.18
+            118.15340909090912
           ],
           [
             "2024-05-14",
-            81
+            115.0568181818182
           ],
           [
             "2024-05-15",
-            79.98
+            113.60795454545456
           ],
           [
             "2024-05-16",
-            81.65
+            115.98011363636365
           ],
           [
             "2024-05-17",
-            82.24
+            116.81818181818183
           ],
           [
             "2024-05-20",
-            81.91
+            116.34943181818183
           ],
           [
             "2024-05-21",
-            81.22
+            115.3693181818182
           ],
           [
             "2024-05-22",
-            79.9
+            113.4943181818182
           ],
           [
             "2024-05-23",
-            79.25
+            112.57102272727275
           ],
           [
             "2024-05-24",
-            78.92
+            112.10227272727275
           ],
           [
             "2024-05-28",
-            81.34
+            115.53977272727275
           ],
           [
             "2024-05-29",
-            81.5
+            115.76704545454547
           ],
           [
             "2024-05-30",
-            81.42
+            115.65340909090911
           ],
           [
             "2024-05-31",
-            79.41
+            112.79829545454547
           ],
           [
             "2024-06-03",
-            76.45
+            108.59375000000001
           ],
           [
             "2024-06-04",
-            75.33
+            107.00284090909092
           ],
           [
             "2024-06-05",
-            75.41
+            107.11647727272728
           ],
           [
             "2024-06-06",
-            77.62
+            110.25568181818184
           ],
           [
             "2024-06-07",
-            78.12
+            110.96590909090911
           ],
           [
             "2024-06-10",
-            79.59
+            113.0539772727273
           ],
           [
             "2024-06-11",
-            80.15
+            113.84943181818184
           ],
           [
             "2024-06-12",
-            80.52
+            114.37500000000001
           ],
           [
             "2024-06-13",
-            81.44
+            115.68181818181819
           ],
           [
             "2024-06-14",
-            81.49
+            115.75284090909092
           ],
           [
             "2024-06-17",
-            82.45
+            117.1164772727273
           ],
           [
             "2024-06-18",
-            84.79
+            120.44034090909093
           ],
           [
             "2024-06-19",
-            85.64
+            121.6477272727273
           ],
           [
             "2024-06-20",
-            85.92
+            122.04545454545456
           ],
           [
             "2024-06-21",
-            86.42
+            122.75568181818184
           ],
           [
             "2024-06-24",
-            86.75
+            123.22443181818183
           ],
           [
             "2024-06-25",
-            86.81
+            123.30965909090911
           ],
           [
             "2024-06-26",
-            85.76
+            121.81818181818184
           ],
           [
             "2024-06-27",
-            87
+            123.57954545454547
           ],
           [
             "2024-06-28",
-            87.26
+            123.94886363636365
           ],
           [
             "2024-07-01",
-            86.57
+            122.96875
           ],
           [
             "2024-07-02",
-            88.28
+            125.3977272727273
           ],
           [
             "2024-07-03",
-            88.25
+            125.35511363636365
           ],
           [
             "2024-07-04",
-            88.34
+            125.48295454545456
           ],
           [
             "2024-07-05",
-            88.66
+            125.93750000000001
           ],
           [
             "2024-07-08",
-            87.15
+            123.79261363636365
           ],
           [
             "2024-07-09",
-            86.48
+            122.84090909090911
           ],
           [
             "2024-07-10",
-            86.55
+            122.94034090909092
           ],
           [
             "2024-07-11",
-            86.49
+            122.85511363636364
           ],
           [
             "2024-07-12",
-            87.35
+            124.07670454545455
           ],
           [
             "2024-07-15",
-            86.42
+            122.75568181818184
           ],
           [
             "2024-07-16",
-            86.6
+            123.01136363636364
           ],
           [
             "2024-07-17",
-            85.76
+            121.81818181818184
           ],
           [
             "2024-07-18",
-            86.26
+            122.52840909090911
           ],
           [
             "2024-07-19",
-            85.19
+            121.00852272727273
           ],
           [
             "2024-07-22",
-            83.44
+            118.52272727272728
           ],
           [
             "2024-07-23",
-            82.2
+            116.76136363636365
           ],
           [
             "2024-07-24",
-            83.01
+            117.91193181818184
           ],
           [
             "2024-07-25",
-            82.58
+            117.30113636363637
           ],
           [
             "2024-07-26",
-            81.35
+            115.55397727272728
           ],
           [
             "2024-07-29",
-            80.94
+            114.97159090909092
           ],
           [
             "2024-07-30",
-            79.26
+            112.5852272727273
           ],
           [
             "2024-07-31",
-            81.39
+            115.61079545454547
           ],
           [
             "2024-08-01",
-            81.37
+            115.58238636363639
           ],
           [
             "2024-08-02",
-            78.35
+            111.29261363636364
           ],
           [
             "2024-08-05",
-            77.51
+            110.09943181818184
           ],
           [
             "2024-08-06",
-            76.62
+            108.8352272727273
           ],
           [
             "2024-08-07",
-            78.26
+            111.16477272727275
           ],
           [
             "2024-08-08",
-            80.76
+            114.71590909090911
           ],
           [
             "2024-08-09",
-            81.07
+            115.15625
           ],
           [
             "2024-08-12",
-            83.06
+            117.98295454545456
           ],
           [
             "2024-08-13",
-            82.51
+            117.20170454545456
           ],
           [
             "2024-08-14",
-            82.15
+            116.69034090909093
           ],
           [
             "2024-08-15",
-            83.09
+            118.0255681818182
           ],
           [
             "2024-08-16",
-            81.56
+            115.85227272727275
           ],
           [
             "2024-08-19",
-            81.09
+            115.18465909090911
           ],
           [
             "2024-08-20",
-            78.85
+            112.00284090909092
           ],
           [
             "2024-08-21",
-            78.77
+            111.88920454545456
           ],
           [
             "2024-08-22",
-            78.8
+            111.93181818181819
           ],
           [
             "2024-08-23",
-            80.34
+            114.1193181818182
           ],
           [
             "2024-08-27",
-            81.51
+            115.78125000000003
           ],
           [
             "2024-08-28",
-            80.04
+            113.69318181818184
           ],
           [
             "2024-08-29",
-            81.55
+            115.83806818181819
           ],
           [
             "2024-08-30",
-            80.2
+            113.92045454545456
           ],
           [
             "2024-09-02",
-            77.82
+            110.53977272727273
           ],
           [
             "2024-09-03",
-            76.46
+            108.60795454545455
           ],
           [
             "2024-09-04",
-            74.67
+            106.06534090909092
           ],
           [
             "2024-09-05",
-            74.47
+            105.78125000000001
           ],
           [
             "2024-09-06",
-            72.82
+            103.4375
           ],
           [
             "2024-09-09",
-            72.37
+            102.79829545454547
           ],
           [
             "2024-09-10",
-            70.34
+            99.91477272727275
           ],
           [
             "2024-09-11",
-            70.31
+            99.87215909090911
           ],
           [
             "2024-09-12",
-            73.81
+            104.84375000000001
           ],
           [
             "2024-09-13",
-            73.68
+            104.65909090909093
           ],
           [
             "2024-09-16",
-            73.96
+            105.05681818181819
           ],
           [
             "2024-09-17",
-            74.55
+            105.89488636363637
           ],
           [
             "2024-09-18",
-            74.52
+            105.85227272727273
           ],
           [
             "2024-09-19",
-            75.93
+            107.85511363636365
           ],
           [
             "2024-09-20",
-            75.96
+            107.89772727272728
           ],
           [
             "2024-09-23",
-            74.95
+            106.4630681818182
           ],
           [
             "2024-09-24",
-            75.29
+            106.94602272727275
           ],
           [
             "2024-09-25",
-            75.4
+            107.10227272727275
           ],
           [
             "2024-09-26",
-            73.06
+            103.77840909090911
           ],
           [
             "2024-09-27",
-            71.63
+            101.7471590909091
           ],
           [
             "2024-09-30",
-            72.35
+            102.76988636363637
           ],
           [
             "2024-10-01",
-            75.3
+            106.96022727272728
           ],
           [
             "2024-10-02",
-            74.86
+            106.33522727272728
           ],
           [
             "2024-10-03",
-            77.57
+            110.1846590909091
           ],
           [
             "2024-10-04",
-            79.32
+            112.67045454545455
           ],
           [
             "2024-10-07",
-            81.74
+            116.10795454545455
           ],
           [
             "2024-10-08",
-            78.19
+            111.06534090909092
           ],
           [
             "2024-10-09",
-            77.06
+            109.4602272727273
           ],
           [
             "2024-10-10",
-            79.45
+            112.85511363636365
           ],
           [
             "2024-10-11",
-            80.27
+            114.01988636363637
           ],
           [
             "2024-10-14",
-            78.47
+            111.4630681818182
           ],
           [
             "2024-10-15",
-            73.68
+            104.65909090909093
           ],
           [
             "2024-10-16",
-            73.65
+            104.6164772727273
           ],
           [
             "2024-10-17",
-            74.37
+            105.63920454545456
           ],
           [
             "2024-10-18",
-            72.75
+            103.3380681818182
           ],
           [
             "2024-10-21",
-            73.29
+            104.10511363636365
           ],
           [
             "2024-10-22",
-            75.59
+            107.37215909090911
           ],
           [
             "2024-10-23",
-            74.68
+            106.07954545454548
           ],
           [
             "2024-10-24",
-            74.27
+            105.4971590909091
           ],
           [
             "2024-10-25",
-            75.62
+            107.41477272727275
           ],
           [
             "2024-10-28",
-            71.87
+            102.0880681818182
           ],
           [
             "2024-10-29",
-            71.09
+            100.98011363636365
           ],
           [
             "2024-10-30",
-            73.21
+            103.99147727272728
           ],
           [
             "2024-10-31",
-            73.25
+            104.04829545454547
           ],
           [
             "2024-11-01",
-            73.63
+            104.58806818181819
           ],
           [
             "2024-11-04",
-            74.89
+            106.37784090909092
           ],
           [
             "2024-11-05",
-            76.98
+            109.34659090909093
           ],
           [
             "2024-11-06",
-            76.52
+            108.69318181818183
           ],
           [
             "2024-11-07",
-            75.73
+            107.57102272727275
           ],
           [
             "2024-11-08",
-            74.04
+            105.17045454545456
           ],
           [
             "2024-11-11",
-            72.19
+            102.54261363636364
           ],
           [
             "2024-11-12",
-            72.56
+            103.06818181818184
           ],
           [
             "2024-11-13",
-            72.86
+            103.4943181818182
           ],
           [
             "2024-11-14",
-            73.39
+            104.24715909090911
           ],
           [
             "2024-11-15",
-            73.45
+            104.33238636363637
           ],
           [
             "2024-11-18",
-            74.35
+            105.61079545454545
           ],
           [
             "2024-11-19",
-            74.32
+            105.56818181818183
           ],
           [
             "2024-11-20",
-            74.33
+            105.58238636363637
           ],
           [
             "2024-11-21",
-            75.09
+            106.66193181818184
           ],
           [
             "2024-11-22",
-            76.1
+            108.09659090909092
           ],
           [
             "2024-11-25",
-            74.27
+            105.4971590909091
           ],
           [
             "2024-11-26",
-            74.56
+            105.90909090909092
           ],
           [
             "2024-11-27",
-            73.91
+            104.98579545454547
           ],
           [
             "2024-11-28",
-            73.92
+            105.00000000000001
           ],
           [
             "2024-11-29",
-            74.16
+            105.3409090909091
           ],
           [
             "2024-12-02",
-            72.81
+            103.42329545454547
           ],
           [
             "2024-12-03",
-            74.8
+            106.25000000000001
           ],
           [
             "2024-12-04",
-            74.68
+            106.07954545454548
           ],
           [
             "2024-12-05",
-            73.78
+            104.80113636363637
           ],
           [
             "2024-12-06",
-            73.78
+            104.80113636363637
           ],
           [
             "2024-12-09",
-            73.73
+            104.73011363636365
           ],
           [
             "2024-12-10",
-            73.64
+            104.60227272727275
           ],
           [
             "2024-12-11",
-            74.38
+            105.6534090909091
           ],
           [
             "2024-12-12",
-            73.52
+            104.43181818181819
           ],
           [
             "2024-12-13",
-            74.89
+            106.37784090909092
           ],
           [
             "2024-12-16",
-            74.3
+            105.53977272727273
           ],
           [
             "2024-12-17",
-            73.16
+            103.92045454545456
           ],
           [
             "2024-12-18",
-            74.57
+            105.92329545454545
           ],
           [
             "2024-12-19",
-            73.75
+            104.75852272727273
           ],
           [
             "2024-12-20",
-            73.19
+            103.96306818181819
           ],
           [
             "2024-12-23",
-            72.12
+            102.44318181818184
           ],
           [
             "2024-12-24",
-            73.5
+            104.40340909090911
           ],
           [
             "2024-12-27",
-            73.77
+            104.78693181818183
           ],
           [
             "2024-12-30",
-            74.24
+            105.45454545454547
           ],
           [
             "2024-12-31",
-            74.58
+            105.93750000000001
           ],
           [
             "2025-01-02",
-            76.14
+            108.15340909090911
           ],
           [
             "2025-01-03",
-            76.72
+            108.97727272727273
           ],
           [
             "2025-01-06",
-            77.27
+            109.75852272727273
           ],
           [
             "2025-01-07",
-            77.84
+            110.56818181818184
           ],
           [
             "2025-01-08",
-            77.37
+            109.9005681818182
           ],
           [
             "2025-01-09",
-            78.44
+            111.42045454545456
           ],
           [
             "2025-01-10",
-            79.76
+            113.29545454545456
           ],
           [
             "2025-01-13",
-            82.69
+            117.45738636363637
           ],
           [
             "2025-01-14",
-            82.39
+            117.03125000000001
           ],
           [
             "2025-01-15",
-            83.48
+            118.57954545454548
           ],
           [
             "2025-01-16",
-            82.39
+            117.03125000000001
           ],
           [
             "2025-01-17",
-            83.02
+            117.92613636363637
           ],
           [
             "2025-01-20",
-            81.68
+            116.0227272727273
           ],
           [
             "2025-01-21",
-            80.57
+            114.44602272727273
           ],
           [
             "2025-01-22",
-            80
+            113.63636363636365
           ],
           [
             "2025-01-23",
-            78.62
+            111.67613636363639
           ],
           [
             "2025-01-24",
-            78.71
+            111.80397727272728
           ],
           [
             "2025-01-27",
-            77.3
+            109.80113636363637
           ],
           [
             "2025-01-28",
-            78.01
+            110.80965909090911
           ],
           [
             "2025-01-29",
-            77.02
+            109.4034090909091
           ],
           [
             "2025-01-30",
-            77.42
+            109.97159090909092
           ],
           [
             "2025-01-31",
-            77.11
+            109.53125000000001
           ],
           [
             "2025-02-03",
-            76.49
+            108.65056818181819
           ],
           [
             "2025-02-04",
-            76.58
+            108.77840909090911
           ],
           [
             "2025-02-05",
-            74.71
+            106.1221590909091
           ],
           [
             "2025-02-06",
-            74.54
+            105.88068181818184
           ],
           [
             "2025-02-07",
-            74.68
+            106.07954545454548
           ],
           [
             "2025-02-10",
-            76.23
+            108.28125000000001
           ],
           [
             "2025-02-11",
-            77.65
+            110.29829545454548
           ],
           [
             "2025-02-12",
-            75.38
+            107.07386363636364
           ],
           [
             "2025-02-13",
-            75.61
+            107.4005681818182
           ],
           [
             "2025-02-14",
-            75.19
+            106.80397727272728
           ],
           [
             "2025-02-17",
-            75.81
+            107.68465909090911
           ],
           [
             "2025-02-18",
-            76.46
+            108.60795454545455
           ],
           [
             "2025-02-19",
-            76.34
+            108.43750000000001
           ],
           [
             "2025-02-20",
-            76.95
+            109.3039772727273
           ],
           [
             "2025-02-21",
-            74.88
+            106.36363636363637
           ],
           [
             "2025-02-24",
-            74.89
+            106.37784090909092
           ],
           [
             "2025-02-25",
-            73.11
+            103.84943181818183
           ],
           [
             "2025-02-26",
-            73.49
+            104.38920454545455
           ],
           [
             "2025-02-27",
-            75.01
+            106.54829545454548
           ],
           [
             "2025-02-28",
-            74.76
+            106.19318181818184
           ],
           [
             "2025-03-03",
-            72.85
+            103.48011363636364
           ],
           [
             "2025-03-04",
-            72.31
+            102.7130681818182
           ],
           [
             "2025-03-05",
-            70.92
+            100.73863636363637
           ],
           [
             "2025-03-06",
-            71.08
+            100.96590909090911
           ],
           [
             "2025-03-07",
-            72.49
+            102.96875
           ],
           [
             "2025-03-10",
-            71.08
+            100.96590909090911
           ],
           [
             "2025-03-11",
-            71.51
+            101.57670454545456
           ],
           [
             "2025-03-12",
-            72.36
+            102.78409090909092
           ],
           [
             "2025-03-13",
-            70.82
+            100.5965909090909
           ],
           [
             "2025-03-14",
-            71.94
+            102.18750000000001
           ],
           [
             "2025-03-17",
-            71.93
+            102.17329545454548
           ],
           [
             "2025-03-18",
-            71.93
+            102.17329545454548
           ],
           [
             "2025-03-19",
-            71.94
+            102.18750000000001
           ],
           [
             "2025-03-20",
-            72.61
+            103.13920454545456
           ],
           [
             "2025-03-21",
-            72.64
+            103.1818181818182
           ],
           [
             "2025-03-24",
-            73.96
+            105.05681818181819
           ],
           [
             "2025-03-25",
-            73.78
+            104.80113636363637
           ],
           [
             "2025-03-26",
-            74.6
+            105.9659090909091
           ],
           [
             "2025-03-27",
-            74.72
+            106.13636363636365
           ],
           [
             "2025-03-28",
-            74.69
+            106.09375000000001
           ],
           [
             "2025-03-31",
-            77.23
+            109.70170454545456
           ],
           [
             "2025-04-01",
-            77.78
+            110.48295454545456
           ],
           [
             "2025-04-02",
-            77.27
+            109.75852272727273
           ],
           [
             "2025-04-03",
-            72.54
+            103.03977272727275
           ],
           [
             "2025-04-04",
-            68.36
+            97.10227272727273
           ],
           [
             "2025-04-07",
-            66.13
+            93.9346590909091
           ],
           [
             "2025-04-08",
-            64.86
+            92.13068181818183
           ],
           [
             "2025-04-09",
-            67.3
+            95.59659090909092
           ],
           [
             "2025-04-10",
-            65.37
+            92.85511363636365
           ],
           [
             "2025-04-11",
-            66.83
+            94.92897727272728
           ],
           [
             "2025-04-14",
-            67.18
+            95.42613636363639
           ],
           [
             "2025-04-15",
-            66.58
+            94.57386363636364
           ],
           [
             "2025-04-16",
-            67.94
+            96.50568181818183
           ],
           [
             "2025-04-17",
-            69.33
+            98.48011363636364
           ],
           [
             "2025-04-22",
-            68.93
+            97.91193181818184
           ],
           [
             "2025-04-23",
-            68.26
+            96.9602272727273
           ],
           [
             "2025-04-24",
-            67.5
+            95.88068181818183
           ],
           [
             "2025-04-25",
-            66.99
+            95.15625
           ],
           [
             "2025-04-28",
-            66.13
+            93.9346590909091
           ],
           [
             "2025-04-29",
-            64.04
+            90.96590909090911
           ],
           [
             "2025-04-30",
-            63.37
+            90.01420454545455
           ],
           [
             "2025-05-01",
-            62.37
+            88.59375000000001
           ],
           [
             "2025-05-02",
-            61.57
+            87.45738636363637
           ],
           [
             "2025-05-06",
-            62.37
+            88.59375000000001
           ],
           [
             "2025-05-07",
-            60.31
+            85.66761363636365
           ],
           [
             "2025-05-08",
-            62.22
+            88.38068181818183
           ],
           [
             "2025-05-09",
-            64.26
+            91.27840909090911
           ],
           [
             "2025-05-12",
-            65.28
+            92.72727272727273
           ],
           [
             "2025-05-13",
-            66.93
+            95.07102272727275
           ],
           [
             "2025-05-14",
-            65.91
+            93.6221590909091
           ],
           [
             "2025-05-15",
-            64.36
+            91.42045454545456
           ],
           [
             "2025-05-16",
-            65.2
+            92.61363636363637
           ],
           [
             "2025-05-19",
-            66.25
+            94.10511363636365
           ],
           [
             "2025-05-20",
-            66.93
+            95.07102272727275
           ],
           [
             "2025-05-21",
-            65.86
+            93.55113636363637
           ],
           [
             "2025-05-22",
-            64.87
+            92.14488636363639
           ],
           [
             "2025-05-23",
-            65.41
+            92.91193181818183
           ],
           [
             "2025-05-27",
-            64.32
+            91.36363636363636
           ],
           [
             "2025-05-28",
-            65.72
+            93.35227272727273
           ],
           [
             "2025-05-29",
-            64.6
+            91.76136363636364
           ],
           [
             "2025-05-30",
-            64.32
+            91.36363636363636
           ],
           [
             "2025-06-02",
-            66.55
+            94.53125000000001
           ],
           [
             "2025-06-03",
-            67.48
+            95.85227272727275
           ],
           [
             "2025-06-04",
-            66.69
+            94.73011363636364
           ],
           [
             "2025-06-05",
-            67.14
+            95.3693181818182
           ],
           [
             "2025-06-06",
-            68.02
+            96.61931818181819
           ],
           [
             "2025-06-09",
-            68.73
+            97.62784090909092
           ],
           [
             "2025-06-10",
-            68.41
+            97.17329545454547
           ],
           [
             "2025-06-11",
-            71.29
+            101.26420454545456
           ],
           [
             "2025-06-12",
-            70.84
+            100.62500000000001
           ],
           [
             "2025-06-13",
-            76
+            107.95454545454547
           ],
           [
             "2025-06-16",
-            75.05
+            106.60511363636364
           ],
           [
             "2025-06-17",
-            78.7
+            111.78977272727275
           ],
           [
             "2025-06-18",
-            78.38
+            111.33522727272728
           ],
           [
             "2025-06-19",
-            80.37
+            114.16193181818184
           ],
           [
             "2025-06-20",
-            78.73
+            111.83238636363639
           ],
           [
             "2025-06-23",
-            74.34
+            105.59659090909092
           ],
           [
             "2025-06-24",
-            69.13
+            98.19602272727273
           ],
           [
             "2025-06-25",
-            68.4
+            97.15909090909093
           ],
           [
             "2025-06-26",
-            68.57
+            97.40056818181819
           ],
           [
             "2025-06-27",
-            69.37
+            98.53693181818184
           ],
           [
             "2025-06-30",
-            68.15
+            96.8039772727273
           ],
           [
             "2025-07-01",
-            67.63
+            96.06534090909092
           ],
           [
             "2025-07-02",
-            70.8
+            100.56818181818183
           ],
           [
             "2025-07-03",
-            70.42
+            100.02840909090911
           ],
           [
             "2025-07-04",
-            71.03
+            100.89488636363637
           ],
           [
             "2025-07-07",
-            71.95
+            102.20170454545456
           ],
           [
             "2025-07-08",
-            72.5
+            102.98295454545456
           ],
           [
             "2025-07-09",
-            71.98
+            102.2443181818182
           ],
           [
             "2025-07-10",
-            70.38
+            99.97159090909092
           ],
           [
             "2025-07-11",
-            72.06
+            102.35795454545456
           ],
           [
             "2025-07-14",
-            70.96
+            100.79545454545455
           ],
           [
             "2025-07-15",
-            70.27
+            99.81534090909092
           ],
           [
             "2025-07-16",
-            69.67
+            98.9630681818182
           ],
           [
             "2025-07-17",
-            71.32
+            101.30681818181819
           ],
           [
             "2025-07-18",
-            71.06
+            100.93750000000001
           ],
           [
             "2025-07-21",
-            71.92
+            102.15909090909092
           ],
           [
             "2025-07-22",
-            69.69
+            98.99147727272728
           ],
           [
             "2025-07-23",
-            69.17
+            98.25284090909092
           ],
           [
             "2025-07-24",
-            70.42
+            100.02840909090911
           ],
           [
             "2025-07-25",
-            69.23
+            98.3380681818182
           ],
           [
             "2025-07-28",
-            70.87
+            100.66761363636365
           ],
           [
             "2025-07-29",
-            73.21
+            103.99147727272728
           ],
           [
             "2025-07-30",
-            73.98
+            105.0852272727273
           ],
           [
             "2025-07-31",
-            73.43
+            104.3039772727273
           ],
           [
             "2025-08-01",
-            70.55
+            100.21306818181819
           ],
           [
             "2025-08-04",
-            69.56
+            98.8068181818182
           ],
           [
             "2025-08-05",
-            69.14
+            98.21022727272728
           ],
           [
             "2025-08-06",
-            67.97
+            96.54829545454547
           ],
           [
             "2025-08-07",
-            66.99
+            95.15625
           ],
           [
             "2025-08-08",
-            67.17
+            95.41193181818183
           ],
           [
             "2025-08-11",
-            67.36
+            95.68181818181819
           ],
           [
             "2025-08-12",
-            66.8
+            94.88636363636364
           ],
           [
             "2025-08-13",
-            66.25
+            94.10511363636365
           ],
           [
             "2025-08-14",
-            68.12
+            96.76136363636365
           ],
           [
             "2025-08-15",
-            67.3
+            95.59659090909092
           ],
           [
             "2025-08-18",
-            68.18
+            96.84659090909093
           ],
           [
             "2025-08-19",
-            66.62
+            94.63068181818184
           ],
           [
             "2025-08-20",
-            67.61
+            96.03693181818183
           ],
           [
             "2025-08-21",
-            68.41
+            97.17329545454547
           ],
           [
             "2025-08-22",
-            68.29
+            97.00284090909093
           ],
           [
             "2025-08-26",
-            66.89
+            95.01420454545456
           ],
           [
             "2025-08-27",
-            67.75
+            96.23579545454547
           ],
           [
             "2025-08-28",
-            68.61
+            97.45738636363637
           ],
           [
             "2025-08-29",
-            67.83
+            96.34943181818183
           ],
           [
             "2025-09-01",
-            67.09
+            95.29829545454547
           ],
           [
             "2025-09-02",
-            68.09
+            96.71875000000001
           ],
           [
             "2025-09-03",
-            67.76
+            96.25000000000001
           ],
           [
             "2025-09-04",
-            66.41
+            94.33238636363637
           ],
           [
             "2025-09-05",
-            64.92
+            92.21590909090911
           ],
           [
             "2025-09-08",
-            65.44
+            92.95454545454547
           ],
           [
             "2025-09-09",
-            67.97
+            96.54829545454547
           ],
           [
             "2025-09-10",
-            67.62
+            96.05113636363639
           ],
           [
             "2025-09-11",
-            67.25
+            95.52556818181819
           ],
           [
             "2025-09-12",
-            67.87
+            96.40625000000001
           ],
           [
             "2025-09-15",
-            67.88
+            96.42045454545455
           ],
           [
             "2025-09-16",
-            69.69
+            98.99147727272728
           ],
           [
             "2025-09-17",
-            69.19
+            98.28125000000001
           ],
           [
             "2025-09-18",
-            67.83
+            96.34943181818183
           ],
           [
             "2025-09-19",
-            67.05
+            95.24147727272728
           ],
           [
             "2025-09-22",
-            66.87
+            94.98579545454547
           ],
           [
             "2025-09-23",
-            67.96
+            96.5340909090909
           ],
           [
             "2025-09-24",
-            69.64
+            98.92045454545456
           ],
           [
             "2025-09-25",
-            70.48
+            100.11363636363639
           ],
           [
             "2025-09-26",
-            71.15
+            101.06534090909093
           ],
           [
             "2025-09-29",
-            69
+            98.01136363636365
           ],
           [
             "2025-09-30",
-            68.52
+            97.32954545454547
           ],
           [
             "2025-10-01",
-            66.67
+            94.70170454545456
           ],
           [
             "2025-10-02",
-            65.44
+            92.95454545454547
           ],
           [
             "2025-10-03",
-            66.13
+            93.9346590909091
           ],
           [
             "2025-10-06",
-            67.09
+            95.29829545454547
           ],
           [
             "2025-10-07",
-            67.1
+            95.3125
           ],
           [
             "2025-10-08",
-            67.42
+            95.76704545454547
           ],
           [
             "2025-10-09",
-            67.23
+            95.49715909090911
           ],
           [
             "2025-10-10",
-            64.41
+            91.49147727272728
           ],
           [
             "2025-10-13",
-            64.15
+            91.12215909090911
           ],
           [
             "2025-10-14",
-            63
+            89.48863636363637
           ],
           [
             "2025-10-15",
-            62.33
+            88.53693181818183
           ],
           [
             "2025-10-16",
-            61.08
+            86.76136363636364
           ],
           [
             "2025-10-17",
-            61.23
+            86.97443181818183
           ],
           [
             "2025-10-20",
-            60.71
+            86.23579545454547
           ],
           [
             "2025-10-21",
-            61
+            86.64772727272728
           ],
           [
             "2025-10-22",
-            62.28
+            88.46590909090911
           ],
           [
             "2025-10-23",
-            66.32
+            94.20454545454545
           ],
           [
             "2025-10-24",
-            65.8
+            93.4659090909091
           ],
           [
             "2025-10-27",
-            65.52
+            93.06818181818183
           ],
           [
             "2025-10-28",
-            64.03
+            90.95170454545456
           ],
           [
             "2025-10-29",
-            65.01
+            92.34375000000001
           ],
           [
             "2025-10-30",
-            65.11
+            92.48579545454547
           ],
           [
             "2025-10-31",
-            65.44
+            92.95454545454547
           ],
           [
             "2025-11-03",
-            65.79
+            93.45170454545456
           ],
           [
             "2025-11-04",
-            65.04
+            92.38636363636365
           ],
           [
             "2025-11-05",
-            63.54
+            90.25568181818183
           ],
           [
             "2025-11-06",
-            63.41
+            90.07102272727273
           ],
           [
             "2025-11-07",
-            63.72
+            90.51136363636364
           ],
           [
             "2025-11-10",
-            63.01
+            89.50284090909092
           ],
           [
             "2025-11-11",
-            63.86
+            90.71022727272728
           ],
           [
             "2025-11-12",
-            61.88
+            87.8977272727273
           ],
           [
             "2025-11-13",
-            62.14
+            88.26704545454547
           ],
           [
             "2025-11-14",
-            63.45
+            90.12784090909092
           ],
           [
             "2025-11-17",
-            63.16
+            89.7159090909091
           ],
           [
             "2025-11-18",
-            64.86
+            92.13068181818183
           ],
           [
             "2025-11-19",
-            63.78
+            90.59659090909092
           ],
           [
             "2025-11-20",
-            63.64
+            90.39772727272728
           ],
           [
             "2025-11-21",
-            62.78
+            89.17613636363637
           ],
           [
             "2025-11-24",
-            64.83
+            92.08806818181819
           ],
           [
             "2025-11-25",
-            63.99
+            90.89488636363637
           ],
           [
             "2025-11-26",
-            64.81
+            92.05965909090911
           ],
           [
             "2025-11-27",
-            64.18
+            91.16477272727275
           ],
           [
             "2025-11-28",
-            64.07
+            91.00852272727273
           ],
           [
             "2025-12-01",
-            64.22
+            91.22159090909092
           ],
           [
             "2025-12-02",
-            63.37
+            90.01420454545455
           ],
           [
             "2025-12-03",
-            63.75
+            90.55397727272728
           ],
           [
             "2025-12-04",
-            64.15
+            91.12215909090911
           ],
           [
             "2025-12-05",
-            64.42
+            91.50568181818183
           ],
           [
             "2025-12-08",
-            63.3
+            89.91477272727273
           ],
           [
             "2025-12-09",
-            62.62
+            88.94886363636364
           ],
           [
             "2025-12-10",
-            63.12
+            89.65909090909092
           ],
           [
             "2025-12-11",
-            61.87
+            87.88352272727273
           ],
           [
             "2025-12-12",
-            62.11
+            88.22443181818183
           ],
           [
             "2025-12-15",
-            61.55
+            87.42897727272728
           ],
           [
             "2025-12-16",
-            59.93
+            85.12784090909092
           ],
           [
             "2025-12-17",
-            60.61
+            86.09375000000001
           ],
           [
             "2025-12-18",
-            60.69
+            86.20738636363637
           ],
           [
             "2025-12-19",
-            61.35
+            87.14488636363637
           ],
           [
             "2025-12-22",
-            62.22
+            88.38068181818183
           ],
           [
             "2025-12-23",
-            63.7
+            90.48295454545456
           ],
           [
             "2025-12-24",
-            63.7
+            90.48295454545456
           ],
           [
             "2025-12-29",
-            63.1
+            89.63068181818183
           ],
           [
             "2025-12-30",
-            62.3
+            88.49431818181819
           ],
           [
             "2025-12-31",
-            61.35
+            87.14488636363637
           ],
           [
             "2026-01-02",
-            61.98
+            88.03977272727273
           ],
           [
             "2026-01-05",
-            63
+            89.48863636363637
           ],
           [
             "2026-01-06",
-            62.1
+            88.21022727272728
           ],
           [
             "2026-01-07",
-            61.08
+            86.76136363636364
           ],
           [
             "2026-01-08",
-            63.34
+            89.97159090909092
           ],
           [
             "2026-01-09",
-            65.11
+            92.48579545454547
           ],
           [
             "2026-01-12",
-            65.4
+            92.8977272727273
           ],
           [
             "2026-01-13",
-            67.58
+            95.99431818181819
           ],
           [
             "2026-01-14",
-            68.87
+            97.82670454545456
           ],
           [
             "2026-01-15",
-            66.16
+            93.97727272727273
           ],
           [
             "2026-01-16",
-            66.97
+            95.12784090909092
           ],
           [
             "2026-01-19",
-            66.91
+            95.04261363636364
           ],
           [
             "2026-01-20",
-            67.68
+            96.13636363636365
           ],
           [
             "2026-01-21",
-            66.72
+            94.77272727272728
           ],
           [
             "2026-01-22",
-            65.46
+            92.98295454545455
           ],
           [
             "2026-01-23",
-            68.16
+            96.81818181818183
           ],
           [
             "2026-01-26",
-            67.7
+            96.16477272727275
           ],
           [
             "2026-01-27",
-            70.28
+            99.82954545454547
           ],
           [
             "2026-01-28",
-            70.9
+            100.7102272727273
           ],
           [
             "2026-01-29",
-            71
+            100.85227272727273
           ],
           [
             "2026-01-30",
-            72.25
+            102.62784090909092
           ],
           [
             "2026-02-02",
-            67.72
+            96.19318181818183
           ],
           [
             "2026-02-03",
-            70.01
+            99.44602272727275
           ],
           [
             "2026-02-04",
-            71.15
+            101.06534090909093
           ],
           [
             "2026-02-05",
-            69.87
+            99.24715909090911
           ],
           [
             "2026-02-06",
-            70.45
+            100.07102272727275
           ],
           [
             "2026-02-09",
-            71.19
+            101.12215909090911
           ],
           [
             "2026-02-10",
-            71.01
+            100.8664772727273
           ],
           [
             "2026-02-11",
-            71.52
+            101.5909090909091
           ],
           [
             "2026-02-12",
-            69.8
+            99.14772727272728
           ],
           [
             "2026-02-13",
-            69.96
+            99.375
           ],
           [
             "2026-02-16",
-            70.81
+            100.58238636363637
           ],
           [
             "2026-02-17",
-            69.77
+            99.10511363636364
           ],
           [
             "2026-02-18",
-            71.78
+            101.96022727272728
           ],
           [
             "2026-02-19",
-            73.17
+            103.93465909090911
           ],
           [
             "2026-02-20",
-            72.75
+            103.3380681818182
           ],
           [
             "2026-02-23",
-            71.9
+            102.13068181818184
           ],
           [
             "2026-02-24",
-            71.21
+            101.15056818181819
           ],
           [
             "2026-02-25",
-            70.69
+            100.41193181818183
           ],
           [
             "2026-02-26",
-            71.66
+            101.78977272727273
           ],
           [
             "2026-02-27",
-            71.32
+            101.30681818181819
           ],
           [
             "2026-03-02",
-            77.24
+            109.7159090909091
           ],
           [
             "2026-03-03",
-            83.28
+            118.29545454545456
           ],
           [
             "2026-03-04",
-            81.56
+            115.85227272727275
           ],
           [
             "2026-03-05",
-            88.59
+            125.8380681818182
           ],
           [
             "2026-03-06",
-            95.74
+            135.9943181818182
           ],
           [
             "2026-03-09",
-            94.35
+            134.01988636363637
           ],
           [
             "2026-03-10",
-            89.84
+            127.61363636363639
           ],
           [
             "2026-03-11",
-            90.98
+            129.23295454545456
           ],
           [
             "2026-03-12",
-            102.38
+            145.42613636363637
           ],
           [
             "2026-03-13",
-            103.23
+            146.63352272727275
           ],
           [
             "2026-03-16",
-            101.04
+            143.5227272727273
           ],
           [
             "2026-03-17",
-            108.39
+            153.96306818181822
           ],
           [
             "2026-03-18",
-            118.09
+            167.7414772727273
           ],
           [
             "2026-03-19",
-            111.05
+            157.74147727272728
           ],
           [
             "2026-03-20",
-            118.42
+            168.2102272727273
           ],
           [
             "2026-03-23",
-            103.79
+            147.4289772727273
           ],
           [
             "2026-03-24",
-            108.42
+            154.00568181818184
           ],
           [
             "2026-03-25",
-            109.14
+            155.02840909090912
           ],
           [
             "2026-03-26",
-            113.39
+            161.06534090909093
           ],
           [
             "2026-03-27",
-            121.47
+            172.54261363636365
           ],
           [
             "2026-03-30",
-            121.88
+            173.12500000000003
           ],
           [
             "2026-03-31",
-            126.69
+            179.95738636363637
           ],
           [
             "2026-04-01",
-            119.56
+            169.82954545454547
           ],
           [
             "2026-04-02",
-            127.61
+            181.26420454545456
           ],
           [
             "2026-04-07",
-            138.21
+            196.32102272727278
           ],
           [
             "2026-04-08",
-            122.11
+            173.45170454545456
           ],
           [
             "2026-04-09",
-            119.03
+            169.07670454545456
           ],
           [
             "2026-04-10",
-            119.07
+            169.13352272727275
           ],
           [
             "2026-04-13",
-            123.28
+            175.11363636363637
           ],
           [
             "2026-04-14",
-            118.69
+            168.59375000000003
           ],
           [
             "2026-04-15",
-            114.93
+            163.25284090909093
           ],
           [
             "2026-04-16",
-            116.63
+            165.66761363636365
           ],
           [
             "2026-04-17",
-            98.63
+            140.09943181818184
           ],
           [
             "2026-04-20",
-            103.4
+            146.87500000000003
           ],
           [
             "2026-04-21",
-            106.14
+            150.76704545454547
           ],
           [
             "2026-04-22",
-            113.44
+            161.13636363636365
           ],
           [
             "2026-04-23",
-            113.25
+            160.86647727272728
           ],
           [
             "2026-04-24",
-            111.86
+            158.89204545454547
           ],
           [
             "2026-04-27",
-            113.89
+            161.77556818181822
           ],
           [
             "2026-04-28",
-            117.62
+            167.07386363636365
           ],
           [
             "2026-04-29",
-            124.16
+            176.36363636363637
           ],
           [
             "2026-04-30",
-            124.24
+            176.47727272727275
           ],
           [
             "2026-05-01",
-            118.26
+            167.98295454545456
           ],
           [
             "2026-05-05",
-            114.51
+            162.65625000000003
           ],
           [
             "2026-05-06",
-            103.7
+            147.30113636363637
           ],
           [
             "2026-05-07",
-            101.82
+            144.6306818181818
           ],
           [
             "2026-05-08",
-            103.48
+            146.98863636363637
           ],
           [
             "2026-05-11",
-            106.11
+            150.72443181818184
           ],
           [
             "2026-05-12",
-            111.37
+            158.19602272727275
           ],
           [
             "2026-05-13",
-            110.28
+            156.64772727272728
           ],
           [
             "2026-05-14",
-            110.91
+            157.54261363636365
           ],
           [
             "2026-05-15",
-            113.96
+            161.875
           ],
           [
             "2026-05-18",
-            116.73
+            165.80965909090912
           ],
           [
             "2026-05-19",
-            114.64
+            162.84090909090912
           ],
           [
             "2026-05-20",
-            108.93
+            154.73011363636365
           ],
           [
             "2026-05-21",
-            105.84
+            150.34090909090912
           ],
           [
             "2026-05-22",
-            106.9
+            151.84659090909093
           ],
           [
             "2026-05-26",
-            102.75
+            145.95170454545456
           ],
           [
             "2026-05-27",
-            97.11
+            137.94034090909093
           ],
           [
             "2026-05-28",
-            95.47
+            135.61079545454547
           ],
           [
             "2026-05-29",
-            92.88
+            131.9318181818182
           ],
           [
             "2026-06-01",
-            98.29
+            139.6164772727273
           ],
           [
             "2026-06-02",
-            98.49
+            139.9005681818182
           ],
           [
             "2026-06-03",
-            101.69
+            144.44602272727275
           ],
           [
             "2026-06-04",
-            98.98
+            140.59659090909093
           ],
           [
             "2026-06-05",
-            97.29
+            138.19602272727275
           ],
           [
             "2026-06-08",
-            97.46
+            138.4375
           ],
           [
             "2026-06-09",
-            94.15
+            133.73579545454547
           ],
           [
             "2026-06-10",
-            95.73
+            135.98011363636365
           ],
           [
             "2026-06-11",
-            92.84
+            131.87500000000003
           ],
           [
             "2026-06-12",
-            88.64
+            125.90909090909092
           ],
           [
             "2026-06-15",
-            84.36
+            119.82954545454547
           ],
           [
             "2026-06-16",
-            80.5
+            114.34659090909092
           ],
           [
             "2026-06-17",
-            80.33
+            114.10511363636365
           ],
           [
             "2026-06-18",
-            79.35
+            112.71306818181819
           ],
           [
             "2026-06-19",
-            80.46
+            114.28977272727273
           ],
           [
             "2026-06-22",
-            76.49
+            108.65056818181819
           ],
           [
             "2026-06-23",
-            75.69
+            107.51420454545456
           ],
           [
             "2026-06-24",
-            72.09
+            102.4005681818182
           ],
           [
             "2026-06-25",
-            73.74
+            104.74431818181819
           ],
           [
             "2026-06-26",
-            70.16
+            99.65909090909092
           ],
           [
             "2026-06-29",
-            71.59
+            101.69034090909092
           ],
           [
             "2026-06-30",
-            70.46
+            100.08522727272728
           ],
           [
             "2026-07-01",
-            69.24
+            98.35227272727273
           ],
           [
             "2026-07-02",
-            68.53
+            97.34375000000001
           ],
           [
             "2026-07-03",
-            68.68
+            97.5568181818182
           ],
           [
             "2026-07-06",
-            69.56
+            98.8068181818182
           ],
           [
             "2026-07-07",
-            71.78
+            101.96022727272728
           ],
           [
             "2026-07-08",
-            76.5
+            108.66477272727275
           ],
           [
             "2026-07-09",
-            74.46
+            105.76704545454545
           ],
           [
             "2026-07-10",
-            74.34
+            105.59659090909092
           ],
           [
             "2026-07-13",
-            81.62
+            115.93750000000001
           ],
           [
             "2026-07-14",
-            83.69
+            118.87784090909092
           ],
           [
             "2026-07-15",
-            83.08
+            118.01136363636365
           ],
           [
             "2026-07-16",
-            81.23
+            115.38352272727275
           ],
           [
             "2026-07-17",
-            85.01
+            120.75284090909093
           ],
           [
             "2026-07-20",
-            86.99
+            123.56534090909092
           ],
           [
             "2026-07-21",
-            93.85
+            133.3096590909091
           ],
           [
             "2026-07-22",
-            94.12
+            133.69318181818184
           ],
           [
             "2026-07-23",
-            105.32
+            149.60227272727275
           ],
           [
             "2026-07-24",
-            100.31
+            142.48579545454547
           ],
           [
             "2026-07-27",
-            91.82
+            130.42613636363637
           ],
           [
             "2026-07-28",
-            85.51
+            121.4630681818182
           ],
           [
             "2026-07-29",
-            91.95
+            130.61079545454547
           ],
           [
             "2026-07-30",
-            91.91
+            130.55397727272728
           ],
           [
             "2026-07-31",
-            96.95
+            137.71306818181822
           ],
           [
             "2026-08-03",
-            88.9
+            126.27840909090912
           ],
           [
             "2026-08-04",
-            86.47
+            122.82670454545456
           ],
           [
             "2026-08-05",
-            86.65
+            123.08238636363639
           ],
           [
             "2026-08-06",
-            89.65
+            127.34375000000003
           ],
           [
             "2026-08-07",
-            87.62
+            124.4602272727273
           ],
           [
             "2026-08-10",
-            92.74
+            131.73295454545456
           ],
           [
             "2026-08-11",
-            93.26
+            132.47159090909093
           ],
           [
             "2026-08-12",
-            92.52
+            131.42045454545456
           ],
           [
             "2026-08-13",
-            92.03
+            130.72443181818184
           ],
           [
             "2026-08-14",
-            92.02
+            130.71022727272728
           ],
           [
             "2026-08-17",
-            92.43
+            131.29261363636365
           ],
           [
             "2026-08-18",
-            95.29
+            135.35511363636365
           ],
           [
             "2026-08-19",
-            92.37
+            131.20738636363637
           ],
           [
             "2026-08-20",
-            94
+            133.52272727272728
           ],
           [
             "2026-08-21",
-            96.92
+            137.67045454545456
           ],
           [
             "2026-08-24",
-            92.71
+            131.6903409090909
           ],
           [
             "2026-08-25",
-            88.24
+            125.3409090909091
           ],
           [
             "2026-08-26",
-            87.77
+            124.67329545454547
           ],
           [
             "2026-08-27",
-            90.18
+            128.09659090909093
           ],
           [
             "2026-08-28",
-            89.75
+            127.48579545454547
           ],
           [
             "2026-09-01",
-            96.02
+            136.39204545454547
           ],
           [
             "2026-09-02",
-            97.59
+            138.62215909090912
           ],
           [
             "2026-09-03",
-            100.52
+            142.78409090909093
           ],
           [
             "2026-09-04",
-            102.24
+            145.22727272727275
           ],
           [
             "2026-09-07",
-            104.47
+            148.39488636363637
           ],
           [
             "2026-09-08",
-            106.12
+            150.7386363636364
           ],
           [
             "2026-09-09",
-            109.51
+            155.5539772727273
           ],
           [
             "2026-09-10",
-            120.98
+            171.84659090909093
           ],
           [
             "2026-09-11",
-            118.06
+            167.69886363636365
           ],
           [
             "2026-09-14",
-            121.25
+            172.23011363636365
           ],
           [
             "2026-09-15",
-            130.8
+            185.7954545454546
           ],
           [
             "2026-09-16",
-            127.84
+            181.59090909090912
           ],
           [
             "2026-09-17",
-            121.18
+            172.13068181818184
           ],
           [
             "2026-09-18",
-            119.66
+            169.97159090909093
           ],
           [
             "2026-09-21",
-            116.15
+            164.9857954545455
           ],
           [
             "2026-09-22",
-            114.89
+            163.19602272727275
           ],
           [
             "2026-09-23",
-            117.45
+            166.8323863636364
           ],
           [
             "2026-09-24",
-            120.92
+            171.76136363636365
           ],
           [
             "2026-09-25",
-            116.01
+            164.78693181818184
           ],
           [
             "2026-09-28",
-            119.97
+            170.41193181818184
           ],
           [
             "2026-09-29",
-            113.96
+            161.875
           ],
           [
             "2026-09-30",
-            115.91
+            164.64488636363637
           ],
           [
             "2026-10-01",
-            114.82
+            163.0965909090909
           ],
           [
             "2026-10-02",
-            135.51
+            192.48579545454547
           ],
           [
             "2026-10-05",
-            125.51
+            178.28125000000003
           ],
           [
             "2026-10-06",
-            125.44
+            178.18181818181822
           ],
           [
             "2026-10-07",
-            126
+            178.97727272727275
           ],
           [
             "2026-10-08",
-            130.18
+            184.91477272727275
           ],
           [
             "2026-10-09",
-            130.03
+            184.70170454545456
           ],
           [
             "2026-10-12",
-            129.95
+            184.5880681818182
           ],
           [
             "2026-10-13",
-            125.78
+            178.66477272727275
           ],
           [
             "2026-10-14",
-            126.55
+            179.75852272727275
           ],
           [
             "2026-10-15",
-            126.35
+            179.47443181818184
           ],
           [
             "2026-10-16",
-            119.33
+            169.50284090909093
           ],
           [
             "2026-10-19",
-            118.82
+            168.7784090909091
           ],
           [
             "2026-10-20",
-            115.22
+            163.66477272727275
           ],
           [
             "2026-10-21",
-            117.37
+            166.71875000000003
           ],
           [
             "2026-10-22",
-            125.39
+            178.11079545454547
           ],
           [
             "2026-10-23",
-            128.3
+            182.24431818181822
           ],
           [
             "2026-10-26",
-            128.12
+            181.9886363636364
           ],
           [
             "2026-10-27",
-            123.1
+            174.85795454545456
           ],
           [
             "2026-10-28",
-            119.2
+            169.31818181818184
           ],
           [
             "2026-10-29",
-            115.28
+            163.75000000000003
           ],
           [
             "2026-10-30",
-            120.15
+            170.66761363636365
           ],
           [
             "2026-11-02",
-            107.39
+            152.54261363636365
           ],
           [
             "2026-11-03",
-            107.03
+            152.03125000000003
           ]
-        ]
+        ],
+        "originalUnit": "USD / barrel",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       },
       "china": {
-        "price": 107.03,
-        "unit": "USD / barrel",
+        "price": 712.6768906250002,
+        "unit": "CNY / barrel",
         "label": "Brent spot · EIA via FRED · shared global benchmark",
         "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
         "date": "2026-11-03",
         "history": [
           [
             "2022-01-03",
-            78.25
+            521.0405184659091
           ],
           [
             "2022-01-04",
-            79.39
+            528.6313963068183
           ],
           [
             "2022-01-05",
-            80.6
+            536.6883806818182
           ],
           [
             "2022-01-06",
-            81.99
+            545.9439247159091
           ],
           [
             "2022-01-07",
-            82.28
+            547.8749375000001
           ],
           [
             "2022-01-10",
-            81.56
+            543.0806988636365
           ],
           [
             "2022-01-11",
-            84.98
+            565.8533323863638
           ],
           [
             "2022-01-12",
-            85.83
+            571.513197443182
           ],
           [
             "2022-01-13",
-            85.8
+            571.3134375000001
           ],
           [
             "2022-01-14",
-            87.17
+            580.4358082386365
           ],
           [
             "2022-01-17",
-            87.82
+            584.7639403409091
           ],
           [
             "2022-01-18",
-            88.83
+            591.4891917613637
           ],
           [
             "2022-01-19",
-            89.64
+            596.8827102272728
           ],
           [
             "2022-01-20",
-            89.75
+            597.6151633522728
           ],
           [
             "2022-01-21",
-            89.75
+            597.6151633522728
           ],
           [
             "2022-01-24",
-            87.74
+            584.231247159091
           ],
           [
             "2022-01-25",
-            89.49
+            595.8839105113638
           ],
           [
             "2022-01-26",
-            91.22
+            607.403400568182
           ],
           [
             "2022-01-27",
-            90.7
+            603.9408948863638
           ],
           [
             "2022-01-28",
-            91.47
+            609.0680667613638
           ],
           [
             "2022-01-31",
-            92.35
+            614.9276917613637
           ],
           [
             "2022-02-01",
-            90.24
+            600.8779090909092
           ],
           [
             "2022-02-02",
-            91.43
+            608.8017201704547
           ],
           [
             "2022-02-03",
-            92.99
+            619.1892372159092
           ],
           [
             "2022-02-04",
-            96.86
+            644.9582698863637
           ],
           [
             "2022-02-07",
-            97.28
+            647.7549090909092
           ],
           [
             "2022-02-08",
-            96.07
+            639.6979247159092
           ],
           [
             "2022-02-09",
-            94.95
+            632.2402201704547
           ],
           [
             "2022-02-10",
-            96.37
+            641.6955241477274
           ],
           [
             "2022-02-11",
-            97.5
+            649.2198153409092
           ],
           [
             "2022-02-14",
-            101.66
+            676.9198607954546
           ],
           [
             "2022-02-15",
-            98.43
+            655.4123735795456
           ],
           [
             "2022-02-16",
-            97.44
+            648.8202954545455
           ],
           [
             "2022-02-17",
-            95.28
+            634.4375795454547
           ],
           [
             "2022-02-18",
-            96.18
+            640.4303778409093
           ],
           [
             "2022-02-21",
-            98.95
+            658.8748792613638
           ],
           [
             "2022-02-22",
-            98.73
+            657.4099730113638
           ],
           [
             "2022-02-23",
-            99.29
+            661.1388252840911
           ],
           [
             "2022-02-24",
-            101.29
+            674.4561548295457
           ],
           [
             "2022-02-25",
-            98.56
+            656.2780000000001
           ],
           [
             "2022-02-28",
-            103.08
+            686.3751647727274
           ],
           [
             "2022-03-01",
-            110.93
+            738.6456832386366
           ],
           [
             "2022-03-02",
-            118.94
+            791.981588068182
           ],
           [
             "2022-03-03",
-            115.36
+            768.1435681818183
           ],
           [
             "2022-03-04",
-            123.86
+            824.7422187500001
           ],
           [
             "2022-03-07",
-            129.02
+            859.1009289772729
           ],
           [
             "2022-03-08",
-            133.18
+            886.8009744318184
           ],
           [
             "2022-03-09",
-            116.58
+            776.2671392045456
           ],
           [
             "2022-03-10",
-            114.54
+            762.683463068182
           ],
           [
             "2022-03-11",
-            118.11
+            786.4548963068183
           ],
           [
             "2022-03-14",
-            110.39
+            735.0500042613638
           ],
           [
             "2022-03-15",
-            105.14
+            700.0920142045456
           ],
           [
             "2022-03-16",
-            104.61
+            696.5629218750001
           ],
           [
             "2022-03-17",
-            113.5
+            755.7584517045456
           ],
           [
             "2022-03-18",
-            114.32
+            761.2185568181819
           ],
           [
             "2022-03-21",
-            122.29
+            814.2881150568184
           ],
           [
             "2022-03-22",
-            121.53
+            809.2275298295456
           ],
           [
             "2022-03-23",
-            127.52
+            849.112931818182
           ],
           [
             "2022-03-24",
-            123.98
+            825.5412585227275
           ],
           [
             "2022-03-25",
-            122.67
+            816.8184076704547
           ],
           [
             "2022-03-28",
-            114.5
+            762.4171164772729
           ],
           [
             "2022-03-29",
-            112.79
+            751.0307997159093
           ],
           [
             "2022-03-30",
-            115.59
+            769.6750610795457
           ],
           [
             "2022-03-31",
-            107.29
+            714.4081434659092
           ],
           [
             "2022-04-01",
-            106.13
+            706.6840923295456
           ],
           [
             "2022-04-04",
-            108.15
+            720.1345951704548
           ],
           [
             "2022-04-05",
-            106.6
+            709.8136647727274
           ],
           [
             "2022-04-06",
-            100.81
+            671.2599957386365
           ],
           [
             "2022-04-07",
-            99.83
+            664.7345042613638
           ],
           [
             "2022-04-08",
-            101.26
+            674.2563948863639
           ],
           [
             "2022-04-11",
-            97.92
+            652.0164545454547
           ],
           [
             "2022-04-12",
-            104.42
+            695.2977755681819
           ],
           [
             "2022-04-13",
-            108.49
+            722.3985411931819
           ],
           [
             "2022-04-14",
-            110.83
+            737.9798167613637
           ],
           [
             "2022-04-19",
-            105.49
+            702.4225468750001
           ],
           [
             "2022-04-20",
-            105.05
+            699.4927343750002
           ],
           [
             "2022-04-21",
-            107.2
+            713.8088636363638
           ],
           [
             "2022-04-22",
-            105.15
+            700.1586008522729
           ],
           [
             "2022-04-25",
-            99.27
+            661.0056519886365
           ],
           [
             "2022-04-26",
-            102.89
+            685.1100184659092
           ],
           [
             "2022-04-27",
-            103.3
+            687.8400710227274
           ],
           [
             "2022-04-28",
-            105.78
+            704.353559659091
           ],
           [
             "2022-04-29",
-            108.36
+            721.5329147727274
           ],
           [
             "2022-05-03",
-            104.94
+            698.7602812500002
           ],
           [
             "2022-05-04",
-            110.53
+            735.9822173295456
           ],
           [
             "2022-05-05",
-            112.11
+            746.5029076704546
           ],
           [
             "2022-05-06",
-            113.86
+            758.1555710227274
           ],
           [
             "2022-05-09",
-            106.67
+            710.2797713068184
           ],
           [
             "2022-05-10",
-            102.61
+            683.2455923295456
           ],
           [
             "2022-05-11",
-            107.7
+            717.1381960227275
           ],
           [
             "2022-05-12",
-            108.06
+            719.5353153409093
           ],
           [
             "2022-05-13",
-            112.12
+            746.569494318182
           ],
           [
             "2022-05-16",
-            114.86
+            764.8142357954547
           ],
           [
             "2022-05-17",
-            112.89
+            751.696666193182
           ],
           [
             "2022-05-18",
-            110.04
+            732.7194715909093
           ],
           [
             "2022-05-19",
-            113.22
+            753.894025568182
           ],
           [
             "2022-05-20",
-            113.63
+            756.6240781250001
           ],
           [
             "2022-05-23",
-            115.13
+            766.612075284091
           ],
           [
             "2022-05-24",
-            115.77
+            770.8736207386365
           ],
           [
             "2022-05-25",
-            116.41
+            775.1351661931819
           ],
           [
             "2022-05-26",
-            119.81
+            797.7746264204548
           ],
           [
             "2022-05-27",
-            121.19
+            806.9635838068183
           ],
           [
             "2022-05-30",
-            123.01
+            819.082353693182
           ],
           [
             "2022-05-31",
-            125.53
+            835.8621889204547
           ],
           [
             "2022-06-01",
-            122.2
+            813.6888352272729
           ],
           [
             "2022-06-03",
-            125.68
+            836.8609886363638
           ],
           [
             "2022-06-06",
-            124.99
+            832.266509943182
           ],
           [
             "2022-06-07",
-            126.89
+            844.9179730113638
           ],
           [
             "2022-06-08",
-            129.2
+            860.2994886363638
           ],
           [
             "2022-06-09",
-            128.47
+            855.4386633522729
           ],
           [
             "2022-06-10",
-            127.44
+            848.5802386363638
           ],
           [
             "2022-06-13",
-            128.44
+            855.2389034090911
           ],
           [
             "2022-06-14",
-            127.02
+            845.7835994318183
           ],
           [
             "2022-06-15",
-            124.96
+            832.0667500000002
           ],
           [
             "2022-06-16",
-            125.78
+            837.5268551136365
           ],
           [
             "2022-06-17",
-            119.22
+            793.8460142045456
           ],
           [
             "2022-06-20",
-            118.25
+            787.3871093750001
           ],
           [
             "2022-06-21",
-            118.51
+            789.1183622159093
           ],
           [
             "2022-06-22",
-            115.54
+            769.3421278409093
           ],
           [
             "2022-06-23",
-            114.5
+            762.4171164772729
           ],
           [
             "2022-06-24",
-            117.36
+            781.4608977272729
           ],
           [
             "2022-06-27",
-            119.69
+            796.9755866477274
           ],
           [
             "2022-06-28",
-            122.21
+            813.7554218750001
           ],
           [
             "2022-06-29",
-            120.8
+            804.3667045454547
           ],
           [
             "2022-06-30",
-            119.78
+            797.5748664772728
           ],
           [
             "2022-07-01",
-            119.21
+            793.7794275568183
           ],
           [
             "2022-07-04",
-            121.8
+            811.025369318182
           ],
           [
             "2022-07-05",
-            110.49
+            735.7158707386365
           ],
           [
             "2022-07-06",
-            108.54
+            722.7314744318184
           ],
           [
             "2022-07-07",
-            113.4
+            755.0925852272729
           ],
           [
             "2022-07-08",
-            113.95
+            758.7548508522729
           ],
           [
             "2022-07-11",
-            114.85
+            764.7476491477274
           ],
           [
             "2022-07-12",
-            106.98
+            712.3439573863639
           ],
           [
             "2022-07-13",
-            107.17
+            713.609103693182
           ],
           [
             "2022-07-14",
-            107.74
+            717.4045426136365
           ],
           [
             "2022-07-15",
-            112.26
+            747.5017073863638
           ],
           [
             "2022-07-18",
-            117.27
+            780.8616178977275
           ],
           [
             "2022-07-19",
-            114.96
+            765.4801022727274
           ],
           [
             "2022-07-20",
-            115.86
+            771.472900568182
           ],
           [
             "2022-07-21",
-            112.81
+            751.1639730113639
           ],
           [
             "2022-07-22",
-            106.77
+            710.945637784091
           ],
           [
             "2022-07-25",
-            108.23
+            720.6672883522729
           ],
           [
             "2022-07-26",
-            107.32
+            714.607903409091
           ],
           [
             "2022-07-27",
-            109.64
+            730.0560056818183
           ],
           [
             "2022-07-28",
-            109.68
+            730.3223522727275
           ],
           [
             "2022-07-29",
-            111.51
+            742.5077088068184
           ],
           [
             "2022-08-01",
-            106.09
+            706.4177457386365
           ],
           [
             "2022-08-02",
-            106.51
+            709.214384943182
           ],
           [
             "2022-08-03",
-            101.82
+            677.985247159091
           ],
           [
             "2022-08-04",
-            97.99
+            652.4825610795456
           ],
           [
             "2022-08-05",
-            100.31
+            667.9306633522729
           ],
           [
             "2022-08-08",
-            103.46
+            688.9054573863638
           ],
           [
             "2022-08-09",
-            103.81
+            691.2359900568183
           ],
           [
             "2022-08-10",
-            105.06
+            699.5593210227274
           ],
           [
             "2022-08-11",
-            107.19
+            713.7422769886365
           ],
           [
             "2022-08-12",
-            103.7
+            690.5035369318183
           ],
           [
             "2022-08-15",
-            98.25
+            654.2138139204546
           ],
           [
             "2022-08-16",
-            95.36
+            634.9702727272728
           ],
           [
             "2022-08-17",
-            97.22
+            647.3553892045455
           ],
           [
             "2022-08-18",
-            96.35
+            641.5623508522729
           ],
           [
             "2022-08-19",
-            96.45
+            642.2282173295456
           ],
           [
             "2022-08-22",
-            95.06
+            632.9726732954547
           ],
           [
             "2022-08-23",
-            99.49
+            662.4705582386365
           ],
           [
             "2022-08-24",
-            99.87
+            665.000850852273
           ],
           [
             "2022-08-25",
-            98.81
+            657.9426661931819
           ],
           [
             "2022-08-26",
-            101.13
+            673.3907684659092
           ],
           [
             "2022-08-30",
-            99.34
+            661.4717585227274
           ],
           [
             "2022-08-31",
-            96.55
+            642.8940838068183
           ],
           [
             "2022-09-01",
-            92.24
+            614.1952386363637
           ],
           [
             "2022-09-02",
-            93.09
+            619.855103693182
           ],
           [
             "2022-09-05",
-            94.22
+            627.3793948863638
           ],
           [
             "2022-09-06",
-            91.43
+            608.8017201704547
           ],
           [
             "2022-09-07",
-            86.83
+            578.1718622159092
           ],
           [
             "2022-09-08",
-            87.99
+            585.8959133522728
           ],
           [
             "2022-09-09",
-            91.68
+            610.4663863636365
           ],
           [
             "2022-09-12",
-            93.45
+            622.2522230113638
           ],
           [
             "2022-09-13",
-            92.04
+            612.8635056818183
           ],
           [
             "2022-09-14",
-            92.83
+            618.1238508522729
           ],
           [
             "2022-09-15",
-            89.28
+            594.485590909091
           ],
           [
             "2022-09-16",
-            89.43
+            595.4843906250002
           ],
           [
             "2022-09-20",
-            89.62
+            596.7495369318183
           ],
           [
             "2022-09-21",
-            89.86
+            598.3476164772728
           ],
           [
             "2022-09-22",
-            90.4
+            601.9432954545456
           ],
           [
             "2022-09-23",
-            84.29
+            561.258853693182
           ],
           [
             "2022-09-26",
-            82.55
+            549.6727769886364
           ],
           [
             "2022-09-27",
-            85.97
+            572.4454105113638
           ],
           [
             "2022-09-28",
-            89.55
+            596.2834303977273
           ],
           [
             "2022-09-29",
-            89.41
+            595.3512173295455
           ],
           [
             "2022-09-30",
-            88.9
+            591.9552982954547
           ],
           [
             "2022-10-03",
-            90.68
+            603.8077215909093
           ],
           [
             "2022-10-04",
-            93.74
+            624.1832357954546
           ],
           [
             "2022-10-05",
-            94.35
+            628.2450213068182
           ],
           [
             "2022-10-06",
-            95.65
+            636.9012855113638
           ],
           [
             "2022-10-07",
-            98.88
+            658.4087727272728
           ],
           [
             "2022-10-10",
-            97.13
+            646.756109375
           ],
           [
             "2022-10-11",
-            95.17
+            633.7051264204547
           ],
           [
             "2022-10-12",
-            93.44
+            622.1856363636365
           ],
           [
             "2022-10-13",
-            95.16
+            633.6385397727274
           ],
           [
             "2022-10-14",
-            92.22
+            614.0620653409092
           ],
           [
             "2022-10-17",
-            91.04
+            606.2048409090911
           ],
           [
             "2022-10-18",
-            89.46
+            595.6841505681818
           ],
           [
             "2022-10-19",
-            91.34
+            608.2024403409092
           ],
           [
             "2022-10-20",
-            91.52
+            609.4010000000001
           ],
           [
             "2022-10-21",
-            91.82
+            611.3985994318183
           ],
           [
             "2022-10-24",
-            91.57
+            609.7339332386365
           ],
           [
             "2022-10-25",
-            91.76
+            610.9990795454547
           ],
           [
             "2022-10-26",
-            92.93
+            618.7897173295456
           ],
           [
             "2022-10-27",
-            94.17
+            627.0464616477274
           ],
           [
             "2022-10-28",
-            94.64
+            630.1760340909092
           ],
           [
             "2022-10-31",
-            93.3
+            621.2534232954547
           ],
           [
             "2022-11-01",
-            95.12
+            633.3721931818184
           ],
           [
             "2022-11-02",
-            96.07
+            639.6979247159092
           ],
           [
             "2022-11-03",
-            95.29
+            634.504166193182
           ],
           [
             "2022-11-04",
-            99.53
+            662.7369048295456
           ],
           [
             "2022-11-07",
-            99.87
+            665.000850852273
           ],
           [
             "2022-11-08",
-            96.85
+            644.8916832386365
           ],
           [
             "2022-11-09",
-            93.05
+            619.5887571022728
           ],
           [
             "2022-11-10",
-            94.25
+            627.5791548295456
           ],
           [
             "2022-11-11",
-            96.37
+            641.6955241477274
           ],
           [
             "2022-11-14",
-            93.59
+            623.1844360795455
           ],
           [
             "2022-11-15",
-            94.3
+            627.9120880681819
           ],
           [
             "2022-11-16",
-            92.61
+            616.6589446022729
           ],
           [
             "2022-11-17",
-            91
+            605.9384943181819
           ],
           [
             "2022-11-18",
-            88.93
+            592.1550582386366
           ],
           [
             "2022-11-21",
-            88.44
+            588.8923125000001
           ],
           [
             "2022-11-22",
-            88.65
+            590.2906321022729
           ],
           [
             "2022-11-23",
-            85.9
+            571.9793039772729
           ],
           [
             "2022-11-24",
-            85.59
+            569.9151178977274
           ],
           [
             "2022-11-25",
-            83.4
+            555.3326420454547
           ],
           [
             "2022-11-28",
-            83.5
+            555.9985085227274
           ],
           [
             "2022-11-29",
-            83.22
+            554.1340823863637
           ],
           [
             "2022-11-30",
-            85.61
+            570.048291193182
           ],
           [
             "2022-12-01",
-            86.28
+            574.5095965909093
           ],
           [
             "2022-12-02",
-            86.54
+            576.2408494318183
           ],
           [
             "2022-12-05",
-            83.36
+            555.0662954545455
           ],
           [
             "2022-12-06",
-            79.92
+            532.1604886363638
           ],
           [
             "2022-12-07",
-            77.11
+            513.4496406250001
           ],
           [
             "2022-12-08",
-            76.02
+            506.19169602272734
           ],
           [
             "2022-12-09",
-            76.37
+            508.52222869318194
           ],
           [
             "2022-12-12",
-            78
+            519.3758522727273
           ],
           [
             "2022-12-13",
-            80.14
+            533.6253948863638
           ],
           [
             "2022-12-14",
-            83.33
+            554.8665355113637
           ],
           [
             "2022-12-15",
-            82.34
+            548.2744573863638
           ],
           [
             "2022-12-16",
-            80.2
+            534.0249147727274
           ],
           [
             "2022-12-19",
-            81.66
+            543.7465653409092
           ],
           [
             "2022-12-20",
-            79.45
+            529.030916193182
           ],
           [
             "2022-12-21",
-            80.25
+            534.3578480113638
           ],
           [
             "2022-12-22",
-            79.58
+            529.8965426136365
           ],
           [
             "2022-12-23",
-            82.45
+            549.0069105113638
           ],
           [
             "2022-12-28",
-            81.7
+            544.0129119318183
           ],
           [
             "2022-12-29",
-            80.96
+            539.0855
           ],
           [
             "2022-12-30",
-            82.82
+            551.4706164772728
           ],
           [
             "2023-01-03",
-            80.36
+            535.0903011363638
           ],
           [
             "2023-01-04",
-            75.31
+            501.46404403409105
           ],
           [
             "2023-01-05",
-            76.73
+            510.91934801136375
           ],
           [
             "2023-01-06",
-            76.41
+            508.788575284091
           ],
           [
             "2023-01-09",
-            77.5
+            516.0465198863637
           ],
           [
             "2023-01-10",
-            78.4
+            522.0393181818183
           ],
           [
             "2023-01-11",
-            81.11
+            540.0842997159092
           ],
           [
             "2023-01-12",
-            82.59
+            549.9391235795456
           ],
           [
             "2023-01-13",
-            83.43
+            555.5324019886365
           ],
           [
             "2023-01-16",
-            82.65
+            550.3386434659093
           ],
           [
             "2023-01-17",
-            84.38
+            561.8581335227274
           ],
           [
             "2023-01-18",
-            83.78
+            557.862934659091
           ],
           [
             "2023-01-19",
-            85.08
+            566.5191988636365
           ],
           [
             "2023-01-20",
-            86.96
+            579.0374886363637
           ],
           [
             "2023-01-23",
-            87.54
+            582.8995142045457
           ],
           [
             "2023-01-24",
-            85.25
+            567.6511718750002
           ],
           [
             "2023-01-25",
-            85.08
+            566.5191988636365
           ],
           [
             "2023-01-26",
-            86.29
+            574.5761832386365
           ],
           [
             "2023-01-27",
-            85.36
+            568.3836250000002
           ],
           [
             "2023-01-30",
-            84.9
+            565.3206392045456
           ],
           [
             "2023-01-31",
-            83.42
+            555.4658153409092
           ],
           [
             "2023-02-01",
-            81.61
+            543.4136321022728
           ],
           [
             "2023-02-02",
-            80.57
+            536.4886207386364
           ],
           [
             "2023-02-03",
-            78.85
+            525.0357173295455
           ],
           [
             "2023-02-06",
-            80.48
+            535.8893409090911
           ],
           [
             "2023-02-07",
-            82.92
+            552.1364829545456
           ],
           [
             "2023-02-08",
-            84.17
+            560.4598139204546
           ],
           [
             "2023-02-09",
-            83.46
+            555.7321619318183
           ],
           [
             "2023-02-10",
-            85.46
+            569.0494914772728
           ],
           [
             "2023-02-13",
-            85.98
+            572.511997159091
           ],
           [
             "2023-02-14",
-            84.96
+            565.7201590909092
           ],
           [
             "2023-02-15",
-            84.11
+            560.060294034091
           ],
           [
             "2023-02-16",
-            83.84
+            558.2624545454547
           ],
           [
             "2023-02-17",
-            81.97
+            545.8107514204546
           ],
           [
             "2023-02-20",
-            82.79
+            551.2708565340911
           ],
           [
             "2023-02-21",
-            82.14
+            546.9427244318183
           ],
           [
             "2023-02-22",
-            79.55
+            529.6967826704546
           ],
           [
             "2023-02-23",
-            82.08
+            546.5432045454546
           ],
           [
             "2023-02-24",
-            82.31
+            548.0746974431819
           ],
           [
             "2023-02-27",
-            81.24
+            540.9499261363637
           ],
           [
             "2023-02-28",
-            83.21
+            554.0674957386365
           ],
           [
             "2023-03-01",
-            83.68
+            557.1970681818184
           ],
           [
             "2023-03-02",
-            84.15
+            560.3266406250001
           ],
           [
             "2023-03-03",
-            85.74
+            570.9139176136365
           ],
           [
             "2023-03-06",
-            85.86
+            571.7129573863638
           ],
           [
             "2023-03-07",
-            83.03
+            552.8689360795456
           ],
           [
             "2023-03-08",
-            82.1
+            546.6763778409091
           ],
           [
             "2023-03-09",
-            81
+            539.3518465909092
           ],
           [
             "2023-03-10",
-            82.3
+            548.0081107954546
           ],
           [
             "2023-03-13",
-            79.67
+            530.495822443182
           ],
           [
             "2023-03-14",
-            76.77
+            511.1856946022728
           ],
           [
             "2023-03-15",
-            74.3
+            494.73879261363646
           ],
           [
             "2023-03-16",
-            73.12
+            486.8815681818183
           ],
           [
             "2023-03-17",
-            71.03
+            472.9649588068183
           ],
           [
             "2023-03-20",
-            72.42
+            482.2205028409092
           ],
           [
             "2023-03-21",
-            74.78
+            497.93495170454554
           ],
           [
             "2023-03-22",
-            76.08
+            506.591215909091
           ],
           [
             "2023-03-23",
-            74.31
+            494.8053792613637
           ],
           [
             "2023-03-24",
-            73.63
+            490.27748721590916
           ],
           [
             "2023-03-27",
-            76.8
+            511.38545454545465
           ],
           [
             "2023-03-28",
-            78.07
+            519.8419588068183
           ],
           [
             "2023-03-29",
-            77.51
+            516.113106534091
           ],
           [
             "2023-03-30",
-            78.45
+            522.3722514204546
           ],
           [
             "2023-03-31",
-            79.19
+            527.2996633522728
           ],
           [
             "2023-04-03",
-            85.81
+            571.3800241477275
           ],
           [
             "2023-04-04",
-            85.7
+            570.6475710227274
           ],
           [
             "2023-04-05",
-            85.89
+            571.9127173295456
           ],
           [
             "2023-04-06",
-            86.56
+            576.3740227272729
           ],
           [
             "2023-04-11",
-            87.32
+            581.4346079545455
           ],
           [
             "2023-04-12",
-            88.31
+            588.0266860795456
           ],
           [
             "2023-04-13",
-            86.51
+            576.0410894886365
           ],
           [
             "2023-04-14",
-            87.31
+            581.3680213068183
           ],
           [
             "2023-04-17",
-            85.63
+            570.1814644886365
           ],
           [
             "2023-04-18",
-            85.48
+            569.1826647727274
           ],
           [
             "2023-04-19",
-            85.34
+            568.2504517045456
           ],
           [
             "2023-04-20",
-            83.29
+            554.6001889204547
           ],
           [
             "2023-04-21",
-            83.36
+            555.0662954545455
           ],
           [
             "2023-04-24",
-            84.23
+            560.8593338068183
           ],
           [
             "2023-04-25",
-            82.13
+            546.876137784091
           ],
           [
             "2023-04-26",
-            79.19
+            527.2996633522728
           ],
           [
             "2023-04-27",
-            80.11
+            533.4256349431819
           ],
           [
             "2023-04-28",
-            81.32
+            541.4826193181818
           ],
           [
             "2023-05-02",
-            76.71
+            510.78617471590917
           ],
           [
             "2023-05-03",
-            72.91
+            485.48324857954555
           ],
           [
             "2023-05-04",
-            73
+            486.082528409091
           ],
           [
             "2023-05-05",
-            75.85
+            505.0597230113637
           ],
           [
             "2023-05-09",
-            77.76
+            517.7777727272729
           ],
           [
             "2023-05-10",
-            76.7
+            510.71958806818196
           ],
           [
             "2023-05-11",
-            75.32
+            501.53063068181825
           ],
           [
             "2023-05-12",
-            74.54
+            496.33687215909106
           ],
           [
             "2023-05-15",
-            75.46
+            502.46284375000005
           ],
           [
             "2023-05-16",
-            75.15
+            500.39865767045467
           ],
           [
             "2023-05-17",
-            76.98
+            512.5840142045456
           ],
           [
             "2023-05-18",
-            75.75
+            504.393856534091
           ],
           [
             "2023-05-19",
-            75.42
+            502.196497159091
           ],
           [
             "2023-05-22",
-            75.77
+            504.52702982954554
           ],
           [
             "2023-05-23",
-            76.66
+            510.4532414772728
           ],
           [
             "2023-05-24",
-            77.99
+            519.3092656250001
           ],
           [
             "2023-05-25",
-            75.66
+            503.79457670454553
           ],
           [
             "2023-05-26",
-            76.33
+            508.25588210227284
           ],
           [
             "2023-05-30",
-            73.38
+            488.61282102272736
           ],
           [
             "2023-05-31",
-            71.98
+            479.29069034090924
           ],
           [
             "2023-06-01",
-            74.18
+            493.93975284090925
           ],
           [
             "2023-06-02",
-            76
+            506.0585227272728
           ],
           [
             "2023-06-05",
-            76.61
+            510.1203082386365
           ],
           [
             "2023-06-06",
-            76.22
+            507.52342897727283
           ],
           [
             "2023-06-07",
-            76.85
+            511.71838778409096
           ],
           [
             "2023-06-08",
-            75.88
+            505.25948295454555
           ],
           [
             "2023-06-09",
-            74.74
+            497.66860511363643
           ],
           [
             "2023-06-12",
-            71.8
+            478.0921306818183
           ],
           [
             "2023-06-13",
-            74.24
+            494.33927272727277
           ],
           [
             "2023-06-14",
-            73.39
+            488.6794076704546
           ],
           [
             "2023-06-15",
-            75.75
+            504.393856534091
           ],
           [
             "2023-06-16",
-            76.76
+            511.1191079545456
           ],
           [
             "2023-06-19",
-            76.09
+            506.6578025568183
           ],
           [
             "2023-06-20",
-            75.79
+            504.6602031250001
           ],
           [
             "2023-06-21",
-            76.92
+            512.1844943181819
           ],
           [
             "2023-06-22",
-            73.93
+            492.2750866477274
           ],
           [
             "2023-06-23",
-            73.56
+            489.8113806818183
           ],
           [
             "2023-06-26",
-            73.86
+            491.80898011363644
           ],
           [
             "2023-06-27",
-            71.88
+            478.62482386363644
           ],
           [
             "2023-06-28",
-            73.64
+            490.3440738636365
           ],
           [
             "2023-06-29",
-            73.86
+            491.80898011363644
           ],
           [
             "2023-06-30",
-            74.51
+            496.1371122159092
           ],
           [
             "2023-07-03",
-            74.52
+            496.2036988636364
           ],
           [
             "2023-07-04",
-            76.23
+            507.59001562500015
           ],
           [
             "2023-07-05",
-            76.74
+            510.98593465909096
           ],
           [
             "2023-07-06",
-            76.72
+            510.85276136363643
           ],
           [
             "2023-07-07",
-            78.77
+            524.5030241477274
           ],
           [
             "2023-07-10",
-            77.83
+            518.2438792613638
           ],
           [
             "2023-07-11",
-            79.54
+            529.6301960227274
           ],
           [
             "2023-07-12",
-            80.35
+            535.0237144886364
           ],
           [
             "2023-07-13",
-            81.31
+            541.4160326704547
           ],
           [
             "2023-07-14",
-            79.9
+            532.0273153409092
           ],
           [
             "2023-07-17",
-            77.8
+            518.0441193181819
           ],
           [
             "2023-07-18",
-            79.54
+            529.6301960227274
           ],
           [
             "2023-07-19",
-            79.38
+            528.564809659091
           ],
           [
             "2023-07-20",
-            79.62
+            530.1628892045456
           ],
           [
             "2023-07-21",
-            81.06
+            539.7513664772729
           ],
           [
             "2023-07-24",
-            82.53
+            549.5396036931819
           ],
           [
             "2023-07-25",
-            83.46
+            555.7321619318183
           ],
           [
             "2023-07-26",
-            82.98
+            552.5360028409092
           ],
           [
             "2023-07-27",
-            84.28
+            561.1922670454546
           ],
           [
             "2023-07-28",
-            84.49
+            562.5905866477274
           ],
           [
             "2023-07-31",
-            85.22
+            567.4514119318183
           ],
           [
             "2023-08-01",
-            85.34
+            568.2504517045456
           ],
           [
             "2023-08-02",
-            84.01
+            559.3944275568183
           ],
           [
             "2023-08-03",
-            86.19
+            573.9103167613638
           ],
           [
             "2023-08-04",
-            87.38
+            581.8341278409092
           ],
           [
             "2023-08-07",
-            86.47
+            575.7747428977274
           ],
           [
             "2023-08-08",
-            88
+            585.9625000000001
           ],
           [
             "2023-08-09",
-            89.31
+            594.6853508522729
           ],
           [
             "2023-08-10",
-            87.44
+            582.2336477272728
           ],
           [
             "2023-08-11",
-            87.93
+            585.4963934659093
           ],
           [
             "2023-08-14",
-            87.4
+            581.9673011363637
           ],
           [
             "2023-08-15",
-            86.28
+            574.5095965909093
           ],
           [
             "2023-08-16",
-            84.49
+            562.5905866477274
           ],
           [
             "2023-08-17",
-            85.24
+            567.5845852272728
           ],
           [
             "2023-08-18",
-            85.92
+            572.1124772727273
           ],
           [
             "2023-08-21",
-            85.44
+            568.9163181818183
           ],
           [
             "2023-08-22",
-            84.7
+            563.9889062500001
           ],
           [
             "2023-08-23",
-            83.94
+            558.9283210227273
           ],
           [
             "2023-08-24",
-            84.07
+            559.7939474431819
           ],
           [
             "2023-08-25",
-            85.42
+            568.7831448863637
           ],
           [
             "2023-08-29",
-            86.37
+            575.1088764204547
           ],
           [
             "2023-08-30",
-            86.62
+            576.7735426136366
           ],
           [
             "2023-08-31",
-            87.29
+            581.2348480113639
           ],
           [
             "2023-09-01",
-            89.98
+            599.1466562500001
           ],
           [
             "2023-09-04",
-            90.42
+            602.0764687500001
           ],
           [
             "2023-09-05",
-            91.25
+            607.6031605113637
           ],
           [
             "2023-09-06",
-            91.79
+            611.1988394886365
           ],
           [
             "2023-09-07",
-            91.16
+            607.0038806818183
           ],
           [
             "2023-09-08",
-            91.85
+            611.5983593750001
           ],
           [
             "2023-09-11",
-            91.97
+            612.3973991477274
           ],
           [
             "2023-09-12",
-            93.58
+            623.1178494318183
           ],
           [
             "2023-09-13",
-            93.04
+            619.5221704545456
           ],
           [
             "2023-09-14",
-            95.2
+            633.9048863636365
           ],
           [
             "2023-09-15",
-            95.55
+            636.235419034091
           ],
           [
             "2023-09-18",
-            95.95
+            638.898884943182
           ],
           [
             "2023-09-19",
-            96.11
+            639.9642713068183
           ],
           [
             "2023-09-20",
-            94.56
+            629.6433409090911
           ],
           [
             "2023-09-21",
-            93.7
+            623.9168892045456
           ],
           [
             "2023-09-22",
-            93.99
+            625.8479019886364
           ],
           [
             "2023-09-25",
-            94.01
+            625.981075284091
           ],
           [
             "2023-09-26",
-            94.46
+            628.9774744318182
           ],
           [
             "2023-09-27",
-            97.1
+            646.5563494318183
           ],
           [
             "2023-09-28",
-            96.64
+            643.4933636363638
           ],
           [
             "2023-09-29",
-            95.86
+            638.2996051136365
           ],
           [
             "2023-10-02",
-            91.21
+            607.3368139204546
           ],
           [
             "2023-10-03",
-            94.46
+            628.9774744318182
           ],
           [
             "2023-10-04",
-            89.83
+            598.147856534091
           ],
           [
             "2023-10-05",
-            88.28
+            587.8269261363638
           ],
           [
             "2023-10-06",
-            87.86
+            585.0302869318183
           ],
           [
             "2023-10-09",
-            91.37
+            608.402200284091
           ],
           [
             "2023-10-10",
-            90.7
+            603.9408948863638
           ],
           [
             "2023-10-11",
-            87.58
+            583.1658607954547
           ],
           [
             "2023-10-12",
-            88.4
+            588.6259659090911
           ],
           [
             "2023-10-13",
-            94.33
+            628.1118480113638
           ],
           [
             "2023-10-16",
-            90.99
+            605.8719076704547
           ],
           [
             "2023-10-17",
-            92.52
+            616.0596647727274
           ],
           [
             "2023-10-18",
-            91.99
+            612.5305724431819
           ],
           [
             "2023-10-19",
-            93.12
+            620.0548636363638
           ],
           [
             "2023-10-20",
-            93.72
+            624.0500625000001
           ],
           [
             "2023-10-23",
-            91.88
+            611.7981193181819
           ],
           [
             "2023-10-24",
-            88
+            585.9625000000001
           ],
           [
             "2023-10-25",
-            90.14
+            600.2120426136365
           ],
           [
             "2023-10-26",
-            88.45
+            588.9588991477274
           ],
           [
             "2023-10-27",
-            90.73
+            604.1406548295456
           ],
           [
             "2023-10-30",
-            90.73
+            604.1406548295456
           ],
           [
             "2023-10-31",
-            86.82
+            578.1052755681819
           ],
           [
             "2023-11-01",
-            86.92
+            578.7711420454547
           ],
           [
             "2023-11-02",
-            89.02
+            592.7543380681819
           ],
           [
             "2023-11-03",
-            87.55
+            582.9661008522728
           ],
           [
             "2023-11-06",
-            87.31
+            581.3680213068183
           ],
           [
             "2023-11-07",
-            83.43
+            555.5324019886365
           ],
           [
             "2023-11-08",
-            81.46
+            542.4148323863637
           ],
           [
             "2023-11-09",
-            81.74
+            544.2792585227273
           ],
           [
             "2023-11-10",
-            83.66
+            557.0638948863638
           ],
           [
             "2023-11-13",
-            84.09
+            559.9271207386365
           ],
           [
             "2023-11-14",
-            84.2
+            560.6595738636365
           ],
           [
             "2023-11-15",
-            82.4
+            548.6739772727274
           ],
           [
             "2023-11-16",
-            77.73
+            517.578012784091
           ],
           [
             "2023-11-17",
-            81.22
+            540.8167528409092
           ],
           [
             "2023-11-20",
-            83.25
+            554.3338423295455
           ],
           [
             "2023-11-21",
-            82.42
+            548.8071505681819
           ],
           [
             "2023-11-22",
-            81.76
+            544.412431818182
           ],
           [
             "2023-11-23",
-            80.85
+            538.353046875
           ],
           [
             "2023-11-24",
-            79.82
+            531.494622159091
           ],
           [
             "2023-11-27",
-            79.49
+            529.297262784091
           ],
           [
             "2023-11-28",
-            81.66
+            543.7465653409092
           ],
           [
             "2023-11-29",
-            82.98
+            552.5360028409092
           ],
           [
             "2023-11-30",
-            81.72
+            544.1460852272728
           ],
           [
             "2023-12-01",
-            78.72
+            524.170090909091
           ],
           [
             "2023-12-04",
-            78.16
+            520.4412386363637
           ],
           [
             "2023-12-05",
-            77.27
+            514.5150269886365
           ],
           [
             "2023-12-06",
-            74.33
+            494.93855255681825
           ],
           [
             "2023-12-07",
-            74.21
+            494.139512784091
           ],
           [
             "2023-12-08",
-            75.94
+            505.6590028409092
           ],
           [
             "2023-12-11",
-            75.75
+            504.393856534091
           ],
           [
             "2023-12-12",
-            74.11
+            493.4736463068183
           ],
           [
             "2023-12-13",
-            74.14
+            493.6734062500001
           ],
           [
             "2023-12-14",
-            77.05
+            513.0501207386365
           ],
           [
             "2023-12-15",
-            76.84
+            511.65180113636376
           ],
           [
             "2023-12-18",
-            78.89
+            525.3020639204547
           ],
           [
             "2023-12-19",
-            79.82
+            531.494622159091
           ],
           [
             "2023-12-20",
-            81.1
+            540.0177130681819
           ],
           [
             "2023-12-21",
-            80.73
+            537.5540071022729
           ],
           [
             "2023-12-22",
-            80.23
+            534.2246747159093
           ],
           [
             "2023-12-27",
-            80.97
+            539.1520866477274
           ],
           [
             "2023-12-28",
-            79.04
+            526.3008636363638
           ],
           [
             "2023-12-29",
-            77.69
+            517.311666193182
           ],
           [
             "2024-01-02",
-            76.24
+            507.65660227272735
           ],
           [
             "2024-01-03",
-            77.18
+            513.9157471590911
           ],
           [
             "2024-01-04",
-            75.79
+            504.6602031250001
           ],
           [
             "2024-01-05",
-            78.31
+            521.4400383522728
           ],
           [
             "2024-01-08",
-            75.47
+            502.52943039772737
           ],
           [
             "2024-01-09",
-            77.97
+            519.1760923295456
           ],
           [
             "2024-01-10",
-            78.46
+            522.4388380681819
           ],
           [
             "2024-01-11",
-            80.21
+            534.0915014204546
           ],
           [
             "2024-01-12",
-            79.89
+            531.960728693182
           ],
           [
             "2024-01-15",
-            79.76
+            531.0951022727274
           ],
           [
             "2024-01-16",
-            80.15
+            533.691981534091
           ],
           [
             "2024-01-17",
-            78.88
+            525.2354772727274
           ],
           [
             "2024-01-18",
-            81.04
+            539.6181931818184
           ],
           [
             "2024-01-19",
-            80.71
+            537.4208338068182
           ],
           [
             "2024-01-22",
-            81.7
+            544.0129119318183
           ],
           [
             "2024-01-23",
-            82.04
+            546.2768579545456
           ],
           [
             "2024-01-24",
-            82.15
+            547.0093110795456
           ],
           [
             "2024-01-25",
-            82.33
+            548.2078707386364
           ],
           [
             "2024-01-26",
-            83.34
+            554.933122159091
           ],
           [
             "2024-01-29",
-            83.99
+            559.2612542613637
           ],
           [
             "2024-01-30",
-            84.14
+            560.2600539772728
           ],
           [
             "2024-01-31",
-            82.98
+            552.5360028409092
           ],
           [
             "2024-02-01",
-            82.2
+            547.342244318182
           ],
           [
             "2024-02-02",
-            79.54
+            529.6301960227274
           ],
           [
             "2024-02-05",
-            79.3
+            528.0321164772728
           ],
           [
             "2024-02-06",
-            80.46
+            535.7561676136364
           ],
           [
             "2024-02-07",
-            81.18
+            540.5504062500002
           ],
           [
             "2024-02-08",
-            83.01
+            552.7357627840911
           ],
           [
             "2024-02-09",
-            83.58
+            556.5312017045455
           ],
           [
             "2024-02-12",
-            83.88
+            558.5288011363638
           ],
           [
             "2024-02-13",
-            84.72
+            564.1220795454547
           ],
           [
             "2024-02-14",
-            84.41
+            562.0578934659092
           ],
           [
             "2024-02-15",
-            84.33
+            561.525200284091
           ],
           [
             "2024-02-16",
-            84.88
+            565.187465909091
           ],
           [
             "2024-02-19",
-            85.52
+            569.4490113636365
           ],
           [
             "2024-02-20",
-            84.78
+            564.5215994318183
           ],
           [
             "2024-02-21",
-            84.77
+            564.455012784091
           ],
           [
             "2024-02-22",
-            85.84
+            571.5797840909092
           ],
           [
             "2024-02-23",
-            84.18
+            560.526400568182
           ],
           [
             "2024-02-26",
-            84.01
+            559.3944275568183
           ],
           [
             "2024-02-27",
-            83.8
+            557.9961079545456
           ],
           [
             "2024-02-28",
-            84.08
+            559.8605340909091
           ],
           [
             "2024-02-29",
-            84.57
+            563.1232798295455
           ],
           [
             "2024-03-01",
-            84.82
+            564.7879460227274
           ],
           [
             "2024-03-04",
-            86.58
+            576.5071960227274
           ],
           [
             "2024-03-05",
-            85.82
+            571.4466107954546
           ],
           [
             "2024-03-06",
-            86.59
+            576.5737826704546
           ],
           [
             "2024-03-07",
-            84.88
+            565.187465909091
           ],
           [
             "2024-03-08",
-            84.29
+            561.258853693182
           ],
           [
             "2024-03-11",
-            83.44
+            555.5989886363637
           ],
           [
             "2024-03-12",
-            83.66
+            557.0638948863638
           ],
           [
             "2024-03-13",
-            83.95
+            558.9949076704547
           ],
           [
             "2024-03-14",
-            86.16
+            573.7105568181819
           ],
           [
             "2024-03-15",
-            85.39
+            568.583384943182
           ],
           [
             "2024-03-18",
-            86.47
+            575.7747428977274
           ],
           [
             "2024-03-19",
-            87.36
+            581.7009545454547
           ],
           [
             "2024-03-20",
-            85.77
+            571.1136775568183
           ],
           [
             "2024-03-21",
-            84.92
+            565.4538125000001
           ],
           [
             "2024-03-22",
-            84.87
+            565.1208792613638
           ],
           [
             "2024-03-25",
-            86.18
+            573.8437301136365
           ],
           [
             "2024-03-26",
-            85.91
+            572.0458906250001
           ],
           [
             "2024-03-27",
-            84.94
+            565.5869857954547
           ],
           [
             "2024-03-28",
-            86.17
+            573.7771434659093
           ],
           [
             "2024-04-02",
-            87.63
+            583.498794034091
           ],
           [
             "2024-04-03",
-            90.6
+            603.275028409091
           ],
           [
             "2024-04-04",
-            90.32
+            601.4106022727274
           ],
           [
             "2024-04-05",
-            92.81
+            617.9906775568184
           ],
           [
             "2024-04-08",
-            91.73
+            610.7993196022729
           ],
           [
             "2024-04-09",
-            92.13
+            613.4627855113637
           ],
           [
             "2024-04-10",
-            91.57
+            609.7339332386365
           ],
           [
             "2024-04-11",
-            91.49
+            609.2012400568183
           ],
           [
             "2024-04-12",
-            93.12
+            620.0548636363638
           ],
           [
             "2024-04-15",
-            90.84
+            604.8731079545456
           ],
           [
             "2024-04-16",
-            91.29
+            607.8695071022729
           ],
           [
             "2024-04-17",
-            89.54
+            596.2168437500002
           ],
           [
             "2024-04-18",
-            88.34
+            588.2264460227274
           ],
           [
             "2024-04-19",
-            87.96
+            585.696153409091
           ],
           [
             "2024-04-22",
-            87.3
+            581.301434659091
           ],
           [
             "2024-04-23",
-            88.29
+            587.8935127840911
           ],
           [
             "2024-04-24",
-            89.02
+            592.7543380681819
           ],
           [
             "2024-04-25",
-            88.1
+            586.6283664772728
           ],
           [
             "2024-04-26",
-            89.95
+            598.9468963068183
           ],
           [
             "2024-04-29",
-            88.44
+            588.8923125000001
           ],
           [
             "2024-04-30",
-            88.23
+            587.4939928977274
           ],
           [
             "2024-05-01",
-            83.55
+            556.3314417613637
           ],
           [
             "2024-05-02",
-            84.81
+            564.7213593750001
           ],
           [
             "2024-05-03",
-            83.6
+            556.6643750000001
           ],
           [
             "2024-05-07",
-            82.69
+            550.6049900568182
           ],
           [
             "2024-05-08",
-            82.44
+            548.9403238636364
           ],
           [
             "2024-05-09",
-            83.27
+            554.467015625
           ],
           [
             "2024-05-10",
-            83.39
+            555.2660553977274
           ],
           [
             "2024-05-13",
-            83.18
+            553.8677357954547
           ],
           [
             "2024-05-14",
-            81
+            539.3518465909092
           ],
           [
             "2024-05-15",
-            79.98
+            532.5600085227275
           ],
           [
             "2024-05-16",
-            81.65
+            543.679978693182
           ],
           [
             "2024-05-17",
-            82.24
+            547.6085909090909
           ],
           [
             "2024-05-20",
-            81.91
+            545.411231534091
           ],
           [
             "2024-05-21",
-            81.22
+            540.8167528409092
           ],
           [
             "2024-05-22",
-            79.9
+            532.0273153409092
           ],
           [
             "2024-05-23",
-            79.25
+            527.6991832386365
           ],
           [
             "2024-05-24",
-            78.92
+            525.5018238636364
           ],
           [
             "2024-05-28",
-            81.34
+            541.6157926136365
           ],
           [
             "2024-05-29",
-            81.5
+            542.6811789772728
           ],
           [
             "2024-05-30",
-            81.42
+            542.1484857954547
           ],
           [
             "2024-05-31",
-            79.41
+            528.7645696022728
           ],
           [
             "2024-06-03",
-            76.45
+            509.0549218750001
           ],
           [
             "2024-06-04",
-            75.33
+            501.5972173295456
           ],
           [
             "2024-06-05",
-            75.41
+            502.12991051136373
           ],
           [
             "2024-06-06",
-            77.62
+            516.845559659091
           ],
           [
             "2024-06-07",
-            78.12
+            520.1748920454547
           ],
           [
             "2024-06-10",
-            79.59
+            529.9631292613637
           ],
           [
             "2024-06-11",
-            80.15
+            533.691981534091
           ],
           [
             "2024-06-12",
-            80.52
+            536.1556875000001
           ],
           [
             "2024-06-13",
-            81.44
+            542.2816590909092
           ],
           [
             "2024-06-14",
-            81.49
+            542.6145923295455
           ],
           [
             "2024-06-17",
-            82.45
+            549.0069105113638
           ],
           [
             "2024-06-18",
-            84.79
+            564.5881860795456
           ],
           [
             "2024-06-19",
-            85.64
+            570.2480511363638
           ],
           [
             "2024-06-20",
-            85.92
+            572.1124772727273
           ],
           [
             "2024-06-21",
-            86.42
+            575.4418096590911
           ],
           [
             "2024-06-24",
-            86.75
+            577.6391690340911
           ],
           [
             "2024-06-25",
-            86.81
+            578.0386889204547
           ],
           [
             "2024-06-26",
-            85.76
+            571.047090909091
           ],
           [
             "2024-06-27",
-            87
+            579.3038352272729
           ],
           [
             "2024-06-28",
-            87.26
+            581.035088068182
           ],
           [
             "2024-07-01",
-            86.57
+            576.4406093750001
           ],
           [
             "2024-07-02",
-            88.28
+            587.8269261363638
           ],
           [
             "2024-07-03",
-            88.25
+            587.6271661931819
           ],
           [
             "2024-07-04",
-            88.34
+            588.2264460227274
           ],
           [
             "2024-07-05",
-            88.66
+            590.3572187500001
           ],
           [
             "2024-07-08",
-            87.15
+            580.3026349431819
           ],
           [
             "2024-07-09",
-            86.48
+            575.8413295454546
           ],
           [
             "2024-07-10",
-            86.55
+            576.3074360795456
           ],
           [
             "2024-07-11",
-            86.49
+            575.9079161931819
           ],
           [
             "2024-07-12",
-            87.35
+            581.6343678977273
           ],
           [
             "2024-07-15",
-            86.42
+            575.4418096590911
           ],
           [
             "2024-07-16",
-            86.6
+            576.6403693181819
           ],
           [
             "2024-07-17",
-            85.76
+            571.047090909091
           ],
           [
             "2024-07-18",
-            86.26
+            574.3764232954547
           ],
           [
             "2024-07-19",
-            85.19
+            567.2516519886365
           ],
           [
             "2024-07-22",
-            83.44
+            555.5989886363637
           ],
           [
             "2024-07-23",
-            82.2
+            547.342244318182
           ],
           [
             "2024-07-24",
-            83.01
+            552.7357627840911
           ],
           [
             "2024-07-25",
-            82.58
+            549.8725369318183
           ],
           [
             "2024-07-26",
-            81.35
+            541.6823792613637
           ],
           [
             "2024-07-29",
-            80.94
+            538.9523267045455
           ],
           [
             "2024-07-30",
-            79.26
+            527.7657698863637
           ],
           [
             "2024-07-31",
-            81.39
+            541.9487258522728
           ],
           [
             "2024-08-01",
-            81.37
+            541.8155525568184
           ],
           [
             "2024-08-02",
-            78.35
+            521.7063849431819
           ],
           [
             "2024-08-05",
-            77.51
+            516.113106534091
           ],
           [
             "2024-08-06",
-            76.62
+            510.18689488636375
           ],
           [
             "2024-08-07",
-            78.26
+            521.1071051136365
           ],
           [
             "2024-08-08",
-            80.76
+            537.7537670454547
           ],
           [
             "2024-08-09",
-            81.07
+            539.817953125
           ],
           [
             "2024-08-12",
-            83.06
+            553.0686960227274
           ],
           [
             "2024-08-13",
-            82.51
+            549.4064303977274
           ],
           [
             "2024-08-14",
-            82.15
+            547.0093110795456
           ],
           [
             "2024-08-15",
-            83.09
+            553.2684559659092
           ],
           [
             "2024-08-16",
-            81.56
+            543.0806988636365
           ],
           [
             "2024-08-19",
-            81.09
+            539.9511264204547
           ],
           [
             "2024-08-20",
-            78.85
+            525.0357173295455
           ],
           [
             "2024-08-21",
-            78.77
+            524.5030241477274
           ],
           [
             "2024-08-22",
-            78.8
+            524.7027840909092
           ],
           [
             "2024-08-23",
-            80.34
+            534.9571278409093
           ],
           [
             "2024-08-27",
-            81.51
+            542.7477656250002
           ],
           [
             "2024-08-28",
-            80.04
+            532.959528409091
           ],
           [
             "2024-08-29",
-            81.55
+            543.0141122159092
           ],
           [
             "2024-08-30",
-            80.2
+            534.0249147727274
           ],
           [
             "2024-09-02",
-            77.82
+            518.1772926136364
           ],
           [
             "2024-09-03",
-            76.46
+            509.1215085227273
           ],
           [
             "2024-09-04",
-            74.67
+            497.2024985795456
           ],
           [
             "2024-09-05",
-            74.47
+            495.8707656250001
           ],
           [
             "2024-09-06",
-            72.82
+            484.88396875000007
           ],
           [
             "2024-09-09",
-            72.37
+            481.88756960227283
           ],
           [
             "2024-09-10",
-            70.34
+            468.37048011363646
           ],
           [
             "2024-09-11",
-            70.31
+            468.1707201704547
           ],
           [
             "2024-09-12",
-            73.81
+            491.4760468750001
           ],
           [
             "2024-09-13",
-            73.68
+            490.6104204545456
           ],
           [
             "2024-09-16",
-            73.96
+            492.4748465909091
           ],
           [
             "2024-09-17",
-            74.55
+            496.40345880681826
           ],
           [
             "2024-09-18",
-            74.52
+            496.2036988636364
           ],
           [
             "2024-09-19",
-            75.93
+            505.592416193182
           ],
           [
             "2024-09-20",
-            75.96
+            505.7921761363637
           ],
           [
             "2024-09-23",
-            74.95
+            499.06692471590924
           ],
           [
             "2024-09-24",
-            75.29
+            501.3308707386365
           ],
           [
             "2024-09-25",
-            75.4
+            502.0633238636365
           ],
           [
             "2024-09-26",
-            73.06
+            486.48204829545466
           ],
           [
             "2024-09-27",
-            71.63
+            476.96015767045463
           ],
           [
             "2024-09-30",
-            72.35
+            481.75439630681825
           ],
           [
             "2024-10-01",
-            75.3
+            501.3974573863637
           ],
           [
             "2024-10-02",
-            74.86
+            498.46764488636376
           ],
           [
             "2024-10-03",
-            77.57
+            516.5126264204546
           ],
           [
             "2024-10-04",
-            79.32
+            528.1652897727273
           ],
           [
             "2024-10-07",
-            81.74
+            544.2792585227273
           ],
           [
             "2024-10-08",
-            78.19
+            520.6409985795456
           ],
           [
             "2024-10-09",
-            77.06
+            513.1167073863637
           ],
           [
             "2024-10-10",
-            79.45
+            529.030916193182
           ],
           [
             "2024-10-11",
-            80.27
+            534.4910213068183
           ],
           [
             "2024-10-14",
-            78.47
+            522.5054247159092
           ],
           [
             "2024-10-15",
-            73.68
+            490.6104204545456
           ],
           [
             "2024-10-16",
-            73.65
+            490.4106605113638
           ],
           [
             "2024-10-17",
-            74.37
+            495.2048991477274
           ],
           [
             "2024-10-18",
-            72.75
+            484.41786221590917
           ],
           [
             "2024-10-21",
-            73.29
+            488.01354119318194
           ],
           [
             "2024-10-22",
-            75.59
+            503.3284701704547
           ],
           [
             "2024-10-23",
-            74.68
+            497.26908522727285
           ],
           [
             "2024-10-24",
-            74.27
+            494.5390326704546
           ],
           [
             "2024-10-25",
-            75.62
+            503.5282301136365
           ],
           [
             "2024-10-28",
-            71.87
+            478.55823721590923
           ],
           [
             "2024-10-29",
-            71.09
+            473.3644786931819
           ],
           [
             "2024-10-30",
-            73.21
+            487.4808480113637
           ],
           [
             "2024-10-31",
-            73.25
+            487.7471946022728
           ],
           [
             "2024-11-01",
-            73.63
+            490.27748721590916
           ],
           [
             "2024-11-04",
-            74.89
+            498.66740482954555
           ],
           [
             "2024-11-05",
-            76.98
+            512.5840142045456
           ],
           [
             "2024-11-06",
-            76.52
+            509.521028409091
           ],
           [
             "2024-11-07",
-            75.73
+            504.2606832386365
           ],
           [
             "2024-11-08",
-            74.04
+            493.0075397727274
           ],
           [
             "2024-11-11",
-            72.19
+            480.6890099431819
           ],
           [
             "2024-11-12",
-            72.56
+            483.152715909091
           ],
           [
             "2024-11-13",
-            72.86
+            485.1503153409092
           ],
           [
             "2024-11-14",
-            73.39
+            488.6794076704546
           ],
           [
             "2024-11-15",
-            73.45
+            489.0789275568183
           ],
           [
             "2024-11-18",
-            74.35
+            495.0717258522728
           ],
           [
             "2024-11-19",
-            74.32
+            494.871965909091
           ],
           [
             "2024-11-20",
-            74.33
+            494.93855255681825
           ],
           [
             "2024-11-21",
-            75.09
+            499.99913778409103
           ],
           [
             "2024-11-22",
-            76.1
+            506.7243892045455
           ],
           [
             "2024-11-25",
-            74.27
+            494.5390326704546
           ],
           [
             "2024-11-26",
-            74.56
+            496.4700454545456
           ],
           [
             "2024-11-27",
-            73.91
+            492.1419133522728
           ],
           [
             "2024-11-28",
-            73.92
+            492.20850000000013
           ],
           [
             "2024-11-29",
-            74.16
+            493.8065795454546
           ],
           [
             "2024-12-02",
-            72.81
+            484.81738210227286
           ],
           [
             "2024-12-03",
-            74.8
+            498.06812500000007
           ],
           [
             "2024-12-04",
-            74.68
+            497.26908522727285
           ],
           [
             "2024-12-05",
-            73.78
+            491.2762869318183
           ],
           [
             "2024-12-06",
-            73.78
+            491.2762869318183
           ],
           [
             "2024-12-09",
-            73.73
+            490.94335369318196
           ],
           [
             "2024-12-10",
-            73.64
+            490.3440738636365
           ],
           [
             "2024-12-11",
-            74.38
+            495.2714857954546
           ],
           [
             "2024-12-12",
-            73.52
+            489.54503409090916
           ],
           [
             "2024-12-13",
-            74.89
+            498.66740482954555
           ],
           [
             "2024-12-16",
-            74.3
+            494.73879261363646
           ],
           [
             "2024-12-17",
-            73.16
+            487.14791477272735
           ],
           [
             "2024-12-18",
-            74.57
+            496.5366321022728
           ],
           [
             "2024-12-19",
-            73.75
+            491.0765269886365
           ],
           [
             "2024-12-20",
-            73.19
+            487.3476747159092
           ],
           [
             "2024-12-23",
-            72.12
+            480.22290340909103
           ],
           [
             "2024-12-24",
-            73.5
+            489.41186079545463
           ],
           [
             "2024-12-27",
-            73.77
+            491.20970028409096
           ],
           [
             "2024-12-30",
-            74.24
+            494.33927272727277
           ],
           [
             "2024-12-31",
-            74.58
+            496.6032187500001
           ],
           [
             "2025-01-02",
-            76.14
+            506.99073579545467
           ],
           [
             "2025-01-03",
-            76.72
+            510.85276136363643
           ],
           [
             "2025-01-06",
-            77.27
+            514.5150269886365
           ],
           [
             "2025-01-07",
-            77.84
+            518.310465909091
           ],
           [
             "2025-01-08",
-            77.37
+            515.1808934659092
           ],
           [
             "2025-01-09",
-            78.44
+            522.3056647727274
           ],
           [
             "2025-01-10",
-            79.76
+            531.0951022727274
           ],
           [
             "2025-01-13",
-            82.69
+            550.6049900568182
           ],
           [
             "2025-01-14",
-            82.39
+            548.6073906250001
           ],
           [
             "2025-01-15",
-            83.48
+            555.8653352272729
           ],
           [
             "2025-01-16",
-            82.39
+            548.6073906250001
           ],
           [
             "2025-01-17",
-            83.02
+            552.8023494318182
           ],
           [
             "2025-01-20",
-            81.68
+            543.8797386363638
           ],
           [
             "2025-01-21",
-            80.57
+            536.4886207386364
           ],
           [
             "2025-01-22",
-            80
+            532.693181818182
           ],
           [
             "2025-01-23",
-            78.62
+            523.5042244318183
           ],
           [
             "2025-01-24",
-            78.71
+            524.1035042613637
           ],
           [
             "2025-01-27",
-            77.3
+            514.7147869318183
           ],
           [
             "2025-01-28",
-            78.01
+            519.4424389204547
           ],
           [
             "2025-01-29",
-            77.02
+            512.8503607954547
           ],
           [
             "2025-01-30",
-            77.42
+            515.5138267045455
           ],
           [
             "2025-01-31",
-            77.11
+            513.4496406250001
           ],
           [
             "2025-02-03",
-            76.49
+            509.32126846590916
           ],
           [
             "2025-02-04",
-            76.58
+            509.92054829545464
           ],
           [
             "2025-02-05",
-            74.71
+            497.4688451704546
           ],
           [
             "2025-02-06",
-            74.54
+            496.33687215909106
           ],
           [
             "2025-02-07",
-            74.68
+            497.26908522727285
           ],
           [
             "2025-02-10",
-            76.23
+            507.59001562500015
           ],
           [
             "2025-02-11",
-            77.65
+            517.0453196022729
           ],
           [
             "2025-02-12",
-            75.38
+            501.9301505681819
           ],
           [
             "2025-02-13",
-            75.61
+            503.46164346590916
           ],
           [
             "2025-02-14",
-            75.19
+            500.6650042613637
           ],
           [
             "2025-02-17",
-            75.81
+            504.79337642045465
           ],
           [
             "2025-02-18",
-            76.46
+            509.1215085227273
           ],
           [
             "2025-02-19",
-            76.34
+            508.3224687500001
           ],
           [
             "2025-02-20",
-            76.95
+            512.3842542613637
           ],
           [
             "2025-02-21",
-            74.88
+            498.6008181818182
           ],
           [
             "2025-02-24",
-            74.89
+            498.66740482954555
           ],
           [
             "2025-02-25",
-            73.11
+            486.81498153409103
           ],
           [
             "2025-02-26",
-            73.49
+            489.34527414772737
           ],
           [
             "2025-02-27",
-            75.01
+            499.4664446022729
           ],
           [
             "2025-02-28",
-            74.76
+            497.80177840909107
           ],
           [
             "2025-03-03",
-            72.85
+            485.08372869318185
           ],
           [
             "2025-03-04",
-            72.31
+            481.4880497159092
           ],
           [
             "2025-03-05",
-            70.92
+            472.2325056818183
           ],
           [
             "2025-03-06",
-            71.08
+            473.2978920454546
           ],
           [
             "2025-03-07",
-            72.49
+            482.68660937500005
           ],
           [
             "2025-03-10",
-            71.08
+            473.2978920454546
           ],
           [
             "2025-03-11",
-            71.51
+            476.1611178977274
           ],
           [
             "2025-03-12",
-            72.36
+            481.82098295454557
           ],
           [
             "2025-03-13",
-            70.82
+            471.5666392045455
           ],
           [
             "2025-03-14",
-            71.94
+            479.02434375000007
           ],
           [
             "2025-03-17",
-            71.93
+            478.95775710227286
           ],
           [
             "2025-03-18",
-            71.93
+            478.95775710227286
           ],
           [
             "2025-03-19",
-            71.94
+            479.02434375000007
           ],
           [
             "2025-03-20",
-            72.61
+            483.4856491477274
           ],
           [
             "2025-03-21",
-            72.64
+            483.6854090909092
           ],
           [
             "2025-03-24",
-            73.96
+            492.4748465909091
           ],
           [
             "2025-03-25",
-            73.78
+            491.2762869318183
           ],
           [
             "2025-03-26",
-            74.6
+            496.73639204545464
           ],
           [
             "2025-03-27",
-            74.72
+            497.5354318181819
           ],
           [
             "2025-03-28",
-            74.69
+            497.33567187500006
           ],
           [
             "2025-03-31",
-            77.23
+            514.2486803977274
           ],
           [
             "2025-04-01",
-            77.78
+            517.9109460227273
           ],
           [
             "2025-04-02",
-            77.27
+            514.5150269886365
           ],
           [
             "2025-04-03",
-            72.54
+            483.01954261363653
           ],
           [
             "2025-04-04",
-            68.36
+            455.18632386363646
           ],
           [
             "2025-04-07",
-            66.13
+            440.3375014204546
           ],
           [
             "2025-04-08",
-            64.86
+            431.880997159091
           ],
           [
             "2025-04-09",
-            67.3
+            448.1281392045455
           ],
           [
             "2025-04-10",
-            65.37
+            435.27691619318193
           ],
           [
             "2025-04-11",
-            66.83
+            444.9985667613637
           ],
           [
             "2025-04-14",
-            67.18
+            447.3290994318183
           ],
           [
             "2025-04-15",
-            66.58
+            443.3339005681819
           ],
           [
             "2025-04-16",
-            67.94
+            452.38968465909096
           ],
           [
             "2025-04-17",
-            69.33
+            461.6452286931819
           ],
           [
             "2025-04-22",
-            68.93
+            458.9817627840911
           ],
           [
             "2025-04-23",
-            68.26
+            454.5204573863638
           ],
           [
             "2025-04-24",
-            67.5
+            449.459872159091
           ],
           [
             "2025-04-25",
-            66.99
+            446.06395312500007
           ],
           [
             "2025-04-28",
-            66.13
+            440.3375014204546
           ],
           [
             "2025-04-29",
-            64.04
+            426.42089204545465
           ],
           [
             "2025-04-30",
-            63.37
+            421.95958664772735
           ],
           [
             "2025-05-01",
-            62.37
+            415.3009218750001
           ],
           [
             "2025-05-02",
-            61.57
+            409.97399005681825
           ],
           [
             "2025-05-06",
-            62.37
+            415.3009218750001
           ],
           [
             "2025-05-07",
-            60.31
+            401.5840724431819
           ],
           [
             "2025-05-08",
-            62.22
+            414.30212215909097
           ],
           [
             "2025-05-09",
-            64.26
+            427.88579829545466
           ],
           [
             "2025-05-12",
-            65.28
+            434.67763636363645
           ],
           [
             "2025-05-13",
-            66.93
+            445.6644332386365
           ],
           [
             "2025-05-14",
-            65.91
+            438.8725951704546
           ],
           [
             "2025-05-15",
-            64.36
+            428.55166477272735
           ],
           [
             "2025-05-16",
-            65.2
+            434.1449431818183
           ],
           [
             "2025-05-19",
-            66.25
+            441.1365411931819
           ],
           [
             "2025-05-20",
-            66.93
+            445.6644332386365
           ],
           [
             "2025-05-21",
-            65.86
+            438.5396619318183
           ],
           [
             "2025-05-22",
-            64.87
+            431.9475838068183
           ],
           [
             "2025-05-23",
-            65.41
+            435.543262784091
           ],
           [
             "2025-05-27",
-            64.32
+            428.28531818181824
           ],
           [
             "2025-05-28",
-            65.72
+            437.6074488636364
           ],
           [
             "2025-05-29",
-            64.6
+            430.1497443181819
           ],
           [
             "2025-05-30",
-            64.32
+            428.28531818181824
           ],
           [
             "2025-06-02",
-            66.55
+            443.13414062500004
           ],
           [
             "2025-06-03",
-            67.48
+            449.32669886363647
           ],
           [
             "2025-06-04",
-            66.69
+            444.0663536931819
           ],
           [
             "2025-06-05",
-            67.14
+            447.0627528409092
           ],
           [
             "2025-06-06",
-            68.02
+            452.9223778409092
           ],
           [
             "2025-06-09",
-            68.73
+            457.6500298295456
           ],
           [
             "2025-06-10",
-            68.41
+            455.5192571022728
           ],
           [
             "2025-06-11",
-            71.29
+            474.6962116477274
           ],
           [
             "2025-06-12",
-            70.84
+            471.6998125000001
           ],
           [
             "2025-06-13",
-            76
+            506.0585227272728
           ],
           [
             "2025-06-16",
-            75.05
+            499.7327911931819
           ],
           [
             "2025-06-17",
-            78.7
+            524.0369176136364
           ],
           [
             "2025-06-18",
-            78.38
+            521.9061448863637
           ],
           [
             "2025-06-19",
-            80.37
+            535.156887784091
           ],
           [
             "2025-06-20",
-            78.73
+            524.2366775568183
           ],
           [
             "2025-06-23",
-            74.34
+            495.00513920454557
           ],
           [
             "2025-06-24",
-            69.13
+            460.31349573863645
           ],
           [
             "2025-06-25",
-            68.4
+            455.45267045454557
           ],
           [
             "2025-06-26",
-            68.57
+            456.58464346590915
           ],
           [
             "2025-06-27",
-            69.37
+            461.91157528409104
           ],
           [
             "2025-06-30",
-            68.15
+            453.78800426136377
           ],
           [
             "2025-07-01",
-            67.63
+            450.3254985795455
           ],
           [
             "2025-07-02",
-            70.8
+            471.433465909091
           ],
           [
             "2025-07-03",
-            70.42
+            468.9031732954547
           ],
           [
             "2025-07-04",
-            71.03
+            472.9649588068183
           ],
           [
             "2025-07-07",
-            71.95
+            479.0909303977274
           ],
           [
             "2025-07-08",
-            72.5
+            482.75319602272737
           ],
           [
             "2025-07-09",
-            71.98
+            479.29069034090924
           ],
           [
             "2025-07-10",
-            70.38
+            468.6368267045455
           ],
           [
             "2025-07-11",
-            72.06
+            479.8233835227274
           ],
           [
             "2025-07-14",
-            70.96
+            472.49885227272733
           ],
           [
             "2025-07-15",
-            70.27
+            467.9043735795455
           ],
           [
             "2025-07-16",
-            69.67
+            463.9091747159092
           ],
           [
             "2025-07-17",
-            71.32
+            474.89597159090914
           ],
           [
             "2025-07-18",
-            71.06
+            473.16471875000013
           ],
           [
             "2025-07-21",
-            71.92
+            478.89117045454554
           ],
           [
             "2025-07-22",
-            69.69
+            464.04234801136374
           ],
           [
             "2025-07-23",
-            69.17
+            460.57984232954556
           ],
           [
             "2025-07-24",
-            70.42
+            468.9031732954547
           ],
           [
             "2025-07-25",
-            69.23
+            460.9793622159092
           ],
           [
             "2025-07-28",
-            70.87
+            471.89957244318197
           ],
           [
             "2025-07-29",
-            73.21
+            487.4808480113637
           ],
           [
             "2025-07-30",
-            73.98
+            492.60801988636376
           ],
           [
             "2025-07-31",
-            73.43
+            488.9457542613638
           ],
           [
             "2025-08-01",
-            70.55
+            469.76879971590915
           ],
           [
             "2025-08-04",
-            69.56
+            463.1767215909092
           ],
           [
             "2025-08-05",
-            69.14
+            460.3800823863637
           ],
           [
             "2025-08-06",
-            67.97
+            452.5894446022728
           ],
           [
             "2025-08-07",
-            66.99
+            446.06395312500007
           ],
           [
             "2025-08-08",
-            67.17
+            447.26251278409103
           ],
           [
             "2025-08-11",
-            67.36
+            448.5276590909092
           ],
           [
             "2025-08-12",
-            66.8
+            444.7988068181819
           ],
           [
             "2025-08-13",
-            66.25
+            441.1365411931819
           ],
           [
             "2025-08-14",
-            68.12
+            453.5882443181819
           ],
           [
             "2025-08-15",
-            67.3
+            448.1281392045455
           ],
           [
             "2025-08-18",
-            68.18
+            453.9877642045456
           ],
           [
             "2025-08-19",
-            66.62
+            443.60024715909105
           ],
           [
             "2025-08-20",
-            67.61
+            450.192325284091
           ],
           [
             "2025-08-21",
-            68.41
+            455.5192571022728
           ],
           [
             "2025-08-22",
-            68.29
+            454.72021732954556
           ],
           [
             "2025-08-26",
-            66.89
+            445.3980866477274
           ],
           [
             "2025-08-27",
-            67.75
+            451.1245383522728
           ],
           [
             "2025-08-28",
-            68.61
+            456.85099005681826
           ],
           [
             "2025-08-29",
-            67.83
+            451.657231534091
           ],
           [
             "2025-09-01",
-            67.09
+            446.72981960227287
           ],
           [
             "2025-09-02",
-            68.09
+            453.38848437500013
           ],
           [
             "2025-09-03",
-            67.76
+            451.1911250000001
           ],
           [
             "2025-09-04",
-            66.41
+            442.20192755681825
           ],
           [
             "2025-09-05",
-            64.92
+            432.28051704545464
           ],
           [
             "2025-09-08",
-            65.44
+            435.7430227272728
           ],
           [
             "2025-09-09",
-            67.97
+            452.5894446022728
           ],
           [
             "2025-09-10",
-            67.62
+            450.2589119318183
           ],
           [
             "2025-09-11",
-            67.25
+            447.7952059659092
           ],
           [
             "2025-09-12",
-            67.87
+            451.9235781250001
           ],
           [
             "2025-09-15",
-            67.88
+            451.9901647727273
           ],
           [
             "2025-09-16",
-            69.69
+            464.04234801136374
           ],
           [
             "2025-09-17",
-            69.19
+            460.7130156250001
           ],
           [
             "2025-09-18",
-            67.83
+            451.657231534091
           ],
           [
             "2025-09-19",
-            67.05
+            446.4634730113637
           ],
           [
             "2025-09-22",
-            66.87
+            445.26491335227286
           ],
           [
             "2025-09-23",
-            67.96
+            452.5228579545455
           ],
           [
             "2025-09-24",
-            69.64
+            463.70941477272737
           ],
           [
             "2025-09-25",
-            70.48
+            469.3026931818183
           ],
           [
             "2025-09-26",
-            71.15
+            473.7639985795456
           ],
           [
             "2025-09-29",
-            69
+            459.4478693181819
           ],
           [
             "2025-09-30",
-            68.52
+            456.2517102272728
           ],
           [
             "2025-10-01",
-            66.67
+            443.93318039772737
           ],
           [
             "2025-10-02",
-            65.44
+            435.7430227272728
           ],
           [
             "2025-10-03",
-            66.13
+            440.3375014204546
           ],
           [
             "2025-10-06",
-            67.09
+            446.72981960227287
           ],
           [
             "2025-10-07",
-            67.1
+            446.7964062500001
           ],
           [
             "2025-10-08",
-            67.42
+            448.92717897727283
           ],
           [
             "2025-10-09",
-            67.23
+            447.66203267045466
           ],
           [
             "2025-10-10",
-            64.41
+            428.8845980113637
           ],
           [
             "2025-10-13",
-            64.15
+            427.15334517045466
           ],
           [
             "2025-10-14",
-            63
+            419.4958806818183
           ],
           [
             "2025-10-15",
-            62.33
+            415.034575284091
           ],
           [
             "2025-10-16",
-            61.08
+            406.7112443181819
           ],
           [
             "2025-10-17",
-            61.23
+            407.71004403409097
           ],
           [
             "2025-10-20",
-            60.71
+            404.24753835227284
           ],
           [
             "2025-10-21",
-            61
+            406.1785511363637
           ],
           [
             "2025-10-22",
-            62.28
+            414.70164204545466
           ],
           [
             "2025-10-23",
-            66.32
+            441.60264772727277
           ],
           [
             "2025-10-24",
-            65.8
+            438.14014204545464
           ],
           [
             "2025-10-27",
-            65.52
+            436.275715909091
           ],
           [
             "2025-10-28",
-            64.03
+            426.3543053977274
           ],
           [
             "2025-10-29",
-            65.01
+            432.8797968750001
           ],
           [
             "2025-10-30",
-            65.11
+            433.5456633522728
           ],
           [
             "2025-10-31",
-            65.44
+            435.7430227272728
           ],
           [
             "2025-11-03",
-            65.79
+            438.0735553977274
           ],
           [
             "2025-11-04",
-            65.04
+            433.07955681818197
           ],
           [
             "2025-11-05",
-            63.54
+            423.091559659091
           ],
           [
             "2025-11-06",
-            63.41
+            422.2259332386364
           ],
           [
             "2025-11-07",
-            63.72
+            424.2901193181819
           ],
           [
             "2025-11-10",
-            63.01
+            419.56246732954554
           ],
           [
             "2025-11-11",
-            63.86
+            425.22233238636375
           ],
           [
             "2025-11-12",
-            61.88
+            412.03817613636375
           ],
           [
             "2025-11-13",
-            62.14
+            413.7694289772728
           ],
           [
             "2025-11-14",
-            63.45
+            422.49227982954557
           ],
           [
             "2025-11-17",
-            63.16
+            420.5612670454546
           ],
           [
             "2025-11-18",
-            64.86
+            431.880997159091
           ],
           [
             "2025-11-19",
-            63.78
+            424.68963920454553
           ],
           [
             "2025-11-20",
-            63.64
+            423.75742613636373
           ],
           [
             "2025-11-21",
-            62.78
+            418.03097443181827
           ],
           [
             "2025-11-24",
-            64.83
+            431.68123721590916
           ],
           [
             "2025-11-25",
-            63.99
+            426.0879588068183
           ],
           [
             "2025-11-26",
-            64.81
+            431.54806392045464
           ],
           [
             "2025-11-27",
-            64.18
+            427.3531051136365
           ],
           [
             "2025-11-28",
-            64.07
+            426.6206519886364
           ],
           [
             "2025-12-01",
-            64.22
+            427.61945170454555
           ],
           [
             "2025-12-02",
-            63.37
+            421.95958664772735
           ],
           [
             "2025-12-03",
-            63.75
+            424.48987926136374
           ],
           [
             "2025-12-04",
-            64.15
+            427.15334517045466
           ],
           [
             "2025-12-05",
-            64.42
+            428.951184659091
           ],
           [
             "2025-12-08",
-            63.3
+            421.49348011363645
           ],
           [
             "2025-12-09",
-            62.62
+            416.9655880681819
           ],
           [
             "2025-12-10",
-            63.12
+            420.29492045454555
           ],
           [
             "2025-12-11",
-            61.87
+            411.9715894886364
           ],
           [
             "2025-12-12",
-            62.11
+            413.56966903409096
           ],
           [
             "2025-12-15",
-            61.55
+            409.8408167613637
           ],
           [
             "2025-12-16",
-            59.93
+            399.05377982954553
           ],
           [
             "2025-12-17",
-            60.61
+            403.5816718750001
           ],
           [
             "2025-12-18",
-            60.69
+            404.11436505681826
           ],
           [
             "2025-12-19",
-            61.35
+            408.5090838068183
           ],
           [
             "2025-12-22",
-            62.22
+            414.30212215909097
           ],
           [
             "2025-12-23",
-            63.7
+            424.15694602272737
           ],
           [
             "2025-12-24",
-            63.7
+            424.15694602272737
           ],
           [
             "2025-12-29",
-            63.1
+            420.161747159091
           ],
           [
             "2025-12-30",
-            62.3
+            414.83481534090913
           ],
           [
             "2025-12-31",
-            61.35
+            408.5090838068183
           ],
           [
             "2026-01-02",
-            61.98
+            412.70404261363643
           ],
           [
             "2026-01-05",
-            63
+            419.4958806818183
           ],
           [
             "2026-01-06",
-            62.1
+            413.50308238636376
           ],
           [
             "2026-01-07",
-            61.08
+            406.7112443181819
           ],
           [
             "2026-01-08",
-            63.34
+            421.75982670454556
           ],
           [
             "2026-01-09",
-            65.11
+            433.5456633522728
           ],
           [
             "2026-01-12",
-            65.4
+            435.4766761363638
           ],
           [
             "2026-01-13",
-            67.58
+            449.99256534090915
           ],
           [
             "2026-01-14",
-            68.87
+            458.5822428977274
           ],
           [
             "2026-01-15",
-            66.16
+            440.53726136363645
           ],
           [
             "2026-01-16",
-            66.97
+            445.93077982954554
           ],
           [
             "2026-01-19",
-            66.91
+            445.5312599431819
           ],
           [
             "2026-01-20",
-            67.68
+            450.65843181818195
           ],
           [
             "2026-01-21",
-            66.72
+            444.26611363636374
           ],
           [
             "2026-01-22",
-            65.46
+            435.8761960227273
           ],
           [
             "2026-01-23",
-            68.16
+            453.854590909091
           ],
           [
             "2026-01-26",
-            67.7
+            450.7916051136365
           ],
           [
             "2026-01-27",
-            70.28
+            467.9709602272728
           ],
           [
             "2026-01-28",
-            70.9
+            472.09933238636376
           ],
           [
             "2026-01-29",
-            71
+            472.76519886363644
           ],
           [
             "2026-01-30",
-            72.25
+            481.08852982954556
           ],
           [
             "2026-02-02",
-            67.72
+            450.924778409091
           ],
           [
             "2026-02-03",
-            70.01
+            466.1731207386365
           ],
           [
             "2026-02-04",
-            71.15
+            473.7639985795456
           ],
           [
             "2026-02-05",
-            69.87
+            465.24090767045465
           ],
           [
             "2026-02-06",
-            70.45
+            469.10293323863647
           ],
           [
             "2026-02-09",
-            71.19
+            474.0303451704546
           ],
           [
             "2026-02-10",
-            71.01
+            472.83178551136376
           ],
           [
             "2026-02-11",
-            71.52
+            476.2277045454546
           ],
           [
             "2026-02-12",
-            69.8
+            464.7748011363637
           ],
           [
             "2026-02-13",
-            69.96
+            465.84018750000007
           ],
           [
             "2026-02-16",
-            70.81
+            471.5000525568183
           ],
           [
             "2026-02-17",
-            69.77
+            464.5750411931819
           ],
           [
             "2026-02-18",
-            71.78
+            477.95895738636375
           ],
           [
             "2026-02-19",
-            73.17
+            487.21450142045467
           ],
           [
             "2026-02-20",
-            72.75
+            484.41786221590917
           ],
           [
             "2026-02-23",
-            71.9
+            478.757997159091
           ],
           [
             "2026-02-24",
-            71.21
+            474.16351846590914
           ],
           [
             "2026-02-25",
-            70.69
+            470.701012784091
           ],
           [
             "2026-02-26",
-            71.66
+            477.1599176136364
           ],
           [
             "2026-02-27",
-            71.32
+            474.89597159090914
           ],
           [
             "2026-03-02",
-            77.24
+            514.3152670454546
           ],
           [
             "2026-03-03",
-            83.28
+            554.5336022727274
           ],
           [
             "2026-03-04",
-            81.56
+            543.0806988636365
           ],
           [
             "2026-03-05",
-            88.59
+            589.8911122159093
           ],
           [
             "2026-03-06",
-            95.74
+            637.5005653409091
           ],
           [
             "2026-03-09",
-            94.35
+            628.2450213068182
           ],
           [
             "2026-03-10",
-            89.84
+            598.2144431818183
           ],
           [
             "2026-03-11",
-            90.98
+            605.8053210227274
           ],
           [
             "2026-03-12",
-            102.38
+            681.7140994318183
           ],
           [
             "2026-03-13",
-            103.23
+            687.3739644886365
           ],
           [
             "2026-03-16",
-            101.04
+            672.7914886363639
           ],
           [
             "2026-03-17",
-            108.39
+            721.7326747159093
           ],
           [
             "2026-03-18",
-            118.09
+            786.3217230113638
           ],
           [
             "2026-03-19",
-            111.05
+            739.4447230113637
           ],
           [
             "2026-03-20",
-            118.42
+            788.5190823863638
           ],
           [
             "2026-03-23",
-            103.79
+            691.1028167613638
           ],
           [
             "2026-03-24",
-            108.42
+            721.9324346590911
           ],
           [
             "2026-03-25",
-            109.14
+            726.7266732954547
           ],
           [
             "2026-03-26",
-            113.39
+            755.0259985795456
           ],
           [
             "2026-03-27",
-            121.47
+            808.828009943182
           ],
           [
             "2026-03-30",
-            121.88
+            811.5580625000001
           ],
           [
             "2026-03-31",
-            126.69
+            843.5862400568184
           ],
           [
             "2026-04-01",
-            119.56
+            796.109960227273
           ],
           [
             "2026-04-02",
-            127.61
+            849.7122116477275
           ],
           [
             "2026-04-07",
-            138.21
+            920.2940582386366
           ],
           [
             "2026-04-08",
-            122.11
+            813.0895553977274
           ],
           [
             "2026-04-09",
-            119.03
+            792.5808678977274
           ],
           [
             "2026-04-10",
-            119.07
+            792.8472144886365
           ],
           [
             "2026-04-13",
-            123.28
+            820.8801931818184
           ],
           [
             "2026-04-14",
-            118.69
+            790.3169218750002
           ],
           [
             "2026-04-15",
-            114.93
+            765.2803423295456
           ],
           [
             "2026-04-16",
-            116.63
+            776.600072443182
           ],
           [
             "2026-04-17",
-            98.63
+            656.744106534091
           ],
           [
             "2026-04-20",
-            103.4
+            688.5059375000002
           ],
           [
             "2026-04-21",
-            106.14
+            706.7506789772729
           ],
           [
             "2026-04-22",
-            113.44
+            755.358931818182
           ],
           [
             "2026-04-23",
-            113.25
+            754.0937855113638
           ],
           [
             "2026-04-24",
-            111.86
+            744.8382414772728
           ],
           [
             "2026-04-27",
-            113.89
+            758.3553309659093
           ],
           [
             "2026-04-28",
-            117.62
+            783.192150568182
           ],
           [
             "2026-04-29",
-            124.16
+            826.7398181818184
           ],
           [
             "2026-04-30",
-            124.24
+            827.2725113636365
           ],
           [
             "2026-05-01",
-            118.26
+            787.4536960227275
           ],
           [
             "2026-05-05",
-            114.51
+            762.4837031250001
           ],
           [
             "2026-05-06",
-            103.7
+            690.5035369318183
           ],
           [
             "2026-05-07",
-            101.82
+            677.985247159091
           ],
           [
             "2026-05-08",
-            103.48
+            689.0386306818184
           ],
           [
             "2026-05-11",
-            106.11
+            706.5509190340911
           ],
           [
             "2026-05-12",
-            111.37
+            741.5754957386365
           ],
           [
             "2026-05-13",
-            110.28
+            734.3175511363638
           ],
           [
             "2026-05-14",
-            110.91
+            738.512509943182
           ],
           [
             "2026-05-15",
-            113.96
+            758.8214375000001
           ],
           [
             "2026-05-18",
-            116.73
+            777.2659389204547
           ],
           [
             "2026-05-19",
-            114.64
+            763.3493295454547
           ],
           [
             "2026-05-20",
-            108.93
+            725.3283536931821
           ],
           [
             "2026-05-21",
-            105.84
+            704.7530795454547
           ],
           [
             "2026-05-22",
-            106.9
+            711.8112642045456
           ],
           [
             "2026-05-26",
-            102.75
+            684.1778053977274
           ],
           [
             "2026-05-27",
-            97.11
+            646.6229360795456
           ],
           [
             "2026-05-28",
-            95.47
+            635.7027258522728
           ],
           [
             "2026-05-29",
-            92.88
+            618.4567840909092
           ],
           [
             "2026-06-01",
-            98.29
+            654.4801605113638
           ],
           [
             "2026-06-02",
-            98.49
+            655.8118934659092
           ],
           [
             "2026-06-03",
-            101.69
+            677.1196207386365
           ],
           [
             "2026-06-04",
-            98.98
+            659.0746392045456
           ],
           [
             "2026-06-05",
-            97.29
+            647.8214957386365
           ],
           [
             "2026-06-08",
-            97.46
+            648.9534687500001
           ],
           [
             "2026-06-09",
-            94.15
+            626.9132883522728
           ],
           [
             "2026-06-10",
-            95.73
+            637.433978693182
           ],
           [
             "2026-06-11",
-            92.84
+            618.1904375000001
           ],
           [
             "2026-06-12",
-            88.64
+            590.2240454545456
           ],
           [
             "2026-06-15",
-            84.36
+            561.7249602272728
           ],
           [
             "2026-06-16",
-            80.5
+            536.0225142045456
           ],
           [
             "2026-06-17",
-            80.33
+            534.8905411931819
           ],
           [
             "2026-06-18",
-            79.35
+            528.3650497159092
           ],
           [
             "2026-06-19",
-            80.46
+            535.7561676136364
           ],
           [
             "2026-06-22",
-            76.49
+            509.32126846590916
           ],
           [
             "2026-06-23",
-            75.69
+            503.9943366477274
           ],
           [
             "2026-06-24",
-            72.09
+            480.0231434659092
           ],
           [
             "2026-06-25",
-            73.74
+            491.00994034090917
           ],
           [
             "2026-06-26",
-            70.16
+            467.1719204545455
           ],
           [
             "2026-06-29",
-            71.59
+            476.6938110795456
           ],
           [
             "2026-06-30",
-            70.46
+            469.1695198863637
           ],
           [
             "2026-07-01",
-            69.24
+            461.0459488636364
           ],
           [
             "2026-07-02",
-            68.53
+            456.3182968750001
           ],
           [
             "2026-07-03",
-            68.68
+            457.3170965909092
           ],
           [
             "2026-07-06",
-            69.56
+            463.1767215909092
           ],
           [
             "2026-07-07",
-            71.78
+            477.95895738636375
           ],
           [
             "2026-07-08",
-            76.5
+            509.3878551136365
           ],
           [
             "2026-07-09",
-            74.46
+            495.8041789772728
           ],
           [
             "2026-07-10",
-            74.34
+            495.00513920454557
           ],
           [
             "2026-07-13",
-            81.62
+            543.4802187500002
           ],
           [
             "2026-07-14",
-            83.69
+            557.2636548295455
           ],
           [
             "2026-07-15",
-            83.08
+            553.2018693181819
           ],
           [
             "2026-07-16",
-            81.23
+            540.8833394886365
           ],
           [
             "2026-07-17",
-            85.01
+            566.0530923295456
           ],
           [
             "2026-07-20",
-            86.99
+            579.2372485795455
           ],
           [
             "2026-07-21",
-            93.85
+            624.9156889204546
           ],
           [
             "2026-07-22",
-            94.12
+            626.713528409091
           ],
           [
             "2026-07-23",
-            105.32
+            701.2905738636365
           ],
           [
             "2026-07-24",
-            100.31
+            667.9306633522729
           ],
           [
             "2026-07-27",
-            91.82
+            611.3985994318183
           ],
           [
             "2026-07-28",
-            85.51
+            569.3824247159092
           ],
           [
             "2026-07-29",
-            91.95
+            612.2642258522728
           ],
           [
             "2026-07-30",
-            91.91
+            611.9978792613638
           ],
           [
             "2026-07-31",
-            96.95
+            645.5575497159092
           ],
           [
             "2026-08-03",
-            88.9
+            591.9552982954547
           ],
           [
             "2026-08-04",
-            86.47
+            575.7747428977274
           ],
           [
             "2026-08-05",
-            86.65
+            576.9733025568183
           ],
           [
             "2026-08-06",
-            89.65
+            596.9492968750002
           ],
           [
             "2026-08-07",
-            87.62
+            583.4322073863638
           ],
           [
             "2026-08-10",
-            92.74
+            617.5245710227274
           ],
           [
             "2026-08-11",
-            93.26
+            620.9870767045456
           ],
           [
             "2026-08-12",
-            92.52
+            616.0596647727274
           ],
           [
             "2026-08-13",
-            92.03
+            612.796919034091
           ],
           [
             "2026-08-14",
-            92.02
+            612.7303323863638
           ],
           [
             "2026-08-17",
-            92.43
+            615.460384943182
           ],
           [
             "2026-08-18",
-            95.29
+            634.504166193182
           ],
           [
             "2026-08-19",
-            92.37
+            615.0608650568183
           ],
           [
             "2026-08-20",
-            94
+            625.9144886363638
           ],
           [
             "2026-08-21",
-            96.92
+            645.3577897727274
           ],
           [
             "2026-08-24",
-            92.71
+            617.3248110795455
           ],
           [
             "2026-08-25",
-            88.24
+            587.5605795454546
           ],
           [
             "2026-08-26",
-            87.77
+            584.4310071022728
           ],
           [
             "2026-08-27",
-            90.18
+            600.4783892045456
           ],
           [
             "2026-08-28",
-            89.75
+            597.6151633522728
           ],
           [
             "2026-09-01",
-            96.02
+            639.3649914772728
           ],
           [
             "2026-09-02",
-            97.59
+            649.8190951704547
           ],
           [
             "2026-09-03",
-            100.52
+            669.3289829545456
           ],
           [
             "2026-09-04",
-            102.24
+            680.7818863636364
           ],
           [
             "2026-09-07",
-            104.47
+            695.6307088068183
           ],
           [
             "2026-09-08",
-            106.12
+            706.6175056818183
           ],
           [
             "2026-09-09",
-            109.51
+            729.1903792613638
           ],
           [
             "2026-09-10",
-            120.98
+            805.5652642045457
           ],
           [
             "2026-09-11",
-            118.06
+            786.121963068182
           ],
           [
             "2026-09-14",
-            121.25
+            807.363103693182
           ],
           [
             "2026-09-15",
-            130.8
+            870.9533522727276
           ],
           [
             "2026-09-16",
-            127.84
+            851.2437045454548
           ],
           [
             "2026-09-17",
-            121.18
+            806.8969971590911
           ],
           [
             "2026-09-18",
-            119.66
+            796.7758267045456
           ],
           [
             "2026-09-21",
-            116.15
+            773.4039133522729
           ],
           [
             "2026-09-22",
-            114.89
+            765.0139957386365
           ],
           [
             "2026-09-23",
-            117.45
+            782.0601775568184
           ],
           [
             "2026-09-24",
-            120.92
+            805.165744318182
           ],
           [
             "2026-09-25",
-            116.01
+            772.4717002840911
           ],
           [
             "2026-09-28",
-            119.97
+            798.8400127840911
           ],
           [
             "2026-09-29",
-            113.96
+            758.8214375000001
           ],
           [
             "2026-09-30",
-            115.91
+            771.8058338068183
           ],
           [
             "2026-10-01",
-            114.82
+            764.5478892045455
           ],
           [
             "2026-10-02",
-            135.51
+            902.3156633522728
           ],
           [
             "2026-10-05",
-            125.51
+            835.7290156250002
           ],
           [
             "2026-10-06",
-            125.44
+            835.2629090909093
           ],
           [
             "2026-10-07",
-            126
+            838.9917613636366
           ],
           [
             "2026-10-08",
-            130.18
+            866.8249801136366
           ],
           [
             "2026-10-09",
-            130.03
+            865.8261803977275
           ],
           [
             "2026-10-12",
-            129.95
+            865.2934872159092
           ],
           [
             "2026-10-13",
-            125.78
+            837.5268551136365
           ],
           [
             "2026-10-14",
-            126.55
+            842.6540269886365
           ],
           [
             "2026-10-15",
-            126.35
+            841.322294034091
           ],
           [
             "2026-10-16",
-            119.33
+            794.5784673295456
           ],
           [
             "2026-10-19",
-            118.82
+            791.1825482954547
           ],
           [
             "2026-10-20",
-            115.22
+            767.2113551136365
           ],
           [
             "2026-10-21",
-            117.37
+            781.5274843750002
           ],
           [
             "2026-10-22",
-            125.39
+            834.929975852273
           ],
           [
             "2026-10-23",
-            128.3
+            854.3066903409093
           ],
           [
             "2026-10-26",
-            128.12
+            853.1081306818184
           ],
           [
             "2026-10-27",
-            123.1
+            819.6816335227275
           ],
           [
             "2026-10-28",
-            119.2
+            793.7128409090911
           ],
           [
             "2026-10-29",
-            115.28
+            767.6108750000002
           ],
           [
             "2026-10-30",
-            120.15
+            800.038572443182
           ],
           [
             "2026-11-02",
-            107.39
+            715.074009943182
           ],
           [
             "2026-11-03",
-            107.03
+            712.6768906250002
           ]
-        ]
+        ],
+        "originalUnit": "USD / barrel",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       }
     },
     "news": [
@@ -10740,146 +10981,149 @@ window.EDITORIAL_CASES = [
     "icon": "2615",
     "quotes": {
       "australia": {
-        "price": 6.64908,
-        "unit": "USD/kg",
-        "label": "Australia生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+        "price": 9.44471590909091,
+        "unit": "AUD/kg",
+        "label": "Australia green coffee import unit value",
         "date": "2026-08-01",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
         "history": [
           [
             "2024-01-01",
-            3.983226
+            5.657991477272728
           ],
           [
             "2024-02-01",
-            3.730323
+            5.298754261363637
           ],
           [
             "2024-03-01",
-            4.216106
+            5.988786931818183
           ],
           [
             "2024-04-01",
-            4.135386
+            5.874127840909091
           ],
           [
             "2024-05-01",
-            4.67427
+            6.639588068181819
           ],
           [
             "2024-06-01",
-            5.069253
+            7.200643465909091
           ],
           [
             "2024-07-01",
-            5.300461
+            7.529063920454547
           ],
           [
             "2024-08-01",
-            5.428151
+            7.710441761363637
           ],
           [
             "2024-09-01",
-            5.56544
+            7.905454545454546
           ],
           [
             "2024-10-01",
-            5.44012
+            7.727443181818183
           ],
           [
             "2024-11-01",
-            5.505832
+            7.8207840909090915
           ],
           [
             "2024-12-01",
-            5.373256
+            7.632465909090909
           ],
           [
             "2025-01-01",
-            5.64138
+            8.013323863636364
           ],
           [
             "2025-02-01",
-            6.300261
+            8.949234375000001
           ],
           [
             "2025-03-01",
-            7.041112
+            10.001579545454547
           ],
           [
             "2025-04-01",
-            6.820656
+            9.688431818181819
           ],
           [
             "2025-05-01",
-            7.293573
+            10.360188920454547
           ],
           [
             "2025-06-01",
-            7.634608
+            10.844613636363638
           ],
           [
             "2025-07-01",
-            7.928011
+            11.261379261363638
           ],
           [
             "2025-08-01",
-            7.653635
+            10.871640625000001
           ],
           [
             "2025-09-01",
-            7.209282
+            10.240457386363637
           ],
           [
             "2025-10-01",
-            7.468583
+            10.608782670454547
           ],
           [
             "2025-11-01",
-            7.598815
+            10.793771306818183
           ],
           [
             "2025-12-01",
-            7.320069
+            10.39782528409091
           ],
           [
             "2026-01-01",
-            7.574096
+            10.758659090909092
           ],
           [
             "2026-02-01",
-            7.521307
+            10.683674715909092
           ],
           [
             "2026-03-01",
-            7.24047
+            10.284758522727275
           ],
           [
             "2026-04-01",
-            6.860409
+            9.744899147727274
           ],
           [
             "2026-05-01",
-            6.646142
+            9.440542613636365
           ],
           [
             "2026-06-01",
-            6.369387
+            9.047424715909091
           ],
           [
             "2026-07-01",
-            6.667367
+            9.470691761363637
           ],
           [
             "2026-08-01",
-            6.64908
+            9.44471590909091
           ]
-        ]
+        ],
+        "originalUnit": "USD/kg",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       },
       "china": {
         "price": 41.45,
         "unit": "CNY/kg",
-        "label": "Yunnan commercial green coffee: monitored monthly mean",
+        "label": "Yunnan commercial green coffee monitored monthly mean",
         "date": "2026-08-01",
         "url": "https://cloud.abeedata.com/home/article/detail/id/32209",
         "history": [
@@ -10930,16 +11174,15 @@ window.EDITORIAL_CASES = [
             "region": "China",
             "commodity": "Coffee Beans",
             "frequency": "monthly",
-            "label_zh": "云南商业咖啡生豆监测月均价",
-            "label_en": "Yunnan commercial green coffee: monitored monthly mean",
+            "label_zh": "Yunnan commercial green coffee monitored monthly mean",
+            "label_en": "Yunnan commercial green coffee monitored monthly mean",
             "unit": "CNY/kg",
             "measure_type": "monthly_mean_price",
             "proxy_for_commodity": false,
             "seasonal_adjustment": "not seasonally adjusted / 未做额外季调",
             "limitations": [
-              "9个连续月点含2025-12基期；2026-01至08为主展示窗",
-              "监测主要为思茅、隆阳商业生豆；不是零售烘焙豆；权重及样本变化不完全透明",
-              "同一报告上月值是已报告数据，不是根据百分比反推"
+              "Only documented observations are plotted. This series must not be merged with other grades, measures or frequencies.",
+              "Mainly commercial green beans monitored in Simao and Longyang; not roasted retail coffee. Sampling weights are not fully transparent."
             ],
             "observations": [
               {
@@ -11072,7 +11315,7 @@ window.EDITORIAL_CASES = [
             "quote": {
               "price": 41.45,
               "unit": "CNY/kg",
-              "label": "Yunnan commercial green coffee: monitored monthly mean",
+              "label": "Yunnan commercial green coffee monitored monthly mean",
               "date": "2026-08-01",
               "url": "https://cloud.abeedata.com/home/article/detail/id/32209",
               "history": [
@@ -11119,16 +11362,14 @@ window.EDITORIAL_CASES = [
             "series_id": "coffee_cn_composite_selected",
             "region": "China",
             "commodity": "Coffee Beans",
-            "label_zh": "云南生豆市场综合均价：公开图表已核实月份（有缺口）",
+            "label_zh": "Yunnan composite green coffee price with data gaps",
             "unit": "CNY/kg",
             "frequency": "monthly",
             "measure_type": "composite_market_price",
             "latest_valid_period": "2026-03",
             "limitations": [
-              "与商业生豆监测不是同口径，禁止合并",
-              "仅收录图表明确标签；2025-04至09未在该图显示，保持缺失",
-              "底层统计机构由制作者注明为农垦局；本次未找到其原始发布页面，所以证据B而非声称原始官方数据已读",
-              "本次仅核实图表明确标注月份；2024-04至09、2025-04至09、2026-04至10等尚缺，不插补"
+              "Only documented observations are plotted. This series must not be merged with other grades, measures or frequencies.",
+              "Selected labelled months only; gaps remain missing. Chart-derived evidence, not independently verified original official releases."
             ],
             "observations": [
               {
@@ -11315,7 +11556,7 @@ window.EDITORIAL_CASES = [
             "quote": {
               "price": 45.6,
               "unit": "CNY/kg",
-              "label": "云南生豆市场综合均价：公开图表已核实月份（有缺口）",
+              "label": "Yunnan composite green coffee price with data gaps",
               "date": "2026-03-01",
               "url": "https://www.abeedata.com/home/article/detail/id/30752",
               "history": [
@@ -11380,15 +11621,16 @@ window.EDITORIAL_CASES = [
                   45.6
                 ]
               ]
-            }
+            },
+            "label_en": "Yunnan composite green coffee price with data gaps"
           },
           {
             "series_id": "coffee_cn_import",
             "region": "China",
             "commodity": "Coffee Beans",
-            "label_zh": "China生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+            "label_zh": "China green coffee import unit value",
             "frequency": "monthly",
-            "unit": "USD/kg",
+            "unit": "CNY/kg",
             "measure_type": "trade_unit_value_not_spot_price",
             "hs_code": "090111",
             "reporter_code": 156,
@@ -11424,19 +11666,14 @@ window.EDITORIAL_CASES = [
               "2026-10"
             ],
             "limitations": [
-              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
-              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
-              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
-              "CIF不等于含进口关税成本；FOB不含国际运保费",
-              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
-              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
-              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+              "Trade value divided by net weight; not a fixed-grade spot or retail price. Product mix, contracts, arrival dates and source estimation flags can affect this proxy. CIF excludes import tariffs; FOB excludes international freight and insurance. Missing records are not zero trade.",
+              "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
             ],
             "observations": [
               {
                 "period": "2024-01",
-                "value": 3.69255,
-                "unit": "USD/kg",
+                "value": 24.587452606534097,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11461,12 +11698,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 3.69255
               },
               {
                 "period": "2024-02",
-                "value": 3.930028,
-                "unit": "USD/kg",
+                "value": 26.168738999431824,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11491,12 +11729,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 6.43,
                 "date": "2024-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 3.930028
               },
               {
                 "period": "2024-03",
-                "value": 4.016643,
-                "unit": "USD/kg",
+                "value": 26.745479248721598,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11519,12 +11758,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 2.2,
                 "date": "2024-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 4.016643
               },
               {
                 "period": "2024-04",
-                "value": 4.350824,
-                "unit": "USD/kg",
+                "value": 28.970678501136373,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11547,12 +11787,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 8.32,
                 "date": "2024-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 4.350824
               },
               {
                 "period": "2024-05",
-                "value": 5.009088,
-                "unit": "USD/kg",
+                "value": 33.35383780909092,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11577,12 +11818,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 15.13,
                 "date": "2024-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.009088
               },
               {
                 "period": "2024-06",
-                "value": 5.120388,
-                "unit": "USD/kg",
+                "value": 34.094947198295465,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11607,12 +11849,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 2.22,
                 "date": "2024-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.120388
               },
               {
                 "period": "2024-07",
-                "value": 5.430656,
-                "unit": "USD/kg",
+                "value": 36.16091780000001,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11635,12 +11878,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 6.06,
                 "date": "2024-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.430656
               },
               {
                 "period": "2024-08",
-                "value": 5.643948,
-                "unit": "USD/kg",
+                "value": 37.581157726704554,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11665,12 +11909,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 3.93,
                 "date": "2024-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.643948
               },
               {
                 "period": "2024-09",
-                "value": 5.417029,
-                "unit": "USD/kg",
+                "value": 36.070180175142056,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11693,12 +11938,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -4.02,
                 "date": "2024-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.417029
               },
               {
                 "period": "2024-10",
-                "value": 5.171493,
-                "unit": "USD/kg",
+                "value": 34.43523826150569,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11721,12 +11967,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -4.53,
                 "date": "2024-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.171493
               },
               {
                 "period": "2024-11",
-                "value": 5.527377,
-                "unit": "USD/kg",
+                "value": 36.804950515482965,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11749,12 +11996,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 6.88,
                 "date": "2024-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.527377
               },
               {
                 "period": "2024-12",
-                "value": 5.446152,
-                "unit": "USD/kg",
+                "value": 36.26410046931819,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -11777,12 +12025,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.47,
                 "date": "2024-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.446152
               },
               {
                 "period": "2025-01",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11794,12 +12043,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-02",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11811,12 +12061,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-03",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11828,12 +12079,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-04",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11845,12 +12097,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-05",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11862,12 +12115,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-06",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11879,12 +12133,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-07",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11896,12 +12151,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-08",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11913,12 +12169,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11930,12 +12187,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-10",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11947,12 +12205,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-11",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11964,12 +12223,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-12",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11981,12 +12241,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-01",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -11998,12 +12259,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-02",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12015,12 +12277,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-03",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12032,12 +12295,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-04",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12049,12 +12313,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-05",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12066,12 +12331,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-06",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12083,12 +12349,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-07",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12100,12 +12367,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-08",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12117,12 +12385,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12134,12 +12403,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-10",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -12151,7 +12421,8 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               }
             ],
             "quarterly": [
@@ -12277,62 +12548,69 @@ window.EDITORIAL_CASES = [
               }
             ],
             "quote": {
-              "price": 5.446152,
-              "unit": "USD/kg",
-              "label": "China生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+              "price": 36.26410046931819,
+              "unit": "CNY/kg",
+              "label": "China green coffee import unit value",
               "date": "2024-12-01",
               "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
               "history": [
                 [
                   "2024-01-01",
-                  3.69255
+                  24.587452606534097
                 ],
                 [
                   "2024-02-01",
-                  3.930028
+                  26.168738999431824
                 ],
                 [
                   "2024-03-01",
-                  4.016643
+                  26.745479248721598
                 ],
                 [
                   "2024-04-01",
-                  4.350824
+                  28.970678501136373
                 ],
                 [
                   "2024-05-01",
-                  5.009088
+                  33.35383780909092
                 ],
                 [
                   "2024-06-01",
-                  5.120388
+                  34.094947198295465
                 ],
                 [
                   "2024-07-01",
-                  5.430656
+                  36.16091780000001
                 ],
                 [
                   "2024-08-01",
-                  5.643948
+                  37.581157726704554
                 ],
                 [
                   "2024-09-01",
-                  5.417029
+                  36.070180175142056
                 ],
                 [
                   "2024-10-01",
-                  5.171493
+                  34.43523826150569
                 ],
                 [
                   "2024-11-01",
-                  5.527377
+                  36.804950515482965
                 ],
                 [
                   "2024-12-01",
-                  5.446152
+                  36.26410046931819
                 ]
-              ]
-            }
+              ],
+              "originalUnit": "USD/kg",
+              "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+              "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
+            },
+            "label_en": "China green coffee import unit value",
+            "originalUnit": "USD/kg",
+            "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+            "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
           }
         ],
         "stories": [
@@ -12340,36 +12618,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NC1",
             "region": "China",
             "commodity": "Coffee Beans",
-            "headline_original": "云新闻深度丨国际咖啡豆价格狂飙，对云南咖啡影响几何？",
+            "headline_original": "Why global coffee price increases affect Yunnan",
             "source_id": "NC1",
             "related_source_ids": [],
-            "facts_confirmed": "报道引述产业专家，将主产国灾害、运输滞留和资金交易列为国际豆价上涨因素，并描述云南企业原料成本压力。",
+            "facts_confirmed": "Industry interviewees linked coffee price increases to weather damage, shipping delays and trading activity, and described raw-material cost pressures in Yunnan.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "主产区灾害和供应链障碍，被受访专家认为收紧可用供应",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "国际豆价走高，云南企业面临原料成本压力",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "进口豆与云南豆存在替代采购，可能抬高云南生豆采购报价",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "咖农收入可能改善，但净利润取决于产量与投入成本",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Tighter available supply can raise procurement costs. Substitution between imported and Yunnan beans may transmit pressure, while farm profits still depend on yields and costs.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "对生豆采购价有上行压力",
-            "possible_lag": "采购与库存周期可能跨月；本包未估计",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "专家归因不等于因果识别；不能用2024期货涨幅代替云南生豆涨幅。",
+            "limitations": "Interview explanations do not establish causality. Futures gains are not measured Yunnan green-bean gains.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -12380,43 +12642,27 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://www.yndaily.com/html/2025/yunxinwen_0227/133033.html",
-            "publisher": "云南日报—云新闻",
+            "publisher": "Yunnan Daily",
             "published": "2025-02-27"
           },
           {
             "story_id": "NC2",
             "region": "China",
             "commodity": "Coffee Beans",
-            "headline_original": "云南泸水：一杯精品咖啡背后的乡村振兴之路",
+            "headline_original": "Specialty coffee development in Lushui",
             "source_id": "NC2",
             "related_source_ids": [],
-            "facts_confirmed": "报道当地推广品种、加工与品质管控，并称怒江精品生豆价格提高。",
+            "facts_confirmed": "The report describes improvements in varieties, processing and quality control, alongside higher prices for local specialty beans.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "当地推动品种与加工升级，完善品质管控",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "品质与可追溯性可能提高采购者支付意愿",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "精品生豆可能取得溢价，销售组合也随之改变",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "混合商品进口单位价值不一定反映这种本地精品溢价",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Quality and traceability may increase willingness to pay and support a specialty premium. Import unit values need not reflect this local premium.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "对特定精品豆可能上行；全国平均不确定",
-            "possible_lag": "品质投入到收益通常需跨产季；未量化",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "地区个案；前后价格并非同一等级连续交易样本，不放入月线。",
+            "limitations": "A local case study, not a continuous sample of identical-grade transactions.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -12427,43 +12673,27 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://www.yn.xinhuanet.com/20250912/84564c2d5c2442f38412691bd162cfa3/c.html",
-            "publisher": "新华网云南频道（来源：泸水市融媒体中心）",
+            "publisher": "Xinhua Yunnan",
             "published": "2025-09-12"
           },
           {
             "story_id": "NC3",
             "region": "China",
             "commodity": "Coffee Beans",
-            "headline_original": "“云南咖啡还是代表着中国的”",
+            "headline_original": "Yunnan coffee moves towards specialty production and branding",
             "source_id": "NC3",
             "related_source_ids": [],
-            "facts_confirmed": "报道云南从原料供应向精品化、加工及品牌发展。",
+            "facts_confirmed": "The article describes Yunnan producers developing processing, quality and domestic brands.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "生产端与本土品牌加强品质、加工和直采联系",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "差异化可能降低完全按国际大宗豆价定价的程度",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "精品豆报价可能更有韧性，商业豆仍可能随大宗行情回落",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "因此本地不同等级生豆价格可出现分化",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Differentiation may support specialty prices even when commodity-grade beans weaken; different grades can move differently.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "品质溢价可能扩大；总体方向不确定",
-            "possible_lag": "长期产业变化，不是单月冲击",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "产业宣传与采访背景，不证明精品化导致某月涨价；不采用文内不一致的种植面积数字。",
+            "limitations": "Industry background does not prove a particular monthly price change. Inconsistent acreage figures are excluded.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -12474,43 +12704,27 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://society.yunnan.cn/system/2026/01/09/033821397.shtml",
-            "publisher": "云南网",
+            "publisher": "Yunnan.cn",
             "published": "2026-01-09"
           },
           {
             "story_id": "NC4",
             "region": "China",
             "commodity": "Coffee Beans",
-            "headline_original": "云咖丰收 价格下调",
+            "headline_original": "Yunnan harvest brings lower coffee-cherry purchase prices",
             "source_id": "NC4",
             "related_source_ids": [],
-            "facts_confirmed": "报道新产季咖啡鲜果收购回落；受访品牌负责人将其与巴西供应恢复及国际期货回调联系。",
+            "facts_confirmed": "The report records lower fresh-cherry purchase prices. An interviewee associates the change with recovering Brazilian supply and weaker futures.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "受访者认为主产区供应恢复，国际期货承压",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "报道观察到云南新产季鲜果收购价回落",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "鲜果原料成本下降可能传导至后续商业生豆采购定价",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "传导受出米率、处理方式、库存和品质影响，不会机械等比例",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Cheaper cherries may reduce later green-bean procurement costs, subject to processing yields, quality and inventories.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "商业生豆存在下行压力，尚未核实具体幅度",
-            "possible_lag": "新产季交货与加工后；不可视为11月完整月均",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "报道价格是鲜果，不能混入生豆曲线；巴西产量归因为采访判断，不作独立已证实供给统计。",
+            "limitations": "Cherry prices are not green-bean prices and are excluded from the line. November is not a complete monthly observation.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -12521,7 +12735,7 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://www.yn.news.cn/20261103/b5b4db1daa824f7b84b6ad0033ce0b8b/c.html",
-            "publisher": "新华网云南频道",
+            "publisher": "Xinhua Yunnan",
             "published": "2026-11-03"
           }
         ]
@@ -12532,9 +12746,9 @@ window.EDITORIAL_CASES = [
             "series_id": "coffee_au_import",
             "region": "Australia",
             "commodity": "Coffee Beans",
-            "label_zh": "Australia生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+            "label_zh": "Australia green coffee import unit value",
             "frequency": "monthly",
-            "unit": "USD/kg",
+            "unit": "AUD/kg",
             "measure_type": "trade_unit_value_not_spot_price",
             "hs_code": "090111",
             "reporter_code": 36,
@@ -12550,19 +12764,14 @@ window.EDITORIAL_CASES = [
               "2026-10"
             ],
             "limitations": [
-              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
-              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
-              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
-              "CIF不等于含进口关税成本；FOB不含国际运保费",
-              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
-              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
-              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+              "Trade value divided by net weight; not a fixed-grade spot or retail price. Product mix, contracts, arrival dates and source estimation flags can affect this proxy. CIF excludes import tariffs; FOB excludes international freight and insurance. Missing records are not zero trade.",
+              "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
             ],
             "observations": [
               {
                 "period": "2024-01",
-                "value": 3.983226,
-                "unit": "USD/kg",
+                "value": 5.657991477272728,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12585,12 +12794,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 3.983226
               },
               {
                 "period": "2024-02",
-                "value": 3.730323,
-                "unit": "USD/kg",
+                "value": 5.298754261363637,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12613,12 +12823,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -6.35,
                 "date": "2024-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 3.730323
               },
               {
                 "period": "2024-03",
-                "value": 4.216106,
-                "unit": "USD/kg",
+                "value": 5.988786931818183,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12641,12 +12852,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 13.02,
                 "date": "2024-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 4.216106
               },
               {
                 "period": "2024-04",
-                "value": 4.135386,
-                "unit": "USD/kg",
+                "value": 5.874127840909091,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12669,12 +12881,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.91,
                 "date": "2024-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 4.135386
               },
               {
                 "period": "2024-05",
-                "value": 4.67427,
-                "unit": "USD/kg",
+                "value": 6.639588068181819,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12697,12 +12910,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 13.03,
                 "date": "2024-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 4.67427
               },
               {
                 "period": "2024-06",
-                "value": 5.069253,
-                "unit": "USD/kg",
+                "value": 7.200643465909091,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12725,12 +12939,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 8.45,
                 "date": "2024-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.069253
               },
               {
                 "period": "2024-07",
-                "value": 5.300461,
-                "unit": "USD/kg",
+                "value": 7.529063920454547,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12753,12 +12968,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 4.56,
                 "date": "2024-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.300461
               },
               {
                 "period": "2024-08",
-                "value": 5.428151,
-                "unit": "USD/kg",
+                "value": 7.710441761363637,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12781,12 +12997,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 2.41,
                 "date": "2024-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.428151
               },
               {
                 "period": "2024-09",
-                "value": 5.56544,
-                "unit": "USD/kg",
+                "value": 7.905454545454546,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12809,12 +13026,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 2.53,
                 "date": "2024-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.56544
               },
               {
                 "period": "2024-10",
-                "value": 5.44012,
-                "unit": "USD/kg",
+                "value": 7.727443181818183,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12837,12 +13055,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -2.25,
                 "date": "2024-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.44012
               },
               {
                 "period": "2024-11",
-                "value": 5.505832,
-                "unit": "USD/kg",
+                "value": 7.8207840909090915,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12865,12 +13084,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 1.21,
                 "date": "2024-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.505832
               },
               {
                 "period": "2024-12",
-                "value": 5.373256,
-                "unit": "USD/kg",
+                "value": 7.632465909090909,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12893,12 +13113,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -2.41,
                 "date": "2024-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.373256
               },
               {
                 "period": "2025-01",
-                "value": 5.64138,
-                "unit": "USD/kg",
+                "value": 8.013323863636364,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12921,12 +13142,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 4.99,
                 "date": "2025-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 5.64138
               },
               {
                 "period": "2025-02",
-                "value": 6.300261,
-                "unit": "USD/kg",
+                "value": 8.949234375000001,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12949,12 +13171,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 11.68,
                 "date": "2025-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.300261
               },
               {
                 "period": "2025-03",
-                "value": 7.041112,
-                "unit": "USD/kg",
+                "value": 10.001579545454547,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -12977,12 +13200,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 11.76,
                 "date": "2025-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.041112
               },
               {
                 "period": "2025-04",
-                "value": 6.820656,
-                "unit": "USD/kg",
+                "value": 9.688431818181819,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13005,12 +13229,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.13,
                 "date": "2025-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.820656
               },
               {
                 "period": "2025-05",
-                "value": 7.293573,
-                "unit": "USD/kg",
+                "value": 10.360188920454547,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13033,12 +13258,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 6.93,
                 "date": "2025-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.293573
               },
               {
                 "period": "2025-06",
-                "value": 7.634608,
-                "unit": "USD/kg",
+                "value": 10.844613636363638,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13061,12 +13287,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 4.68,
                 "date": "2025-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.634608
               },
               {
                 "period": "2025-07",
-                "value": 7.928011,
-                "unit": "USD/kg",
+                "value": 11.261379261363638,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13089,12 +13316,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 3.84,
                 "date": "2025-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.928011
               },
               {
                 "period": "2025-08",
-                "value": 7.653635,
-                "unit": "USD/kg",
+                "value": 10.871640625000001,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13117,12 +13345,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.46,
                 "date": "2025-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.653635
               },
               {
                 "period": "2025-09",
-                "value": 7.209282,
-                "unit": "USD/kg",
+                "value": 10.240457386363637,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13145,12 +13374,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -5.81,
                 "date": "2025-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.209282
               },
               {
                 "period": "2025-10",
-                "value": 7.468583,
-                "unit": "USD/kg",
+                "value": 10.608782670454547,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13173,12 +13403,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 3.6,
                 "date": "2025-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.468583
               },
               {
                 "period": "2025-11",
-                "value": 7.598815,
-                "unit": "USD/kg",
+                "value": 10.793771306818183,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13201,12 +13432,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 1.74,
                 "date": "2025-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.598815
               },
               {
                 "period": "2025-12",
-                "value": 7.320069,
-                "unit": "USD/kg",
+                "value": 10.39782528409091,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13229,12 +13461,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.67,
                 "date": "2025-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.320069
               },
               {
                 "period": "2026-01",
-                "value": 7.574096,
-                "unit": "USD/kg",
+                "value": 10.758659090909092,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13257,12 +13490,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 3.47,
                 "date": "2026-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.574096
               },
               {
                 "period": "2026-02",
-                "value": 7.521307,
-                "unit": "USD/kg",
+                "value": 10.683674715909092,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13285,12 +13519,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.7,
                 "date": "2026-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.521307
               },
               {
                 "period": "2026-03",
-                "value": 7.24047,
-                "unit": "USD/kg",
+                "value": 10.284758522727275,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13313,12 +13548,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.73,
                 "date": "2026-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 7.24047
               },
               {
                 "period": "2026-04",
-                "value": 6.860409,
-                "unit": "USD/kg",
+                "value": 9.744899147727274,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13341,12 +13577,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -5.25,
                 "date": "2026-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.860409
               },
               {
                 "period": "2026-05",
-                "value": 6.646142,
-                "unit": "USD/kg",
+                "value": 9.440542613636365,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13369,12 +13606,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.12,
                 "date": "2026-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.646142
               },
               {
                 "period": "2026-06",
-                "value": 6.369387,
-                "unit": "USD/kg",
+                "value": 9.047424715909091,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13397,12 +13635,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -4.16,
                 "date": "2026-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.369387
               },
               {
                 "period": "2026-07",
-                "value": 6.667367,
-                "unit": "USD/kg",
+                "value": 9.470691761363637,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13425,12 +13664,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 4.68,
                 "date": "2026-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.667367
               },
               {
                 "period": "2026-08",
-                "value": 6.64908,
-                "unit": "USD/kg",
+                "value": 9.44471590909091,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -13453,12 +13693,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.27,
                 "date": "2026-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 6.64908
               },
               {
                 "period": "2026-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -13470,12 +13711,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-10",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -13487,7 +13729,8 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               }
             ],
             "quarterly": [
@@ -13613,142 +13856,149 @@ window.EDITORIAL_CASES = [
               }
             ],
             "quote": {
-              "price": 6.64908,
-              "unit": "USD/kg",
-              "label": "Australia生咖啡豆（未烘焙、未脱咖啡因）进口单位价值",
+              "price": 9.44471590909091,
+              "unit": "AUD/kg",
+              "label": "Australia green coffee import unit value",
               "date": "2026-08-01",
               "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
               "history": [
                 [
                   "2024-01-01",
-                  3.983226
+                  5.657991477272728
                 ],
                 [
                   "2024-02-01",
-                  3.730323
+                  5.298754261363637
                 ],
                 [
                   "2024-03-01",
-                  4.216106
+                  5.988786931818183
                 ],
                 [
                   "2024-04-01",
-                  4.135386
+                  5.874127840909091
                 ],
                 [
                   "2024-05-01",
-                  4.67427
+                  6.639588068181819
                 ],
                 [
                   "2024-06-01",
-                  5.069253
+                  7.200643465909091
                 ],
                 [
                   "2024-07-01",
-                  5.300461
+                  7.529063920454547
                 ],
                 [
                   "2024-08-01",
-                  5.428151
+                  7.710441761363637
                 ],
                 [
                   "2024-09-01",
-                  5.56544
+                  7.905454545454546
                 ],
                 [
                   "2024-10-01",
-                  5.44012
+                  7.727443181818183
                 ],
                 [
                   "2024-11-01",
-                  5.505832
+                  7.8207840909090915
                 ],
                 [
                   "2024-12-01",
-                  5.373256
+                  7.632465909090909
                 ],
                 [
                   "2025-01-01",
-                  5.64138
+                  8.013323863636364
                 ],
                 [
                   "2025-02-01",
-                  6.300261
+                  8.949234375000001
                 ],
                 [
                   "2025-03-01",
-                  7.041112
+                  10.001579545454547
                 ],
                 [
                   "2025-04-01",
-                  6.820656
+                  9.688431818181819
                 ],
                 [
                   "2025-05-01",
-                  7.293573
+                  10.360188920454547
                 ],
                 [
                   "2025-06-01",
-                  7.634608
+                  10.844613636363638
                 ],
                 [
                   "2025-07-01",
-                  7.928011
+                  11.261379261363638
                 ],
                 [
                   "2025-08-01",
-                  7.653635
+                  10.871640625000001
                 ],
                 [
                   "2025-09-01",
-                  7.209282
+                  10.240457386363637
                 ],
                 [
                   "2025-10-01",
-                  7.468583
+                  10.608782670454547
                 ],
                 [
                   "2025-11-01",
-                  7.598815
+                  10.793771306818183
                 ],
                 [
                   "2025-12-01",
-                  7.320069
+                  10.39782528409091
                 ],
                 [
                   "2026-01-01",
-                  7.574096
+                  10.758659090909092
                 ],
                 [
                   "2026-02-01",
-                  7.521307
+                  10.683674715909092
                 ],
                 [
                   "2026-03-01",
-                  7.24047
+                  10.284758522727275
                 ],
                 [
                   "2026-04-01",
-                  6.860409
+                  9.744899147727274
                 ],
                 [
                   "2026-05-01",
-                  6.646142
+                  9.440542613636365
                 ],
                 [
                   "2026-06-01",
-                  6.369387
+                  9.047424715909091
                 ],
                 [
                   "2026-07-01",
-                  6.667367
+                  9.470691761363637
                 ],
                 [
                   "2026-08-01",
-                  6.64908
+                  9.44471590909091
                 ]
-              ]
-            }
+              ],
+              "originalUnit": "USD/kg",
+              "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+              "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
+            },
+            "label_en": "Australia green coffee import unit value",
+            "originalUnit": "USD/kg",
+            "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+            "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
           }
         ],
         "stories": [
@@ -13756,36 +14006,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NA1",
             "region": "Australia",
             "commodity": "Coffee Beans",
-            "headline_original": "Australian coffee growers struggle to capitalise as global prices soar",
+            "headline_original": "Australian coffee growers struggle to benefit from global price increases",
             "source_id": "NA1",
             "related_source_ids": [],
-            "facts_confirmed": "报道国际供应问题与本地种植扩产瓶颈，指出澳洲供应难以迅速扩大。",
+            "facts_confirmed": "ABC describes international supply problems and barriers to rapid expansion by Australian growers.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "国际供应紧张抬高生豆价格，是报道明确讨论的因素",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "本地种植者表示短期难以提供大规模额外产量",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "本地替代供给有限，进口商仍承受国际采购成本",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "该压力可能体现在随后进口单位价值；合同与来源组合会改变幅度",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Limited local substitution may leave importers exposed to higher international costs. Contract timing and import composition affect transmission.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "进口生豆成本上行压力",
-            "possible_lag": "合同更新与船运抵港后，可能跨月",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "本地种植受访者不代表全行业；不能将国际期货单日高价当澳洲进口月均。",
+            "limitations": "Grower interviews do not represent every producer; a futures peak is not an Australian monthly import unit value.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -13801,36 +14035,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NA2",
             "region": "Australia",
             "commodity": "Coffee Beans",
-            "headline_original": "Why don't Australians source more coffee from the Asia-Pacific region?",
+            "headline_original": "Why Australia does not source more coffee nearby",
             "source_id": "NA2",
             "related_source_ids": [],
-            "facts_confirmed": "报道巴西天气冲击，并解释邻近产地面临规模、品质和内陆运输障碍。",
+            "facts_confirmed": "ABC discusses Brazilian weather disruption and scale, quality and inland-transport barriers in neighbouring supply regions.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "报道将巴西恶劣天气与国际供应压力联系",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "邻近产地的规模与运输障碍限制即时替代",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "进口商难以仅凭地理距离迅速切换到更便宜货源",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "CIF生豆单位价值可能受商品采购价与运保费共同影响",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Nearby suppliers cannot necessarily replace existing sources immediately. CIF unit values may reflect both procurement and freight costs.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "采购与运输成本上行压力，替代效果不确定",
-            "possible_lag": "替代供应链建立需更长时间；当期传导未估计",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "同一HS内品种、品质和来源变化会影响单位价值；本文不能区分运费贡献。",
+            "limitations": "The evidence does not isolate freight contributions; varieties, grades and origins also affect unit values.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -13846,36 +14064,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NA3",
             "region": "Australia",
             "commodity": "Coffee Beans",
-            "headline_original": "Australian growers aim for 'specialty coffee' status as price of international beans rises",
+            "headline_original": "Australian growers pursue specialty coffee markets",
             "source_id": "NA3",
             "related_source_ids": [],
-            "facts_confirmed": "报道北昆士兰生产者与研究者改良风味、争取精品市场。",
+            "facts_confirmed": "ABC reports on North Queensland growers and researchers working to improve flavour and enter specialty markets.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "生产者与研究人员尝试提高本土生豆品质",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "更高风味认可可能扩大本土精品豆需求与溢价",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "国际成本较高时，本土豆相对竞争力可能改善",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "本土规模较小，不足以据此推断全国进口价将下降",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Greater quality recognition may support local premiums and competitiveness when imported beans are costly.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "本土精品溢价可能提高；进口成本方向未确定",
-            "possible_lag": "跨产季与采购测试；未量化",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "这是品质与替代机制，不是进口价格已经下降的证据。",
+            "limitations": "This is a potential quality and substitution mechanism, not evidence that national import prices fell.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -13899,126 +14101,129 @@ window.EDITORIAL_CASES = [
     "icon": "1f33f",
     "quotes": {
       "australia": {
-        "price": 1.99054,
-        "unit": "USD/kg",
-        "label": "Australia原棉（未梳或未精梳）出口单位价值",
+        "price": 2.827471590909091,
+        "unit": "AUD/kg",
+        "label": "Australia raw cotton export unit value",
         "date": "2026-08-01",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
         "history": [
           [
             "2024-01-01",
-            2.041434
+            2.899764204545455
           ],
           [
             "2024-02-01",
-            2.056309
+            2.9208934659090917
           ],
           [
             "2024-03-01",
-            2.126535
+            3.020646306818182
           ],
           [
             "2024-04-01",
-            2.22014
+            3.1536079545454547
           ],
           [
             "2024-05-01",
-            2.215945
+            3.147649147727273
           ],
           [
             "2024-06-01",
-            2.133429
+            3.0304389204545457
           ],
           [
             "2024-07-01",
-            2.067856
+            2.937295454545455
           ],
           [
             "2024-08-01",
-            2.023361
+            2.874092329545455
           ],
           [
             "2024-10-01",
-            1.962917
+            2.7882343750000005
           ],
           [
             "2024-12-01",
-            1.859572
+            2.6414375000000003
           ],
           [
             "2025-02-01",
-            1.83183
+            2.6020312500000005
           ],
           [
             "2025-04-01",
-            1.848819
+            2.6261633522727275
           ],
           [
             "2025-06-01",
-            1.845187
+            2.6210042613636366
           ],
           [
             "2025-07-01",
-            1.834622
+            2.6059971590909092
           ],
           [
             "2025-08-01",
-            1.802172
+            2.5599034090909094
           ],
           [
             "2025-09-01",
-            1.766993
+            2.509933238636364
           ],
           [
             "2025-10-01",
-            1.720277
+            2.4435752840909095
           ],
           [
             "2025-11-01",
-            1.704325
+            2.4209161931818186
           ],
           [
             "2025-12-01",
-            1.675825
+            2.3804332386363636
           ],
           [
             "2026-01-01",
-            1.663144
+            2.362420454545455
           ],
           [
             "2026-02-01",
-            1.674813
+            2.3789957386363643
           ],
           [
             "2026-03-01",
-            1.751965
+            2.488586647727273
           ],
           [
             "2026-04-01",
-            1.732617
+            2.4611036931818187
           ],
           [
             "2026-05-01",
-            1.888983
+            2.6832144886363642
           ],
           [
             "2026-06-01",
-            1.918689
+            2.725410511363637
           ],
           [
             "2026-07-01",
-            1.945827
+            2.763958806818182
           ],
           [
             "2026-08-01",
-            1.99054
+            2.827471590909091
           ]
-        ]
+        ],
+        "originalUnit": "USD/kg",
+        "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+        "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
       },
       "china": {
         "price": 17504,
         "unit": "CNY/tonne",
-        "label": "中国3128B级原棉季度均价",
+        "label": "China grade 3128B cotton quarterly mean",
         "date": "2026-04-01",
         "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf",
         "history": [
@@ -14072,15 +14277,14 @@ window.EDITORIAL_CASES = [
             "series_id": "cotton_cn_domestic_quarterly",
             "region": "China",
             "commodity": "Cotton",
-            "label_zh": "中国3128B级原棉季度均价",
+            "label_zh": "China grade 3128B cotton quarterly mean",
             "unit": "CNY/tonne",
             "frequency": "quarterly",
             "measure_type": "domestic_grade_price",
             "latest_valid_period": "2026-Q2",
             "limitations": [
-              "2024季度和2025Q4/2026Q1Q2用3个月均价简单平均，非按天/成交量加权；2025Q1Q2Q3为报告给定季度均价，官方季度聚合算法未单独核验",
-              "2026Q3因9月仅截至21日，不计算完整季度",
-              "与进口单位价值完全不同，不可接成一条线"
+              "Only documented observations are plotted. This series must not be merged with other grades, measures or frequencies.",
+              "Some quarters are simple means of three monthly values; others are reported quarterly means. Not volume-weighted. Incomplete quarters are excluded."
             ],
             "observations": [
               {
@@ -14203,7 +14407,7 @@ window.EDITORIAL_CASES = [
             "quote": {
               "price": 17504,
               "unit": "CNY/tonne",
-              "label": "中国3128B级原棉季度均价",
+              "label": "China grade 3128B cotton quarterly mean",
               "date": "2026-04-01",
               "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf",
               "history": [
@@ -14248,20 +14452,21 @@ window.EDITORIAL_CASES = [
                   17504
                 ]
               ]
-            }
+            },
+            "label_en": "China grade 3128B cotton quarterly mean"
           },
           {
             "series_id": "cotton_cn_domestic_recent_monthly",
             "region": "China",
             "commodity": "Cotton",
-            "label_zh": "中国3128B级原棉近期月均价",
+            "label_zh": "China grade 3128B cotton recent monthly mean",
             "unit": "CNY/tonne",
             "frequency": "monthly",
             "measure_type": "domestic_grade_price",
             "latest_valid_period": "2026-08",
             "limitations": [
-              "9月仅截至21日，单列部分月；10月未从此附件取得",
-              "不把2025前三季度均价拆成每个月重复值"
+              "Only documented observations are plotted. This series must not be merged with other grades, measures or frequencies.",
+              "September 2026 is partial through 21 September; the headline quote uses the latest full month."
             ],
             "observations": [
               {
@@ -14412,7 +14617,7 @@ window.EDITORIAL_CASES = [
             "quote": {
               "price": 17963,
               "unit": "CNY/tonne",
-              "label": "中国3128B级原棉近期月均价",
+              "label": "China grade 3128B cotton recent monthly mean",
               "date": "2026-08-01",
               "url": "https://gjs.moa.gov.cn/ncpmy/202610/P020261008315421854017.pdf",
               "history": [
@@ -14465,15 +14670,16 @@ window.EDITORIAL_CASES = [
                   17910
                 ]
               ]
-            }
+            },
+            "label_en": "China grade 3128B cotton recent monthly mean"
           },
           {
             "series_id": "cotton_cn_import",
             "region": "China",
             "commodity": "Cotton",
-            "label_zh": "China原棉（未梳或未精梳）进口单位价值",
+            "label_zh": "China raw cotton import unit value",
             "frequency": "monthly",
-            "unit": "USD/kg",
+            "unit": "CNY/kg",
             "measure_type": "trade_unit_value_not_spot_price",
             "hs_code": "5201",
             "reporter_code": 156,
@@ -14509,19 +14715,14 @@ window.EDITORIAL_CASES = [
               "2026-10"
             ],
             "limitations": [
-              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
-              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
-              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
-              "CIF不等于含进口关税成本；FOB不含国际运保费",
-              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
-              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
-              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+              "Trade value divided by net weight; not a fixed-grade spot or retail price. Product mix, contracts, arrival dates and source estimation flags can affect this proxy. CIF excludes import tariffs; FOB excludes international freight and insurance. Missing records are not zero trade.",
+              "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
             ],
             "observations": [
               {
                 "period": "2024-01",
-                "value": 2.075568,
-                "unit": "USD/kg",
+                "value": 13.820511525000004,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14544,12 +14745,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.075568
               },
               {
                 "period": "2024-02",
-                "value": 2.065331,
-                "unit": "USD/kg",
+                "value": 13.752346773721595,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14572,12 +14774,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.49,
                 "date": "2024-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.065331
               },
               {
                 "period": "2024-03",
-                "value": 2.076328,
-                "unit": "USD/kg",
+                "value": 13.825572110227277,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14600,12 +14803,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 0.53,
                 "date": "2024-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.076328
               },
               {
                 "period": "2024-04",
-                "value": 2.069415,
-                "unit": "USD/kg",
+                "value": 13.779540760653411,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14628,12 +14832,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.33,
                 "date": "2024-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.069415
               },
               {
                 "period": "2024-05",
-                "value": 2.080797,
-                "unit": "USD/kg",
+                "value": 13.855329683096594,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14656,12 +14861,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 0.55,
                 "date": "2024-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.080797
               },
               {
                 "period": "2024-06",
-                "value": 2.086709,
-                "unit": "USD/kg",
+                "value": 13.894695709232957,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14684,12 +14890,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 0.28,
                 "date": "2024-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.086709
               },
               {
                 "period": "2024-07",
-                "value": 2.049944,
-                "unit": "USD/kg",
+                "value": 13.64988989886364,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14712,12 +14919,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.76,
                 "date": "2024-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.049944
               },
               {
                 "period": "2024-08",
-                "value": 1.993977,
-                "unit": "USD/kg",
+                "value": 13.277224407528413,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14740,12 +14948,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -2.73,
                 "date": "2024-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.993977
               },
               {
                 "period": "2024-09",
-                "value": 1.97051,
-                "unit": "USD/kg",
+                "value": 13.12096552130682,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14768,12 +14977,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.18,
                 "date": "2024-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.97051
               },
               {
                 "period": "2024-10",
-                "value": 1.888313,
-                "unit": "USD/kg",
+                "value": 12.573643252982956,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14796,12 +15006,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -4.17,
                 "date": "2024-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.888313
               },
               {
                 "period": "2024-11",
-                "value": 1.857722,
-                "unit": "USD/kg",
+                "value": 12.369948038920457,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14824,12 +15035,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.62,
                 "date": "2024-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.857722
               },
               {
                 "period": "2024-12",
-                "value": 1.888884,
-                "unit": "USD/kg",
+                "value": 12.577445350568185,
+                "unit": "CNY/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -14852,12 +15064,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 1.68,
                 "date": "2024-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.888884
               },
               {
                 "period": "2025-01",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14869,12 +15082,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-02",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14886,12 +15100,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-03",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14903,12 +15118,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-04",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14920,12 +15136,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-05",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14937,12 +15154,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-06",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14954,12 +15172,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-07",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14971,12 +15190,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-08",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -14988,12 +15208,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15005,12 +15226,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-10",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15022,12 +15244,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-11",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15039,12 +15262,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-12",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15056,12 +15280,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2025-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-01",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15073,12 +15298,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-02",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15090,12 +15316,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-03",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15107,12 +15334,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-04",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15124,12 +15352,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-05",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15141,12 +15370,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-06",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15158,12 +15388,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-07",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15175,12 +15406,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-08",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15192,12 +15424,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15209,12 +15442,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-10",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "CNY/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -15226,7 +15460,8 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               }
             ],
             "quarterly": [
@@ -15352,78 +15587,83 @@ window.EDITORIAL_CASES = [
               }
             ],
             "quote": {
-              "price": 1.888884,
-              "unit": "USD/kg",
-              "label": "China原棉（未梳或未精梳）进口单位价值",
+              "price": 12.577445350568185,
+              "unit": "CNY/kg",
+              "label": "China raw cotton import unit value",
               "date": "2024-12-01",
               "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
               "history": [
                 [
                   "2024-01-01",
-                  2.075568
+                  13.820511525000004
                 ],
                 [
                   "2024-02-01",
-                  2.065331
+                  13.752346773721595
                 ],
                 [
                   "2024-03-01",
-                  2.076328
+                  13.825572110227277
                 ],
                 [
                   "2024-04-01",
-                  2.069415
+                  13.779540760653411
                 ],
                 [
                   "2024-05-01",
-                  2.080797
+                  13.855329683096594
                 ],
                 [
                   "2024-06-01",
-                  2.086709
+                  13.894695709232957
                 ],
                 [
                   "2024-07-01",
-                  2.049944
+                  13.64988989886364
                 ],
                 [
                   "2024-08-01",
-                  1.993977
+                  13.277224407528413
                 ],
                 [
                   "2024-09-01",
-                  1.97051
+                  13.12096552130682
                 ],
                 [
                   "2024-10-01",
-                  1.888313
+                  12.573643252982956
                 ],
                 [
                   "2024-11-01",
-                  1.857722
+                  12.369948038920457
                 ],
                 [
                   "2024-12-01",
-                  1.888884
+                  12.577445350568185
                 ]
-              ]
-            }
+              ],
+              "originalUnit": "USD/kg",
+              "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+              "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
+            },
+            "label_en": "China raw cotton import unit value",
+            "originalUnit": "USD/kg",
+            "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+            "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
           },
           {
             "series_id": "cotton_cn_domestic_2024",
             "region": "China",
             "commodity": "Cotton",
             "frequency": "monthly",
-            "label_zh": "中国3128B级棉花国内月均价",
-            "label_en": "China domestic grade 3128B cotton: monthly mean",
+            "label_zh": "China grade 3128B cotton monthly mean in 2024",
+            "label_en": "China grade 3128B cotton monthly mean in 2024",
             "unit": "CNY/tonne",
             "measure_type": "monthly_mean_price",
             "proxy_for_commodity": false,
             "seasonal_adjustment": "not seasonally adjusted / 未做额外季调",
             "limitations": [
-              "同一S13表内完整2024年；不是郑棉期货或衣服价格",
-              "原始来源中国棉花信息网，官方汇编转引；不把它擅自重命名为所有月份CCIndex",
-              "NT4解释同等级行情但11月隐含数值与汇编差1元；保留S13数值"
+              "Only documented observations are plotted. This series must not be merged with other grades, measures or frequencies."
             ],
             "observations": [
               {
@@ -15598,7 +15838,7 @@ window.EDITORIAL_CASES = [
             "quote": {
               "price": 14949,
               "unit": "CNY/tonne",
-              "label": "China domestic grade 3128B cotton: monthly mean",
+              "label": "China grade 3128B cotton monthly mean in 2024",
               "date": "2024-12-01",
               "url": "https://gjs.moa.gov.cn/ncpmy/202503/P020250331633873555195.pdf",
               "history": [
@@ -15659,38 +15899,22 @@ window.EDITORIAL_CASES = [
             "story_id": "NT1",
             "region": "China",
             "commodity": "Cotton",
-            "headline_original": "2024年全國棉花產量同比增長9.7%",
+            "headline_original": "China cotton production increased by 9.7 percent in 2024",
             "source_id": "NT1",
             "related_source_ids": [
               "OFF1"
             ],
-            "facts_confirmed": "报道国家统计局公布2024年棉花产量增长；官方公告可交叉核实。",
+            "facts_confirmed": "The report cites official statistics showing higher Chinese cotton production.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "国家统计局确认2024年全国棉花产量增加",
-                "evidence_grade": "A",
-                "status": "official_fact"
-              },
-              {
-                "mechanism": "其他因素不变时，国内原棉供应增加可能减轻采购紧张",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "纺企可能减少或调整进口采购",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "进口数量和来源构成变化可改变贸易单位价值，不保证其必然下降",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "More domestic supply may ease purchasing pressure and alter import demand. Import composition can change average unit values in either direction.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "国内现货有下行压力；进口单位价值方向不唯一",
-            "possible_lag": "采收加工、库存消化与进口订单更新后",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "产量同比并非月度供给冲击；国内价与进口价不可视为同一序列。",
+            "limitations": "Annual output growth is not a monthly supply shock. Domestic prices and import unit values are separate series.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -15701,43 +15925,27 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://hb.people.com.cn/BIG5/n2/2024/1227/c194063-41089203.html",
-            "publisher": "人民日报 / 人民网",
+            "publisher": "People’s Daily",
             "published": "2024-12-27"
           },
           {
             "story_id": "NT2",
             "region": "China",
             "commodity": "Cotton",
-            "headline_original": "我国自3月10日起对原产于美国的部分进口商品加征关税",
+            "headline_original": "China announced additional tariffs on US products in March 2025",
             "source_id": "NT2",
             "related_source_ids": [],
-            "facts_confirmed": "报道当时宣布对美国产棉花等加征关税，自2025-03-10起实施，并载明在途豁免。",
+            "facts_confirmed": "The report describes additional tariffs covering US cotton from 10 March 2025, including in-transit exemptions.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "报道确认当时对美国产棉花的新增税收措施与适用时间",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "适用交易的税后进口成本可能提高",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "采购者可能转向其他原产地，改变来源与合同",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "世界伙伴合计CIF单位价值未含进口关税，不能当作税后成本涨幅",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Eligible US imports may face higher tax-inclusive costs, encouraging sourcing changes. CIF unit values do not include import tariffs.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "美棉税后成本上行；进口平均CIF方向不确定",
-            "possible_lag": "受在途豁免、合同和后续政策影响",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "仅作2025-03历史政策；不声称该税率仍为2026-11当前税率；不计算当月因果贡献。",
+            "limitations": "Historical policy context only; not a statement of current rates or a measured monthly price effect.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -15748,43 +15956,27 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://www.xinhuanet.com/fortune/20250304/d1102d5c256d4ceebaa155476f94b26a/c.html",
-            "publisher": "新华社",
+            "publisher": "Xinhua",
             "published": "2025-03-04"
           },
           {
             "story_id": "NT3",
             "region": "China",
             "commodity": "Cotton",
-            "headline_original": "两部门：2026—2028年新疆棉花目标价格为每吨18600元",
+            "headline_original": "Xinjiang cotton target price announced for 2026 to 2028",
             "source_id": "NT3",
             "related_source_ids": [],
-            "facts_confirmed": "报道继续实施新疆棉花目标价格政策，涉及补贴及种植布局。",
+            "facts_confirmed": "The report describes continuation of a target-price policy intended to support producer income and production.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "报道说明政策旨在保障收益和稳定生产",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "收益预期可能影响种植积极性与中期供应",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "国内供给变化可能改变进口需求",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "补贴支持不等于市场报价下限，也不固定进口单位价值",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Income expectations may influence planting and medium-term supply, which can change import demand.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "中期供应稳定作用；价格净方向不确定",
-            "possible_lag": "跨种植季而非当月机械生效",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "18600元/吨是政策目标价，不能作为现货价或补进月线；非法律适用建议。",
+            "limitations": "CNY 18,600 per tonne is a policy target, not a market-price floor or a spot observation.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -15795,43 +15987,27 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://www1.xinhuanet.com/20260525/1b268d4488ae49a191b4f10406d1e5cd/c.html",
-            "publisher": "新华社",
+            "publisher": "Xinhua",
             "published": "2026-05-25"
           },
           {
             "story_id": "NT4",
             "region": "China",
             "commodity": "Cotton",
-            "headline_original": "纺织淡季特征加深 国内棉价继续走低——中国棉花价格指数（CCIndex）月度报告（2024年12月）",
+            "headline_original": "Weak textile demand and inventories weigh on cotton prices",
             "source_id": "NT4",
             "related_source_ids": [],
-            "facts_confirmed": "行业月报描述新棉供给增加、订单不足与库存压力。",
+            "facts_confirmed": "The December 2024 industry report describes new-crop supply, weak orders and inventory pressure.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "报告观察国内供应增加、订单和库存压力",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "报告认为采购意愿偏弱使现货价格承压",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "国内原料便宜可能降低部分进口棉的替代吸引力",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "但进口单位价值还受交货合同与品质影响",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Weak purchasing demand can weigh on domestic spot prices; cheaper domestic cotton may affect import substitution.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "国内现货下行压力；进口价不必同步",
-            "possible_lag": "订单与交货周期跨月",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "行业报告不是独立记者新闻；托管转载已标明。该组仍含3条独立新闻报道。",
+            "limitations": "An attributed industry report hosted on another platform, not independent causal evidence. Contracts and grades still affect import unit values.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -15842,7 +16018,7 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://npo193491.npoall.com/news/itemid-93855.html",
-            "publisher": "中国棉花协会署名报告（商协汇托管）",
+            "publisher": "China Cotton Association report",
             "published": "2025-01-20"
           }
         ]
@@ -15853,9 +16029,9 @@ window.EDITORIAL_CASES = [
             "series_id": "cotton_au_export",
             "region": "Australia",
             "commodity": "Cotton",
-            "label_zh": "Australia原棉（未梳或未精梳）出口单位价值",
+            "label_zh": "Australia raw cotton export unit value",
             "frequency": "monthly",
-            "unit": "USD/kg",
+            "unit": "AUD/kg",
             "measure_type": "trade_unit_value_not_spot_price",
             "hs_code": "5201",
             "reporter_code": 36,
@@ -15876,19 +16052,14 @@ window.EDITORIAL_CASES = [
               "2026-10"
             ],
             "limitations": [
-              "是该国该商品贸易组合的单位价值，非固定等级现货/农户成交/零售价",
-              "HS090111不含脱咖啡因生豆；HS5201不含棉纱、棉布和籽棉，不代表所有棉制品",
-              "币种统一为原始USD，地区独立展示；未擅自换算AUD或CNY",
-              "CIF不等于含进口关税成本；FOB不含国际运保费",
-              "进口构成、等级、合同、抵港时间和统计修订均可改变单位价值；保留来源估算及聚合标记",
-              "没有返回记录不能解释成零进口；未查得最新月不等于该国没有更新数据",
-              "季度按金额总和/净重总和，不对月单价简单平均；缺任一月不计算完整季度"
+              "Trade value divided by net weight; not a fixed-grade spot or retail price. Product mix, contracts, arrival dates and source estimation flags can affect this proxy. CIF excludes import tariffs; FOB excludes international freight and insurance. Missing records are not zero trade.",
+              "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
             ],
             "observations": [
               {
                 "period": "2024-01",
-                "value": 2.041434,
-                "unit": "USD/kg",
+                "value": 2.899764204545455,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -15911,12 +16082,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202401&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.041434
               },
               {
                 "period": "2024-02",
-                "value": 2.056309,
-                "unit": "USD/kg",
+                "value": 2.9208934659090917,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -15939,12 +16111,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 0.73,
                 "date": "2024-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202402&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.056309
               },
               {
                 "period": "2024-03",
-                "value": 2.126535,
-                "unit": "USD/kg",
+                "value": 3.020646306818182,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -15967,12 +16140,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 3.42,
                 "date": "2024-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202403&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.126535
               },
               {
                 "period": "2024-04",
-                "value": 2.22014,
-                "unit": "USD/kg",
+                "value": 3.1536079545454547,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -15995,12 +16169,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 4.4,
                 "date": "2024-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202404&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.22014
               },
               {
                 "period": "2024-05",
-                "value": 2.215945,
-                "unit": "USD/kg",
+                "value": 3.147649147727273,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16023,12 +16198,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.19,
                 "date": "2024-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202405&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.215945
               },
               {
                 "period": "2024-06",
-                "value": 2.133429,
-                "unit": "USD/kg",
+                "value": 3.0304389204545457,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16051,12 +16227,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.72,
                 "date": "2024-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202406&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.133429
               },
               {
                 "period": "2024-07",
-                "value": 2.067856,
-                "unit": "USD/kg",
+                "value": 2.937295454545455,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16079,12 +16256,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -3.07,
                 "date": "2024-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202407&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.067856
               },
               {
                 "period": "2024-08",
-                "value": 2.023361,
-                "unit": "USD/kg",
+                "value": 2.874092329545455,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16109,12 +16287,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -2.15,
                 "date": "2024-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202408&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 2.023361
               },
               {
                 "period": "2024-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "missing_positive_net_weight_or_value",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16137,12 +16316,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202409&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2024-10",
-                "value": 1.962917,
-                "unit": "USD/kg",
+                "value": 2.7882343750000005,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16165,12 +16345,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202410&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.962917
               },
               {
                 "period": "2024-11",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "missing_positive_net_weight_or_value",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16193,12 +16374,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202411&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2024-12",
-                "value": 1.859572,
-                "unit": "USD/kg",
+                "value": 2.6414375000000003,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16221,12 +16403,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2024-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202412&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.859572
               },
               {
                 "period": "2025-01",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "missing_positive_net_weight_or_value",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16249,12 +16432,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2025-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202501&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-02",
-                "value": 1.83183,
-                "unit": "USD/kg",
+                "value": 2.6020312500000005,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16277,12 +16461,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2025-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202502&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.83183
               },
               {
                 "period": "2025-03",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "missing_positive_net_weight_or_value",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16305,12 +16490,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2025-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202503&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-04",
-                "value": 1.848819,
-                "unit": "USD/kg",
+                "value": 2.6261633522727275,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16333,12 +16519,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2025-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202504&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.848819
               },
               {
                 "period": "2025-05",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "missing_positive_net_weight_or_value",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16361,12 +16548,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2025-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202505&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2025-06",
-                "value": 1.845187,
-                "unit": "USD/kg",
+                "value": 2.6210042613636366,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16389,12 +16577,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": null,
                 "date": "2025-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202506&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.845187
               },
               {
                 "period": "2025-07",
-                "value": 1.834622,
-                "unit": "USD/kg",
+                "value": 2.6059971590909092,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16417,12 +16606,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.57,
                 "date": "2025-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202507&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.834622
               },
               {
                 "period": "2025-08",
-                "value": 1.802172,
-                "unit": "USD/kg",
+                "value": 2.5599034090909094,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16445,12 +16635,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.77,
                 "date": "2025-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202508&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.802172
               },
               {
                 "period": "2025-09",
-                "value": 1.766993,
-                "unit": "USD/kg",
+                "value": 2.509933238636364,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16475,12 +16666,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.95,
                 "date": "2025-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202509&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.766993
               },
               {
                 "period": "2025-10",
-                "value": 1.720277,
-                "unit": "USD/kg",
+                "value": 2.4435752840909095,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16503,12 +16695,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -2.64,
                 "date": "2025-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202510&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.720277
               },
               {
                 "period": "2025-11",
-                "value": 1.704325,
-                "unit": "USD/kg",
+                "value": 2.4209161931818186,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16531,12 +16724,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.93,
                 "date": "2025-11-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202511&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.704325
               },
               {
                 "period": "2025-12",
-                "value": 1.675825,
-                "unit": "USD/kg",
+                "value": 2.3804332386363636,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16559,12 +16753,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.67,
                 "date": "2025-12-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202512&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.675825
               },
               {
                 "period": "2026-01",
-                "value": 1.663144,
-                "unit": "USD/kg",
+                "value": 2.362420454545455,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16587,12 +16782,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -0.76,
                 "date": "2026-01-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202601&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.663144
               },
               {
                 "period": "2026-02",
-                "value": 1.674813,
-                "unit": "USD/kg",
+                "value": 2.3789957386363643,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16615,12 +16811,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 0.7,
                 "date": "2026-02-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202602&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.674813
               },
               {
                 "period": "2026-03",
-                "value": 1.751965,
-                "unit": "USD/kg",
+                "value": 2.488586647727273,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16643,12 +16840,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 4.61,
                 "date": "2026-03-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202603&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.751965
               },
               {
                 "period": "2026-04",
-                "value": 1.732617,
-                "unit": "USD/kg",
+                "value": 2.4611036931818187,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16672,12 +16870,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": -1.1,
                 "date": "2026-04-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202604&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.732617
               },
               {
                 "period": "2026-05",
-                "value": 1.888983,
-                "unit": "USD/kg",
+                "value": 2.6832144886363642,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16700,12 +16899,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 9.02,
                 "date": "2026-05-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202605&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.888983
               },
               {
                 "period": "2026-06",
-                "value": 1.918689,
-                "unit": "USD/kg",
+                "value": 2.725410511363637,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16728,12 +16928,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 1.57,
                 "date": "2026-06-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202606&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.918689
               },
               {
                 "period": "2026-07",
-                "value": 1.945827,
-                "unit": "USD/kg",
+                "value": 2.763958806818182,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16756,12 +16957,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 1.41,
                 "date": "2026-07-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202607&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.945827
               },
               {
                 "period": "2026-08",
-                "value": 1.99054,
-                "unit": "USD/kg",
+                "value": 2.827471590909091,
+                "unit": "AUD/kg",
                 "status": "derived_from_official_trade",
                 "evidence_grade": "A-source/B-derived-price-proxy",
                 "source_id": "UNAPI",
@@ -16784,12 +16986,13 @@ window.EDITORIAL_CASES = [
                 ],
                 "mom_pct": 2.3,
                 "date": "2026-08-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": 1.99054
               },
               {
                 "period": "2026-09",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16801,12 +17004,13 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-09-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202609&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               },
               {
                 "period": "2026-10",
                 "value": null,
-                "unit": "USD/kg",
+                "unit": "AUD/kg",
                 "status": "no_record_in_query",
                 "evidence_grade": "U",
                 "source_id": "UNAPI",
@@ -16818,7 +17022,8 @@ window.EDITORIAL_CASES = [
                 "quality_flags": [],
                 "mom_pct": null,
                 "date": "2026-10-01",
-                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500"
+                "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202610&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
+                "originalValue": null
               }
             ],
             "quarterly": [
@@ -16944,122 +17149,129 @@ window.EDITORIAL_CASES = [
               }
             ],
             "quote": {
-              "price": 1.99054,
-              "unit": "USD/kg",
-              "label": "Australia原棉（未梳或未精梳）出口单位价值",
+              "price": 2.827471590909091,
+              "unit": "AUD/kg",
+              "label": "Australia raw cotton export unit value",
               "date": "2026-08-01",
               "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=36%2C156&period=202608&partnerCode=0&partner2Code=0&cmdCode=090111%2C5201&flowCode=M%2CX&customsCode=C00&motCode=0&maxRecords=500",
               "history": [
                 [
                   "2024-01-01",
-                  2.041434
+                  2.899764204545455
                 ],
                 [
                   "2024-02-01",
-                  2.056309
+                  2.9208934659090917
                 ],
                 [
                   "2024-03-01",
-                  2.126535
+                  3.020646306818182
                 ],
                 [
                   "2024-04-01",
-                  2.22014
+                  3.1536079545454547
                 ],
                 [
                   "2024-05-01",
-                  2.215945
+                  3.147649147727273
                 ],
                 [
                   "2024-06-01",
-                  2.133429
+                  3.0304389204545457
                 ],
                 [
                   "2024-07-01",
-                  2.067856
+                  2.937295454545455
                 ],
                 [
                   "2024-08-01",
-                  2.023361
+                  2.874092329545455
                 ],
                 [
                   "2024-10-01",
-                  1.962917
+                  2.7882343750000005
                 ],
                 [
                   "2024-12-01",
-                  1.859572
+                  2.6414375000000003
                 ],
                 [
                   "2025-02-01",
-                  1.83183
+                  2.6020312500000005
                 ],
                 [
                   "2025-04-01",
-                  1.848819
+                  2.6261633522727275
                 ],
                 [
                   "2025-06-01",
-                  1.845187
+                  2.6210042613636366
                 ],
                 [
                   "2025-07-01",
-                  1.834622
+                  2.6059971590909092
                 ],
                 [
                   "2025-08-01",
-                  1.802172
+                  2.5599034090909094
                 ],
                 [
                   "2025-09-01",
-                  1.766993
+                  2.509933238636364
                 ],
                 [
                   "2025-10-01",
-                  1.720277
+                  2.4435752840909095
                 ],
                 [
                   "2025-11-01",
-                  1.704325
+                  2.4209161931818186
                 ],
                 [
                   "2025-12-01",
-                  1.675825
+                  2.3804332386363636
                 ],
                 [
                   "2026-01-01",
-                  1.663144
+                  2.362420454545455
                 ],
                 [
                   "2026-02-01",
-                  1.674813
+                  2.3789957386363643
                 ],
                 [
                   "2026-03-01",
-                  1.751965
+                  2.488586647727273
                 ],
                 [
                   "2026-04-01",
-                  1.732617
+                  2.4611036931818187
                 ],
                 [
                   "2026-05-01",
-                  1.888983
+                  2.6832144886363642
                 ],
                 [
                   "2026-06-01",
-                  1.918689
+                  2.725410511363637
                 ],
                 [
                   "2026-07-01",
-                  1.945827
+                  2.763958806818182
                 ],
                 [
                   "2026-08-01",
-                  1.99054
+                  2.827471590909091
                 ]
-              ]
-            }
+              ],
+              "originalUnit": "USD/kg",
+              "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+              "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
+            },
+            "label_en": "Australia raw cotton export unit value",
+            "originalUnit": "USD/kg",
+            "fxNote": "Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes.",
+            "note": " Currency display conversion: fixed RBA reference rates dated 30 October 2026 (1 AUD = 0.7040 USD = 4.6877 CNY). Converted historical values are not historical local-currency transaction prices. Original source currency remains identified in the source notes."
           }
         ],
         "stories": [
@@ -17067,36 +17279,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NX1",
             "region": "Australia",
             "commodity": "Cotton",
-            "headline_original": "Cotton exported from Darwin Port in major milestone for new gin near Katherine",
+            "headline_original": "Darwin cotton exports mark a milestone for the Katherine gin",
             "source_id": "NX1",
             "related_source_ids": [],
-            "facts_confirmed": "报道Katherine新轧花厂棉花从Darwin出口；贸易商解释减少长途内陆运输的成本意义。",
+            "facts_confirmed": "The report describes cotton exports via Darwin and traders discussing reduced inland haulage.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "本地加工和Darwin出口减少部分原有内陆运输距离",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "贸易商预计随着规模提高，出口成本效率改善",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "较低物流成本可能提高农户净回款或报价竞争力",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "节省也可能留在利润中，不能推断全国FOB单位价值必然下降",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Shorter transport routes may improve local net returns or competitiveness; savings may also remain in margins.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "物流成本可能下降；FOB单价净影响不确定",
-            "possible_lag": "当地供应链运行和规模形成后",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "地区个案；FOB不含国际运保费，不能用本文计算全国价格下降幅度。",
+            "limitations": "A regional case study cannot quantify a national FOB price decline. FOB excludes international freight and insurance.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -17112,36 +17308,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NX2",
             "region": "Australia",
             "commodity": "Cotton",
-            "headline_original": "Kimberley cotton hits record high in first season with new processing gin in Kununurra",
+            "headline_original": "Kimberley cotton harvest reaches a record after a new gin opens",
             "source_id": "NX2",
             "related_source_ids": [],
-            "facts_confirmed": "报道当地轧花首季完成、本地加工替代跨州运输，采访亦提及低迷原棉价格。",
+            "facts_confirmed": "The report describes local processing replacing interstate haulage, alongside weak cotton-market conditions.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "本地轧花替代部分跨州长途运输",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "加工物流成本和交付时长可能减少",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "成本改善可能增强当地供给能力和回款",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "全国出口FOB单位价值仍由市场、品质和销售组合共同影响",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Lower logistics costs and delivery times may strengthen local production and returns.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "成本减轻；全国价格方向不确定",
-            "possible_lag": "地区交货周期与后续产季",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "报道的澳元/包采访范围不是全国连续月度价格；不将其逐月重复填充。",
+            "limitations": "Interview quotes per bale are not a continuous national monthly series and must not be repeated across months.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -17157,36 +17337,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NX3",
             "region": "Australia",
             "commodity": "Cotton",
-            "headline_original": "Cotton Australia says demand high for its licensing as growers face lower yields",
+            "headline_original": "Demand for Australian cotton licensing grows despite yield concerns",
             "source_id": "NX3",
             "related_source_ids": [],
-            "facts_confirmed": "报道澳棉标识许可使用增加，同时行业面对产量问题。",
+            "facts_confirmed": "The report describes increased use of Australian cotton branding alongside production challenges.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "报道观察到澳棉品牌许可使用增加",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "来源认可与可追溯性可能提高部分买家的支付意愿",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "差异化采购可能支持澳棉质量或来源溢价",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "该溢价是否进入全国出口平均单位价值取决于销量和合同",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "Recognition and traceability may support buyer willingness to pay and provenance premiums.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "特定市场溢价可能上行；总体未知",
-            "possible_lag": "品牌采用、采购与订单周期后",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "许可商品数量不等于原棉新增吨数；没有估计溢价。",
+            "limitations": "Licensing counts are not additional cotton tonnage. No price premium or national average effect is quantified.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -17202,36 +17366,20 @@ window.EDITORIAL_CASES = [
             "story_id": "NX4",
             "region": "Australia",
             "commodity": "Cotton",
-            "headline_original": "我国自3月10日起对原产于美国的部分进口商品加征关税",
+            "headline_original": "Chinese tariffs may change cotton sourcing decisions",
             "source_id": "NX4",
             "related_source_ids": [],
-            "facts_confirmed": "同一条国际原始新闻，在澳洲版本解释潜在的采购来源替代。",
+            "facts_confirmed": "The March 2025 report on Chinese tariffs on US cotton provides context for possible substitution towards Australian supply.",
             "how_does_the_story_affect_prices": [
               {
-                "mechanism": "报道确认当时中国针对美国产棉花的关税变化",
-                "evidence_grade": "B",
-                "status": "reported_factor"
-              },
-              {
-                "mechanism": "美棉税后竞争力可能改变",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "中国采购者可能考虑澳洲等替代供给",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
-              },
-              {
-                "mechanism": "若替代订单增加，可能支持澳棉出口需求和议价；实际幅度未证实",
-                "evidence_grade": "C",
-                "status": "possible_mechanism"
+                "mechanism": "If alternative orders increase, Australian exporters may benefit from stronger demand and bargaining power.",
+                "evidence_grade": "C"
               }
             ],
-            "expected_direction": "潜在需求支持；全球需求走弱可能抵消",
-            "possible_lag": "采购改向到装船交付可能跨月",
+            "expected_direction": "Possible effects depend on supply, demand and product mix",
+            "possible_lag": "Timing and magnitude have not been quantified",
             "causal_strength": "reported_factors_plus_possible_chain",
-            "limitations": "不能说关税直接征在澳棉上，也不能声称澳洲必然获益；历史政策，不代表当前税率。",
+            "limitations": "The tariff was not imposed on Australian cotton. Benefits are not guaranteed; this is historical policy context.",
             "chart_attachment": "相关新闻；不自动解释报道当月的涨跌",
             "event_date": null,
             "related_series_ids": [
@@ -17240,7 +17388,7 @@ window.EDITORIAL_CASES = [
             "price_effect_estimate": null,
             "causality_proven": false,
             "url": "https://www.xinhuanet.com/fortune/20250304/d1102d5c256d4ceebaa155476f94b26a/c.html",
-            "publisher": "新华社",
+            "publisher": "Xinhua",
             "published": "2025-03-04"
           }
         ]
