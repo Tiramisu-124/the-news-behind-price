@@ -27,7 +27,7 @@ def build():
     keys=['series_id','product_id','market','region','specification','currency','unit','price_type','frequency','source_name']
     fields=keys+['period','observation_date','period_end','price','source_url','publication_date','last_checked','verification_status','source_sha256','source_locator']
     with (DATA/'observations.csv').open('w',encoding='utf-8',newline='') as stream:
-        writer=csv.DictWriter(stream,fieldnames=fields)
+        writer=csv.DictWriter(stream,fieldnames=fields,lineterminator='\n')
         writer.writeheader()
         for s in db['series']:
             for o in s['observations']:
