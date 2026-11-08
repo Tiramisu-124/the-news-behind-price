@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "product_id": "petrol",
+  "status_note": "Phase 1 preview data. Observations were transcribed from published ACCC PDF reports and have NOT yet passed the hashed-snapshot verification used by data/prices.json. They must be spot-checked against each PDF (source_locator) before publication.",
+  "series": {
+    "series_id": "accc-5city-ulp-daily",
+    "product_id": "petrol",
+    "market": "Australia",
+    "region": "5 largest cities (Sydney, Melbourne, Brisbane, Adelaide, Perth)",
+    "specification": "Daily average retail price of regular unleaded petrol (ULP), simple average of the five largest cities; membership-only sites excluded",
+    "currency": "AUD",
+    "unit": "cents per litre (incl. GST)",
+    "price_type": "retail",
+    "frequency": "daily_selected",
+    "frequency_note": "Single-day averages at the dates printed in each weekly ACCC report. Not a continuous daily series; dates between observations are gaps, not zero or interpolated values.",
+    "source_name": "Australian Competition and Consumer Commission (ACCC), weekly fuel price monitoring reports",
+    "source_url": "https://www.accc.gov.au/about-us/publications/weekly-fuel-price-monitoring-update",
+    "methodology": "ACCC retail prices come from Informed Sources, state and territory fuel price websites (FuelCheck NSW, WA FuelWatch, FuelCheck TAS, MyFuelNT) and PetrolSpy. Retail sites requiring a membership are excluded.",
+    "verification_status": "transcribed_pending_review",
+    "observations": [
+      {"date": "2026-02-20", "price": 170.9, "report_date": "2026-03-27", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-27march2026.pdf.pdf", "source_locator": "Tables 3 and 6, 5 largest cities"},
+      {"date": "2026-03-11", "price": 219.7, "report_date": "2026-03-13", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-update--13march2026.pdf", "source_locator": "Key messages text, 5 largest cities"},
+      {"date": "2026-03-18", "price": 234.1, "report_date": "2026-03-27", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-27march2026.pdf.pdf", "source_locator": "Tables 3 and 6, 5 largest cities"},
+      {"date": "2026-03-25", "price": 252.2, "report_date": "2026-03-27", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-27march2026.pdf.pdf", "source_locator": "Tables 3 and 6, 5 largest cities"},
+      {"date": "2026-03-31", "price": 257.2, "report_date": "2026-04-02", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-2-april-2026.pdf", "source_locator": "Table 9 and text, 5 largest cities"},
+      {"date": "2026-04-01", "price": 240.5, "report_date": "2026-04-02", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-2-april-2026.pdf", "source_locator": "Tables 1 and 3, 5 largest cities"},
+      {"date": "2026-04-15", "price": 215.6, "report_date": "2026-04-24", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-24-april-2026.pdf", "source_locator": "Table 10, 5 largest cities"},
+      {"date": "2026-04-22", "price": 191.8, "report_date": "2026-04-24", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-24-april-2026.pdf", "source_locator": "Table 10 and text, 5 largest cities"},
+      {"date": "2026-05-13", "price": 182.0, "report_date": "2026-05-22", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-22-may-2026.pdf", "source_locator": "Retail petrol table, 5 largest cities"},
+      {"date": "2026-05-20", "price": 185.2, "report_date": "2026-05-22", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-22-may-2026.pdf", "source_locator": "Retail petrol table, 5 largest cities"},
+      {"date": "2026-06-17", "price": 163.9, "report_date": "2026-06-26", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-26-june-2026.pdf", "source_locator": "Table 8, 5 largest cities"},
+      {"date": "2026-06-24", "price": 157.1, "report_date": "2026-06-26", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-26-june-2026.pdf", "source_locator": "Tables 1 and 8 and text, 5 largest cities"},
+      {"date": "2026-06-30", "price": 151.5, "report_date": "2026-07-17", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-17-july-2026.pdf", "source_locator": "Retail petrol table, 5 largest cities"},
+      {"date": "2026-07-08", "price": 167.5, "report_date": "2026-07-17", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-17-july-2026.pdf", "source_locator": "Retail petrol table, 5 largest cities"},
+      {"date": "2026-07-15", "price": 169.6, "report_date": "2026-07-17", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-17-july-2026.pdf", "source_locator": "Retail petrol table, 5 largest cities"},
+      {"date": "2026-08-02", "price": 195.3, "report_date": "2026-09-04", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-4-september-2026_1.pdf", "source_locator": "Table 1, 5 largest cities"},
+      {"date": "2026-08-26", "price": 205.5, "report_date": "2026-09-04", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-4-september-2026_1.pdf", "source_locator": "Table 8, 5 largest cities"},
+      {"date": "2026-09-02", "price": 204.6, "report_date": "2026-09-04", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-4-september-2026_1.pdf", "source_locator": "Table 1 and text, 5 largest cities"},
+      {"date": "2026-10-14", "price": 241.9, "report_date": "2026-10-23", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-23-October-2026.pdf", "source_locator": "Table 6, 5 largest cities"},
+      {"date": "2026-10-21", "price": 236.2, "report_date": "2026-10-23", "source_url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-23-October-2026.pdf", "source_locator": "Table 6 and key messages, 5 largest cities"}
+    ],
+    "known_gaps": [
+      {"from": "2026-09-02", "to": "2026-10-14", "reason": "ACCC reports for 11 Sep to 9 Oct were not transcribed in Phase 1."},
+      {"from": "2026-10-21", "to": "2026-11-04", "reason": "The 30 Oct and 6 Nov ACCC reports were not transcribed in Phase 1."}
+    ]
+  },
+  "events": [
+    {
+      "id": "war-begins",
+      "date": "2026-02-28",
+      "title": "War with Iran begins; Gulf energy shipping disrupted",
+      "summary": "ABC News later dated the start of the war to 28 February. Strikes on Iran and Tehran's retaliation led to precautionary shutdowns of regional oil and gas facilities and disrupted shipping through the Strait of Hormuz.",
+      "relevance": "Australia imports most of its refined fuel, largely via Asian refineries that buy Middle Eastern crude. A supply shock there raises the benchmark prices that Australian wholesale prices track.",
+      "publisher": "InDaily / The New Daily",
+      "headline": "Australians rush to fill up amid fuel price warnings",
+      "published": "2026-03-03",
+      "url": "https://www.indailysa.com.au/news/just-in/2026/03/03/middle-east-oil-and-gas-shutdowns",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "accc-monitoring",
+      "date": "2026-03-13",
+      "title": "ACCC starts weekly fuel price monitoring",
+      "summary": "The competition regulator began publishing weekly petrol and diesel price reports covering the major cities and about 190 regional locations, to increase transparency about price movements and their causes.",
+      "relevance": "These weekly reports are the source of the price observations on this page.",
+      "publisher": "ACCC",
+      "headline": "Fuel price monitoring during the current Middle Eastern conflict",
+      "published": "2026-03-13",
+      "url": "https://www.accc.gov.au/consumers/petrol-and-fuel/fuel-price-monitoring-during-the-current-middle-eastern-conflict",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "excise-cut",
+      "date": "2026-04-01",
+      "title": "Fuel excise temporarily cut",
+      "summary": "The federal government announced on 30 March that fuel excise would be temporarily reduced from 1 April for three months as part of its response to the fuel crisis.",
+      "relevance": "Excise is a fixed cents-per-litre tax, so a cut lowers wholesale prices directly and, after a lag, retail prices.",
+      "publisher": "SBS News",
+      "headline": "Fuel excise slashed, relief for truckies as Australia enters stage two of four-point plan",
+      "published": "2026-03-30",
+      "url": "https://sbs.com.au/news/article/pm-slashes-fuel-excise-following-the-second-national-cabinet-on-the-fuel-crisis/4x9kpqe5x",
+      "editorial_status": "needs_review",
+      "review_note": "Size of the cut differs between sources: SBS reported 26.3 cpl (half of 52.6 cpl); the ACCC and ABC describe a 32 cpl cut. Confirm the figure (e.g. GST treatment) before stating an amount."
+    },
+    {
+      "id": "ceasefire",
+      "date": "2026-04-08",
+      "title": "Temporary US–Iran ceasefire lowers crude prices",
+      "summary": "A temporary ceasefire pushed benchmark crude from about US$110 to about US$95 a barrel. Analysts told the ABC that relief at the bowser would be slow and depend on the Strait of Hormuz reopening.",
+      "relevance": "Shows the asymmetry often described as 'rockets and feathers': retail prices tend to fall more slowly than they rise.",
+      "publisher": "ABC News",
+      "headline": "How long will it take petrol prices to get back to pre-Iran war levels, if at all?",
+      "published": "2026-04-09",
+      "url": "https://www.abc.net.au/news/2026-04-09/petrol-prices-will-they-come-down-to-pre-iran-war-levels/106542120",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "excise-partial",
+      "date": "2026-07-01",
+      "title": "Excise cut partly unwound",
+      "summary": "The temporary cut was reduced from 1 July, so part of the excise was restored.",
+      "relevance": "A higher excise rate feeds straight into wholesale prices.",
+      "publisher": "ACCC",
+      "headline": "Fuel price monitoring during the current Middle Eastern conflict",
+      "published": "2026-03-13",
+      "url": "https://www.accc.gov.au/consumers/petrol-and-fuel/fuel-price-monitoring-during-the-current-middle-eastern-conflict",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "excise-restored",
+      "date": "2026-08-03",
+      "title": "Fuel excise fully restored",
+      "summary": "The remaining cut ended at midnight on 3 August, adding about 16 cents a litre to wholesale prices. Analysts expected the change to reach the bowser about 10 days later.",
+      "relevance": "A policy change, not a world-market change, explains part of the August rise.",
+      "publisher": "ABC News",
+      "headline": "Drivers brace for petrol price hikes as fuel excise cut comes to end",
+      "published": "2026-08-02",
+      "url": "https://www.abc.net.au/news/2026-08-02/fuel-excise-cut-ending/106987482",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "pipeline-attack",
+      "date": "2026-09-15",
+      "title": "Attacks hit route around the Strait of Hormuz",
+      "summary": "After an attack disabled Saudi Arabia's East-West pipeline, a bypass route for tankers avoiding the blockaded strait, Brent crude rose above US$107 a barrel. Analysts warned it could approach US$150.",
+      "relevance": "Loss of a bypass route tightens supply again and pushes refined-fuel benchmarks up.",
+      "publisher": "ABC News",
+      "headline": "Oil price could surge to $US150 as war engulfs major Middle East supply routes, analysts say",
+      "published": "2026-09-15",
+      "url": "https://www.abc.net.au/news/2026-09-15/oil-could-surge-to-150-dollars-middle-east-war-intensifies/107155830",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "crude-dips",
+      "date": "2026-09-23",
+      "title": "Crude falls, but relief is slow at the bowser",
+      "summary": "Brent fell to its lowest level since 8 September. The NRMA said lower international prices could take up to 10 days to reach the retail market, because fuel already in the supply chain was bought at higher prices.",
+      "relevance": "Explains why Australian retail prices lag world prices.",
+      "publisher": "ABC News",
+      "headline": "Global oil prices have dropped but Australian motorists should remain wary",
+      "published": "2026-09-23",
+      "url": "https://www.abc.net.au/news/2026-09-23/petrol-prices-rising-brent-crude-drops/107184536",
+      "editorial_status": "verified_headline_and_date"
+    },
+    {
+      "id": "accc-oct",
+      "date": "2026-10-21",
+      "title": "Retail petrol eases as refined benchmarks fall",
+      "summary": "The ACCC reported that retail petrol fell in the week to 21 October because international refined petrol prices decreased.",
+      "relevance": "The regulator's explanation of the most recent move in this series.",
+      "publisher": "ACCC",
+      "headline": "Weekly fuel price monitoring report, Friday 23 October 2026",
+      "published": "2026-10-23",
+      "url": "https://www.accc.gov.au/system/files/weekly-fuel-price-monitoring-report-23-October-2026.pdf",
+      "editorial_status": "verified_headline_and_date"
+    }
+  ],
+  "context_benchmarks": [
+    {"label": "Brent crude, daily (EIA)", "series_id": "eia-brent-daily", "note": "International benchmark in USD per barrel, kept in data/prices.json as background only. Not an Australian price."}
+  ]
+}
