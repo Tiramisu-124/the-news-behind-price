@@ -36,6 +36,14 @@ This discovers the current official World Bank and ABS workbook links and fetche
 python scripts/price_data.py refresh --full-nbs
 ```
 
+To check the scheduled download, validation and export path without changing any committed data:
+
+```sh
+python scripts/price_data.py refresh --dry-run
+```
+
+This stages its writes in a temporary directory and retains `.cache-data/dry-run-report.json`. The PR validation workflow also performs this read-only publisher check on GitHub's runner. It does not open an update PR or publish the site. Temporary publisher outages can fail this check; inspect the report before retrying.
+
 Review `data/update-report.json`, `COVERAGE.md`, `data/source-registry.json`, the CSV and the source snapshots in ignored `.cache-data/` before committing. A snapshot's filename is its SHA-256 and matches the observation's source hash. `--as-of YYYY-MM-DD` supports reproducible date validation, but must never be used to approve unpublished future observations. The default is today's UTC date. The import window starts 2026-01-01; no historical gaps are filled.
 
 Unexpected revisions do **not** replace old prices. Review each proposed change against its publisher snapshot, then make a deliberate, separately documented correction to `prices.json`. Preserve the previous record in Git and record the reason/evidence in the correcting PR. Regenerate exports with `python scripts/build_catalog.py` and validate again. New sources need a reviewed specification, original units, reuse terms and a policy entry before integration; never map retail fuel to crude, cotton to T-shirts, trade unit values to fixed-grade prices, or FX-converted global prices to a domestic market.
@@ -45,6 +53,10 @@ Unexpected revisions do **not** replace old prices. Review each proposed change 
 `.github/workflows/update-prices.yml` checks World Bank, ABS and EIA weekly on Mondays at 22:23 UTC, and supports **Run workflow**. It opens or updates `automated/price-observations` as a review PR, uploads source evidence, and never merges or deploys. Failed providers retain prior verified records; diagnostics still go into the PR, and a partial failure marks the workflow failed. NBS and restricted/manual providers are excluded from the schedule.
 
 After merging this implementation, repository Settings → Actions → General must permit **Allow GitHub Actions to create and approve pull requests**. The workflow declares contents-write and pull-requests-write permissions; organization policies may still restrict these. If PR creation is blocked, download the workflow diagnostic artifact and run the manual process. The workflow validates data before opening its PR because PRs created with `GITHUB_TOKEN` normally do not trigger another workflow. Separate `validate-data.yml` checks human-created PRs and main-branch changes.
+
+The scheduled workflow repeats the data/export tests **after** fetching new observations and explicitly targets `main` for its proposed PR. Local or read-only publisher checks cannot establish that the repository permits Actions to create pull requests; this permission and the first scheduled run still need confirmation after merging. No automatic merge is configured.
+
+Optional browser regression checks are in `tests/browser-regressions.cjs`. They use Playwright as a test-only dependency (not needed to serve the site). With Playwright and Chromium available, run `node tests/browser-regressions.cjs`. An existing installation can be selected through `PLAYWRIGHT_MODULE`; `CHROME_EXECUTABLE` can select an existing Chrome binary. The check starts and closes its own local server and exercises the GitHub Pages project subpath.
 
 ### Comparisons and news
 

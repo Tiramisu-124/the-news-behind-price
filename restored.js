@@ -53,6 +53,7 @@ function render(){
   $('compare').disabled=!comparison;$('compare').checked=compare&&!!comparison;
   $('comparisonNote').textContent=comparison?'Common base period '+comparison.base+' = 100. Changes in each original currency; not exchange-rate adjusted.':'Comparison unavailable: no compatible cross-market series with a common valid base period. Different grades, benchmarks and retail indices are not interchangeable.';
   if(!s){
+    document.querySelector('.quote-row .minor').textContent='Latest recorded price';
     $('description').textContent=market()+' · '+(loadState==='error'?'The verified data files could not be loaded. Please retry.':reason(active.id));
     $('price').textContent=loadState==='loading'?'Loading…':'Data unavailable';$('unit').textContent='';$('change').textContent='';$('dateRange').textContent='No verified observations';
     $('dataNote').textContent='No placeholder prices are shown. Existing reporting remains available as editorial context.';
@@ -69,13 +70,15 @@ function render(){
   const plotted=compare&&comparison?comparison.series:[s];
   const datedNews=news.map((n,i)=>({...n,index:i})).filter(n=>n.published&&n.published>=first.observation_date&&n.published<=latest.period_end);
   chart.setOption({animation:false,aria:{enabled:true},legend:{show:plotted.length>1,top:0},grid:{left:18,right:20,top:35,bottom:55,containLabel:true},
-    tooltip:{trigger:'axis',renderMode:'richText',formatter:params=>params.filter(p=>p.value?.[1]!=null).map(p=>{
+    tooltip:{trigger:'axis',renderMode:'richText',formatter:params=>{
+      if(!Array.isArray(params))return params.data?.name||params.name||'';
+      return params.filter(p=>p.value?.[1]!=null).map(p=>{
       const source=plotted[p.seriesIndex],record=source.observations.find(o=>PriceModel.time(o.observation_date)===p.value[0]);
       return (record?.period||new Date(p.value[0]).toISOString().slice(0,10))+'\n'+p.seriesName+': '+fmt(p.value[1])+' '+(compare?'index (base 100)':units(source));
-    }).join('\n')},xAxis:{type:'time'},yAxis:{type:'value',scale:true,name:compare?'Common base = 100':s.price_type==='price_index'?'Price index':''},
+    }).join('\n');}},xAxis:{type:'time'},yAxis:{type:'value',scale:true,name:compare?'Common base = 100':s.price_type==='price_index'?'Price index':''},
     dataZoom:observations.length>1?[{type:'slider',height:18,bottom:0}]:[],series:plotted.map((v,i)=>({name:v.market+' · '+v.source_name,type:'line',connectNulls:false,smooth:false,showSymbol:true,symbolSize:5,
       data:PriceModel.plot(v),lineStyle:{width:3},itemStyle:i===0?{color:'#3269ff'}:undefined,
-      markLine:i===0?{symbol:'none',silent:false,lineStyle:{type:'dashed',color:'#81926d'},label:{show:false},data:datedNews.map(n=>({name:'Publication context: '+n.title,xAxis:PriceModel.time(n.published),newsIndex:n.index}))}:undefined}))},true);
+      markLine:i===0?{symbol:'none',silent:false,lineStyle:{type:'dashed',color:'#81926d'},label:{show:false},data:datedNews.map(n=>({name:n.date_basis+': '+n.published+'\n'+n.title,xAxis:PriceModel.time(n.published),newsIndex:n.index}))}:undefined}))},true);
 }
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);compare=false;render();});
 $('city').addEventListener('change',()=>{setRegion($('city').value);compare=false;render();});

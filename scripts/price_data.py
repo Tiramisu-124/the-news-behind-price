@@ -8,7 +8,9 @@ import json
 import math
 from pathlib import Path
 import re
+import shutil
 import sys
+import tempfile
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
@@ -33,7 +35,7 @@ def read_json(path, default=None):
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + '.tmp')
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n', encoding='utf-8')
+    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n', encoding='utf-8', newline='\n')
     temp.replace(path)
 
 
@@ -257,8 +259,8 @@ def merge(existing, incoming):
         if sid not in result:
             result[sid] = {**new, 'observations': []}
         old = result[sid]
-        identity = ['product_id', 'market', 'region', 'specification', 'currency', 'unit', 'price_type', 'frequency']
-        if any(old[k] != new[k] for k in identity):
+        identity = ['product_id', 'market', 'region', 'specification', 'currency', 'unit', 'price_type', 'frequency', 'source_series_id']
+        if any(old.get(k) != new.get(k) for k in identity):
             conflicts.append(dict(series_id=sid, reason='Series definition changed', proposed=new))
             continue
         records = {o['observation_date']: o for o in old['observations']}
@@ -278,7 +280,8 @@ def merge(existing, incoming):
     return list(result.values()), conflicts, additions
 
 
-def refresh(checked, full_nbs=False):
+def refresh(checked, full_nbs=False, data_dir=None):
+    data_dir = Path(data_dir) if data_dir is not None else DATA
     incoming, logs = [], []
     def run(name, action):
         try:
@@ -344,24 +347,43 @@ def refresh(checked, full_nbs=False):
                 path, digest = fetch(url)
                 return import_nbs(path, url, digest, checked)
             run(url, nbs)
-    previous = read_json(DATA / 'prices.json', {'schema_version': 1, 'series': []})
+    previous = read_json(data_dir / 'prices.json', {'schema_version': 1, 'series': []})
     combined, revisions, additions = merge(previous['series'], incoming)
     result = dict(schema_version=1, coverage_start=START, series=combined)
     validate(result, checked)
-    write_json(DATA / 'prices.json', result)
-    write_json(DATA / 'update-report.json', dict(last_checked=checked, sources=logs, additions=additions, revisions=revisions,
+    write_json(data_dir / 'prices.json', result)
+    write_json(data_dir / 'update-report.json', dict(last_checked=checked, sources=logs, additions=additions, revisions=revisions,
                                                policy='Existing observations retained. Review revisions before any replacement.'))
-    registry = read_json(DATA / 'source-registry.json', {})
+    registry = read_json(data_dir / 'source-registry.json', {})
     registry['imported_series'] = [{**{k:v for k,v in s.items() if k != 'observations'},
                                    'coverage_start': s['observations'][0]['period'] if s['observations'] else None,
                                    'coverage_end': s['observations'][-1]['period'] if s['observations'] else None,
                                    'record_count': len(s['observations']), 'last_checked': max((o['last_checked'] for o in s['observations']), default=None),
                                    'update_mode': 'manual' if s['series_id'].startswith('nbs-') else 'scheduled-review-pr'} for s in combined]
-    write_json(DATA / 'source-registry.json', registry)
+    write_json(data_dir / 'source-registry.json', registry)
     from build_catalog import build
-    build()
+    build(data_dir=data_dir, coverage_path=data_dir.parent / 'COVERAGE.md')
     print(json.dumps(dict(additions=additions, revisions=len(revisions), logs=logs), ensure_ascii=False))
     return not any(log['status'] == 'failed' for log in logs)
+
+
+def dry_run(checked):
+    """Exercise the actual refresh/export path in isolation, retaining diagnostics only."""
+    CACHE.mkdir(exist_ok=True)
+    report_path = CACHE / 'dry-run-report.json'
+    write_json(report_path, {'status': 'started', 'last_checked': checked})
+    with tempfile.TemporaryDirectory(prefix='refresh-check-', dir=CACHE) as temporary:
+        staged = Path(temporary) / 'data'
+        shutil.copytree(DATA, staged)
+        try:
+            success = refresh(checked, data_dir=staged)
+            report = read_json(staged / 'update-report.json')
+            report['status'] = 'passed' if success else 'failed'
+            write_json(report_path, report)
+            return success
+        except Exception as exc:
+            write_json(report_path, {'status': 'failed', 'last_checked': checked, 'error': str(exc)})
+            raise
 
 
 if __name__ == '__main__':
@@ -369,9 +391,12 @@ if __name__ == '__main__':
     parser.add_argument('command', choices=['refresh', 'validate'])
     parser.add_argument('--as-of', default=datetime.now(timezone.utc).date().isoformat())
     parser.add_argument('--full-nbs', action='store_true', help='Manual review only: discover 2026 NBS release pages')
+    parser.add_argument('--dry-run', action='store_true', help='Check scheduled sources in isolation; do not modify repository data')
     args = parser.parse_args()
     if args.command == 'validate':
         validate(read_json(DATA / 'prices.json'), args.as_of)
         print('Database validation passed')
     else:
-        sys.exit(0 if refresh(args.as_of, args.full_nbs) else 1)
+        if args.dry_run and args.full_nbs:
+            parser.error('--dry-run checks scheduled sources only; do not combine with --full-nbs')
+        sys.exit(0 if (dry_run(args.as_of) if args.dry_run else refresh(args.as_of, args.full_nbs)) else 1)

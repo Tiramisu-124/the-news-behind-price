@@ -39,7 +39,7 @@ class Prices(unittest.TestCase):
         self.assertEqual(added,0)
 
     def test_unit_or_specification_change_quarantined(self):
-        for key,value in [('currency','AUD'),('unit','pound'),('specification','Different grade')]:
+        for key,value in [('currency','AUD'),('unit','pound'),('specification','Different grade'),('source_series_id','REPLACEMENT-ID')]:
             incoming=copy.deepcopy(self.series);incoming[key]=value
             merged,revisions,added=p.merge([self.series],[incoming])
             self.assertEqual(merged,[self.series]);self.assertEqual(len(revisions),1)
@@ -74,6 +74,33 @@ class Prices(unittest.TestCase):
                 self.assertFalse(p.refresh(TODAY))
             self.assertEqual(p.read_json(data/'prices.json')['series'],self.db['series'])
             self.assertTrue(all(x['status']=='failed' for x in p.read_json(data/'update-report.json')['sources']))
+
+    def test_dry_run_stages_all_writes_and_retains_diagnostics(self):
+        p.CACHE.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=p.CACHE) as tmp:
+            data=Path(tmp)/'published';cache=Path(tmp)/'cache'
+            p.write_json(data/'prices.json',self.db)
+            before=(data/'prices.json').read_bytes()
+            def simulated_refresh(checked, data_dir=None):
+                self.assertNotEqual(data_dir,data)
+                p.write_json(data_dir/'prices.json',{'test_only':'staged update'})
+                p.write_json(data_dir/'update-report.json',{'sources':[{'status':'ok'}]})
+                return True
+            with patch.object(p,'DATA',data),patch.object(p,'CACHE',cache),patch.object(p,'refresh',side_effect=simulated_refresh):
+                self.assertTrue(p.dry_run(TODAY))
+            self.assertEqual((data/'prices.json').read_bytes(),before)
+            self.assertEqual(p.read_json(cache/'dry-run-report.json')['status'],'passed')
+
+    def test_dry_run_failure_does_not_change_published_data(self):
+        p.CACHE.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=p.CACHE) as tmp:
+            data=Path(tmp)/'published';cache=Path(tmp)/'cache'
+            p.write_json(data/'prices.json',self.db)
+            before=(data/'prices.json').read_bytes()
+            with patch.object(p,'DATA',data),patch.object(p,'CACHE',cache),patch.object(p,'refresh',side_effect=RuntimeError('export failed')):
+                with self.assertRaisesRegex(RuntimeError,'export failed'):p.dry_run(TODAY)
+            self.assertEqual((data/'prices.json').read_bytes(),before)
+            self.assertEqual(p.read_json(cache/'dry-run-report.json')['status'],'failed')
 
     def test_csv_retains_original_metadata_and_values(self):
         import csv

@@ -29,6 +29,11 @@ jobs:
         continue-on-error: true
         run: python scripts/price_data.py refresh
       - run: python scripts/price_data.py validate
+      - name: Validate refreshed data and exports before proposing a PR
+        run: |
+          python scripts/build_catalog.py
+          python -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/price-model.test.cjs
       - name: Upload diagnostics and publisher snapshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -41,6 +46,7 @@ jobs:
       - name: Open a review PR; never merge or deploy
         uses: peter-evans/create-pull-request@v8
         with:
+          base: main
           branch: automated/price-observations
           title: 'Review newly published price observations'
           commit-message: 'Propose validated publisher observations and update diagnostics'
