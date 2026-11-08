@@ -1,70 +1,94 @@
-const items=window.EDITORIAL_CASES,$=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),fmt=v=>v.toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:2});
-let seriesChoices={};
-let active=items[0],category=active.category,chart=echarts.init($('chart')),saved=[];
-try{saved=JSON.parse(localStorage.getItem('followed-products')||'[]')}catch{}
-function render(){
- const bundle=active.bundleRegions?.[$('city').value];const seriesKey=active.id+'-'+$('city').value;const series=bundle?.series.find(s=>s.series_id===seriesChoices[seriesKey])||bundle?.series[0];
- const views=active.researchViews?.[$('city').value];const selectedView=views?.[Number(seriesChoices[seriesKey])||0]||views?.[0];
- const q=selectedView?.quote||series?.quote||active.quotes[$('city').value];
- document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('selected',b.dataset.filter===category));
- $('products').innerHTML=items.filter(x=>x.category===category).map(x=>{const p=x.quotes[$('city').value];return '<button data-product="'+x.id+'" aria-pressed="'+(x.id===active.id)+'"><div class="product-illustration"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+x.icon+'.svg"></div><h3>'+esc(x.name)+'</h3><small>'+esc(p.label)+'</small><strong>'+(p.priceDisplay||x.priceDisplay||fmt(p.price))+'</strong><small>'+esc(p.unit)+' · '+esc(p.date)+'</small></button>'}).join('');
- document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>{active=items.find(x=>x.id===b.dataset.product);render()});
- $('category').textContent=active.category;$('productTitle').textContent=active.name;$('description').textContent=q.label;$('price').textContent=q.priceDisplay||active.priceDisplay||fmt(q.price);$('unit').textContent=q.unit;
- const points=(q.history.length?q.history:[[q.date,q.price]]).map(([d,v])=>[d.replace('Listing checked ',''),v]).map(([d,v])=>[/^[A-Za-z]{3}$/.test(d)?d+' '+q.date.match(/\d{4}/)[0]:d,v]);
- $('dateRange').textContent=points[0][0]+' — '+points.at(-1)[0];$('change').textContent=points.length>1?'Period '+((points.at(-1)[1]/points[0][1]-1)*100).toFixed(1)+'%':'Single quote';
- $('dataNote').textContent=points.length>1?'Lines connect recorded observations; intermediate prices are not measured.':'Only one dated quote is available; this does not establish a trend.';
- $('table').innerHTML=points.map(([d,v])=>'<tr><td>'+esc(d)+'</td><td>'+fmt(v)+' '+esc(q.unit)+'</td><td><a href="'+esc(q.url)+'" target="_blank" rel="noopener noreferrer">Price source ↗</a></td></tr>').join('');
- const values=points.map(p=>p[1]);const keys=[...new Set([0,points.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])];
- chart.setOption({animation:false,grid:{left:18,right:20,top:25,bottom:55,containLabel:true},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:v=>fmt(v)+' '+q.unit},xAxis:{type:'time'},yAxis:{type:'value',scale:true},dataZoom:points.length>1?[{type:'slider',height:18,bottom:0}]:[],series:[{type:'line',data:points.map(([d,v])=>[Date.parse(d),v]),showSymbol:false,symbolSize:7,markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:keys.map(i=>({coord:[Date.parse(points[i][0]),points[i][1]],value:points[i][1]}))},lineStyle:{color:'#3269ff',width:3},itemStyle:{color:'#3269ff'},areaStyle:{color:'#dce7ff',opacity:.5}}]},true);
- if(active.chartKind==='dram-index'){
- $('dateRange').textContent='Q1 2026 · reported change';$('change').textContent='Historical price table pending';
- $('dataNote').textContent='The document reports a 93–98% quarterly rise in global DRAM contract prices. A retail price history will be plotted once the dated price table is supplied.';
- chart.clear();chart.setOption({graphic:{type:'text',left:'center',top:'middle',style:{text:'RAM price history awaiting data',fill:'#65715e',fontSize:16}}});
- $('table').innerHTML='<tr><td>Q1 2026</td><td>+93–98% QoQ (contract-price change)</td><td><a href="'+active.indexSource+'">TrendForce ↗</a></td></tr>';
- }
- const explanation=($('city').value==='china'?active.chinaAnalysis:active.analysis)||active.analysis||'Editorial explanation is being prepared.';
- $('editorExplanation').innerHTML='<p>'+esc(explanation)+'</p>'+(active.steps?'<ol>'+active.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol>':'')+(active.other?'<p>'+esc(active.other)+'</p>':'');
- $('story').innerHTML=active.source?'<h3>'+esc(active.headline)+'</h3><p>'+esc(active.summary)+'</p><a href="'+esc(active.source)+'" target="_blank" rel="noopener noreferrer">Read '+esc(active.publisher)+' ↗</a><p>Related reporting provides context; it does not establish the cause of every recorded price change.</p>':'<h3>Reporting in progress</h3><p>A verified news link has not yet been added for this product.</p>';
- if(active.priceContext)$('editorExplanation').innerHTML+='<details><summary>Price events and sources · 2024–2026</summary>'+active.priceContext.map(t=>/^https:\/\//.test(t)?'<p><a href="'+esc(t)+'" target="_blank" rel="noopener noreferrer">Price report ↗</a></p>':'<p>'+esc(t)+'</p>').join('')+'</details>';
- if(active.regionExplanation)$('editorExplanation').innerHTML+='<h4>China and Australia</h4><p>'+esc(active.regionExplanation)+'</p><p>'+esc(active.conclusion)+'</p>';
- if(active.news)$('story').innerHTML='<p>'+esc(active.intro)+'</p>'+active.news.map(n=>'<article class="news-entry"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
- if(bundle){
- let picker=$('seriesPicker');if(!picker){picker=document.createElement('div');picker.id='seriesPicker';$('chart').before(picker);}
- picker.innerHTML='<label for="seriesSelect">Price series </label><select id="seriesSelect">'+bundle.series.map(s=>'<option value="'+s.series_id+'" '+(s===series?'selected':'')+'>'+esc(s.label_en||s.label_zh)+'</option>').join('')+'</select>';
- $('seriesSelect').onchange=()=>{seriesChoices[seriesKey]=$('seriesSelect').value;render()};
- const obs=series.observations;const monthly=series.frequency==='monthly';const dates=new Map(obs.map(o=>[o.date,o]));let plot=obs.map(o=>[Date.parse(o.date),o.value]);
- if(monthly){plot=[];for(let time=Date.parse(obs[0].date);time<=Date.parse(obs.at(-1).date);){const d=new Date(time).toISOString().slice(0,10);plot.push([time,dates.get(d)?.value??null]);const next=new Date(time);next.setUTCMonth(next.getUTCMonth()+1);time=next.getTime();}}
- const valid=plot.filter(p=>Number.isFinite(p[1])),values=valid.map(p=>p[1]);const key=[...new Set([0,valid.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])];
- chart.setOption({animation:false,grid:{left:55,right:20,top:25,bottom:55},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:v=>v==null?'No data':fmt(v)+' '+q.unit},xAxis:{type:'time'},yAxis:{type:'value',scale:true},dataZoom:[{type:'slider',height:18,bottom:0}],series:[{type:'line',connectNulls:false,showSymbol:false,data:plot,lineStyle:{color:'#3269ff',width:3},markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:key.map(i=>({coord:valid[i]}))}}]},true);
- $('dataNote').textContent=series.limitations.join(' ')+(series.missing_months?.length?' Missing months: '+series.missing_months.join(', '):'');
- $('table').innerHTML=obs.map(o=>'<tr><td>'+esc(o.period)+(o.status?.includes('partial')?' (partial month through 21 Sep)':'')+'</td><td>'+(o.value==null?'No data':fmt(o.value)+' '+esc(q.unit))+'</td><td><a href="'+esc(o.url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a><small>'+esc(o.status)+' '+esc((o.quality_flags||[]).join(', '))+'</small></td></tr>').join('');
- $('story').innerHTML=bundle.stories.map(s=>'<article class="news-entry"><small>'+esc(s.publisher)+' · '+esc(s.published)+'</small><h3>'+esc(s.headline_original)+'</h3><p>'+esc(s.facts_confirmed)+'</p><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
- $('editorExplanation').innerHTML=bundle.stories.map(s=>'<section><h4>'+esc(s.headline_original)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?' (possible mechanism; causality not established)':' (reported evidence)')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'; '+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
- }else{ $('seriesPicker')?.remove(); }
- if(active.docViews){const v=active.docViews[$('city').value];
- $('dateRange').textContent=v.labels.join(' → ');$('change').textContent=v.type==='bar'?'Different reference periods':'Reported comparison';
- $('dataNote').textContent=v.note;
- chart.setOption({animation:false,legend:{bottom:0},grid:{left:55,right:20,top:30,bottom:75},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:n=>fmt(n)+' '+v.unit},xAxis:{type:'category',data:v.labels,axisLabel:{interval:0,overflow:'break',width:140}},yAxis:{type:'value',scale:v.type==='line'},series:v.series.map(t=>({...t,type:v.type,showSymbol:true,symbolSize:6,lineStyle:{width:3},barMaxWidth:80}))},true);
- $('table').innerHTML=v.series.flatMap(t=>t.data.map((value,i)=>'<tr><td>'+esc(v.labels[i])+' · '+esc(t.name)+'</td><td>'+fmt(value)+' '+esc(v.unit)+'</td><td><a href="'+esc(v.url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a></td></tr>')).join('');
- }
- if(selectedView){const v=selectedView;
- let picker=$('viewPicker');if(!picker){picker=document.createElement('div');picker.id='viewPicker';$('chart').before(picker);}
- picker.innerHTML=views.length>1?'<label for="viewSelect">Price series </label><select id="viewSelect">'+views.map((s,i)=>'<option value="'+i+'" '+(s===v?'selected':'')+'>'+esc(s.title)+'</option>').join('')+'</select>':'';
- if(views.length>1)$('viewSelect').onchange=()=>{seriesChoices[seriesKey]=$('viewSelect').value;render()};
- $('dateRange').textContent=v.labels.join(' → ');$('change').textContent='Historical observations';$('dataNote').textContent=v.note;
- if(v.type==='range'){chart.clear();chart.setOption({graphic:{type:'text',left:'center',top:'middle',style:{text:'Earlier recollection: AUD 30–35 per tube\n\nAugust 2026: more than AUD 70 per tube',fontSize:14,fill:'#48556b',lineHeight:24}}});}
- else{const values=v.values,keys=[...new Set([0,values.length-1,values.indexOf(Math.min(...values)),values.indexOf(Math.max(...values))])];chart.setOption({animation:false,grid:{left:60,right:25,bottom:65,top:25},tooltip:{trigger:'axis',renderMode:'richText',valueFormatter:n=>fmt(n)+' '+v.unit},xAxis:{type:'category',data:v.labels,axisLabel:{interval:0}},yAxis:{type:'value',scale:true},series:[{type:'line',data:values,showSymbol:false,lineStyle:{width:3,color:'#3269ff'},markPoint:{symbol:'circle',symbolSize:7,label:{show:false},data:keys.map(i=>({coord:[v.labels[i],values[i]]}))}}]},true);}
- $('table').innerHTML=v.labels.map((label,i)=>'<tr><td>'+esc(label)+'</td><td>'+(v.type==='range'?(i?'More than AUD 70':'AUD 30–35'):v.values[i].toLocaleString('en-US',{maximumFractionDigits:4})+' '+esc(v.unit))+'</td><td><a href="'+esc(v.urls[i])+'" target="_blank" rel="noopener noreferrer">Source ↗</a></td></tr>').join('');
- $('story').innerHTML=active.regionalNews[$('city').value].map(n=>'<article class="news-entry"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p><a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">Read original report ↗</a></article>').join('');
- }else{$('viewPicker')?.remove();}
- if(q.fxNote&&!bundle&&!selectedView&&!active.docViews)$('dataNote').textContent+=' '+q.fxNote;
- if(q.fxNote||series?.fxNote||selectedView?.fxNote||active.docViews?.[$('city').value]?.fxNote)$('dataNote').innerHTML=esc($('dataNote').textContent)+' <a href="https://www.rba.gov.au/statistics/tables/csv/f11-data.csv" target="_blank" rel="noopener noreferrer">RBA exchange-rate source ↗</a>';
- $('save').textContent=saved.includes(active.id)?'★ Following':'☆ Follow';$('save').setAttribute('aria-pressed',saved.includes(active.id));
+'use strict';
+const items=window.EDITORIAL_CASES, $=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=v=>v.toLocaleString('en-US',{maximumFractionDigits:4});
+const link=(url,label)=>'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+' ↗</a>';
+let database={series:[]},registry={},loadState='loading';
+let active=items[0],category=active.category,saved=[],seriesChoices={},compare=false;
+const chart=echarts.init($('chart'));
+try {const stored=JSON.parse(localStorage.getItem('followed-products')||'[]');if(Array.isArray(stored))saved=stored;}catch{}
+const market=()=>regions[$('city').value].name;
+const available=product=>database.series.filter(s=>s.product_id===product&&s.market===market()&&s.observations.length);
+const selected=product=>available(product).find(s=>s.series_id===seriesChoices[product+market()])||available(product)[0];
+const units=s=>(s.currency?s.currency+' / ':'')+s.unit;
+const reason=product=>registry.availability?.find(a=>a.product_id===product&&a.market===market())?.reason||'No verified historical series has been imported for this product and market.';
+
+function newsForProduct(){
+  const region=$('city').value;
+  let news=active.regionalNews?.[region]||active.news;
+  const bundles=active.bundleRegions?(region==='global'?Object.values(active.bundleRegions):[active.bundleRegions[region]].filter(Boolean)):[];
+  if(bundles.length)news=bundles.flatMap(b=>b.stories).map(s=>({...s,title:s.headline_original,summary:s.facts_confirmed}));
+  if(!news&&region==='global'&&active.regionalNews)news=Object.values(active.regionalNews).flat();
+  if(!news&&active.source)news=[{title:active.headline,summary:active.summary,url:active.source,publisher:active.publisher}];
+  return [...new Map((news||[]).map(n=>[n.url,n])).values()].map(n=>{
+    const inUrl=n.url?.match(/\/(20\d{2})[/-](\d{2})[/-](\d{2})/);
+    const published=n.published||n.newsDate||(inUrl?inUrl.slice(1,4).join('-'):null);
+    return {...n,published,date_basis:n.published||n.newsDate?'Publication date':'Date in source URL'};
+  });
 }
-document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);render()});
-$('city').addEventListener('change',()=>{setRegion($('city').value);render()});
+function renderEditorial(news){
+  const explanation=($('city').value==='china'?active.chinaAnalysis:active.analysis)||active.analysis||'Editorial explanation is being prepared.';
+  $('editorExplanation').innerHTML='<p>'+esc(explanation)+'</p>'+(active.steps?'<ol>'+active.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol>':'')+(active.other?'<p>'+esc(active.other)+'</p>':'');
+  if(active.priceContext)$('editorExplanation').innerHTML+='<details><summary>Price events and sources · 2024–2026</summary>'+active.priceContext.map(t=>/^https:\/\//.test(t)?'<p>'+link(t,'Price report')+'</p>':'<p>'+esc(t)+'</p>').join('')+'</details>';
+  if(active.regionExplanation)$('editorExplanation').innerHTML+='<h4>China and Australia</h4><p>'+esc(active.regionExplanation)+'</p><p>'+esc(active.conclusion)+'</p>';
+  const stories=news.filter(n=>n.how_does_the_story_affect_prices);
+  if(stories.length)$('editorExplanation').innerHTML=stories.map(s=>'<section><h4>'+esc(s.title)+'</h4><ul>'+s.how_does_the_story_affect_prices.map(m=>'<li>'+esc(m.mechanism)+(m.evidence_grade==='C'?' (possible mechanism; causality not established)':' (reported evidence)')+'</li>').join('')+'</ul><p>'+esc(s.expected_direction)+'; '+esc(s.possible_lag)+'</p><p>'+esc(s.limitations)+'</p></section>').join('');
+  $('story').innerHTML=(active.intro?'<p>'+esc(active.intro)+'</p>':'')+(news.length?news.map((n,i)=>'<article class="news-entry" id="news-'+i+'">'+(n.published?'<small>'+esc(n.date_basis+': '+n.published)+'</small>':'<small>Undated editorial context</small>')+'<h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>'+link(n.url,'Read original report')+'</article>').join(''):'<h3>Reporting in progress</h3><p>A verified news link has not yet been added for this product.</p>')+'<p>Editorial context is preserved separately from verified price observations. Related reporting does not establish the cause of a price change.</p>';
+}
+function render(){
+  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('selected',b.dataset.filter===category));
+  $('products').innerHTML=items.filter(x=>x.category===category).map(x=>{
+    const s=selected(x.id),latest=s?.observations.at(-1);
+    return '<button data-product="'+x.id+'" aria-pressed="'+(x.id===active.id)+'"><div class="product-illustration"><img alt="" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+x.icon+'.svg"></div><h3>'+esc(x.name)+'</h3><small>'+esc(market()+(s?' · '+(s.price_type==='price_index'?'Price index':'Price observations'):''))+'</small><strong>'+(latest?fmt(latest.price):loadState==='loading'?'Loading…':'Data unavailable')+'</strong><small>'+(s?esc(units(s)+' · '+latest.period):'No verified series')+'</small></button>';
+  }).join('');
+  document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>{active=items.find(x=>x.id===b.dataset.product);compare=false;render();});
+  $('category').textContent=active.category;$('productTitle').textContent=active.name;
+  const s=selected(active.id),news=newsForProduct();renderEditorial(news);
+  $('save').textContent=saved.includes(active.id)?'★ Following':'☆ Follow';$('save').setAttribute('aria-pressed',saved.includes(active.id));
+  const choices=available(active.id);
+  $('seriesPicker').innerHTML=choices.length?'<label for="seriesSelect">Price series </label><select id="seriesSelect">'+choices.map(v=>'<option value="'+esc(v.series_id)+'" '+(v===s?'selected':'')+'>'+esc(v.source_name+' · '+v.frequency+' · '+v.specification)+'</option>').join('')+'</select>':'';
+  if($('seriesSelect'))$('seriesSelect').onchange=()=>{seriesChoices[active.id+market()]=$('seriesSelect').value;compare=false;render();};
+  const candidates=s?.comparison_group?database.series.filter(v=>v.product_id===active.id&&v.comparison_group===s.comparison_group):[];
+  const comparison=PriceModel.comparison(candidates);
+  $('compare').disabled=!comparison;$('compare').checked=compare&&!!comparison;
+  $('comparisonNote').textContent=comparison?'Common base period '+comparison.base+' = 100. Changes in each original currency; not exchange-rate adjusted.':'Comparison unavailable: no compatible cross-market series with a common valid base period. Different grades, benchmarks and retail indices are not interchangeable.';
+  if(!s){
+    document.querySelector('.quote-row .minor').textContent='Latest recorded price';
+    $('description').textContent=market()+' · '+(loadState==='error'?'The verified data files could not be loaded. Please retry.':reason(active.id));
+    $('price').textContent=loadState==='loading'?'Loading…':'Data unavailable';$('unit').textContent='';$('change').textContent='';$('dateRange').textContent='No verified observations';
+    $('dataNote').textContent='No placeholder prices are shown. Existing reporting remains available as editorial context.';
+    $('sourceInfo').textContent='';$('table').innerHTML='<tr><td colspan="3">Data unavailable for '+esc(market())+'.</td></tr>';
+    chart.clear();chart.setOption({graphic:{type:'text',left:'center',top:'middle',style:{text:loadState==='loading'?'Loading verified observations…':'Data unavailable',fill:'#65715e',fontSize:16}}});return;
+  }
+  const observations=s.observations,first=observations[0],latest=observations.at(-1);
+  $('description').textContent=market()+' · '+s.region+' · '+s.specification;$('price').textContent=fmt(latest.price);$('unit').textContent=units(s);
+  document.querySelector('.quote-row .minor').textContent=s.price_type==='price_index'?'Latest recorded index':'Latest recorded price';
+  $('dateRange').textContent=first.period+' — '+latest.period;$('change').textContent=observations.length>1?'Period '+((latest.price/first.price-1)*100).toFixed(1)+'%':'Single observation';
+  $('dataNote').textContent=(s.limitations||'')+' '+s.frequency+' observations in original units. Monthly and ten-day values describe reporting periods, not prices on the first day. Gaps are not filled; lines join adjacent reported periods only. '+(s.price_type==='price_index'?'This is a price index, not a monetary price. ':'')+(s.attribution||'');
+  $('sourceInfo').innerHTML=link(s.source_url,s.source_name)+'<br>Latest observation: '+esc(latest.period)+' · Published: '+esc(latest.publication_date||'not specified')+' · Checked: '+esc(latest.last_checked)+'<br>'+link(s.licence_url,s.licence);
+  $('table').innerHTML=observations.map(o=>'<tr><td>'+esc(o.period)+'</td><td>'+fmt(o.price)+' '+esc(units(s))+'</td><td>'+link(o.source_url,s.source_name)+'<small>Published: '+esc(o.publication_date||'not specified')+' · '+esc(o.source_locator)+'</small></td></tr>').join('');
+  const plotted=compare&&comparison?comparison.series:[s];
+  const datedNews=news.map((n,i)=>({...n,index:i})).filter(n=>n.published&&n.published>=first.observation_date&&n.published<=latest.period_end);
+  chart.setOption({animation:false,aria:{enabled:true},legend:{show:plotted.length>1,top:0},grid:{left:18,right:20,top:35,bottom:55,containLabel:true},
+    tooltip:{trigger:'axis',renderMode:'richText',formatter:params=>{
+      if(!Array.isArray(params))return params.data?.name||params.name||'';
+      return params.filter(p=>p.value?.[1]!=null).map(p=>{
+      const source=plotted[p.seriesIndex],record=source.observations.find(o=>PriceModel.time(o.observation_date)===p.value[0]);
+      return (record?.period||new Date(p.value[0]).toISOString().slice(0,10))+'\n'+p.seriesName+': '+fmt(p.value[1])+' '+(compare?'index (base 100)':units(source));
+    }).join('\n');}},xAxis:{type:'time'},yAxis:{type:'value',scale:true,name:compare?'Common base = 100':s.price_type==='price_index'?'Price index':''},
+    dataZoom:observations.length>1?[{type:'slider',height:18,bottom:0}]:[],series:plotted.map((v,i)=>({name:v.market+' · '+v.source_name,type:'line',connectNulls:false,smooth:false,showSymbol:true,symbolSize:5,
+      data:PriceModel.plot(v),lineStyle:{width:3},itemStyle:i===0?{color:'#3269ff'}:undefined,
+      markLine:i===0?{symbol:'none',silent:false,lineStyle:{type:'dashed',color:'#81926d'},label:{show:false},data:datedNews.map(n=>({name:n.date_basis+': '+n.published+'\n'+n.title,xAxis:PriceModel.time(n.published),newsIndex:n.index}))}:undefined}))},true);
+}
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.filter;active=items.find(x=>x.category===category);compare=false;render();});
+$('city').addEventListener('change',()=>{setRegion($('city').value);compare=false;render();});
+$('compare').onchange=()=>{compare=$('compare').checked;render();};
+chart.on('click',params=>{if(params.componentType==='markLine'&&params.data.newsIndex!=null)$('news-'+params.data.newsIndex)?.scrollIntoView({behavior:'smooth',block:'nearest'});});
 $('prev').onclick=()=>$('products').scrollBy({left:-300,behavior:'smooth'});$('next').onclick=()=>$('products').scrollBy({left:300,behavior:'smooth'});
-function search(){const term=$('search').value.trim().toLowerCase().replace('memory','ram');const found=items.find(x=>(x.name+' '+x.id).toLowerCase().includes(term));$('empty').hidden=!!found;if(found){active=found;category=found.category;render();$('discover').scrollIntoView({behavior:'smooth'})}}
-$('searchForm').onsubmit=e=>{e.preventDefault();search()};document.querySelectorAll('[data-query]').forEach(b=>b.onclick=()=>{$('search').value=b.dataset.query;search()});
-$('save').onclick=()=>{saved=saved.includes(active.id)?saved.filter(x=>x!==active.id):[...saved,active.id];try{localStorage.setItem('followed-products',JSON.stringify(saved))}catch{}render()};
+function search(){const term=$('search').value.trim().toLowerCase().replace('memory','ram');const found=items.find(x=>(x.name+' '+x.id).toLowerCase().includes(term));$('empty').hidden=!!found;if(found){active=found;category=found.category;compare=false;render();$('discover').scrollIntoView({behavior:'smooth'});}}
+$('searchForm').onsubmit=e=>{e.preventDefault();search();};document.querySelectorAll('[data-query]').forEach(b=>b.onclick=()=>{$('search').value=b.dataset.query;search();});
+$('save').onclick=()=>{saved=saved.includes(active.id)?saved.filter(x=>x!==active.id):[...saved,active.id];try{localStorage.setItem('followed-products',JSON.stringify(saved));}catch{}render();};
 $('methodBtn').onclick=$('methodBtn2').onclick=()=>$('method').showModal();$('closeDialog').onclick=()=>$('method').close();window.addEventListener('resize',()=>chart.resize());render();
+Promise.all(['prices','source-registry'].map(name=>fetch('./data/'+name+'.json').then(response=>{if(!response.ok)throw new Error('Data download failed');return response.json();}))).then(([prices,sources])=>{
+  if(prices.schema_version!==1||!Array.isArray(prices.series))throw new Error('Unsupported data format');database=prices;registry=sources;loadState='ready';render();
+}).catch(error=>{console.error(error);loadState='error';render();});

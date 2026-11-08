@@ -13,3 +13,6 @@
 #seriesPicker{margin:18px 0}#seriesPicker select{max-width:100%;padding:10px;border:1px solid #ccd6bf;border-radius:8px;background:white}.table-wrap small{display:block;font-size:11px}
 
 #viewPicker{margin:18px 0}#viewPicker select{max-width:100%;padding:10px;border:1px solid #ccd6bf;border-radius:8px;background:white}
+
+/* Data controls share the existing palette and layout. */
+.series-picker{margin:12px 0}.series-picker select{display:block;max-width:100%;width:100%;padding:8px;border:1px solid #ccd6bf;border-radius:8px;background:white}.comparison-control{font-size:12px;color:#53614d;margin:12px 0}.comparison-control p{line-height:1.5;margin:8px 0}.table-wrap small{display:block;margin-top:4px}.data-note a{overflow-wrap:anywhere}.chart-panel,.story-panel{min-width:0}.products>button strong{overflow-wrap:anywhere}
