@@ -1,0 +1,23 @@
+{
+  "last_checked": "2026-11-08",
+  "sources": [
+    {
+      "source": "world-bank",
+      "status": "ok",
+      "records": 70
+    },
+    {
+      "source": "abs",
+      "status": "ok",
+      "records": 18
+    },
+    {
+      "source": "eia",
+      "status": "ok",
+      "records": 213
+    }
+  ],
+  "additions": 0,
+  "revisions": [],
+  "policy": "Existing observations retained. Review revisions before any replacement."
+}

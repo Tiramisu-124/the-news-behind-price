@@ -1,0 +1,62 @@
+name: Propose verified price updates
+on:
+  schedule:
+    - cron: '23 22 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: price-data-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -r scripts/requirements.txt
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - run: node --test tests/price-model.test.cjs
+      - name: Fetch supported public sources (retain history on failure)
+        id: refresh
+        continue-on-error: true
+        run: python scripts/price_data.py refresh
+      - run: python scripts/price_data.py validate
+      - name: Upload diagnostics and publisher snapshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: price-source-evidence
+          include-hidden-files: true
+          path: |
+            .cache-data/
+            data/update-report.json
+      - name: Open a review PR; never merge or deploy
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automated/price-observations
+          title: 'Review newly published price observations'
+          commit-message: 'Propose validated publisher observations and update diagnostics'
+          body: |
+            Publisher records were fetched and validated in this workflow. Existing observations are preserved.
+            Review data/update-report.json for failures and proposed revisions, source-registry.json for provenance, and COVERAGE.md for actual coverage.
+            A source failure does not erase that source's history. Revisions are proposals only and require separate evidence review.
+            CI checks run before this PR is created, because PRs created with GITHUB_TOKEN do not trigger other workflows automatically.
+          add-paths: |
+            data/prices.json
+            data/observations.csv
+            data/source-registry.json
+            data/update-report.json
+            COVERAGE.md
+      - name: Signal partial source failure
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo 'One or more sources failed; retained verified history. Inspect the diagnostic artifact and review PR.'
+          exit 1

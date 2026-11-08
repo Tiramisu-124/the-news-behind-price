@@ -1,0 +1,694 @@
+{
+  "imported_series": [
+    {
+      "series_id": "wb-beef",
+      "product_id": "beef",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Beef (New Zealand), 90% chemical lean, c.i.f. U.S. imported, from January 2024; September 2021 - December 2023, (Australia) cow forequarters, 85% chemical lean, c.i.f. U.S. imported; 1995-August 2021, Australia/ New Zealand mixed trimmings 85%, East Coast, 7-45 day deferred delivery, FOB port of entry; previously cow forequarters",
+      "currency": "USD",
+      "unit": "kg",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "wb-crude",
+      "product_id": "crude",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Crude oil, UK Brent 38` API.",
+      "currency": "USD",
+      "unit": "barrel",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "wb-gold",
+      "product_id": "gold",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Gold, spot average of daily rates, from June 2025; previously (UK), 99.5% fine, London afternoon fixing, average of daily rates",
+      "currency": "USD",
+      "unit": "troy oz",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "wb-copper",
+      "product_id": "copper",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Copper (LME), grade A, minimum 99.9935% purity, cathodes and wire bar shapes, settlement price",
+      "currency": "USD",
+      "unit": "metric tonne",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "wb-beans-arabica",
+      "product_id": "beans",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Coffee, Arabica (ICO), International Coffee Organization indicator price, other mild Arabicas, average New York and Bremen/Hamburg markets, ex-dock",
+      "currency": "USD",
+      "unit": "kg",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "wb-beans-robusta",
+      "product_id": "beans",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Coffee, Robusta (ICO), International Coffee Organization indicator price, Robustas, average New York and Le Havre/Marseilles markets, ex-dock",
+      "currency": "USD",
+      "unit": "kg",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "wb-cotton",
+      "product_id": "cotton",
+      "market": "Global",
+      "region": "International benchmark",
+      "specification": "Cotton (Cotton Outlook \"CotlookA index\"), middling 1-3/32 inch, traded in Far East, C/F beginning 2006; previously Northern Europe, c.i.f.",
+      "currency": "USD",
+      "unit": "kg",
+      "price_type": "commodity_benchmark",
+      "frequency": "monthly",
+      "source_name": "World Bank Pink Sheet",
+      "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "licence": "CC BY 4.0 with World Bank additional terms; underlying provider rights retained",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "comparison_group": null,
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-10",
+      "record_count": 10,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "abs-sydney-beef",
+      "product_id": "beef",
+      "market": "Australia",
+      "region": "Sydney",
+      "specification": "Beef and veal consumer price index, Sydney; original (not seasonally adjusted)",
+      "currency": null,
+      "unit": "index points (Sep 2025 = 100)",
+      "price_type": "price_index",
+      "frequency": "monthly",
+      "source_name": "Australian Bureau of Statistics",
+      "source_url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://www.abs.gov.au/website-privacy-copyright-and-disclaimer",
+      "comparison_group": null,
+      "source_series_id": "A130394462T",
+      "limitations": "Sydney expenditure-class index, not an AUD shelf price or an Australia-wide average.",
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-09",
+      "record_count": 9,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "abs-sydney-milk",
+      "product_id": "milk",
+      "market": "Australia",
+      "region": "Sydney",
+      "specification": "Milk consumer price index, Sydney; original (not seasonally adjusted)",
+      "currency": null,
+      "unit": "index points (Sep 2025 = 100)",
+      "price_type": "price_index",
+      "frequency": "monthly",
+      "source_name": "Australian Bureau of Statistics",
+      "source_url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://www.abs.gov.au/website-privacy-copyright-and-disclaimer",
+      "comparison_group": null,
+      "source_series_id": "A130396807X",
+      "limitations": "Sydney expenditure-class index, not an AUD shelf price or an Australia-wide average.",
+      "coverage_start": "2026-01",
+      "coverage_end": "2026-09",
+      "record_count": 9,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "eia-brent-daily",
+      "product_id": "crude",
+      "market": "Global",
+      "region": "Europe / Brent FOB",
+      "specification": "Europe Brent spot price FOB",
+      "currency": "USD",
+      "unit": "barrel",
+      "price_type": "commodity_benchmark",
+      "frequency": "daily",
+      "source_name": "U.S. Energy Information Administration",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/RBRTED.htm",
+      "licence": "Public domain U.S. government data; credit EIA",
+      "licence_url": "https://www.eia.gov/about/copyrights_reuse.php",
+      "comparison_group": null,
+      "coverage_start": "2026-01-02",
+      "coverage_end": "2026-11-03",
+      "record_count": 213,
+      "last_checked": "2026-11-08",
+      "update_mode": "scheduled-review-pr"
+    },
+    {
+      "series_id": "nbs-copper",
+      "product_id": "copper",
+      "market": "China",
+      "region": "China circulation market monitoring",
+      "specification": "Electrolytic copper 1#, copper + silver >=99.95%",
+      "currency": "CNY",
+      "unit": "tonne",
+      "price_type": "wholesale",
+      "frequency": "ten_day",
+      "source_name": "National Bureau of Statistics of China",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/",
+      "licence": "NBS statistical data use and attributed quotation terms (not CC licensed)",
+      "licence_url": "https://www.stats.gov.cn/english/nbs/200701/t20070104_59236.html",
+      "comparison_group": null,
+      "attribution": "Quoted from the website of the National Bureau of Statistics, www.stats.gov.cn.",
+      "limitations": "Reported early/middle/late-month market average; not a daily price. Manual source review.",
+      "coverage_start": "2026-01-01/2026-01-10",
+      "coverage_end": "2026-10-21/2026-10-31",
+      "record_count": 28,
+      "last_checked": "2026-11-08",
+      "update_mode": "manual"
+    },
+    {
+      "series_id": "nbs-cotton",
+      "product_id": "cotton",
+      "market": "China",
+      "region": "China circulation market monitoring",
+      "specification": "Lint cotton, white grade 3, fibre length >=28mm",
+      "currency": "CNY",
+      "unit": "tonne",
+      "price_type": "wholesale",
+      "frequency": "ten_day",
+      "source_name": "National Bureau of Statistics of China",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/",
+      "licence": "NBS statistical data use and attributed quotation terms (not CC licensed)",
+      "licence_url": "https://www.stats.gov.cn/english/nbs/200701/t20070104_59236.html",
+      "comparison_group": null,
+      "attribution": "Quoted from the website of the National Bureau of Statistics, www.stats.gov.cn.",
+      "limitations": "Reported early/middle/late-month market average; not a daily price. Manual source review.",
+      "coverage_start": "2026-01-01/2026-01-10",
+      "coverage_end": "2026-10-21/2026-10-31",
+      "record_count": 28,
+      "last_checked": "2026-11-08",
+      "update_mode": "manual"
+    }
+  ],
+  "sources_reviewed": [
+    {
+      "id": "world-bank",
+      "url": "https://www.worldbank.org/en/research/commodity-markets",
+      "products": [
+        "beef",
+        "crude",
+        "gold",
+        "copper",
+        "beans",
+        "cotton"
+      ],
+      "frequency": "monthly",
+      "bulk": true,
+      "access": "public XLSX",
+      "update_mode": "scheduled-review-pr",
+      "licence": "CC BY 4.0 plus World Bank dataset terms; provider rights remain",
+      "licence_url": "https://data.worldbank.org/summary-terms-of-use",
+      "decision": "Imported original USD nominal prices; no FX conversion.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "eia",
+      "url": "https://www.eia.gov/dnav/pet/hist/RBRTED.htm",
+      "products": [
+        "crude"
+      ],
+      "frequency": "daily",
+      "bulk": true,
+      "access": "public HTML history and XLS",
+      "update_mode": "scheduled-review-pr",
+      "licence": "Public domain government data; credit EIA",
+      "licence_url": "https://www.eia.gov/about/copyrights_reuse.php",
+      "decision": "Imported HTML table, USD/barrel.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "abs",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+      "products": [
+        "beef",
+        "milk",
+        "beans",
+        "shirt"
+      ],
+      "frequency": "monthly",
+      "bulk": true,
+      "access": "public Table 10 XLSX",
+      "update_mode": "scheduled-review-pr",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://www.abs.gov.au/website-privacy-copyright-and-disclaimer",
+      "decision": "Imported Sydney beef/veal and milk indices. Broader coffee/tea/cocoa and clothing indices excluded. September 2025=100 reference checked.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "nbs",
+      "url": "https://www.stats.gov.cn/sj/zxfb/",
+      "products": [
+        "copper",
+        "cotton"
+      ],
+      "frequency": "ten_day",
+      "bulk": false,
+      "access": "public per-release HTML tables",
+      "update_mode": "manual",
+      "licence": "NBS statistical data use and attributed quotation terms; no blanket open licence asserted",
+      "licence_url": "https://www.stats.gov.cn/english/nbs/200701/t20070104_59236.html",
+      "decision": "Imported 28 releases; attributed statistical values only. Manual bounded importer; no unattended crawler or unsupported API.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "nsw-fuelcheck",
+      "url": "https://www.data.nsw.gov.au/data/dataset/fuel-check",
+      "products": [
+        "crude"
+      ],
+      "frequency": "transaction/price-change records",
+      "bulk": true,
+      "access": "RDF is a catalogue linking monthly downloads, not observations",
+      "update_mode": "not-integrated",
+      "licence": "See distribution-specific licence in supplied RDF/catalogue",
+      "decision": "Rejected for crude-oil mapping: retail motor fuel is a different product.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "dram",
+      "url": "https://www.dramexchange.com/intelligence/historical_price",
+      "products": [
+        "memory"
+      ],
+      "frequency": "daily/weekly/monthly by subscription",
+      "bulk": "subscriber downloads",
+      "access": "membership and redistribution permission required",
+      "update_mode": "manual-permission-required",
+      "licence": "Proprietary; republication prohibited without written consent",
+      "licence_url": "https://www.dramexchange.com/intelligence/historical_price",
+      "decision": "No download or republication of restricted observations.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "abares",
+      "url": "https://www.agriculture.gov.au/abares/research-topics/agricultural-outlook/september-2026",
+      "products": [
+        "beef",
+        "milk",
+        "cotton"
+      ],
+      "frequency": "quarterly publication; annual/financial-year estimates and forecasts",
+      "bulk": true,
+      "access": "public reports and data",
+      "update_mode": "manual",
+      "licence": "Dataset-specific terms not verified for an accepted series",
+      "decision": "Forecasts are not observed 2026 prices; no matching high-frequency domestic series verified.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "moa",
+      "url": "https://www.moa.gov.cn/ztzl/nybrl/",
+      "products": [
+        "beef",
+        "milk",
+        "cotton"
+      ],
+      "frequency": "daily/weekly/monthly depending on publication",
+      "bulk": "not established",
+      "access": "portal redirects to monitoring site; existing PDF links require manual review",
+      "update_mode": "manual",
+      "licence": "Reuse terms for an accepted bulk series not established",
+      "decision": "Not imported. Existing PDF observations are not automatically re-certified by repository labels.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "ndrc",
+      "url": "https://www.ndrc.gov.cn/",
+      "products": [
+        "crude",
+        "beef",
+        "milk"
+      ],
+      "frequency": "varies",
+      "bulk": "not established",
+      "access": "public policy and monitoring releases",
+      "update_mode": "manual",
+      "licence": "No matching reusable bulk-series licence established",
+      "decision": "Refined-fuel adjustments are not crude prices; no matching series imported.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "sge",
+      "url": "https://www.sge.com.cn/sjzx/lsjysj",
+      "products": [
+        "gold"
+      ],
+      "frequency": "daily",
+      "bulk": "not verified",
+      "access": "historical page inaccessible in this run",
+      "update_mode": "manual",
+      "licence": "Redistribution not verified",
+      "decision": "No SGE data imported.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "legacy-comtrade",
+      "url": "https://comtradeapi.un.org/",
+      "products": [
+        "beans",
+        "cotton",
+        "shirt"
+      ],
+      "frequency": "monthly/annual",
+      "bulk": true,
+      "access": "official API referenced by legacy data; not re-imported",
+      "update_mode": "not-integrated",
+      "licence": "UN Comtrade terms require review for any future integration",
+      "decision": "Value/weight and value/item are derived unit values, not fixed-specification price observations.",
+      "last_checked": "2026-11-08"
+    },
+    {
+      "id": "legacy-news-retail",
+      "url": "https://github.com/Tiramisu-124/the-news-behind-price/blob/main/editorial-data.js",
+      "products": [
+        "shuttle",
+        "shirt",
+        "milk",
+        "beef",
+        "memory"
+      ],
+      "frequency": "irregular",
+      "bulk": false,
+      "access": "existing linked reports and retailer listings",
+      "update_mode": "manual",
+      "licence": "Publisher-specific; no bulk reuse permission established",
+      "decision": "Stories retained; unverified, approximate, mixed-period and out-of-window numbers excluded from the active verified-price layer.",
+      "last_checked": "2026-11-08"
+    }
+  ],
+  "availability": [
+    {
+      "product_id": "beef",
+      "market": "Global",
+      "status": "available",
+      "reason": "New Zealand lean beef import benchmark; not supermarket beef.",
+      "series_ids": [
+        "wb-beef"
+      ]
+    },
+    {
+      "product_id": "beef",
+      "market": "Australia",
+      "status": "available",
+      "reason": "Sydney beef and veal CPI only; no monetary retail price imported.",
+      "series_ids": [
+        "abs-sydney-beef"
+      ]
+    },
+    {
+      "product_id": "beef",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "Existing 2024 quarterly and Jan–Feb 2025 wholesale figures are outside the priority window. MOA monitoring is a candidate; a reusable 2026 series was not verified.",
+      "series_ids": []
+    },
+    {
+      "product_id": "crude",
+      "market": "Global",
+      "status": "available",
+      "reason": "World Bank monthly Brent and EIA daily Brent kept separate.",
+      "series_ids": [
+        "wb-crude",
+        "eia-brent-daily"
+      ]
+    },
+    {
+      "product_id": "crude",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "FuelCheck contains retail petrol/diesel, not crude oil. Converted Brent is not an Australian domestic price.",
+      "series_ids": []
+    },
+    {
+      "product_id": "crude",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "Converted Brent and NDRC refined-fuel adjustments are not domestic crude spot prices; no matching series imported.",
+      "series_ids": []
+    },
+    {
+      "product_id": "gold",
+      "market": "Global",
+      "status": "available",
+      "reason": "World Bank spot benchmark; not jewellery retail prices.",
+      "series_ids": [
+        "wb-gold"
+      ]
+    },
+    {
+      "product_id": "gold",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "Legacy AUD values converted from USD at a fixed 2026 rate are not domestic historical transactions. No domestic series verified.",
+      "series_ids": []
+    },
+    {
+      "product_id": "gold",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "Shanghai Gold Exchange historical-data access could not be verified in this run; no fabricated substitute.",
+      "series_ids": []
+    },
+    {
+      "product_id": "copper",
+      "market": "Global",
+      "status": "available",
+      "reason": "LME grade A benchmark.",
+      "series_ids": [
+        "wb-copper"
+      ]
+    },
+    {
+      "product_id": "copper",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "Legacy FX-converted international benchmark excluded; no matching Australian domestic series verified.",
+      "series_ids": []
+    },
+    {
+      "product_id": "copper",
+      "market": "China",
+      "status": "available",
+      "reason": "NBS electrolytic copper 1# wholesale monitoring; ten-day periods, not a monthly LME equivalent.",
+      "series_ids": [
+        "nbs-copper"
+      ]
+    },
+    {
+      "product_id": "beans",
+      "market": "Global",
+      "status": "available",
+      "reason": "ICO Arabica and Robusta prices kept separate.",
+      "series_ids": [
+        "wb-beans-arabica",
+        "wb-beans-robusta"
+      ]
+    },
+    {
+      "product_id": "beans",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "Existing import unit values mix grades and contracts; broad coffee/tea/cocoa CPI is not coffee-specific. Neither is substituted for a coffee price.",
+      "series_ids": []
+    },
+    {
+      "product_id": "beans",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "Existing trade unit values are price proxies and mix product grades. No comparable domestic coffee price series verified.",
+      "series_ids": []
+    },
+    {
+      "product_id": "cotton",
+      "market": "Global",
+      "status": "available",
+      "reason": "Cotlook A physical-price benchmark in USD/kg; its name does not make it a base-100 price index.",
+      "series_ids": [
+        "wb-cotton"
+      ]
+    },
+    {
+      "product_id": "cotton",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "Existing export value/weight ratios are mix-sensitive unit-value proxies, not fixed-grade prices. No domestic series verified.",
+      "series_ids": []
+    },
+    {
+      "product_id": "cotton",
+      "market": "China",
+      "status": "available",
+      "reason": "NBS white grade 3 lint cotton in CNY/tonne; distinct from Cotlook A and 3128B monthly series.",
+      "series_ids": [
+        "nbs-cotton"
+      ]
+    },
+    {
+      "product_id": "memory",
+      "market": "Global",
+      "status": "unavailable",
+      "reason": "DRAMeXchange historical downloads require membership and redistribution permission. No licensed DDR4 history imported; editorial context retained.",
+      "series_ids": []
+    },
+    {
+      "product_id": "memory",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "DRAMeXchange historical downloads require membership and redistribution permission. No licensed DDR4 history imported; editorial context retained.",
+      "series_ids": []
+    },
+    {
+      "product_id": "memory",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "DRAMeXchange historical downloads require membership and redistribution permission. No licensed DDR4 history imported; editorial context retained.",
+      "series_ids": []
+    },
+    {
+      "product_id": "milk",
+      "market": "Global",
+      "status": "unavailable",
+      "reason": "World Bank Pink Sheet does not provide a directly matching fresh/raw milk series; milk powder is a different product.",
+      "series_ids": []
+    },
+    {
+      "product_id": "milk",
+      "market": "Australia",
+      "status": "available",
+      "reason": "Sydney milk CPI only; not an AUD/litre shelf price or farmgate milk price.",
+      "series_ids": [
+        "abs-sydney-milk"
+      ]
+    },
+    {
+      "product_id": "milk",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "Legacy annual/year-end raw-milk figures are not a monthly series. No reusable 2026 historical series verified; manual MOA review required.",
+      "series_ids": []
+    },
+    {
+      "product_id": "shirt",
+      "market": "Global",
+      "status": "unavailable",
+      "reason": "No verified same-specification T-shirt price history. Apparel trade unit values, clothing CPI and cotton input prices are not T-shirt retail prices.",
+      "series_ids": []
+    },
+    {
+      "product_id": "shirt",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "No verified same-specification T-shirt price history. Apparel trade unit values, clothing CPI and cotton input prices are not T-shirt retail prices.",
+      "series_ids": []
+    },
+    {
+      "product_id": "shirt",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "No verified same-specification T-shirt price history. Apparel trade unit values, clothing CPI and cotton input prices are not T-shirt retail prices.",
+      "series_ids": []
+    },
+    {
+      "product_id": "shuttle",
+      "market": "Global",
+      "status": "unavailable",
+      "reason": "No global standard-grade shuttlecock benchmark verified.",
+      "series_ids": []
+    },
+    {
+      "product_id": "shuttle",
+      "market": "Australia",
+      "status": "unavailable",
+      "reason": "Legacy AS-30 recollection and greater-than-AUD70 quote are a range/lower bound, not exact historical observations.",
+      "series_ids": []
+    },
+    {
+      "product_id": "shuttle",
+      "market": "China",
+      "status": "unavailable",
+      "reason": "Legacy AS-05 quotes span 2024–2025, mix sales channels and lack a verified 2026 history; not comparable with AS-30.",
+      "series_ids": []
+    }
+  ]
+}
