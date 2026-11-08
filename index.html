@@ -1,8 +1,84 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e9f0dd"><title>The News Behind Price — Every price has a story</title><meta name="description" content="Explore historical prices for memory, oil and more. Select a price point to discover the news behind it."><link rel="stylesheet" href="reference.css?v=shuttle1"></head><body>
-<header><a class="wordmark" href="#">The News Behind Price<span>FOLLOW THE WHY</span></a><nav><a class="active" href="#discover">Explore</a><a href="#insight">Price stories</a><button id="methodBtn">About the data ↗</button></nav><a href="#" class="basket" aria-label="The News Behind Price red shopping basket logo"><svg viewBox="0 0 48 48"><path d="M8 21h32l-4 20H12zM16 21l8-14 8 14M19 27v8m10-8v8"/></svg></a></header>
-<main><section class="hero"><div class="eyebrow"><span class="dot"></span> REAL PRICES. TRACEABLE STORIES.</div><h1>Every price<br class="mobile"> has a story<span>.</span></h1><p>From a memory chip to a barrel of oil, discover the world behind the price.</p><div class="region-picker"><label for="city">Region </label><select id="city"><option value="global">Global</option><option value="australia">Australia</option><option value="china">China</option></select></div><form id="searchForm" class="search"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input id="search" type="search" placeholder="Search a product, like “memory”" aria-label="Search"><button>Search <span>↗</span></button></form><div class="suggestions">Popular searches <button data-query="memory">Memory ↗</button><button data-query="oil">Oil ↗</button><button data-query="gold">Gold ↗</button></div><div class="hero-decoration" aria-hidden="true">↗</div></section>
-<section id="discover"><div class="section-heading"><div><span class="eyebrow">THE WATCHLIST</span><h2>Prices worth watching</h2></div><div class="slider-controls"><span>Slide to explore</span><button id="prev" aria-label="Scroll products left">←</button><button id="next" aria-label="Scroll products right">→</button></div></div><div class="filters" aria-label="Product categories"><button class="selected" data-filter="Everyday Consumer Goods">Everyday Consumer Goods</button><button data-filter="Raw Materials">Raw Materials</button></div><div id="products" class="products"></div><p id="empty" hidden>No products found. Try “memory” or “oil”, or clear your search.</p></section>
-<section id="insight"><div class="section-heading"><div><span class="eyebrow">BEHIND THE PRICE</span><h2>Connect the dots. Discover the story.</h2></div><span class="historic">Historical observations · Not live quotes</span></div><div class="workspace"><article class="chart-panel"><div class="chart-title"><div><span class="tag" id="category"></span><h3 id="productTitle"></h3><p id="description"></p></div><button id="save" class="save" aria-label="Follow product">☆ Follow</button></div><div class="quote-row"><div><span class="minor">Latest recorded price</span><div><strong id="price"></strong><span id="unit"></span></div></div><span id="change"></span></div><div class="chart-meta"><span><i></i> Reported price observations</span><span id="dateRange"></span></div><div id="seriesPicker" class="series-picker"></div><div class="comparison-control"><label><input id="compare" type="checkbox" disabled> Compare markets (base 100)</label><p id="comparisonNote"></p></div><div id="chart" class="chart" aria-label="Interactive historical price chart"></div><div class="chart-hint">Hover or tap to inspect recorded periods and prices. Dashed markers identify dated reporting, not proven causes. Exact values are also available in the table.</div><details><summary>View price data table</summary><div class="table-wrap"><table><thead><tr><th>Price date</th><th>Price</th><th>Original source</th></tr></thead><tbody id="table"></tbody></table></div></details><p class="data-note" id="dataNote"></p><p class="data-note" id="sourceInfo"></p><section class="editor-note"><span class="eyebrow">EDITOR’S EXPLANATION</span><h3>How does this connect?</h3><div id="editorExplanation"></div></section></article><aside class="story-panel" aria-live="polite"><div class="story-top"><span class="eyebrow">THE STORY BEHIND THIS POINT</span><span class="story-icon">↗</span></div><div id="story"></div><div class="story-bottom"><span class="dot"></span> Every price has a source you can check.</div></aside></div></section>
-<section class="bottom-note"><span>See the price. Understand the why.</span><p>Every dot links to a public record. Every story leads back to its source.</p><button id="methodBtn2">How we use data ↗</button></section></main><footer><a class="wordmark" href="#">The News Behind Price<span>FOLLOW THE WHY</span></a><p>More context for the prices. More confidence in your choices.</p><span>A historical price observatory · 2026</span></footer>
-<dialog id="method"><button id="closeDialog" aria-label="Close">×</button><span class="eyebrow">ABOUT THE DATA</span><h2>Real records. Clear definitions.</h2><p>This site brings together historical prices from public reports, not live market quotes. Percentages on product cards compare the first and last observations shown. They are not daily changes or popularity rankings.</p><p>Memory and flash prices refer to upstream chips and wafer quotation categories. Oil and gold use the market benchmarks described for each product. These are not retail store prices, and values across products are not directly comparable.</p><p>Charts show verified publisher observations in original units. Missing periods break the line. Monthly and ten-day observations retain their reporting periods; their position at the start of a period does not imply an exact-day price. Price dates and publication dates are shown separately. Refer to the original source for precise timing. News summaries describe reported influences, not proof of a single cause.</p><p>Every price point includes a source link. Your followed products are saved only in this browser. Scheduled checks propose data updates in a pull request for review. Source failures retain the last verified dataset. Price indices are labelled separately from monetary prices. Cross-market comparison is enabled only for reviewed compatible series sharing a valid base period.</p></dialog><div id="toast" role="status"></div><script src="editorial-data.js?v=local-en1"></script><script src="vendor/echarts.min.js"></script><script src="regions.js?v=verified1"></script><script src="price-model.js?v=verified1"></script><script src="restored.js?v=verified1"></script></body></html>
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The News Behind Price</title>
+<meta name="description" content="An interactive journalism archive for international students in Australia. Every price has a story.">
+<meta name="theme-color" content="#121110">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter+Tight:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site/editorial.css">
+</head>
+<body data-view="home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
 
+<header class="masthead">
+  <a class="logo" href="#/" aria-label="The News Behind Price, home">The News<br>Behind Price</a>
+  <nav class="cats" aria-label="Product categories"><ul id="catNav"></ul></nav>
+  <div class="tools">
+    <button class="icon-btn" id="searchBtn" aria-label="Search products" aria-expanded="false" aria-controls="searchPanel">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+    </button>
+    <span class="loc" title="All prices on this site are Australian unless labelled as international context"><span class="loc-dot" aria-hidden="true"></span>Australia</span>
+  </div>
+  <form class="search-panel" id="searchPanel" role="search" hidden>
+    <label for="searchInput" class="sr-only">Search the ten products</label>
+    <input id="searchInput" type="search" placeholder="Search products — petrol, rent, coffee…" autocomplete="off">
+    <ul id="searchResults" class="search-results"></ul>
+  </form>
+</header>
+
+<main id="main">
+  <!-- HOME -->
+  <section id="home" class="home" aria-label="Featured product">
+    <div class="atmos" aria-hidden="true"><div class="atmos-img" id="atmosImg"></div></div>
+    <div class="feature">
+      <div class="feature-text" id="featureText" aria-live="polite">
+        <p class="eyebrow" id="fCat"></p>
+        <h1 class="f-name" id="fName"></h1>
+        <p class="f-headline" id="fHeadline"></p>
+        <a class="read" id="fRead" href="#/">Read the story <span aria-hidden="true">→</span></a>
+        <div class="f-price" id="fPrice"></div>
+      </div>
+      <figure class="feature-visual" id="featureVisual"><img id="fImg" alt="" decoding="async"></figure>
+      <aside class="feature-side">
+        <div class="counter">
+          <button class="icon-btn" id="prevFeat" aria-label="Previous product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button>
+          <p><strong id="fIndex">01</strong> / <span id="fTotal">10</span></p>
+          <button class="icon-btn" id="nextFeat" aria-label="Next product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        </div>
+        <p class="f-summary" id="fSummary"></p>
+      </aside>
+    </div>
+
+    <div class="rail-wrap">
+      <button class="rail-arrow" id="railPrev" aria-label="Scroll products left"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button>
+      <ul class="rail" id="rail" aria-label="Products. Use left and right arrow keys to move between them."></ul>
+      <button class="rail-arrow" id="railNext" aria-label="Scroll products right"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+    </div>
+
+    <div class="home-foot">
+      <a href="#/story/petrol" class="foot-card"><span class="eyebrow accent">Featured story</span><span class="foot-title">From war to your wallet: what happened to petrol in 2026</span><span class="arrow" aria-hidden="true">→</span></a>
+      <a href="#/story/petrol#connected" class="foot-card"><span class="eyebrow">Explore connections</span><span class="foot-title it">One event, several prices. See how a single news story spreads.</span><span class="arrow" aria-hidden="true">→</span></a>
+      <a href="#/sources" class="foot-card"><span class="eyebrow">Data &amp; sources</span><span class="foot-title">How we check prices, and what we still can’t show</span><span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <article id="story" class="story" hidden></article>
+
+  <!-- SOURCES -->
+  <section id="sources" class="story sources" hidden></section>
+</main>
+
+<script src="vendor/echarts.min.js" defer></script>
+<script src="site/catalogue.js" defer></script>
+<script src="site/data.js" defer></script>
+<script src="site/home.js" defer></script>
+<script src="site/story.js" defer></script>
+<script src="site/router.js" defer></script>
+</body>
+</html>

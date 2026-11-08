@@ -20,7 +20,9 @@ jobs:
       - run: python scripts/price_data.py validate
       - run: python -m unittest discover -s tests -p 'test_*.py'
       - run: node --test tests/price-model.test.cjs
-      - run: node --check restored.js
+      - run: node --check legacy/restored.js
+      - run: for f in site/*.js; do node --check "$f"; done
+      - run: python -m json.tool data/stories/petrol.json > /dev/null
       - run: python scripts/build_catalog.py
       - run: git diff --exit-code -- data/observations.csv data/source-registry.json COVERAGE.md
   verify-publisher-refresh:

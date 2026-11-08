@@ -1,7 +1,36 @@
 # the-news-behind-price
-An interactive journalism project exploring price changes in Australia.
+An interactive journalism project for international students in Australia. **Every price has a story.**
 
-## Verified price data
+## Australian editorial redesign (Phase 1 preview)
+
+Branch `redesign/australia-editorial` replaces the old Global / Australia / China interface with an Australia-only editorial site built on the existing data infrastructure.
+
+| Path | What it is |
+|---|---|
+| `index.html`, `site/` | New frontend: dark homepage with circular product rail (`site/home.js`), light story pages with linked chart and timeline (`site/story.js`), hash router, catalogue of the 10 products (`site/catalogue.js`) |
+| `site/editorial.css` | All styles; colour tokens on `:root` |
+| `data/stories/petrol.json` | Petrol story: ACCC price observations and verified news events with original URLs |
+| `assets/products/` | Product imagery. **Placeholder:** cropped from the design concepts; replace with licensed photography before launch |
+| `legacy/` | The previous frontend, kept for reference (open `legacy/index.html` over HTTP) |
+| `tests/redesign-browser.cjs` | Playwright checks for the new UI (optional, test-only dependency) |
+
+Unchanged: `data/prices.json`, the source registry and policy, `scripts/`, `price-model.js`, the Python and Node tests, and both workflows (the validate workflow now also syntax-checks `site/*.js` and the story JSON).
+
+**Phase 1 scope.** Homepage, category filter, search, carousel and a complete Petrol story. The other nine products open an honest preview page. Their full stories are Phase 2.
+
+**Petrol data status.** PR #1 contained no Australian petrol series. The Petrol chart uses the ACCC's daily averages for regular unleaded across the five largest cities, as printed in its weekly fuel price monitoring reports. The 20 values were **transcribed** from 9 report PDFs and are marked `transcribed_pending_review`. They are kept outside `prices.json` because they don't yet have publisher snapshot hashes. Before publication, spot-check each value against its `source_locator`, or add an ACCC importer that hashes the PDFs. Gaps (2 Sep–14 Oct and after 21 Oct) are shown as gaps.
+
+**Data rules in the UI.** Prices are in A$. Indexes (for example ABS beef CPI) are shown as index points, never dollars. International benchmarks are never displayed as Australian prices. Range buttons are disabled when they would contain fewer than three observations. Event–price pairings are labelled as observations, not effects.
+
+### Preview locally
+
+```sh
+python -m http.server 8000      # then open http://localhost:8000
+node tests/redesign-browser.cjs # optional, needs Playwright + Chromium
+```
+
+## Verified price data (from PR #1)
+
 
 The site now separates Global, Australia and China datasets while retaining the original design and reporting. See [DATA_AUDIT.md](DATA_AUDIT.md), [actual imported coverage](COVERAGE.md), and [source registry](data/source-registry.json). Empty markets retain their products and show **Data unavailable**. Australian observations currently cover Sydney CPI indices, not monetary shelf prices.
 
